@@ -1,0 +1,21 @@
+## Interface: 100207
+## Title: HandyNotes: The War Within Treasures and Rares
+## Notes: Where are the hidden treasures in the War Within?
+## Author: Kemayo
+## Version: @project-version@
+## DefaultState: enabled
+## X-Category: Map
+## X-eMail: kemayo @ gmail DOT com
+## X-Curse-Project-ID: 934069
+## X-Wago-ID:
+## SavedVariables: HandyNotes_WarWithinDB
+## RequiredDeps: HandyNotes
+## OptionalDeps: !LibUIDropDownMenu
+
+#@non-debug@
+# lib\LibUIDropDownMenu\LibUIDropDownMenu.xml
+#@end-non-debug@
+
+handler\handler.xml
+
+warwithin.lua
