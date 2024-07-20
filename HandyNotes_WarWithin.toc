@@ -1,4 +1,4 @@
-## Interface: 100207
+## Interface: 110002
 ## Title: HandyNotes: The War Within Treasures and Rares
 ## Notes: Where are the hidden treasures in the War Within?
 ## Author: Kemayo
@@ -19,3 +19,11 @@
 handler\handler.xml
 
 warwithin.lua
+
+zones\AzjKahet.lua
+zones\Dornogal.lua
+zones\Hallowfall.lua
+zones\IsleOfDorn.lua
+zones\KhazAlgar.lua
+zones\RingingDeeps.lua
+
