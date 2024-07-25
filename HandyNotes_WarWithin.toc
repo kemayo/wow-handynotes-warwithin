@@ -27,3 +27,4 @@ zones\IsleOfDorn.lua
 zones\KhazAlgar.lua
 zones\RingingDeeps.lua
 
+achievements\GlyphHunter.lua
