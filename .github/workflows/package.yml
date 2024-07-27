@@ -16,7 +16,7 @@ jobs:
           submodules: recursive
           fetch-depth: 0 # reads history for commit changelog
 
-      - uses: kemayo/actions-recent-changelog@v1
+      - uses: kemayo/actions-recent-changelog@v2
         if: startsWith(github.ref, 'refs/tags')
         with:
           input: CHANGELOG.md
