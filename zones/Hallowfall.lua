@@ -1,5 +1,106 @@
 local myname, ns = ...
 
+-- Treasures
+
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [41795827] = { -- Caesper
+        criteria=69692,
+        quest=83263,
+        loot={225639}, -- Recipe: Exquisitely Eviscerated Muscle
+        active=ns.conditions.Item(225238), -- Meaty Haunch
+        related={
+            [69254397]={label="{npc:217645:Torran Dellain}", note="Buy {item:225238:Meaty Haunch}"},
+        },
+        note="Buy {item:225238:Meaty Haunch} from {npc:217645:Torran Dellain}",
+    },
+    [55145185] = { -- Smuggler's Treasure
+        criteria=69693,
+        quest=83273,
+        loot={226021}, -- Jar of Pickles
+        note="Get the key from the dead NPC",
+    },
+    [59716058] = { -- Dark Ritual
+        criteria=69694,
+        quest=83284,
+        loot={225693}, -- Shadowed Essence
+        note="In cave; use the book, defeat the summoned monsters",
+    },
+    [40035112] = { -- Arathi Loremaster
+        criteria=69695,
+        quest=83298,
+        loot={{225659, toy=true}},
+        note="Answer riddles from {npc:221630:Ryfus Sacredpyr}; you need to find the books for {achievement:40622:Biblo Archivist} for the correct answers to appear",
+    },
+    [55726960] = { -- Jewel of the Cliffs
+        criteria=69697,
+        quest=81971,
+        loot={224580}, -- Massive Sapphire Chunk
+        note="High up on the rocks",
+    },
+    [30233875] = { -- Priory Satchel
+        criteria=69698,
+        quest=81972,
+        loot={224578}, -- Arathor Courier's Satchel
+        note="Hanging from the cathedral",
+    },
+    [50071385] = { -- Lost Necklace
+        criteria=69699,
+        quest=81978,
+        loot={224575}, -- Lightbearer's Pendant
+    },
+    [57652744] = { -- Illuminated Footlocker
+        criteria=69701,
+        quest=81468,
+        loot={{224552, toy=true}},
+        note="Catch falling glimmers from {npc:220703:Starblessed Glimmerfly} until you get {spell:442529:Glimmering Illumination}",
+    },
+    [76165399] = { -- Spore-covered Coffer
+        criteria=69702,
+        quest=79275,
+        loot={}, -- alchemy mats
+        note="In cave",
+    },
+    -- [] = {criteria=69700, quest=82005}, -- Sky-Captains' Sunken Cache
+}, {
+    achievement=40848,
+})
+
+-- Illusive Kobyss Lure (Treasures)
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [55362720] = {label="{npc:215653:Kobyss Shadeshaper}: {item:225554:Sunless Lure}",},
+    [47611854] = {label="{npc:213622:Murkfin Depthstalker}: {item:225558:Murkfin Lure}",},
+    [50655037] = {label="{npc:215243:Hungering Shimmerfin}: {item:225559:Hungering Shimmerfin}",},
+    [34965465] = {label="{npc:213406:Ragefin Necromancer}: {item:225560:Ragefin Necrostaff}",},
+}, {
+    achievement=40848, -- Treasures
+    criteria=69696,
+    quest=83299,
+    atlas="Vehicle-TempleofKotmogu-CyanBall", scale=1.2,
+    loot={{225641, toy=true}}, -- Illusive Kobyss Lure
+    note="Gather and combine {item:225554:Sunless Lure}, {item:225558:Murkfin Lure}, {item:225559:Hungering Shimmerfin}, {item:225560:Ragefin Necrostaff}",
+})
+
+-- Biblo Archivist
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [48153959] = {criteria=68954, loot={225212}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Big Book of Arathi Idioms
+    [43884991] = {criteria=68955, loot={225217}}, -- 500 Dishes Using Cave Fish and Mushrooms
+    [69344394] = {criteria=68957, loot={225207}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Care and Feeding of the Imperial Lynx
+    [68684159] = {criteria=68958, loot={225206}}, -- Light's Gambit Playbook
+    [57595180] = {criteria=68960, loot={225208}}, -- From the Depths They Come
+    [48806470] = {criteria=68961, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Palawltar's Codex of Dimensional Structure
+    [64182812] = {criteria=68963, loot={225204}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Shadow Curfew Guidelines
+    [59802203] = {criteria=68965, loot={225205}}, -- Shadow Curfew Journal
+    [70225684] = {criteria=68967, loot={225215}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Song of Renilash
+    [56586518] = {criteria=68968, loot={225203}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Beledar- The Emperor's Vision
+    -- [] = {criteria=69729, loot={228457}}, -- Lightspark Grade Book
+}, {
+    achievement=40622,
+    texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
+    minimap=true,
+})
+
+-- Rares
+
 ns.RegisterPoints(ns.HALLOWFALL, {
     [23005920] = { -- Lytfang the Lost
         criteria=69710,
