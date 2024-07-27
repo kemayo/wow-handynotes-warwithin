@@ -87,25 +87,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=221708,
         vignette=6154,
     },
-    [44744241] = { -- Deathtide
-        criteria=69717,
-        quest=81880,
-        npc=221753,
-        loot={223921}, -- Ever-Oozing Signet
-        vignette=6156,
-        active=ns.conditions.Item(220123), -- Ominous Offering
-        note="Create an {item:220123:Ominous Offering} to summon",
-        related={
-            [48001668] = {loot={220124}}, -- Jar of Mucus
-            [28925120] = {loot={220122}}, -- Offering of Pure Water
-            [34185782] = {loot={220122}}, -- Offering of Pure Water
-            [34365357] = {loot={220122}}, -- Offering of Pure Water
-            [43451413] = {loot={220122}}, -- Offering of Pure Water
-            [50094966] = {loot={220122}}, -- Offering of Pure Water
-            [53771913] = {loot={220122}}, -- Offering of Pure Water
-            [55142344] = {loot={220122}}, -- Offering of Pure Water
-        },
-    },
     [43410990] = { -- Horror of the Shallows
         criteria=69712,
         quest=81836,
@@ -223,6 +204,47 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     note="Buy and use {item:224553:Beledar's Attunement} from {majorfaction:2570:Hallowfall Arathi} to access",
     vignette=6359, -- also 6118?
 })
+
+-- Deathtide
+local deathtide = ns.nodeMaker{
+    achievement=40851,
+    criteria=69717,
+    quest=81880,
+}
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [44744241] = { -- Deathtide
+        npc=221753,
+        loot={223921}, -- Ever-Oozing Signet
+        vignette=6156,
+        active=ns.conditions.Item(220123), -- Ominous Offering
+        note="Create an {item:220123:Ominous Offering} to summon",
+    },
+}, deathtide{})
+ns.RegisterPoints(ns.HALLOWFALL, {
+    -- Jar of Mucus
+    [48001668] = {route={48001668, 44744241, highlightOnly=true}},
+}, deathtide{
+    label="{item:220124}",
+    loot={220124},
+    texture=ns.atlas_texture("playerpartyblip",{r=0,g=1,b=1,}),
+    note="Take to {npc:221753} @ 44.7,42.4",
+})
+ns.RegisterPoints(ns.HALLOWFALL, {
+     -- Offering of Pure Water
+    [28925120] = {route={28925120, 44744241, highlightOnly=true}},
+    [34185782] = {route={34185782, 44744241, highlightOnly=true}},
+    [34365357] = {route={34365357, 44744241, highlightOnly=true}},
+    [43451413] = {route={43451413, 44744241, highlightOnly=true}},
+    [50094966] = {route={50094966, 44744241, highlightOnly=true}},
+    [53771913] = {route={53771913, 44744241, highlightOnly=true}},
+    [55142344] = {route={55142344, 44744241, highlightOnly=true}},
+}, deathtide{
+    label="{item:220122}",
+    loot={220122},
+    texture=ns.atlas_texture("playerpartyblip",{r=0,g=0,b=1,}),
+    note="Take to {npc:221753} @ 44.7,42.4",
+})
+
 
 ns.RegisterPoints(ns.HALLOWFALL, {
     [63400560] = { -- Radiant-Twisted Mycelium
