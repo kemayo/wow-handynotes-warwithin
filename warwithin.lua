@@ -10,6 +10,8 @@ ns.AZJKAHET = 2255
 -- ns.MAXLEVEL = {ns.conditions.QuestComplete(67030), ns.conditions.Level(70)}
 -- ns.DRAGONRIDING = ns.conditions.SpellKnown(376777)
 
+ns.FACTION_ARATHI = 2570
+
 --[[
 ns.PROF_WW_ALCHEMY =  -- spell:
 ns.PROF_WW_BLACKSMITHING =  -- spell:
