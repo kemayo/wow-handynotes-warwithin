@@ -1,5 +1,110 @@
 local myname, ns = ...
 
+-- Treasures
+
+ns.RegisterPoints(ns.ISLEOFDORN, {
+    [48593007] = { -- Tree's Treasure
+        criteria=68197,
+        quest=83242,
+        loot={{224585, toy=true}}, -- Hanna's Locket
+        note="Talk to {npc:222940:Freysworn Letitia} for a {item:224185:Crab-Guiding Branch}, then go find {npc:222941:Pearlescent Shellcrab} around the zone",
+        related={
+            [38364194] = {quest=nil},
+            [19715844] = {quest=nil},
+            [50717055] = {quest=nil},
+            [74904969] = {quest=nil},
+            [70752001] = {quest=nil},
+            [41822704] = {quest=nil},
+            --
+            label="{npc:222941:Pearlescent Shellcrab}",
+            color={r=1, g=0.5, b=0.5},
+            required=ns.conditions.Item(224185), -- Crab-Guiding Branch
+            note="Chase away all six crabs then return to {npc:222940:Freysworn Letitia}",
+        },
+    },
+    [40897380] = { -- Turtle's Thanks
+        criteria=68198,
+        quest=82716,
+        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        note="Give {npc:223338:Dalaran Sewer Turtle}:\n* 5x {item:220143:Dornish Pike}\n* 1x {item:222721:Fish and Chips}\n* 1x {item:222533:Goldengill Trout}",
+        active={ns.conditions.Item(220143, 5), ns.conditions.Item(222721), ns.conditions.Item(222533)},
+    },
+    [40655988] = { -- Magical Treasure Chest
+        criteria=68199,
+        quest=83243,
+        loot={{224579, pet=3362}},
+        note="Push {npc:223104:Lionel} into the water, talk to it, then go gather 5x {item:223159:Plump Snapcrab} nearby",
+    },
+    [54001914] = { -- Mysterious Orb
+        criteria=68201,
+        quest=83244,
+        loot={224373}, -- Waterlord's Iridescent Gem
+        note="Talk to {npc:222847:Weary Water Elemental}, then go fetch its {item:221504:Elemental Pearl}",
+        nearby={53051857, label="{item:221504:Elemental Pearl}"},
+    },
+    [55026562] = { -- Mushroom Cap
+        criteria=68202,
+        quest=83245,
+        loot={210796}, -- Mycobloom
+        note="Talk to {npc:222894:U'llort the Self-Exiled} then fetch its {item:221550:Boskroot Cap} from the nearby woods",
+    },
+    [38054354] = { -- Thak's Treasure
+        criteria=68203,
+        quest=82246,
+        loot={
+            212498, -- Ambivalent Amber
+            212511, -- Ostentatious Onyx
+        },
+        note="Talk to {npc:223227:One-Eyed Thak} and follow him to the treasure",
+    },
+    [59802870] = { -- Mosswool Flower
+        criteria=68204,
+        quest=83246,
+        loot={{224450, pet=4527}}, -- Lil' Moss Rosy
+        nearby={
+            59622459, -- 222956
+            59102706, -- 222963
+            59752870, -- 222965
+            label="{npc:222956:Lost Mosswool}",
+        },
+        note="Chase {npc:222956:Lost Mosswool} to the flower",
+    },
+    [62534320] = { -- Kobold Pickaxe
+        criteria=68205,
+        quest=82325,
+        loot={223484}, -- Kobold Mastermind's "Pivel"
+    },
+    [77272448] = { -- Jade Pearl
+        criteria=68206,
+        quest=82287,
+        loot={223280}, -- Jade Pearl
+    },
+    [48886092] = { -- Shimmering Opal Lily
+        criteria=68207,
+        quest=82326,
+        loot={
+            210800, -- Luredrop
+            213197, -- Null Lotus
+        },
+        path=47316149,
+        note="At the bottom of the cave",
+    },
+    [56176091] = { -- Infused Cinderbrew
+        criteria=68208,
+        quest=82714,
+        loot={224263}, -- Infused Fire-Honey Milk
+    },
+    [59112351] = { -- Web-Wrapped Axe
+        criteria=68209,
+        quest=82715,
+        loot={224290}, -- Storm Defender's Axe
+    },
+}, {
+    achievement=40434, -- Treasures
+})
+
+-- Rares
+
 ns.RegisterPoints(ns.ISLEOFDORN, {
     [16606120] = { -- Alunira
         criteria=68225,
