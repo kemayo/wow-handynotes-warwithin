@@ -1,5 +1,74 @@
 local myname, ns = ...
 
+-- Treasures
+
+ns.RegisterPoints(ns.AZJKAHET, {
+    [78003300] = { -- Weaving Supplies
+        criteria=69643,
+        quest=82527,
+        loot={{225347, toy=true}}, -- Web-Vandal's Spinning Wheel
+        note="Collect {item:223901:Violet Silk Scrap}, {item:223902:Crimson Silk Scrap}, {item:223903:Gold Silk Scrap} from the edge of the platform to unlock",
+    },
+    [50614807] = { -- Nest Egg
+        criteria=69645,
+        quest=82529,
+        loot={{221760, pet=4513}}, -- Bonedrinker
+    },
+    [54404110] = { -- Disturbed Soil
+        criteria=69646,
+        quest=82718,
+        loot={},
+    },
+    -- UNKNOWN LOCATION
+    [85008900] = { -- Silk-spun Supplies
+        criteria=69647,
+        quest=82719,
+        loot={},
+        note="UNKNOWN LOCATION",
+    },
+    [87008900] = { -- Nerubian Offerings
+        criteria=69648,
+        quest=82720,
+        loot={},
+        note="UNKNOWN LOCATION",
+    },
+    [89008900] = { -- Niffen Stash
+        criteria=69649,
+        quest=82721,
+        loot={},
+        note="UNKNOWN LOCATION",
+    },
+    [91008900] = { -- Missing Scout's Pack
+        criteria=69650,
+        quest=82722,
+        loot={},
+        note="UNKNOWN LOCATION",
+    },
+}, {
+    achievement=40828,
+})
+ns.RegisterPoints(2256, { -- Azj-Kahet Lower
+    -- [] = {criteria=69615, quest=82724}, -- Corrupted Memory
+    [62686866] = { -- Memory Cache (confirm lower)
+        criteria=69615,
+        quest=82724,
+        loot={{225544, pet=4599}}, -- Mind Slurp
+        note="Get {spell:420847:Unseeming Shift} from a nearby Extractor Storage, then kill a {npc:223908:Corrupted Memory} for a {item:223870:Cache Key}",
+    },
+})
+ns.RegisterPoints(2213, { -- City of Threads
+    [67387443] = { -- Trapped Trove
+        criteria=69644,
+        quest=82528,
+        loot={{222966, pet=4473}}, -- Spinner
+    },
+}, {
+    achievement=40828,
+    parent=true,
+})
+
+-- Rares
+
 ns.RegisterPoints(ns.AZJKAHET, {
     [62204560] = { -- Kaheti Silk Hauler
         -- [62404140, 68205360]
@@ -161,4 +230,5 @@ ns.RegisterPoints(2213, { -- City of Threads
     },
 }, {
     achievement=40840, -- Adventurer
+    parent=true,
 })
