@@ -7,7 +7,7 @@
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com
 ## X-Curse-Project-ID: 934069
-## X-Wago-ID:
+## X-Wago-ID: 56n9w0N9
 ## SavedVariables: HandyNotes_WarWithinDB
 ## RequiredDeps: HandyNotes
 ## OptionalDeps: !LibUIDropDownMenu
