@@ -1,5 +1,83 @@
 local myname, ns = ...
 
+-- Treasures
+
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [68704056] = { -- Webbed Knapsack
+        criteria=69280,
+        quest=79308,
+        loot={
+            213254, -- Big Gold Nugget
+            213251, -- Cinderbee Wax Jar
+            213250, -- Cracked Gem
+            213253, -- Gilded Candle
+            213255, -- Wax Canary
+            213252, -- Stolen Earthen Contraption
+            213257, -- Wax Shovel
+        },
+    },
+    [63116305] = { -- Cursed Pickaxe
+        criteria=69281,
+        quest=82230,
+        loot={224837}, -- Cursed Pickaxe
+    },
+    [54651418] = { -- Munderut's Forgotten Stash
+        criteria=69282,
+        quest=82235,
+        loot={}, -- some gems
+    },
+    [45521742] = { -- Discarded Toolbox
+        criteria=69283,
+        quest=82239,
+        loot={224644}, -- Lava-Forged Cogwhee
+    },
+    [66203336] = { -- Waterlogged Refuse
+        criteria=69304,
+        quest=83030,
+        loot={}, -- unspecified grays
+    },
+    [58973034] = { -- Scary Dark Chest
+        criteria=69307,
+        quest=82818,
+        loot={{224439, pet=4470}}, -- Oop'lajax
+    },
+    [58796422] = { -- Kaja'Cola Machine
+        criteria=69308,
+        quest=82819,
+        loot={220774}, -- Goblin Mini Fridge
+        note="Order four drinks in the right order: Bluesberry, Orange, Oyster, Mangoro (BOOM!)",
+    },
+    [48304902] = { -- Dislodged Blockage
+        criteria=69311,
+        quest=82820,
+        loot={{221548, pet=4536}}, -- Blightbud
+        note="Solve a sliding-tiles puzzle",
+    },
+    [47573216] = { -- Dusty Prospector's Chest
+        criteria=69312,
+        quest=82464,
+        loot={}, -- some gems
+        note="Gather the five shards",
+        related={
+            [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, color={r=1,g=0,b=1}},
+            [58963798] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, color={r=0,g=1,b=0}},
+            [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, color={r=0,g=0,b=1}},
+            [57404944] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, color={r=1,g=0,b=0}},
+            [62556296] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, color={r=0,g=1,b=1}},
+        },
+    },
+    [52085327] = { -- Forgotten Treasure
+        criteria=69313,
+        quest=80485,
+        loot={{224783, toy=true}},
+        note="Open chests until you find the key",
+    },
+}, {
+    achievement=40724
+})
+
+-- Rares
+
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     [52002000] = { -- Automaxor
         criteria=69634,
