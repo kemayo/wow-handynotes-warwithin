@@ -76,6 +76,20 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     achievement=40724
 })
 
+-- Not So Quick Fix
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [45304640] = {criteria=68658, quest=83475}, -- Water Console
+    [59009330] = {criteria=68659, quest=83479}, -- Abyssal Console
+    [63706110] = {criteria=68660, quest=83480}, -- Taelloch Console
+    [69104880] = {criteria=68661, quest=83481}, -- Obsidian Console
+    [56402250] = {criteria=68662, quest=83482}, -- Lost Console
+    [46301410] = {criteria=68663, quest=83483}, -- Earthen Console
+}, {
+    achievement=40473,
+    atlas="mechagon-projects",
+    minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {

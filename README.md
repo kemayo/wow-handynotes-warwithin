@@ -9,6 +9,7 @@ This includes:
 * [Khaz Algar Lore Hunter](https://www.wowhead.com/achievement=40762/khaz-algar-lore-hunter)
 * [Biblo Archivist](https://www.wowhead.com/achievement=40622/biblo-archivist)
 * [The Missing Lynx](https://www.wowhead.com/achievement=40625/the-missing-lynx)
+* [Not So Quick Fix](https://www.wowhead.com/achievement=40473/not-so-quick-fix)
 
 Items that you've already collected and mobs you've already killed won't be displayed. This uses the "flag" quests that the game relies on to keep track of the items. Sometimes these glitch; generally if they do so, you also won't have gotten achievement-credit / the item, so you'll likely still be interested in the item.
 
