@@ -7,6 +7,7 @@ local GLYPH = ns.nodeMaker{
     minimap=true,
     requires=ns.DRAGONRIDING,
     group="glyphs",
+    loot={{223267, mount=2181}}, -- Swarmite Skyhunter
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
