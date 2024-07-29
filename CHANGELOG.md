@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v3
+
+* Glyph Hunter: add the mount reward
+* Hallowfall: The Missing Lynx achievement
+* Label cosmetic loot in tooltips
+
 ## Changed in v2
 
 * Added the Treasures achievement
