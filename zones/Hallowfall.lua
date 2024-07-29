@@ -99,6 +99,27 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     minimap=true,
 })
 
+-- The Missing Lynx
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [60426022] = {criteria=68975, npc=220720}, -- Magpie
+    [42695384] = {criteria=68998,}, -- Evan
+    [42735388] = {criteria=68999,}, -- Emery
+    [42305381] = {criteria=69000,}, -- Jinx
+    [69274372] = {criteria=69001,}, -- Moog
+    [69274372] = {criteria=69002,}, -- Iggy
+    [63302940] = {criteria=7, note="Light the lesser keyflame"}, -- Nightclaw
+    [63262811] = {criteria=8, note="Light the blooming keyflame"}, -- Shadowpouncer
+    [63792932] = {criteria=9, note="Light the blooming keyflame"}, -- Purrlock
+    [61193054] = {criteria=10,}, -- Miral Murder-Mittens
+    [64441857] = {criteria=11,}, -- Fuzzy
+    [64441857] = {criteria=12,}, -- Furball
+    [61922081] = {criteria=13,}, -- Dander
+    [42145371] = {criteria=69010,}, -- Gobbo
+}, {
+    achievement=40625,
+    atlas="WildBattlePet", color={r=0.75, g=1, b=0},
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.HALLOWFALL, {
