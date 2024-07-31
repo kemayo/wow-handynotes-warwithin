@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v4
+
+* Added Not So Quick Fix achievement
+
 ## Changed in v3
 
 * Glyph Hunter: add the mount reward
