@@ -36,7 +36,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6314,
     },
 }, ECHOES)
-ns.RegisterPoints(2213, { -- City of Threads
+ns.RegisterPoints(ns.CITYOFTHREADS, {
     [22204460] = { -- Vin'ris The Corruptor
         criteria=67545, -- "The Rebellious Queen"?
         quest=nil,

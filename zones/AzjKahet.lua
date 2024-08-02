@@ -56,7 +56,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         note="Get {spell:420847:Unseeming Shift} from a nearby Extractor Storage, then kill a {npc:223908:Corrupted Memory} for a {item:223870:Cache Key}",
     },
 })
-ns.RegisterPoints(2213, { -- City of Threads
+ns.RegisterPoints(ns.CITYOFTHREADS, {
     [67387443] = { -- Trapped Trove
         criteria=69644,
         quest=82528,
@@ -215,7 +215,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     achievement=40840, -- Adventurer
 })
 
-ns.RegisterPoints(2213, { -- City of Threads
+ns.RegisterPoints(ns.CITYOFTHREADS, {
     [36404160] = { -- The Groundskeeper
         criteria=69657,
         quest=81634,

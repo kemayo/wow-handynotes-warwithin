@@ -6,6 +6,7 @@ ns.ISLEOFDORN = 2248
 ns.RINGINGDEEPS = 2214
 ns.HALLOWFALL = 2215
 ns.AZJKAHET = 2255
+ns.CITYOFTHREADS = 2213
 
 -- ns.MAXLEVEL = {ns.conditions.QuestComplete(67030), ns.conditions.Level(70)}
 -- ns.DRAGONRIDING = ns.conditions.SpellKnown(376777)

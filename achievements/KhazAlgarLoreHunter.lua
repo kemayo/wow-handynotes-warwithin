@@ -35,7 +35,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [54101890] = {criteria=69388, quest=82067}, -- Mad Nerubian
     [71106230] = {criteria=69384, quest=82082}, -- Weathered Shadecaster
 }, LORE)
-ns.RegisterPoints(2213, { -- City of Threads
+ns.RegisterPoints(ns.CITYOFTHREADS, {
     [77507020] = {criteria=69385, quest=82079, parent=true}, -- Forgotten Shadecaster
     [08503060] = {criteria=69386, quest=82085, parent=true}, -- Neglected Shadecaster
 }, LORE)
