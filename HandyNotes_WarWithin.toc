@@ -30,3 +30,17 @@ zones\RingingDeeps.lua
 achievements\GlyphHunter.lua
 #achievements\EchoesOfDanger.lua
 achievements\KhazAlgarLoreHunter.lua
+
+profession_knowledge\Masters.lua
+profession_knowledge\Alchemy.lua
+profession_knowledge\Blacksmithing.lua
+profession_knowledge\Enchanting.lua
+profession_knowledge\Engineering.lua
+profession_knowledge\Inscription.lua
+profession_knowledge\Jewelcrafting.lua
+profession_knowledge\Leatherworking.lua
+profession_knowledge\Tailoring.lua
+profession_knowledge\Herbalism.lua
+profession_knowledge\Mining.lua
+profession_knowledge\Skinning.lua
+
