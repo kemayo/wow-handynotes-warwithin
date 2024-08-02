@@ -255,7 +255,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6058,
     },
-    [26005400] = { -- Rotfist
+    [26005401] = { -- Rotfist
         criteria=68228,
         quest=82205,
         npc=222380,

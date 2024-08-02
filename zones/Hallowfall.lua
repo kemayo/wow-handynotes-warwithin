@@ -105,14 +105,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [42695384] = {criteria=68998,}, -- Evan
     [42735388] = {criteria=68999,}, -- Emery
     [42305381] = {criteria=69000,}, -- Jinx
-    [69274372] = {criteria=69001,}, -- Moog
-    [69274372] = {criteria=69002,}, -- Iggy
+    [69274372] = {criteria={69001, 69002},}, -- Moog, Iggy
     [63302940] = {criteria=7, note="Light the lesser keyflame"}, -- Nightclaw
     [63262811] = {criteria=8, note="Light the blooming keyflame"}, -- Shadowpouncer
     [63792932] = {criteria=9, note="Light the blooming keyflame"}, -- Purrlock
     [61193054] = {criteria=10,}, -- Miral Murder-Mittens
-    [64441857] = {criteria=11,}, -- Fuzzy
-    [64441857] = {criteria=12,}, -- Furball
+    [64441857] = {criteria={11, 12},}, -- Fuzzy, Furball
     [61922081] = {criteria=13,}, -- Dander
     [42145371] = {criteria=69010,}, -- Gobbo
 }, {
