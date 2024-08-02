@@ -301,8 +301,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 })
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [26205740] = { -- Malfunctioning Spire
-        -- [26205740, 26605720, 30405500, 31205500, 31405560, 31605560]
+    [31495529] = { -- Malfunctioning Spire
         quest=81891,
         npc=220068,
         vignette=6073,

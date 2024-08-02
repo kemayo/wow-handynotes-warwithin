@@ -7,7 +7,7 @@ local LORE = {
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [37305250] = {criteria=69369, quest=82038}, -- Galan's Edict
+    [37305250] = {criteria=69369, quest=82038, vignette=6182}, -- Galan's Edict
     [44103010] = {criteria=69371, quest=82046}, -- Stone of The Unbound
     [78102780] = {criteria=69370, quest=82045}, -- Titan Console
     [57202000] = {criteria=69372, quest=82047}, -- Watcher of the North
