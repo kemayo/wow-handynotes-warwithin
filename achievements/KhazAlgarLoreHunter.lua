@@ -3,7 +3,7 @@ local myname, ns = ...
 local LORE = {
     achievement=40762,
     texture=ns.atlas_texture("profession", {r=1, g=1, b=0}),
-    minimap=true,
+    -- minimap=true,
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
@@ -23,11 +23,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 }, LORE)
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [62204560] = {criteria=69383, quest=82066}, -- A Scout's Journal
-    [71403670] = {criteria=69382, quest=82065}, -- A Tattered Note
-    [78204040] = {criteria=69381, quest=82064}, -- A Weathered Tome
-    [25105370] = {criteria=69380, quest=82063}, -- A Worn Down Book
-    [25703850] = {criteria=69379, quest=82061}, -- Captain's Chest
+    [62214557] = {criteria=69383, quest=82066, vignette=6200}, -- A Scout's Journal
+    [71423667] = {criteria=69382, quest=82065, vignette=6199}, -- A Tattered Note
+    [78244042] = {criteria=69381, quest=82064, vignette=6198}, -- A Weathered Tome
+    [25085372] = {criteria=69380, quest=82063, vignette=6197}, -- A Worn Down Book
+    [25733844] = {criteria=69379, quest=82061, vignette=6196}, -- Captain's Chest (Last Flight of the Soundness)
 }, LORE)
 
 ns.RegisterPoints(ns.AZJKAHET, {

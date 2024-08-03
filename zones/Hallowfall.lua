@@ -3,62 +3,78 @@ local myname, ns = ...
 -- Treasures
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [41795827] = { -- Caesper
+    [41775829] = { -- Caesper
         criteria=69692,
         quest=83263,
         loot={225639}, -- Recipe: Exquisitely Eviscerated Muscle
         active=ns.conditions.Item(225238), -- Meaty Haunch
         related={
-            [69254397]={label="{npc:217645:Torran Dellain}", note="Buy {item:225238:Meaty Haunch}"},
+            [69254397]={label="{npc:217645:Torran Dellain}", note="Buy {item:225238:Meaty Haunch}", inbag=225238, minimap=true,},
         },
-        note="Buy {item:225238:Meaty Haunch} from {npc:217645:Torran Dellain}",
+        note="Bring {item:225238:Meaty Haunch} from {npc:217645:Torran Dellain}, give to {npc:225948:Caesper}, follow to the treasure",
+        level=73,
+        vignette=6367, -- 6368 after you feed, 6366 for Disturbed Lynx Treasure
     },
-    [55145185] = { -- Smuggler's Treasure
+    [55135193] = { -- Smuggler's Treasure
         criteria=69693,
         quest=83273,
         loot={226021}, -- Jar of Pickles
         note="Get the key from the dead NPC",
+        level=73,
+        vignette=6370,
     },
-    [59716058] = { -- Dark Ritual
+    [59525966] = { -- Dark Ritual
         criteria=69694,
         quest=83284,
         loot={225693}, -- Shadowed Essence
         note="In cave; use the book, defeat the summoned monsters",
+        level=73,
+        vignette=6372,
     },
-    [40035112] = { -- Arathi Loremaster
+    [40015112] = { -- Arathi Loremaster
         criteria=69695,
         quest=83298,
         loot={{225659, toy=true}},
         note="Answer riddles from {npc:221630:Ryfus Sacredpyr}; you need to find the books for {achievement:40622:Biblo Archivist} for the correct answers to appear",
+        vignette=6373,
     },
-    [55726960] = { -- Jewel of the Cliffs
+    [55796954] = { -- Jewel of the Cliffs
         criteria=69697,
         quest=81971,
         loot={224580}, -- Massive Sapphire Chunk
         note="High up on the rocks",
+        level=75,
+        vignette=6174,
     },
-    [30233875] = { -- Priory Satchel
+    [30223877] = { -- Priory Satchel
         criteria=69698,
         quest=81972,
         loot={224578}, -- Arathor Courier's Satchel
+        level=75,
         note="Hanging from the cathedral",
     },
-    [50071385] = { -- Lost Necklace
+    [50061382] = { -- Lost Necklace
         criteria=69699,
         quest=81978,
         loot={224575}, -- Lightbearer's Pendant
+        level=75,
+        vignette=6177, -- Lost Memento
     },
-    [57652744] = { -- Illuminated Footlocker
+    [58392716] = { -- Illuminated Footlocker
         criteria=69701,
         quest=81468,
         loot={{224552, toy=true}},
-        note="Catch falling glimmers from {npc:220703:Starblessed Glimmerfly} until you get {spell:442529:Glimmering Illumination}",
+        note="In cave. Catch falling glimmers from {npc:220703:Starblessed Glimmerfly} until you get {spell:442529:Glimmering Illumination}",
+        level=73,
+        vignette=6098,
     },
-    [76165399] = { -- Spore-covered Coffer
+    [76775383] = { -- Spore-covered Coffer
         criteria=69702,
         quest=79275,
         loot={}, -- alchemy mats
         note="In cave",
+        level=73,
+        vignette=5989,
     },
     -- [] = {criteria=69700, quest=82005}, -- Sky-Captains' Sunken Cache
 }, {
@@ -83,11 +99,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 -- Biblo Archivist
 ns.RegisterPoints(ns.HALLOWFALL, {
     [48153959] = {criteria=68954, loot={225212}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Big Book of Arathi Idioms
-    [43884991] = {criteria=68955, loot={225217}}, -- 500 Dishes Using Cave Fish and Mushrooms
+    [43904997] = {criteria=68955, loot={225217}}, -- 500 Dishes Using Cave Fish and Mushrooms
     [69344394] = {criteria=68957, loot={225207}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Care and Feeding of the Imperial Lynx
     [68684159] = {criteria=68958, loot={225206}}, -- Light's Gambit Playbook
     [57595180] = {criteria=68960, loot={225208}}, -- From the Depths They Come
-    [48806470] = {criteria=68961, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Palawltar's Codex of Dimensional Structure
+    [48756472] = {criteria=68961, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}", vignette=6374}, -- Palawltar's Codex of Dimensional Structure
     [64182812] = {criteria=68963, loot={225204}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Shadow Curfew Guidelines
     [59802203] = {criteria=68965, loot={225205}}, -- Shadow Curfew Journal
     [70225684] = {criteria=68967, loot={225215}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Song of Renilash
@@ -97,6 +113,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     achievement=40622,
     texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
     minimap=true,
+    level=73,
 })
 
 -- The Missing Lynx
@@ -116,12 +133,13 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, {
     achievement=40625,
     atlas="WildBattlePet", color={r=0.75, g=1, b=0},
+    minimap=true,
 })
 
 -- Rares
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [23005920] = { -- Lytfang the Lost
+    [23005922] = { -- Lytfang the Lost
         criteria=69710,
         quest=81756,
         npc=221534,
@@ -142,23 +160,36 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=221648,
         vignette=6151,
     },
-    [56806920] = { -- The Taskmaker
+    [56466897] = { -- The Taskmaker
         criteria=69708,
         quest=80009,
         npc=218444,
         vignette=6033,
     },
-    [32405400] = { -- Grimslice
-        -- [32405400, 32805200, 33205640, 33605740, 34205200, 37005480]
+    [31205464] = { -- Grimslice
         criteria=69706,
         quest=81761,
         npc=221551,
+        loot={
+            223397, -- Abyssal Hunter's Girdle
+            -- assumed:
+            223398, -- Abyssal Hunter's Sash
+            223399, -- Abyssal Hunter's Chain
+            223400, -- Abyssal Hunter's Cinch
+        },
+        route={
+            31205464, 33235598, 32725814, 34135728, 34525751, 35085894, 35655746, 36495657, 36945464,
+            36555280, 35625156, 35055029, 34555186, 34135204, 32725119, 33235334,
+            r=0, g=1, b=1,
+            loop=true,
+        },
         vignette=6146,
+        note="Patrols clockwise",
     },
-    [42803100] = { -- Strength of Beledar
+    [43622993] = { -- Strength of Beledar
         criteria=69713,
         quest=81849,
-        npc=221690,
+        npc=221690, -- Rage of Beledar
         vignette=6153,
     },
     [57006420] = { -- Ixlorb the Spinner
@@ -173,7 +204,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=220771,
         vignette=6123,
     },
-    [63203140] = { -- Deathpetal
+    [63643204] = { -- Deathpetal
         criteria=69721,
         quest=82559,
         npc=206184,
@@ -194,14 +225,16 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=221179,
         vignette=6122,
     },
-    [36807180] = { -- Funglour
+    [36687172] = { -- Funglour
         criteria=69707,
         quest=81881,
         npc=221767,
+        loot={
+            223377, -- Ancient Fungarian's Fingerwrap
+        },
         vignette=6157,
     },
-    [35803540] = { -- Sir Alastair Purefire
-        -- [35803540, 36203560]
+    [35953546] = { -- Sir Alastair Purefire
         criteria=69714,
         quest=81853,
         npc=221708,
@@ -221,14 +254,14 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             r=0,g=0,b=1,
         },
     },
-    -- UNKNOWN LOCATION
-    --[[
-    [] = { -- Sloshmuck
+    [73405259] = { -- Sloshmuck
         criteria=69709,
         quest=79271,
         npc=215805,
         vignette=5988,
     },
+    -- UNKNOWN LOCATION
+    --[[
     [] = { -- Brineslash
         criteria=69718,
         quest=80486,
@@ -330,6 +363,7 @@ local deathtide = ns.nodeMaker{
     achievement=40851,
     criteria=69717,
     quest=81880,
+    level=80, -- required to loot the offering/jar
 }
 ns.RegisterPoints(ns.HALLOWFALL, {
     [44744241] = { -- Deathtide
@@ -347,6 +381,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     label="{item:220124}",
     loot={220124},
     texture=ns.atlas_texture("playerpartyblip",{r=0,g=1,b=1,}),
+    minimap=true,
     note="Take to {npc:221753} @ 44.7,42.4",
 })
 ns.RegisterPoints(ns.HALLOWFALL, {
@@ -362,6 +397,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     label="{item:220122}",
     loot={220122},
     texture=ns.atlas_texture("playerpartyblip",{r=0,g=0,b=1,}),
+    minimap=true,
     note="Take to {npc:221753} @ 44.7,42.4",
 })
 
