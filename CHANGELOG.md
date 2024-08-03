@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v5
+
+* Added profession knowledge treasures
+
 ## Changed in v4
 
 * Added Not So Quick Fix achievement
