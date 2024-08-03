@@ -171,8 +171,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6045,
     },
-    [58606040] = { -- Springbubble
-        -- [59006340]
+    [58766068] = { -- Springbubble
         criteria=68212,
         quest=81892,
         npc=219262,

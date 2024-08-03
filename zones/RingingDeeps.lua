@@ -15,62 +15,82 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             213252, -- Stolen Earthen Contraption
             213257, -- Wax Shovel
         },
+        level=71,
+        vignette=5994,
+        note="In cave",
     },
-    [63116305] = { -- Cursed Pickaxe
+    [63086311] = { -- Cursed Pickaxe
         criteria=69281,
         quest=82230,
         loot={224837}, -- Cursed Pickaxe
+        level=71,
+        vignette=6232,
     },
-    [54651418] = { -- Munderut's Forgotten Stash
+    [55401385] = { -- Munderut's Forgotten Stash
         criteria=69282,
         quest=82235,
         loot={}, -- some gems
+        level=71,
+        vignette=6233,
     },
-    [45521742] = { -- Discarded Toolbox
+    [45511745] = { -- Discarded Toolbox
         criteria=69283,
         quest=82239,
         loot={224644}, -- Lava-Forged Cogwhee
+        level=73,
+        vignette=6235,
     },
-    [66203336] = { -- Waterlogged Refuse
+    [66203342] = { -- Waterlogged Refuse
         criteria=69304,
         quest=83030,
         loot={}, -- unspecified grays
+        level=71,
+        vignette=6356,
     },
-    [58973034] = { -- Scary Dark Chest
+    [58933028] = { -- Scary Dark Chest
         criteria=69307,
         quest=82818,
         loot={{224439, pet=4470}}, -- Oop'lajax
+        level=71,
+        vignette=6277,
     },
-    [58796422] = { -- Kaja'Cola Machine
+    [59016440] = { -- Kaja'Cola Machine
         criteria=69308,
         quest=82819,
         loot={220774}, -- Goblin Mini Fridge
         note="Order four drinks in the right order: Bluesberry, Orange, Oyster, Mangoro (BOOM!)",
+        vignette=6241,
     },
-    [48304902] = { -- Dislodged Blockage
+    [48254896] = { -- Dislodged Blockage
         criteria=69311,
         quest=82820,
         loot={{221548, pet=4536}}, -- Blightbud
         note="Solve a sliding-tiles puzzle",
+        level=71, -- can solve the puzzle, but not loot the chest
+        vignette=6284,
     },
-    [47573216] = { -- Dusty Prospector's Chest
+    [49053163] = { -- Dusty Prospector's Chest
         criteria=69312,
         quest=82464,
         loot={}, -- some gems
+        level=71,
         note="Gather the five shards",
         related={
-            [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, color={r=1,g=0,b=1}},
-            [58963798] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, color={r=0,g=1,b=0}},
-            [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, color={r=0,g=0,b=1}},
-            [57404944] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, color={r=1,g=0,b=0}},
-            [62556296] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, color={r=0,g=1,b=1}},
+            [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, color={r=1,g=0,b=1}, minimap=true,},
+            [58963798] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, color={r=0,g=1,b=0}, minimap=true,},
+            [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, color={r=0,g=0,b=1}, minimap=true,},
+            [57404944] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, color={r=1,g=0,b=0}, minimap=true,},
+            [62556296] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, color={r=0,g=1,b=1}, minimap=true,},
         },
+        vignette=6286,
     },
-    [52085327] = { -- Forgotten Treasure
+    [52085327] = { -- Forgotten Treasure (this is the entrance, actually at 50485349)
         criteria=69313,
         quest=80485,
         loot={{224783, toy=true}},
         note="Open chests until you find the key",
+        level=71,
+        vignette=6074,
     },
 }, {
     achievement=40724
@@ -99,13 +119,14 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220265,
         vignette=6128,
     },
-    [60802540] = { -- Charmonger
+    [41361692] = { -- Charmonger
+        -- wowhead says 60802540 too
         criteria=69632,
         quest=81562,
         npc=220267,
         vignette=6104,
     },
-    [42803500] = { -- King Splash
+    [42773508] = { -- King Splash
         criteria=69624,
         quest=80547,
         npc=220275,
@@ -142,7 +163,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         --route={53000880, 53801800},
         vignette=6082,
     },
-    [54807020] = { -- Aquellion
+    [49556619] = { -- Aquellion
         criteria=69625,
         quest=80557,
         npc=220274,
@@ -152,7 +173,6 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223372, -- Sabatons of Shallow Waters
             223373, -- Treads of Shallow Waters
         },
-        -- note="Break its shield by ...",
         vignette=6089,
     },
     [52002640] = { -- Zilthara
@@ -167,11 +187,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220266,
         vignette=6101,
     },
-    [47601160] = { -- Terror of the Forge
+    [46701209] = { -- Terror of the Forge
         criteria=69628,
         quest=80507,
         npc=220271,
         vignette=6081,
+        note="Walking in the lava",
     },
     [46804680] = { -- Kelpmire
         criteria=69635,
@@ -179,7 +200,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220287,
         vignette=6099,
     },
-    [57005480] = { -- Rampaging Blight
+    [57025480] = { -- Rampaging Blight
         criteria=69626,
         quest=81563,
         npc=220273,
