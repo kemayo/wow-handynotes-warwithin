@@ -232,3 +232,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
     achievement=40840, -- Adventurer
     parent=true,
 })
+    [62796618] = { -- Tka'ktath
