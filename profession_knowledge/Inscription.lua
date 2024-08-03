@@ -11,27 +11,28 @@ local KNOWLEDGE = {
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [55956008] = {
+    [55976001] = {
         quest=83883,
         loot={226309}, -- Historian's Dip Pen
         vignette=6466,
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [57174685] = {
+    [57254689] = {
         quest=83882,
         loot={226308}, -- Dornogal Scribe's Quill
         vignette=6465,
+        parent=true,
     },
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [48573426] = {
+    [48563432] = {
         quest=83884,
         loot={226310}, -- Runic Scroll
         vignette=6467,
     },
-    [62475815] = {
+    [62465801] = {
         quest=83885,
         loot={226311}, -- Blue Earthen Pigment
         vignette=6468,
@@ -39,12 +40,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [43195894] = {
+    [43255894] = {
         quest=83886,
         loot={226312}, -- Informant's Fountain Pen
         vignette=6469,
     },
-    [42844912] = {
+    [42834907] = {
         quest=83887,
         loot={226313}, -- Calligrapher's Chiseled Marker
         vignette=6470,
@@ -52,7 +53,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [55863809] = { -- or 55874398?
+    [55834390] = {
         quest=83888,
         loot={226314}, -- Nerubian Texts
         vignette=6471,
@@ -60,11 +61,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [50103078] = { -- or 50133064?
+    [50233085] = {
         quest=83889,
         loot={226315}, -- Venomancer's Ink Well
         vignette=6472,
         parent=true,
+        note="Inside",
     },
     -- [] = {
     --     quest=82636,
