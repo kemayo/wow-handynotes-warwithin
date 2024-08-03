@@ -50,8 +50,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, GLYPH{achievement=40704})
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [63431698] = {criteria=69265, quest=40691}, -- Arathi's End, Azj-Kahet
-    [46692129] = {criteria=69266, quest=40692}, -- Siegehold, Azj-Kahet
+    [63311399] = {criteria=69265, quest=40691}, -- Arathi's End, Azj-Kahet
+    [46692129] = {criteria=69266, quest=40692, note="On ledge very high above"}, -- Siegehold, Azj-Kahet
     [25144058] = {criteria=69267, quest=40693}, -- Ruptured Lake, Azj-Kahet
     [43125702] = {criteria=69268, quest=40694}, -- Eye of Ansurek, Azj-Kahet
     [58628980] = {criteria=69270, quest=40696}, -- Deepwalker Pass, Azj-Kahet

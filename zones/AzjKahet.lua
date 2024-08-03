@@ -19,10 +19,17 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6291,
         note="Webbed to the ceiling",
     },
-    [54404110] = { -- Disturbed Soil
+    [67449072] = { -- Disturbed Soil
         criteria=69646,
         quest=82718,
-        loot={},
+        loot={}, -- grays and commendations
+        vignette=6280,
+    },
+    [38783722] = { -- Missing Scout's Pack
+        criteria=69650,
+        quest=82722,
+        loot={}, -- grays and commendations
+        vignette=6283,
     },
     -- UNKNOWN LOCATION
     [85008900] = { -- Silk-spun Supplies
@@ -32,28 +39,26 @@ ns.RegisterPoints(ns.AZJKAHET, {
         note="UNKNOWN LOCATION",
     },
     [89008900] = { -- Niffen Stash
+        -- check "Stashed Loot" 6382 @ 76405806
         criteria=69649,
         quest=82721,
         loot={},
         note="UNKNOWN LOCATION",
-    },
-    [91008900] = { -- Missing Scout's Pack
-        criteria=69650,
-        quest=82722,
-        loot={},
-        note="UNKNOWN LOCATION",
+        vignette=6282,
     },
 }, {
     achievement=40828,
 })
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     -- [] = {criteria=69615, quest=82724}, -- Corrupted Memory
-    [62686866] = { -- Memory Cache (confirm lower)
+    [62688866] = { -- Memory Cache (confirm lower)
         criteria=69615,
         quest=82724,
         loot={{225544, pet=4599}}, -- Mind Slurp
         note="Get {spell:420847:Unseeming Shift} from a nearby Extractor Storage, then kill a {npc:223908:Corrupted Memory} for a {item:223870:Cache Key}",
     },
+}, {
+    achievement=40828,
 })
 ns.RegisterPoints(ns.CITYOFTHREADS, {
     [67397441] = { -- Trapped Trove
@@ -79,7 +84,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
 -- Rares
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [62204560] = { -- Kaheti Silk Hauler
+    [62492877] = { -- Kaheti Silk Hauler
         -- [62404140, 68205360]
         criteria=69659,
         quest=81702,
@@ -115,7 +120,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         },
         note="Patrols around the area, fighting other mobs",
     },
-    [36004480] = { -- Vilewing
+    [34574106] = { -- Vilewing
         -- [36004480, 36204400, 36404580, 36604660, 36804320, 36804580, 37004540]
         criteria=69656,
         quest=81700,
@@ -128,17 +133,18 @@ ns.RegisterPoints(ns.AZJKAHET, {
         },
         vignette=6132,
     },
-    [61203300] = { -- Webspeaker Grik'ik
+    [61242731] = { -- Webspeaker Grik'ik
         criteria=69655,
         quest=81699,
         npc=216041,
         vignette=6135,
     },
-    [69802780] = { -- Cha'tak
+    [70732146] = { -- Cha'tak
         criteria=69661,
         quest=81704,
         npc=216042,
         vignette=6136,
+        note="Cave behind the waterfall",
     },
     [58056233] = { -- Enduring Gutterface
         criteria=69664,
@@ -166,10 +172,10 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69653,
         quest=81694,
         npc=216032,
-        vignette=,
+        vignette=6130,
     },
     --]]
-    [40004740] = { -- Ahg'zagall
+    [37944285] = { -- Ahg'zagall
         criteria=69654,
         quest=78905,
         npc=214151,
@@ -204,21 +210,19 @@ ns.RegisterPoints(ns.AZJKAHET, {
 })
 
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
-    [64408720] = { -- Harvester Qixt
-        -- [64408720, 64608520]
+    [64768691] = { -- Harvester Qixt
         criteria=69667,
         quest=82036,
         npc=216050,
         vignette=6185,
     },
-    [64408840] = { -- The Oozekhan
+    [61938973] = { -- The Oozekhan
         criteria=69666,
         quest=82035,
         npc=216049,
         vignette=6184,
     },
-    [64608460] = { -- Jix'ak the Crazed
-        -- [64608460, 65008580]
+    [67458318] = { -- Jix'ak the Crazed
         criteria=69665,
         quest=82034,
         npc=216048,
