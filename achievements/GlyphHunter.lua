@@ -54,12 +54,13 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [46692129] = {criteria=69266, quest=40692}, -- Siegehold, Azj-Kahet
     [25144058] = {criteria=69267, quest=40693}, -- Ruptured Lake, Azj-Kahet
     [43125702] = {criteria=69268, quest=40694}, -- Eye of Ansurek, Azj-Kahet
-    [13323352] = {criteria=69269, quest=40695}, -- Old Sacrificial Pit, Azj-Kahet
     [58628980] = {criteria=69270, quest=40696}, -- Deepwalker Pass, Azj-Kahet
     [66298505] = {criteria=69271, quest=40697}, -- The Maddening Deep, Azj-Kahet
     [73218411] = {criteria=69272, quest=40698}, -- Rak-Ush, Azj-Kahet
     [57615755] = {criteria=69273, quest=40699}, -- Silken Ward, Azj-Kahet
     [70582519] = {criteria=69274, quest=40700}, -- Trickling Abyss, Azj-Kahet
     [65435176] = {criteria=69275, quest=40701}, -- Untamed Valley, Azj-Kahet
-
 }, GLYPH{achievement=40705})
+ns.RegisterPoints(ns.CITYOFTHREADS, {
+    [13323352] = {criteria=69269, quest=40695}, -- Old Sacrificial Pit, Azj-Kahet
+}, GLYPH{achievement=40705, parent=true})
