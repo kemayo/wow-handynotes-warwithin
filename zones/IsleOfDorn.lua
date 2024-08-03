@@ -1,54 +1,65 @@
 local myname, ns = ...
 
+--[[
+notes:
+
+Earthern coffer 6230
+38523951 - in cave from 36354156
+]]
+
 -- Treasures
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [48593007] = { -- Tree's Treasure
+    [48513004] = { -- Tree's Treasure
         criteria=68197,
-        quest=83242,
+        quest=83242, -- 82160 when treasure appears
         loot={{224585, toy=true}}, -- Hanna's Locket
-        note="Talk to {npc:222940:Freysworn Letitia} for a {item:224185:Crab-Guiding Branch}, then go find {npc:222941:Pearlescent Shellcrab} around the zone",
+        note="In cave; talk to {npc:222940:Freysworn Letitia} for a {item:224185:Crab-Guiding Branch}, then go find {npc:222941:Pearlescent Shellcrab} around the zone",
         related={
-            [38364194] = {quest=nil},
-            [19715844] = {quest=nil},
-            [50717055] = {quest=nil},
-            [74904969] = {quest=nil},
-            [70752001] = {quest=nil},
-            [41822704] = {quest=nil},
+            [19715844] = {quest=82755},
+            [50717055] = {quest=82751},
+            [74924940] = {quest=82752},
+            [70752001] = {quest=82753, note="On the rocks above the tree"},
+            [41822704] = {quest=82754},
+            [38364194] = {quest=82756, note="Up in the branches"},
             --
             label="{npc:222941:Pearlescent Shellcrab}",
-            color={r=1, g=0.5, b=0.5},
+            color={r=1, g=0.5, b=0.5}, minimap=true,
             required=ns.conditions.Item(224185), -- Crab-Guiding Branch
             note="Chase away all six crabs then return to {npc:222940:Freysworn Letitia}",
         },
+        vignette=6210,
     },
-    [40897380] = { -- Turtle's Thanks
+    [40917377] = { -- Turtle's Thanks
         criteria=68198,
         quest=82716,
         loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
         note="Give {npc:223338:Dalaran Sewer Turtle}:\n* 5x {item:220143:Dornish Pike}\n* 1x {item:222721:Fish and Chips}\n* 1x {item:222533:Goldengill Trout}",
         active={ns.conditions.Item(220143, 5), ns.conditions.Item(222721), ns.conditions.Item(222533)},
+        vignette=6244,
     },
     [40655988] = { -- Magical Treasure Chest
         criteria=68199,
         quest=83243,
-        loot={{224579, pet=3362}},
+        loot={{224579, pet=3362}}, -- Sapphire Crab
         note="Push {npc:223104:Lionel} into the water, talk to it, then go gather 5x {item:223159:Plump Snapcrab} nearby",
+        vignette=6224,
     },
     [54001914] = { -- Mysterious Orb
         criteria=68201,
-        quest=83244,
+        quest=83244, -- 82047 after talking, 82134 after giving, also 82252 when looted
         loot={224373}, -- Waterlord's Iridescent Gem
         note="Talk to {npc:222847:Weary Water Elemental}, then go fetch its {item:221504:Elemental Pearl}",
         nearby={53051857, label="{item:221504:Elemental Pearl}"},
     },
-    [55026562] = { -- Mushroom Cap
+    [55006564] = { -- Mushroom Cap
         criteria=68202,
-        quest=83245,
+        quest=83245, -- 82142 after giving cap, 82253 as well on loot
         loot={210796}, -- Mycobloom
-        note="Talk to {npc:222894:U'llort the Self-Exiled} then fetch its {item:221550:Boskroot Cap} from the nearby woods",
+        note="Talk to {npc:222894:U'llort the Self-Exiled} then fetch a {item:221550:Boskroot Cap} from the nearby woods",
+            vignette=6209,
     },
-    [38054354] = { -- Thak's Treasure
+    [38074358] = { -- Thak's Treasure
         criteria=68203,
         quest=82246,
         loot={
@@ -56,48 +67,60 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             212511, -- Ostentatious Onyx
         },
         note="Talk to {npc:223227:One-Eyed Thak} and follow him to the treasure",
+        vignette=6236,
     },
-    [59802870] = { -- Mosswool Flower
+    [59622459] = { -- Mosswool Flower
         criteria=68204,
-        quest=83246,
+        quest=83246, -- 82145 when flower spawns, 82251 also when looted
         loot={{224450, pet=4527}}, -- Lil' Moss Rosy
         nearby={
-            59622459, -- 222956
+            -- In this order: (but no helpful quests)
+            -- 59622459, -- 222956
             59102706, -- 222963
             59752870, -- 222965
             label="{npc:222956:Lost Mosswool}",
         },
+        route={59622459, 59102706, 59752870},
+        minimap=true,
         note="Chase {npc:222956:Lost Mosswool} to the flower",
     },
-    [62534320] = { -- Kobold Pickaxe
+    [62574327] = { -- Kobold Pickaxe
         criteria=68205,
         quest=82325,
         loot={223484}, -- Kobold Mastermind's "Pivel"
+        vignette=6273,
+        note="Despawns for a while after someone loots it, so you might need to wait around",
     },
-    [77272448] = { -- Jade Pearl
+    [77232446] = { -- Jade Pearl
         criteria=68206,
         quest=82287,
         loot={223280}, -- Jade Pearl
+        vignette=6262,
+        note="Despawns for a while after someone loots it, so you might need to wait around",
     },
-    [48886092] = { -- Shimmering Opal Lily
+    [48896086] = { -- Shimmering Opal Lily
         criteria=68207,
         quest=82326,
         loot={
-            210800, -- Luredrop
             213197, -- Null Lotus
+            210800, -- Luredrop
         },
         path=47316149,
-        note="At the bottom of the cave",
+        note="At the bottom of the cave; despawns for a while after someone loots it, so you might need to wait around",
+        vignette=2248,
     },
-    [56176091] = { -- Infused Cinderbrew
+    [56226094] = { -- Infused Cinderbrew
         criteria=68208,
         quest=82714,
         loot={224263}, -- Infused Fire-Honey Milk
+        note="On the desk; despawns for a while after someone loots it, so you might need to wait around"
     },
-    [59112351] = { -- Web-Wrapped Axe
+    [59122347] = { -- Web-Wrapped Axe
         criteria=68209,
         quest=82715,
         loot={224290}, -- Storm Defender's Axe
+        note="Inside the building; despawns for a while after someone loots it, so you might need to wait around",
+        vignette=2248,
     },
 }, {
     achievement=40434, -- Treasures
@@ -106,7 +129,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 -- Rares
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [16606120] = { -- Alunira
+    [22985829] = { -- Alunira
         criteria=68225,
         quest=82196,
         npc=219281,
@@ -116,7 +139,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         vignette=6055,
         --route={16606120,23205840},
     },
-    [71403780] = { -- Tephratennae
+    [72043881] = { -- Tephratennae
         criteria=68229,
         quest=81923,
         npc=221126,
@@ -147,19 +170,19 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         route={57003460, 58403560, 58403680, 57803780, 56603840, 56003780, 56403660, loop=true,},
         vignette=6044,
     },
-    [48202680] = { -- Kronolith, Might of the Mountain
+    [48202703] = { -- Kronolith, Might of the Mountain
         criteria=68220,
         quest=81902,
         npc=219270,
         vignette=6051,
     },
-    [74402740] = { -- Shallowshell the Clacker
+    [74082756] = { -- Shallowshell the Clacker
         criteria=68221,
         quest=81903,
         npc=219278,
         vignette=6052,
     },
-    [41807620] = { -- Bloodmaw
+    [41137679] = { -- Bloodmaw
         criteria=68214,
         quest=81893,
         npc=219264,
@@ -182,7 +205,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6043,
     },
-    [62806840] = { -- Sandres the Relicbearer
+    [62776842] = { -- Sandres the Relicbearer
         criteria=68211,
         quest=79685,
         npc=217534,
@@ -198,7 +221,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         npc=221128,
         vignette=6115,
     },
-    [47806020] = { -- Emperor Pitfang
+    [47946014] = { -- Emperor Pitfang
         criteria=68215,
         quest=81895,
         npc=219265,
@@ -209,33 +232,33 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223348, -- Viper's Stone Gauntlets
         },
         vignette=6046,
+        note="At the bottom of the cave",
     },
-    [25604540] = { -- Escaped Cutthroat
+    [25784503] = { -- Escaped Cutthroat
         criteria=68218,
         quest=81907,
         npc=219266,
         vignette=6049,
     },
-    [72804040] = { -- Matriarch Charfuria
+    [73004010] = { -- Matriarch Charfuria
         criteria=68231,
         quest=81921,
         npc=220890,
         vignette=6114,
     },
-    [57201620] = { -- Tempest Lord Incarnus
+    [57461625] = { -- Tempest Lord Incarnus
         criteria=68219,
         quest=81901,
         npc=219269,
         vignette=6050,
     },
-    [53208640] = { -- Gar'loc
-        -- [53408000, 53608000]
+    [53348006] = { -- Gar'loc
         criteria=68217,
         quest=81899,
         npc=219268,
         vignette=6048,
     },
-    [56402260] = { -- Twice-Stinger the Wretched
+    [57072279] = { -- Twice-Stinger the Wretched
         criteria=68222,
         quest=81904,
         npc=219271,
@@ -267,7 +290,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         npc=213115,
         vignette=5959,
     },
-    [64004060] = { -- Flamekeeper Graz
+    [63994055] = { -- Flamekeeper Graz
         criteria=68223,
         quest=81905,
         npc=219279,
@@ -276,7 +299,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6054,
     },
-    [51606960] = { -- Plaguehart
+    [50876984] = { -- Plaguehart
         criteria=68216,
         quest=81897,
         npc=219267,
@@ -287,13 +310,11 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         --tameable=true, -- stag
         vignette=6047,
     },
-    -- LOCATION UNKNOWN
-    [80008000] = { -- Sweetspark the Oozeful
+    [69853847] = { -- Sweetspark the Oozeful
         criteria=68230,
         quest=81922,
         npc=220883,
         vignette=6113,
-        note="LOCATION UNKNOWN",
     },
 }, {
     achievement=40435, -- Adventurer

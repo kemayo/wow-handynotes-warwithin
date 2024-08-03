@@ -8,10 +8,10 @@ local LORE = {
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
     [37305250] = {criteria=69369, quest=82038, vignette=6182}, -- Galan's Edict
-    [44103010] = {criteria=69371, quest=82046}, -- Stone of The Unbound
-    [78102780] = {criteria=69370, quest=82045}, -- Titan Console
-    [57202000] = {criteria=69372, quest=82047}, -- Watcher of the North
-    [42108030] = {criteria=69373, quest=82048}, -- Watcher of the South
+    [44083014] = {criteria=69371, quest=82046, vignette=6188}, -- Stone of The Unbound
+    [78132784] = {criteria=69370, quest=82045, vignette=6187}, -- Titan Console
+    [57222001] = {criteria=69372, quest=82047, vignette=6189}, -- Watcher of the North
+    [42128025] = {criteria=69373, quest=82048, vignette=6190}, -- Watcher of the South
 }, LORE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
