@@ -31,11 +31,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, LORE)
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [75403330] = {criteria=69387, quest=82069}, -- Kah'teht
-    [54101890] = {criteria=69388, quest=82067}, -- Mad Nerubian
-    [71106230] = {criteria=69384, quest=82082}, -- Weathered Shadecaster
+    [75443324] = {criteria=69387, quest=82069, vignette=6202}, -- Kah'teht
+    [54071888] = {criteria=69388, quest=82067, vignette=6201}, -- Mad Nerubian
+    [71126233] = {criteria=69384, quest=82082, vignette=6206}, -- Weathered Shadecaster
 }, LORE)
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [77507020] = {criteria=69385, quest=82079, parent=true}, -- Forgotten Shadecaster
-    [08503060] = {criteria=69386, quest=82085, parent=true}, -- Neglected Shadecaster
+    [77557019] = {criteria=69385, quest=82079, vignette=6205, parent=true}, -- Forgotten Shadecaster
+    [08543058] = {criteria=69386, quest=82085, vignette=6207, note="Above the city", parent=true}, -- Neglected Shadecaster
 }, LORE)

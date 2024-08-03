@@ -3,16 +3,21 @@ local myname, ns = ...
 -- Treasures
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [78003300] = { -- Weaving Supplies
+    [78623320] = { -- Weaving Supplies
         criteria=69643,
         quest=82527,
         loot={{225347, toy=true}}, -- Web-Vandal's Spinning Wheel
-        note="Collect {item:223901:Violet Silk Scrap}, {item:223902:Crimson Silk Scrap}, {item:223903:Gold Silk Scrap} from the edge of the platform to unlock",
+        level=74,
+        vignette=6289,
+        note="Collect {item:223901:Violet Silk Scrap}, {item:223902:Crimson Silk Scrap}, {item:223903:Gold Silk Scrap} from the edges of the nearby platform to unlock",
     },
-    [50614807] = { -- Nest Egg
+    [49564370] = { -- Nest Egg
         criteria=69645,
         quest=82529,
         loot={{221760, pet=4513}}, -- Bonedrinker
+        level=74,
+        vignette=6291,
+        note="Webbed to the ceiling",
     },
     [54404110] = { -- Disturbed Soil
         criteria=69646,
@@ -23,12 +28,6 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [85008900] = { -- Silk-spun Supplies
         criteria=69647,
         quest=82719,
-        loot={},
-        note="UNKNOWN LOCATION",
-    },
-    [87008900] = { -- Nerubian Offerings
-        criteria=69648,
-        quest=82720,
         loot={},
         note="UNKNOWN LOCATION",
     },
@@ -57,10 +56,20 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     },
 })
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [67387443] = { -- Trapped Trove
+    [67397441] = { -- Trapped Trove
         criteria=69644,
         quest=82528,
         loot={{222966, pet=4473}}, -- Spinner
+        level=74,
+        vignette=6290,
+        note="Navigate through the web traps",
+    },
+    [31642077] = { -- Nerubian Offerings
+        criteria=69648,
+        quest=82720,
+        loot={}, -- Some grays and commendations for Weaver, General, Vizier
+        vignette=6281,
+        note="In a nook beneath the platform",
     },
 }, {
     achievement=40828,
@@ -77,8 +86,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         npc=221327,
         vignette=6134,
     },
-    [75406140] = { -- XT-Minecrusher 8700
-        -- [75406140, 75606120]
+    [76585780] = { -- XT-Minecrusher 8700
         criteria=69660,
         quest=81703,
         npc=216034,
@@ -95,12 +103,17 @@ ns.RegisterPoints(ns.AZJKAHET, {
         },
         vignette=6129,
     },
-    [61207540] = { -- Maddened Siegebomber
-        -- [61207540, 61407620, 61807500]
+    [68876480] = { -- Maddened Siegebomber
         criteria=69663,
         quest=81706,
         npc=216044,
         vignette=6138,
+        route={
+            68876480, 69006715, 67206730, 65596605, 63576530, 61636444, 61006640,
+            62106844, 64256750, 65356414, 66936243,
+            loop=true,
+        },
+        note="Patrols around the area, fighting other mobs",
     },
     [36004480] = { -- Vilewing
         -- [36004480, 36204400, 36404580, 36604660, 36804320, 36804580, 37004540]
@@ -127,25 +140,25 @@ ns.RegisterPoints(ns.AZJKAHET, {
         npc=216042,
         vignette=6136,
     },
-    [58206500] = { -- Enduring Gutterface
-        -- [58206500, 58406560]
+    [58056233] = { -- Enduring Gutterface
         criteria=69664,
         quest=81707,
         npc=216045,
         vignette=6139,
     },
-    [68807200] = { -- Monstrous Lasharoth
+    [69996920] = { -- Monstrous Lasharoth
         criteria=69662,
         quest=81705,
         npc=216043,
         vignette=6137,
     },
-    [44803880] = { -- Rhak'ik
+    [43763953] = { -- Rhak'ik
         -- [44803880, 44803980, 45204440]
         criteria=69653,
         quest=81694,
         npc=221032,
-        -- vignette=,
+        vignette=6130, -- Stronghold Scouts
+        note="Patrols with {npc:216032:Khak'ik}",
     },
     --[[ -- with Rhak'ik:
     [44803980] = { -- Khak'ik
@@ -222,7 +235,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         npc=216038,
         vignette=6111,
     },
-    [69406220] = { -- Xishorr
+    [67165840] = { -- Xishorr
         criteria=69658,
         quest=81701,
         npc=216039,
@@ -232,4 +245,16 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
     achievement=40840, -- Adventurer
     parent=true,
 })
+
+ns.RegisterPoints(ns.AZJKAHET, {
     [62796618] = { -- Tka'ktath
+        quest=82289,
+        npc=216046,
+        loot={
+            {225952, quest=83627}, -- Vial of Tka'ktath's Bloo
+            -- {224150, mount=2222}, -- Siesbarg
+        },
+        vignette=6265,
+        note="Begins a quest chain leading to the mount {item:224150:Siesbarg}",
+    },
+})
