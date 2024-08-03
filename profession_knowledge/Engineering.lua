@@ -7,7 +7,7 @@ local KNOWLEDGE = {
     -- active = ns.conditions.Profession(ns.PROF_WW_ENGINEERING, 25),
     group = "professionknowledge",
     texture=ns.atlas_texture("VignetteLoot", {r=0.5,g=1,b=1,}),
-    minimap = true,
+    -- minimap = true,
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
@@ -22,6 +22,7 @@ ns.RegisterPoints(ns.DORNOGAL, {
         quest=83867,
         loot={226293}, -- Dornogal Spectacles
         vignette=6450,
+        parent=true,
     },
 }, KNOWLEDGE)
 

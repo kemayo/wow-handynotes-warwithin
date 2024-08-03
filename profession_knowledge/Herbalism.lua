@@ -7,7 +7,7 @@ local KNOWLEDGE = {
     -- active = ns.conditions.Profession(ns.PROF_WW_HERBALISM, 25),
     group = "professionknowledge",
     texture=ns.atlas_texture("VignetteLoot", {r=0.5,g=1,b=1,}),
-    minimap = true,
+    -- minimap = true,
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
@@ -22,6 +22,7 @@ ns.RegisterPoints(ns.DORNOGAL, {
         quest=83875,
         loot={226301}, -- Dornogal Gardening Scythe
         vignette=6458,
+        parent=true,
     },
 }, KNOWLEDGE)
 
