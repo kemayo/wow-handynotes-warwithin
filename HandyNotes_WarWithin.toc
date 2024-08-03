@@ -31,7 +31,7 @@ achievements\GlyphHunter.lua
 #achievements\EchoesOfDanger.lua
 achievements\KhazAlgarLoreHunter.lua
 
-profession_knowledge\Masters.lua
+#profession_knowledge\Masters.lua
 profession_knowledge\Alchemy.lua
 profession_knowledge\Blacksmithing.lua
 profession_knowledge\Enchanting.lua
