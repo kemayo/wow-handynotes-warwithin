@@ -11,21 +11,66 @@ local KNOWLEDGE = {
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
+    [58693072] = {
+        quest=83899,
+        loot={226325}, -- Dornogal Craftsman's Flat Knife
+        vignette=6482,
+    },
+}, KNOWLEDGE)
+ns.RegisterPoints(ns.DORNOGAL, {
+    [70702865] = {
+        quest=83898,
+        loot={226324}, -- Earthen Lacing Tools
+        vignette=6481,
+    },
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [47053485] = {
+        quest=83900,
+        loot={226326}, -- Underground Stropping Compound
+        vignette=6483,
+        note="Inside the house",
+    },
+    [64306535] = {
+        quest=83901,
+        loot={226327}, -- Earthen Awl
+        vignette=6484,
+    },
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.HALLOWFALL, {
+    [47466511] = {
+        quest=83902,
+        loot={226328}, -- Arathi Beveler Set
+        vignette=6485,
+    },
+    [41525781] = {
+        quest=83903,
+        loot={226329}, -- Arathi Leather Burnisher
+        vignette=6486,
+    },
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.AZJKAHET, {
+    [60005393] = {
+        quest=83905,
+        loot={226331}, -- Curved Nerubian Skinning Knife
+        vignette=6488,
+    },
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
+    [55202685] = {
+        quest=83904,
+        loot={226330}, -- Nerubian Tanning Mallet
+        vignette=6487,
+        parent=true,
+    },
     -- [] = {
     --     quest=82626,
     --     loot={224056}, -- Uses for Leftover Husks (After You Take Them Apart)
     --     note="Buy from {npc::}",
+    --     parent=true,
     -- },
 }, KNOWLEDGE)
