@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v6
+
+* Added Tka'ktath to Azj-Kahet, leading to a mount quest
+* Added level requirements and updated coordinates for many treasures
+* Glyph hunter: don't include the mount as loot, because it was interfering with hiding found glyphs
+* Profession knowledge: don't show on the minimap, because they all have vignettes
+
 ## Changed in v5
 
 * Added profession knowledge treasures
