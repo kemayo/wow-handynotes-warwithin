@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v7
+
+* Data improvements in Isle of Dorn and Azj-Kahet
+
 ## Changed in v6
 
 * Added Tka'ktath to Azj-Kahet, leading to a mount quest
