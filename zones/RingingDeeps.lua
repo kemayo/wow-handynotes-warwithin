@@ -17,6 +17,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         level=71,
         vignette=5994,
+        nearby={68863883},
         note="In cave",
     },
     [63086311] = { -- Cursed Pickaxe
@@ -29,7 +30,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [55401385] = { -- Munderut's Forgotten Stash
         criteria=69282,
         quest=82235,
-        loot={}, -- some gems
+        loot={212498}, -- Ambivalent Amber + commendations
         level=71,
         vignette=6233,
     },
@@ -43,7 +44,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [66203342] = { -- Waterlogged Refuse
         criteria=69304,
         quest=83030,
-        loot={}, -- unspecified grays
+        loot={213250, 213255, 213253, 213254}, -- various grays
         level=71,
         vignette=6356,
     },
@@ -72,23 +73,23 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [49053163] = { -- Dusty Prospector's Chest
         criteria=69312,
         quest=82464,
-        loot={}, -- some gems
+        loot={212495, 212505, 212508}, -- some gems
         level=71,
-        note="Gather the five shards",
+        note="At the back of the inn; gather the five shards first",
         related={
-            [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, color={r=1,g=0,b=1}, minimap=true,},
-            [58963798] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, color={r=0,g=1,b=0}, minimap=true,},
-            [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, color={r=0,g=0,b=1}, minimap=true,},
-            [57404944] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, color={r=1,g=0,b=0}, minimap=true,},
-            [62556296] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, color={r=0,g=1,b=1}, minimap=true,},
+            [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [59043804] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
+            [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
+            [57434943] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
+            [62546313] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=0,g=1,b=1}, minimap=true,},
         },
         vignette=6286,
     },
     [52085327] = { -- Forgotten Treasure (this is the entrance, actually at 50485349)
         criteria=69313,
-        quest=80485,
+        quest=80485, -- chests: 80488, 80489, 80490, 80487
         loot={{224783, toy=true}},
-        note="Open chests until you find the key",
+        note="Cave behind the waterfall; open chests until you find the key",
         level=71,
         vignette=6074,
     },
@@ -98,12 +99,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- Not So Quick Fix
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [45304640] = {criteria=68658, quest=83475}, -- Water Console
-    [59009330] = {criteria=68659, quest=83479}, -- Abyssal Console
-    [63706110] = {criteria=68660, quest=83480}, -- Taelloch Console
+    [45304644] = {criteria=68658, quest=83475, note="By the stairs"}, -- Water Console
+    [59009330] = {criteria=68659, quest=83479, note="In the building"}, -- Abyssal Console
+    [63706110] = {criteria=68660, quest=83480, note="On the bridge"}, -- Taelloch Console
     [69104880] = {criteria=68661, quest=83481}, -- Obsidian Console
-    [56402250] = {criteria=68662, quest=83482}, -- Lost Console
-    [46301410] = {criteria=68663, quest=83483}, -- Earthen Console
+    [56392250] = {criteria=68662, quest=83482}, -- Lost Console
+    [46301409] = {criteria=68663, quest=83483}, -- Earthen Console
 }, {
     achievement=40473,
     atlas="mechagon-projects",
@@ -131,7 +132,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [52002000] = { -- Automaxor
+    [52591991] = { -- Automaxor
         criteria=69634,
         quest=81674,
         npc=220265,
@@ -161,24 +162,34 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69623,
         quest=80505,
         npc=220276,
+        loot={
+            223360, -- Flying Kobold's Seatbelt (plate)
+            223361, -- Flying Kobold's Seatbelt (cloth)
+            223362, -- Flying Kobold's Seatbelt (mail)
+            223363, -- Flying Kobold's Seatbelt (leather)
+        },
         note="Patrols the area",
         vignette=6080,
     },
-    [50604660] = { -- Cragmund
+    [50864651] = { -- Cragmund
         criteria=69630,
-        quest=80560,
+        quest=80560, -- 84042?
         npc=220269,
         loot={
             221205, -- Vest of the River
         },
         vignette=6090,
     },
-    [53000880] = { -- Deepflayer Broodmother
+    [55060843] = { -- Deepflayer Broodmother
         criteria=69636,
         quest=  80536,
         npc=220286,
-        note="Flys around",
-        --route={53000880, 53801800},
+        note="Flys around anticlockwise",
+        route={
+            55060843, 53000880, 49560836, 49121007, 45290955, 43790822, 42650871, 44220973, 44331083, 45151312,
+            43171750, 48681919, 53022244, 53751761, 56091023,
+            loop=true,
+        },
         vignette=6082,
     },
     [49556619] = { -- Aquellion
@@ -193,13 +204,13 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6089,
     },
-    [52002640] = { -- Zilthara
+    [52022657] = { -- Zilthara
         criteria=69629,
         quest=80506,
         npc=220270,
         vignette=6079,
     },
-    [58003820] = { -- Coalesced Monstrosity
+    [57903813] = { -- Coalesced Monstrosity
         criteria=69633,
         quest=81511,
         npc=220266,
@@ -212,7 +223,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6081,
         note="Walking in the lava",
     },
-    [46804680] = { -- Kelpmire
+    [47074696] = { -- Kelpmire
         criteria=69635,
         quest=81485,
         npc=220287,
@@ -230,6 +241,33 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6105,
     },
+    [71654629] = { -- Trungal
+        criteria=69631,
+        quest=80574,
+        npc=220268,
+        note="Kill the {npc:220615:Root of Trungal} to spawn",
+        path={72534569, 72844444},
+        vignette=6126,
+    },
+    [68224378] = { -- Spore-infused Shalewing
+        criteria=69638,
+        quest=81652,
+        npc=221217,
+        vignette=6121,
+        note="Flies around",
+    },
+    [65364949] = { -- Hungerer of the Deeps
+        criteria=69639,
+        quest=81648,
+        npc=221199,
+        vignette=6119,
+    },
+    [67085262] = { -- Disturbed Earthgorger
+        criteria=69640,
+        quest=80003,
+        npc=218393,
+        vignette=6031,
+    },
     -- UNKNOWN LOCATION
     [10009000] = { -- Deathbound Husk
         criteria=69627,
@@ -238,39 +276,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6106,
         note="UNKNOWN LOCATION",
     },
-    [11009000] = { -- Trungal
-        criteria=69631,
-        quest=80574,
-        npc=220268,
-        note="Kill all the {npc:220615:Root of Trungal} to spawn\nUNKNOWN LOCATION",
-        vignette=6126,
-    },
     [12009000] = { -- Lurker of the Deeps
         criteria=69637,
         quest=81633,
         npc=220285,
         vignette=6110,
-        note="UNKNOWN LOCATION",
-    },
-    [13009000] = { -- Spore-infused Shalewing
-        criteria=69638,
-        quest=81652,
-        npc=221217,
-        vignette=6121,
-        note="UNKNOWN LOCATION",
-    },
-    [14009000] = { -- Hungerer of the Deeps
-        criteria=69639,
-        quest=81648,
-        npc=221199,
-        vignette=6119,
-        note="UNKNOWN LOCATION",
-    },
-    [15009000] = { -- Disturbed Earthgorger
-        criteria=69640,
-        quest=80003,
-        npc=218393,
-        vignette=6031,
         note="UNKNOWN LOCATION",
     },
 }, {
