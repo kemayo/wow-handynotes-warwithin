@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v8
+
+* Added Rocked to Sleep achievement
+* Found more rares in Ringing Deeps
+* General data improvements in Ringing Deeps
+
 ## Changed in v7
 
 * Data improvements in Isle of Dorn and Azj-Kahet
