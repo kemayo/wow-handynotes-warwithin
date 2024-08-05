@@ -110,6 +110,24 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     minimap=true,
 })
 
+-- Rocked to Sleep
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [48537065] = {criteria=68690}, -- Alfritha
+    [62863637] = {criteria=68684, note="Up on the ledge"}, -- Attwogaz
+    [65418379] = {criteria=68691, note="Up on the ledge"}, -- Gundrig
+    [44351354] = {criteria=68682}, -- Hathlaz
+    [43144087] = {criteria=68685}, -- Krattdaz
+    [59209371] = {criteria=68688, note="Up on the pipes"}, -- Merunth
+    [64065573] = {criteria=68692}, -- Sathilga
+    [55043023] = {criteria=68686, note="Up on the ledge"}, -- Uisgaz
+    [49384904] = {criteria=68689}, -- Varerko
+    [48583178] = {criteria=68687, note="By the pipes above the inn"}, -- Venedaz
+}, {
+    achievement=40504,
+    atlas="reagents", color={r=0.5, g=1, b=1},
+    minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
