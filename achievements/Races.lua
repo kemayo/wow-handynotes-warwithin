@@ -1,0 +1,101 @@
+local myname, ns = ...
+
+-- TODO: this could be greatly simplified if I properly add multiple-achievement support to core...
+
+-- local function extend(t1, t2)
+--     tAppendAll(t1, t2)
+--     return t1
+-- end
+-- local finalLoot = {
+--     199669, -- Spiked Crimson Spaulders (all bronze)
+--     {199688, pet=3279}, -- Bronze Racing Enthusiast (all silver)
+--     -- Isles Racer title (IsTitleKnown(479) / GetTitleName(478))
+-- }
+
+local Race = ns.Class{
+    Initialize=function(self, questname, achievements, currencies)
+        self._questid = questid
+        self._achievements = achievements
+        self._currencies = currencies or {}
+    end,
+    -- achievement=40354, -- Khaz Algar Completionist: Gold
+    atlas="racing", scale=1.2,
+    _loot={
+        --[[
+        [ns.WAKINGSHORES] = extend({
+            {197370, quest=69571}, -- Renewed Proto-Drake: Red Hair
+            {197351, quest=69552, note=ADVANCED_LABEL}, -- Renewed Proto-Drake: Gold and Red Armor
+        }, finalLoot),
+        --]]
+    },
+    group="races",
+    -- note="Rewards are for zone-wide and continent-wide completion",
+    OnTooltipShow=function(self, tooltip)
+        for i, achievementid in pairs(self._achievements) do
+            local _, name, _, complete = GetAchievementInfo(achievementid)
+            local currencyInfo = self._currencies[i] and C_CurrencyInfo.GetCurrencyInfo(self._currencies[i])
+            tooltip:AddDoubleLine(
+                name or achievementid,
+                currencyInfo and ("%.3f s"):format(currencyInfo.quantity / 1000) or "? s",
+                complete and 0 or 1, complete and 1 or 0, 0,
+                complete and 0 or 1, complete and 1 or 0, 0
+            )
+        end
+    end,
+    __get={
+        label=function(self)
+            self.label = ("{questname:%d}"):format(self._questid)
+            return self.label
+        end,
+        found=function(self)
+            local found = {}
+            for _, aid in ipairs(self._achievements) do
+                table.insert(found, ns.conditions.Achievement(aid))
+            end
+            self.found = found
+            return found
+        end,
+        loot=function(self)
+            return self._loot[self._uiMapID]
+        end,
+    },
+}
+
+-- lines with a ? need their currency verified
+
+ns.RegisterPoints(ns.ISLEOFDORN, {
+    -- quest, {achievements}, {currencies}
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+})
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    -- quest, {achievements}, {currencies}
+    -- [42232744] = Race(, {}, {}), --
+    -- [52474686] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+})
+ns.RegisterPoints(ns.HALLOWFALL, {
+    -- quest, {achievements}, {currencies}
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+})
+ns.RegisterPoints(ns.AZJKAHET, {
+    -- quest, {achievements}, {currencies}
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+    -- [] = Race(, {}, {}), --
+})
