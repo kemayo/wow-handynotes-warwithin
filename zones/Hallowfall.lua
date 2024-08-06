@@ -1,5 +1,21 @@
 local myname, ns = ...
 
+--[[
+Notes:
+
+Disturbed Earth
+37273620, quest 82026, waxy lump
+41466045, catching wax fired into the air
+40776026, spawned enemy (229809)
+47616347, spawned enemy (216537)
+47156330, spawned waxy lump
+46676510, spawned waxy lump
+51006859, ambush
+50776694, squashable grubs
+23695880, spawned enemy (216288)
+60133139, spawned enemy (216537)
+]]
+
 -- Treasures
 
 ns.RegisterPoints(ns.HALLOWFALL, {
@@ -36,6 +52,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=83298,
         loot={{225659, toy=true}},
         note="Answer riddles from {npc:221630:Ryfus Sacredpyr}; you need to find the books for {achievement:40622:Biblo Archivist} for the correct answers to appear",
+        level=73, -- not to talk to him, but to get any of the books for answers...
         vignette=6373,
     },
     [55796954] = { -- Jewel of the Cliffs
@@ -154,10 +171,13 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=5958,
     },
-    [44001620] = { -- The Perchfather
+    [44011639] = { -- The Perchfather
         criteria=69711,
         quest=81791,
         npc=221648,
+        loot={
+            221229, -- Perchfather's Cuffs
+        },
         vignette=6151,
     },
     [56466897] = { -- The Taskmaker
@@ -192,11 +212,17 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=221690, -- Rage of Beledar
         vignette=6153,
     },
-    [57006420] = { -- Ixlorb the Spinner
+    [57046436] = { -- Ixlorb the Spinner
         criteria=69704,
         quest=80006,
         npc=218426,
-        vignette=6032,
+        loot={
+            223374, -- Nerubian Weaver's Gown
+            223379, -- Nerubian Weaver's Chestplate
+            223380, -- Nerubian Weaver's Chainmail
+            223381, -- Nerubian Weaver's Vest
+        },
+        vignette=6032, -- Ixlorb the Weaver
     },
     [62401320] = { -- Murkspike
         criteria=69728,
@@ -213,10 +239,16 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=6078,
     },
-    [72006420] = { -- Deepfiend Azellix
+    [72136436] = { -- Deepfiend Azellix
         criteria=69703,
         quest=80011,
         npc=218458,
+        loot={
+            223393, -- Deepfiend Spaulders
+            223394, -- Deepfiend Pauldrons
+            223395, -- Deepfiend Shoulderpads
+            223396, -- Deepfiend Shoulder Shells
+        },
         vignette=6035,
     },
     [64401880] = { -- Duskshadow
@@ -260,6 +292,26 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=215805,
         vignette=5988,
     },
+    [52132682] = { -- Murkshade
+        criteria=69705,
+        quest=80010,
+        npc=218452,
+        loot={
+            223382, -- Murkshade Grips
+            223383, -- Murkshade Handguards
+            223384, -- Murkshade Gloves
+            223385, -- Murkshade Gauntlets
+        },
+        vignette=6034,
+        note="Underwater",
+    },
+    [67562316] = { -- Croakit
+        criteria=69722,
+        quest=82560,
+        npc=214757,
+        vignette=6125,
+        --tameable=true, -- hopper
+    },
     -- UNKNOWN LOCATION
     --[[
     [] = { -- Brineslash
@@ -273,13 +325,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82558,
         npc=206514,
         vignette=6120,
-    },
-    [] = { -- Croakit
-        criteria=69722,
-        quest=82560,
-        npc=214757,
-        vignette=6125,
-        --tameable=true, -- hopper
     },
     [] = { -- Toadstomper
         criteria=69723,
@@ -313,12 +358,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         vignette=6159,
         -- tameable=true, -- stag
         note="UNKNOWN LOCATION",
-    },
-    [] = { -- Murkshade
-        criteria=69705,
-        quest=80010,
-        npc=218452,
-        vignette=6034,
     },
     --]]
 }, {

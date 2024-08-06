@@ -46,7 +46,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [35403385] = {criteria=69261, quest=40687}, -- Priory of the Sacred Flame, Hallowfall
     [30795156] = {criteria=69262, quest=40688}, -- Fortune's Fall, Hallowfall
     [45691230] = {criteria=69263, quest=40689}, -- Velhan's Claim, Hallowfall
-    [57686460] = {criteria=69264, quest=40690}, -- Tenir's Ascent, Hallowfall
+    [57686460] = {criteria=69264, quest=40690, note="Down between the ship and the dock"}, -- Tenir's Ascent, Hallowfall
 }, GLYPH{achievement=40704})
 
 ns.RegisterPoints(ns.AZJKAHET, {
