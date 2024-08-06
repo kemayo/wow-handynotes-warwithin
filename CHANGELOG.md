@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v9
+
+* Azj-Kahet: found the last of the Adventurer rares
+* Hallowfell: found more Adventurer rares, improved coordinates, and added loot
+* Ringing Deeps: found Deathbound Husk, only one more to go...
+* Background work on gathering data for the races
+
 ## Changed in v8
 
 * Added Rocked to Sleep achievement
