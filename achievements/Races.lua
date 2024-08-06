@@ -13,7 +13,7 @@ local myname, ns = ...
 -- }
 
 local Race = ns.Class{
-    Initialize=function(self, questname, achievements, currencies)
+    Initialize=function(self, questid, achievements, currencies)
         self._questid = questid
         self._achievements = achievements
         self._currencies = currencies or {}
@@ -83,10 +83,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 })
 ns.RegisterPoints(ns.HALLOWFALL, {
     -- quest, {achievements}, {currencies}
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+    -- [72783842] = Race(, {}, {}), -- Dunelle's Detour
+    -- [38976136] = Race(, {}, {}), -- Mereldar Meander
+    -- [41436725] = Race(, {}, {}), -- Light's Redoubt Descent
+    -- [59196894] = Race(, {}, {}), -- Tenir's Traversal
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
 })
