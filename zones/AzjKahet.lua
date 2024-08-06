@@ -1,5 +1,9 @@
 local myname, ns = ...
 
+--[[
+Notes:
+]]
+
 -- Treasures
 
 ns.RegisterPoints(ns.AZJKAHET, {
@@ -181,30 +185,25 @@ ns.RegisterPoints(ns.AZJKAHET, {
         npc=214151,
         vignette=5973,
     },
-    -- UNKNOWN LOCATION
-    [85008500] = { -- Umbraclaw Matra
+    [64600352] = { -- Umbraclaw Matra
         criteria=69668,
         quest=82037,
         npc=216051,
         vignette=6186,
-        note="UNKNOWN LOCATION",
     },
-    [87008500] = { -- Deepcrawler Tx'kesh
+    [62940509] = { -- Kaheti Bladeguard
+        criteria=69670,
+        quest=82078,
+        npc=216052, -- Skirmisher Sa'ztyk
+        vignette=6204,
+        note="Patrols the area",
+    },
+    [64590667] = { -- Deepcrawler Tx'kesh
         criteria=69669,
         quest=82077,
         npc=222624,
         vignette=6203,
-        note="UNKNOWN LOCATION",
     },
-    --[[
-    [89008500] = { -- Kaheti Bladeguard
-        criteria=69670,
-        quest=82078,
-        npc=,
-        vignette=6204,
-        note="UNKNOWN LOCATION",
-    },
-    --]]
 }, {
     achievement=40840, -- Adventurer
 })
