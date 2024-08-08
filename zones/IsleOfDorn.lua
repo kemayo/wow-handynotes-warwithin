@@ -283,12 +283,18 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         npc=222380,
         vignette=6216,
     },
-    [37007520] = { -- Rustul Titancap
-        -- [31408220, 32808100, 33808000]
+    [36477505] = { -- Rustul Titancap
         criteria=68210,
         quest=78619,
         npc=213115,
+        loot={
+            223364, -- Wristwraps of the Titancap
+            223365, -- Wristguards of the Titancap
+            223366, -- Bracers of the Titancap
+            223367, -- Cuffs of the Titancap
+        },
         vignette=5959,
+        note="Wanders the quarry",
     },
     [63994055] = { -- Flamekeeper Graz
         criteria=68223,
