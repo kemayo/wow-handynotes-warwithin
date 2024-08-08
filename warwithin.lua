@@ -34,6 +34,7 @@ ns.defaults.profile.groupsHidden = {}
 ns.groups["junk"] = BAG_FILTER_JUNK
 ns.groups["professionknowledge"] = "Profession Knowledge"
 ns.groups["glyphs"] = GLYPHS
+ns.groups["delves"] = DELVES_LABEL
 
 --[[
 notes:

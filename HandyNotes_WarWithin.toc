@@ -32,6 +32,8 @@ achievements\GlyphHunter.lua
 achievements\KhazAlgarLoreHunter.lua
 achievements\Races.lua
 
+shared\Delves.lua
+
 #profession_knowledge\Masters.lua
 profession_knowledge\Alchemy.lua
 profession_knowledge\Blacksmithing.lua
