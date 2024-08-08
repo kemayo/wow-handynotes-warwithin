@@ -149,6 +149,20 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     minimap=true,
 })
 
+-- Notable Machines
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [45892880] = {criteria=68991}, -- Notes On The Machine Speakers: Fragment I
+    [48932593] = {criteria=68992}, -- Notes On The Machine Speakers: Fragment II
+    [51071448] = {criteria=68993}, -- Notes On The Machine Speakers: Fragment III
+    [39892099] = {criteria=68994, note="Up on the scaffolding"}, -- Notes On The Machine Speakers: Fragment IV
+    [63705878] = {criteria=68995}, -- Notes On The Machine Speakers: Fragment V
+    [65107955] = {criteria=68996}, -- Notes On The Machine Speakers: Fragment VI
+}, {
+    achievement=40628,
+    texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
+    minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
