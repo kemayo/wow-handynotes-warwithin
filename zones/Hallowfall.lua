@@ -14,6 +14,9 @@ Disturbed Earth
 50776694, squashable grubs
 23695880, spawned enemy (216288)
 60133139, spawned enemy (216537)
+
+Worldsoul memories (vignette 6358)
+60686749
 ]]
 
 -- Treasures

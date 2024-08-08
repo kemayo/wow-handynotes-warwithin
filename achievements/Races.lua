@@ -74,10 +74,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 })
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     -- quest, {achievements}, {currencies}
-    -- [42232744] = Race(, {}, {}), --
+    -- [42232744] = Race(, {}, {}), -- Ringing Deeps Ramble
     -- [52474686] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+    -- [40861131] = Race(, {}, {}), -- Earthenworks Weave
+    -- [63557513] = Race(, {}, {}), -- Opportunity Point Amble
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
 })
@@ -92,10 +92,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 })
 ns.RegisterPoints(ns.AZJKAHET, {
     -- quest, {achievements}, {currencies}
+    -- [71343636] = Race(, {}, {}), -- Rak-Ahat Rush
+    -- [23814835] = Race(, {}, {}), -- Pit Plunge
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+})
+ns.RegisterPoints(ns.CITYOFTHREADS, {
+    -- [27010793] = Race(, {}, {}), -- City of Threads Twist
 })
