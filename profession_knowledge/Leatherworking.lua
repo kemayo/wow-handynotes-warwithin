@@ -66,12 +66,12 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83904,
         loot={226330}, -- Nerubian Tanning Mallet
         vignette=6487,
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
     -- [] = {
     --     quest=82626,
     --     loot={224056}, -- Uses for Leftover Husks (After You Take Them Apart)
     --     note="Buy from {npc::}",
-    --     parent=true,
+    --     parent=true, levels=true, translate={[2256]=true},
     -- },
 }, KNOWLEDGE)

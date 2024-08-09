@@ -65,7 +65,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83864,
         loot={226290}, -- Book of Dark Magic
         vignette=6447,
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
     -- [] = {
     --     quest=82635,

@@ -65,12 +65,12 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83854,
         loot={226282}, -- Nerubian Smith's Kit
         vignette=6439,
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
     -- [] = {
     --     quest=82631,
     --     loot={224038}, -- Smithing After Saronite
     --     note="Buy from {npc::}",
-    --     parent=true,
+    --     parent=true, levels=true, translate={[2256]=true},
     -- },
 }, KNOWLEDGE)

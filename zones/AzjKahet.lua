@@ -52,6 +52,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     },
 }, {
     achievement=40828,
+    levels=true,
 })
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     -- [] = {criteria=69615, quest=82724}, -- Corrupted Memory
@@ -63,6 +64,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     },
 }, {
     achievement=40828,
+    levels=true,
 })
 ns.RegisterPoints(ns.CITYOFTHREADS, {
     [67397441] = { -- Trapped Trove
@@ -82,7 +84,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
     },
 }, {
     achievement=40828,
-    parent=true,
+    parent=true, levels=true, translate={[2256]=true},
 })
 
 -- Itsy Bitsy Spider
@@ -98,6 +100,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     achievement=40624,
     atlas="WildBattlePet", color={r=0.75, g=1, b=0},
     minimap=true,
+    levels=true,
 })
 
 -- Rares
@@ -223,6 +226,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     },
 }, {
     achievement=40840, -- Adventurer
+    levels=true,
 })
 
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
@@ -246,6 +250,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     },
 }, {
     achievement=40840, -- Adventurer
+    levels=true,
 })
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
@@ -263,7 +268,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
     },
 }, {
     achievement=40840, -- Adventurer
-    parent=true,
+    parent=true, levels=true, translate={[2256]=true},
 })
 
 ns.RegisterPoints(ns.AZJKAHET, {
@@ -277,4 +282,4 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6265,
         note="Begins a quest chain leading to the mount {item:224150:Siesbarg}",
     },
-})
+}, {levels=true,})

@@ -60,12 +60,13 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83913,
         loot={226339}, -- Nerubian Mining Supplies
         vignette=6496, -- Nerubian Mining Cart
+        parent=true, levels=true, translate={[2256]=true},
     },
     [46732165] = {
         quest=83912,
         loot={226338}, -- Heavy Spider Crusher
         vignette=6495,
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
     -- [] = {
     --     quest=82614,

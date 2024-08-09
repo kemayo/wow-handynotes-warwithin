@@ -65,13 +65,13 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83889,
         loot={226315}, -- Venomancer's Ink Well
         vignette=6472,
-        parent=true,
         note="Inside",
+        parent=true, levels=true, translate={[2256]=true},
     },
     -- [] = {
     --     quest=82636,
     --     loot={224053}, -- Eight Views on Defense against Hostile Runes
     --     note="Buy from {npc::}",
-    --     parent=true,
+    --     parent=true, levels=true, translate={[2256]=true},
     -- },
 }, KNOWLEDGE)

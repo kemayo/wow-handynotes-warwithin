@@ -65,12 +65,12 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         quest=83929,
         loot={226355}, -- Nerubian's Pincushion
         vignette=6512,
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
     [50601680] = {
         quest=82634,
         loot={224036}, -- And That's A Web-Wrap!
         note="Buy from {npc:218190:Saaria}",
-        parent=true,
+        parent=true, levels=true, translate={[2256]=true},
     },
 }, KNOWLEDGE)

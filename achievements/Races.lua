@@ -65,7 +65,7 @@ local Race = ns.Class{
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
     -- quest, {achievements}, {currencies}
-    -- [] = Race(, {}, {}), --
+    -- [32937483] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
