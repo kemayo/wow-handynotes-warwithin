@@ -5,6 +5,9 @@ notes:
 
 Earthern coffer 6230
 38523951 - in cave from 36354156
+
+Worldsoul Memory
+55627771
 ]]
 
 -- Treasures
@@ -168,8 +171,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         -- tameable=true, -- wasp
         vignette=6112,
     },
-    [26005380] = { -- Kereke
-        -- [30605120, 30805240]
+    [30915238] = { -- Kereke
         criteria=68227,
         quest=82204,
         npc=222378,

@@ -412,7 +412,10 @@ local deathtide = ns.nodeMaker{
 ns.RegisterPoints(ns.HALLOWFALL, {
     [44744241] = { -- Deathtide
         npc=221753,
-        loot={223921}, -- Ever-Oozing Signet
+        loot={
+            223921, -- Ever-Oozing Signet
+            225997, -- Earthen Adventurer's Spaulders (zone-wide?)
+        },
         vignette=6156,
         active=ns.conditions.Item(220123), -- Ominous Offering
         note="Create an {item:220123:Ominous Offering} to summon",

@@ -66,8 +66,8 @@ local Race = ns.Class{
 ns.RegisterPoints(ns.ISLEOFDORN, {
     -- quest, {achievements}, {currencies}
     -- [32937483] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+    -- [62164601] = Race(, {}, {}), -- The Wold Ways
+    -- [53486422] = Race(, {}, {}), -- Basin Bypass
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --

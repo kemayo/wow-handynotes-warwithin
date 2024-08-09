@@ -15,6 +15,7 @@ Disturbed Earth, (Odd Glob of Wax 212493)
 55773373, spawned enemy (229808)
 53493438, just spawned waxy lump
 45042805, fired into the air to catch waxy sprockets
+43551959, waxy lump
 
 Worldsoul memories (vignette 6358)
 59516981
