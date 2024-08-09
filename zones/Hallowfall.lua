@@ -122,7 +122,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [43904997] = {criteria=68955, loot={225217}}, -- 500 Dishes Using Cave Fish and Mushrooms
     [69344394] = {criteria=68957, loot={225207}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Care and Feeding of the Imperial Lynx
     [68684159] = {criteria=68958, loot={225206}}, -- Light's Gambit Playbook
-    [57595180] = {criteria=68960, loot={225208}}, -- From the Depths They Come
+    [57815182] = {criteria=68960, loot={225208}, note="By the shore"}, -- From the Depths They Come
     [48756472] = {criteria=68961, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}", vignette=6374}, -- Palawltar's Codex of Dimensional Structure
     [64182812] = {criteria=68963, loot={225204}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Shadow Curfew Guidelines
     [59802203] = {criteria=68965, loot={225205}}, -- Shadow Curfew Journal
@@ -315,6 +315,13 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         vignette=6125,
         --tameable=true, -- hopper
     },
+    [57304858] = { -- Pride of Beledar
+        criteria=69715,
+        quest=81882,
+        npc=221786,
+        vignette=6159,
+        -- tameable=true, -- stag
+    },
     -- UNKNOWN LOCATION
     --[[
     [] = { -- Brineslash
@@ -328,12 +335,14 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82558,
         npc=206514,
         vignette=6120,
+        note="Objective of 76588, so presumably in the NE near the keyflames"
     },
     [] = { -- Toadstomper
         criteria=69723,
         quest=82561,
         npc=207803,
         vignette=6084,
+        note="Objective of 76588, so presumably in the NE near the keyflames"
     },
     [] = { -- Parasidious
         criteria=69725,
@@ -353,14 +362,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=207780, -- also 220492?
         loot={}
         vignette=6085,
-    },
-    [] = { -- Pride of Beledar
-        criteria=69715,
-        quest=81882,
-        npc=221786,
-        vignette=6159,
-        -- tameable=true, -- stag
-        note="UNKNOWN LOCATION",
+        note="Objective of 76588, so presumably in the NE near the keyflames"
     },
     --]]
 }, {
@@ -445,8 +447,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [63400560] = { -- Radiant-Twisted Mycelium
-        quest=nil,
+    [62650611] = { -- Radiant-Twisted Mycelium
+        quest=nil, -- 76588 defender of the flame
         npc=214905,
         vignette=5984,
     },
