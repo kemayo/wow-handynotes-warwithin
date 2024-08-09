@@ -30,14 +30,6 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6210,
     },
-    [40917377] = { -- Turtle's Thanks
-        criteria=68198,
-        quest=82716,
-        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
-        note="Give {npc:223338:Dalaran Sewer Turtle}:\n* 5x {item:220143:Dornish Pike}\n* 1x {item:222721:Fish and Chips}\n* 1x {item:222533:Goldengill Trout}",
-        active={ns.conditions.Item(220143, 5), ns.conditions.Item(222721), ns.conditions.Item(222533)},
-        vignette=6244,
-    },
     [40655988] = { -- Magical Treasure Chest
         criteria=68199,
         quest=83243,
@@ -124,6 +116,36 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, {
     achievement=40434, -- Treasures
+})
+-- Turtle's Thanks
+ns.RegisterPoints(ns.ISLEOFDORN, {
+    [40917377] = { -- Turtle's Thanks (initial)
+        criteria=68198,
+        quest=79585, -- pike
+        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        note="Give {npc:223338:Dalaran Sewer Turtle} 5x {item:220143:Dornish Pike}, then leave the area and return to give it 1x {item:222533:Goldengill Trout}. Then go find it again in Dornegal.",
+        active=ns.conditions.Item(220143, 5),
+        vignette=6244,
+    },
+    [40917376] = { -- Turtle's Thanks (after pike)
+        criteria=68198,
+        quest=79586, -- trout
+        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        note="Give {npc:223338:Dalaran Sewer Turtle} 1x {item:222533:Goldengill Trout}. Then go find it again in Dornegal.",
+        active=ns.conditions.Item(222533),
+        vignette=6245,
+    },
+}, {achievement=40434}) -- Treasures
+ns.RegisterPoints(ns.DORNOGAL, {
+    [58283027] = { -- Turtle's Thanks (after trout)
+        achievement=40434, -- Treasures
+        criteria=68198,
+        quest=82716, -- final!, also 82255 when treasure spawns
+        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        note="Talk to the turtle to spawn the treasure",
+        vignette=6246, -- Dalaran Sewer Turtle, then 6579 Turtle's Thanks
+        parent=true,
+    },
 })
 
 -- Rares
