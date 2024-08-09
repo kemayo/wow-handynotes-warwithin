@@ -24,11 +24,14 @@ ns.RegisterPoints(2269, { -- Earthcrawl Mines
 --     },
 -- })
 
--- ns.RegisterPoints(2312, { -- Mycomancer Cavern
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40808, -- Discoveries
--- })
+ns.RegisterPoints(2312, { -- Mycomancer Cavern
+    [49882164] = {quest=83652, loot={223287}}, -- Atomized Salien Slime
+    [63304537] = {quest=83691, loot={226005}, note="Underwater"}, -- Ancient Tool
+    [68724128] = {quest=83455, loot={221763}}, -- Viridian Charmcap
+    [40706135] = {quest=83672, currency=2815, note="Jump down"}, -- Resonance Crystals
+}, STURDY{
+    achievement=40808, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- Fungal Folly
 --     -- [] = {quest=, loot={}}, --
