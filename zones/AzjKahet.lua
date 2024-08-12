@@ -35,20 +35,26 @@ ns.RegisterPoints(ns.AZJKAHET, {
         loot={}, -- grays and commendations
         vignette=6283,
     },
+    [54525081] = { -- Niffen Stash
+        -- didn't appear until after I hit 73? Could just be a despawn-when-looted though...
+        criteria=69649,
+        quest=82721,
+        loot={
+            204730, -- Grub Grub
+            204790, -- Strong Sniffin' Soup for Niffen
+            204838, -- Discarded Toy
+            204842, -- Red Sparklepretty
+            213261, -- Niffen Smell Pouch
+        },
+        vignette=6282,
+        note="Hanging under the bridge",
+    },
     -- UNKNOWN LOCATION
     [85008900] = { -- Silk-spun Supplies
         criteria=69647,
         quest=82719,
         loot={},
         note="UNKNOWN LOCATION",
-    },
-    [89008900] = { -- Niffen Stash
-        -- check "Stashed Loot" 6382 @ 76405806
-        criteria=69649,
-        quest=82721,
-        loot={},
-        note="UNKNOWN LOCATION",
-        vignette=6282,
     },
 }, {
     achievement=40828,
@@ -161,6 +167,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69655,
         quest=81699,
         npc=216041,
+        loot={223369}, -- Webspeaker's Spiritual Cloak
         vignette=6135,
     },
     [70732146] = { -- Cha'tak
