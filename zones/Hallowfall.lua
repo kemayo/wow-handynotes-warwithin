@@ -323,6 +323,35 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         -- tameable=true, -- stag
     },
     -- UNKNOWN LOCATION
+    [70001500] = { -- Crazed Cabbage Smacker
+        criteria=69720,
+        quest=82558,
+        npc=206514,
+        vignette=6120,
+        note="UNKNOWN LOCATION. Objective of {questname:76588}, so presumably in the NE near the keyflames",
+    },
+    [71501500] = { -- Toadstomper
+        criteria=69723,
+        quest=82561,
+        npc=207803,
+        vignette=6084,
+        note="UNKNOWN LOCATION. Objective of {questname:76588}, so presumably in the NE near the keyflames",
+    },
+    [73001500] = { -- Finclaw Bloodtide
+        criteria=69727,
+        quest=82564,
+        npc=207780, -- also 220492?
+        loot={},
+        vignette=6085,
+        note="UNKNOWN LOCATION. Objective of {questname:76588}, so presumably in the NE near the keyflames",
+    },
+    [74501500] = { -- Ravageant
+        criteria=69726,
+        quest=82566,
+        npc=207826,
+        vignette=6124,
+        note="UNKNOWN LOCATION. Objective of {questname:76588}, so presumably in the NE near the keyflames",
+    },
     --[[
     [] = { -- Brineslash
         criteria=69718,
@@ -330,39 +359,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=220159,
         vignette=6075,
     },
-    [] = { -- Crazed Cabbage Smacker
-        criteria=69720,
-        quest=82558,
-        npc=206514,
-        vignette=6120,
-        note="Objective of 76588, so presumably in the NE near the keyflames"
-    },
-    [] = { -- Toadstomper
-        criteria=69723,
-        quest=82561,
-        npc=207803,
-        vignette=6084,
-        note="Objective of 76588, so presumably in the NE near the keyflames"
-    },
     [] = { -- Parasidious
         criteria=69725,
         quest=82563,
         npc=206977,
         vignette=6361,
-    },
-    [] = { -- Ravageant
-        criteria=69726,
-        quest=82566,
-        npc=207826,
-        vignette=6124,
-    },
-    [] = { -- Finclaw Bloodtide
-        criteria=69727,
-        quest=82564,
-        npc=207780, -- also 220492?
-        loot={}
-        vignette=6085,
-        note="Objective of 76588, so presumably in the NE near the keyflames"
     },
     --]]
 }, {
