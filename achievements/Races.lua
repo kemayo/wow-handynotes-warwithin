@@ -68,14 +68,14 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     -- [32937483] = Race(, {}, {}), --
     -- [62164601] = Race(, {}, {}), -- The Wold Ways
     -- [53486422] = Race(, {}, {}), -- Basin Bypass
-    -- [] = Race(, {}, {}), --
+    -- [38574346] = Race(, {}, {}), -- Storm's Watch Survey
     -- [] = Race(, {}, {}), --
     -- [] = Race(, {}, {}), --
 })
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     -- quest, {achievements}, {currencies}
     -- [42232744] = Race(, {}, {}), -- Ringing Deeps Ramble
-    -- [52474686] = Race(, {}, {}), --
+    -- [52474686] = Race(, {}, {}), -- Cataract River Cruise
     -- [40861131] = Race(, {}, {}), -- Earthenworks Weave
     -- [63557513] = Race(, {}, {}), -- Opportunity Point Amble
     -- [] = Race(, {}, {}), --
