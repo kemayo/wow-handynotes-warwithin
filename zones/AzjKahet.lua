@@ -109,6 +109,43 @@ ns.RegisterPoints(ns.AZJKAHET, {
     levels=true,
 })
 
+-- Smelling History
+ns.RegisterPoints(ns.AZJKAHET, {
+    -- [] = {criteria=68818,}, -- Strands of Memory
+    -- [] = {criteria=68971,}, -- Ethos of War, Part 1
+    [66693128] = {criteria=68980,}, -- Ethos of War, Part 2
+    -- [] = {criteria=68981,}, -- Ethos of War, Part 3
+    -- [] = {criteria=68982,}, -- Ethos of War, Part 4
+    -- [] = {criteria=68984,}, -- Queen Xekatha
+    -- [] = {criteria=68985,}, -- Queen Anub'izek
+    -- [] = {criteria=68986,}, -- Queen Zaltra
+    -- [] = {criteria=68987,}, -- Treatise on Forms: Sages
+    -- [] = {criteria=68988,}, -- Treatise on Forms: Skitterlings
+    -- [] = {criteria=69446,}, -- Treatise on Forms: Lords
+    -- [] = {criteria=69447,}, -- Treatise on Forms: Ascended
+}, {
+    achievement=40542,
+    texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
+    minimap=true,
+    levels=true,
+    active=ns.conditions.AuraActive(456122), -- Polymorphic Translation: Nerubian
+    note="Drink {item:225784:Potion of Polymorphic Translation Nerubian} first",
+})
+
+-- Bookworm
+ns.RegisterPoints(ns.AZJKAHET, {
+    -- [] = {criteria=68983,}, -- Entomological Essay on Grubs, Volume 1
+    -- [] = {criteria=68989,}, -- Entomological Essay on Grubs, Volume 2
+    -- [] = {criteria=68990,}, -- Entomological Essay on Grubs, Volume 3
+}, {
+    achievement=40629,
+    texture=ns.atlas_texture("profession", {r=1, g=0, b=1}),
+    minimap=true,
+    levels=true,
+    active=ns.conditions.AuraActive(456122), -- Polymorphic Translation: Nerubian
+    note="Drink {item:225784:Potion of Polymorphic Translation Nerubian} first",
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.AZJKAHET, {
