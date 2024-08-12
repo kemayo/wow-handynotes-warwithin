@@ -171,16 +171,6 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         -- tameable=true, -- wasp
         vignette=6112,
     },
-    [30915238] = { -- Kereke
-        criteria=68227,
-        quest=82204,
-        npc=222378,
-        loot={
-            226111, -- Arakkoan Ritual Staff
-            226113, -- Kereke's Flourishing Sabre
-        },
-        vignette=6215,
-    },
     [57003460] = { -- Warphorn
         criteria=68213,
         quest=81894,
@@ -225,6 +215,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={
             223356, -- Shoulderpads of the Steamsurger
             223357, -- Spaulders of the Steamsurger
+            -- 223358, -- Mantle of the Steamsurger (name matches, but not listed?)
             223359, -- Epaulets of the Steamsurger
         },
         vignette=6043,
@@ -289,24 +280,6 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         -- tameable=true, -- blood beast
         vignette=6053,
     },
-    [26005400] = { -- Zovex
-        -- [30605260]
-        criteria=68226,
-        quest=82203,
-        npc=219284,
-        loot={
-            226117, -- Dalaran Guardian's Arcanotool
-            226118, -- Arcane Prisoner's Puncher
-            226119, -- Arcane Sharpshooter's Crossbow
-        },
-        vignette=6058,
-    },
-    [26005401] = { -- Rotfist
-        criteria=68228,
-        quest=82205,
-        npc=222380,
-        vignette=6216,
-    },
     [36477505] = { -- Rustul Titancap
         criteria=68210,
         quest=78619,
@@ -345,6 +318,42 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         quest=81922,
         npc=220883,
         vignette=6113,
+    },
+    -- Violet Hold prisoners:
+    -- These all technically spawn exactly at 30915238
+    [29915238] = { -- Kereke
+        criteria=68227,
+        quest=82204,
+        npc=222378,
+        loot={
+            226111, -- Arakkoan Ritual Staff
+            226113, -- Kereke's Flourishing Sabre
+        },
+        vignette=6215,
+        note="Violet Hold Prisoner",
+    },
+    [30915238] = { -- Zovex
+        criteria=68226,
+        quest=82203,
+        npc=219284,
+        loot={
+            226117, -- Dalaran Guardian's Arcanotool
+            226118, -- Arcane Prisoner's Puncher
+            226119, -- Arcane Sharpshooter's Crossbow
+        },
+        vignette=6058,
+        note="Violet Hold Prisoner",
+    },
+    [31915238] = { -- Rotfist
+        criteria=68228,
+        quest=82205,
+        npc=222380,
+        loot={
+            -- Going by the name, but not currently in the drops on wowhead...
+            226112, -- Rotfist Flesh Carver
+        },
+        vignette=6216,
+        note="Violet Hold Prisoner",
     },
 }, {
     achievement=40435, -- Adventurer
