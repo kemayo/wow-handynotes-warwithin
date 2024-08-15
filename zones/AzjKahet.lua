@@ -95,6 +95,16 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
     parent=true, levels=true, translate={[2256]=true},
 })
 
+ns.RegisterPoints(ns.AZJKAHET, {
+    [34076105] = {
+        label="Concealed Contraband",
+        quest=82525,
+        loot={},
+        level=74,
+        path={33846068, 33796026, 34015980, 34365949, 35555918},
+    },
+})
+
 -- Itsy Bitsy Spider
 ns.RegisterPoints(ns.AZJKAHET, {
     -- [] = {criteria=68972, quest=nil}, -- Webster
