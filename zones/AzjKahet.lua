@@ -49,12 +49,14 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6282,
         note="Hanging under the bridge",
     },
-    -- UNKNOWN LOCATION
-    [85008900] = { -- Silk-spun Supplies
+    [67492754] = { -- Silk-spun Supplies
+        -- Wasn't around for ages; despawn-when-looted?
         criteria=69647,
         quest=82719,
-        loot={},
-        note="UNKNOWN LOCATION",
+        loot={
+            224828, -- Weavercloth
+            224441, -- Weavercloth Bandage
+        },
     },
 }, {
     achievement=40828,
