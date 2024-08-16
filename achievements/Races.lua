@@ -95,7 +95,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     -- [71343636] = Race(, {}, {}), -- Rak-Ahat Rush
     -- [23814835] = Race(, {}, {}), -- Pit Plunge
     -- [52943618] = Race(, {}, {}), -- The Weaver's Wing
-    -- [] = Race(, {}, {}), --
+    -- [40183220] = Race(, {}, {}), -- Siegehold Scuttle
     -- [] = Race(, {}, {}), --
 })
 ns.RegisterPoints(ns.CITYOFTHREADS, {
