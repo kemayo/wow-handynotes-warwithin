@@ -33,11 +33,21 @@ ns.RegisterPoints(2312, { -- Mycomancer Cavern
     achievement=40808, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- Fungal Folly
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40803, -- Discoveries
--- })
+ns.RegisterPoints(2249, { -- Fungal Folly
+    [32737407] = {quest=83671, currency=2815}, -- Resonance Crystals
+    [58644691] = { -- Secret-Dredger's Gauntlets
+        quest=83702, loot={211032}, note="May need to jump down to this",
+        path={55844465, 53394431, 54175113}
+    },
+    [53324147] = { -- Snake Oil
+        quest=83690, loot={226003}, note="Bounce up",
+        path={55744326, 55844465},
+    },
+    [49563598] = {quest=83452, loot={{225556, toy=true}}}, -- Ancient Construct
+    [34406546] = {quest=83689, loot={226003}, note="Under the waterfall"}, -- Snake Oil
+}, STURDY{
+    achievement=40803, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- Kriegval's Rest
 --     -- [] = {quest=, loot={}}, --
