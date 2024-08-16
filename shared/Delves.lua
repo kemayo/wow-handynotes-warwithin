@@ -49,11 +49,14 @@ ns.RegisterPoints(2249, { -- Fungal Folly
     achievement=40803, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- Kriegval's Rest
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40807, -- Discoveries
--- })
+ns.RegisterPoints(2250, { -- Kriegval's Rest
+    [46241972] = {quest=83665, currency=2815}, -- Resonance Crystals
+    [62155287] = {quest=83698, loot={211029}, path={62185467, 63965416,}, note="Jump up the junk"}, -- Secret-Dredger's Helm
+    [77447010] = {quest=83683, loot={226005}}, -- Ancient Tool
+    [69968521] = {quest=83666, currency=2815}, -- Resonance Crystals
+}, STURDY{
+    achievement=40807, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- Nightfall Sanctum
 --     -- [] = {quest=, loot={}}, --
