@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v14
+
+* Azj-Kahet: found Silk-Spun Supplies, Concealed Contraband
+* Delves: Kriegval's Rest, Fungal Folly
+
 ## Changed in v13
 
 * Isle of Dorn: consolidated the Violet Hold Prisoner nodes for better display
