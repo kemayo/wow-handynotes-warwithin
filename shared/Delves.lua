@@ -76,11 +76,14 @@ ns.RegisterPoints(2250, { -- Kriegval's Rest
 --     achievement=40811, -- Discoveries
 -- })
 
--- ns.RegisterPoints(, { -- The Dread Pit
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40812, -- Discoveries
--- })
+ns.RegisterPoints(2302, { -- The Dread Pit
+    [41124548] = {quest=83677, loot={226001}, note="Behind rocks"}, -- Pure Gold Stein
+    [57465613] = {quest=83658, currency=2815}, -- Resonance Crystals
+    [57852763] = {quest=83678, loot={226005}}, -- Ancient Tool
+    [36291664] = {quest=83659, currency=2815}, -- Resonance Crystals
+}, STURDY{
+    achievement=40812, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- The Sinkhole
 --     -- [] = {quest=, loot={}}, --
