@@ -3,6 +3,7 @@ local myname, ns = ...
 local STURDY = ns.nodeMaker{
     lable="Sturdy Chest",
     group="delves",
+    minimap=true,
 }
 
 ns.RegisterPoints(2269, { -- Earthcrawl Mines
