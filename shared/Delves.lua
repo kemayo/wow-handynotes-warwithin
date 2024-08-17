@@ -100,8 +100,11 @@ ns.RegisterPoints(2250, { -- Kriegval's Rest
 --     achievement=40815, -- Discoveries
 -- })
 
--- ns.RegisterPoints(, { -- The Waterworks
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40816, -- Discoveries
--- })
+ns.RegisterPoints(2251, { -- The Waterworks
+    [49902459] = {quest=83684, loot={226002}}, -- Expensive-Looking Find
+    [44383823] = {quest=83650, loot={226131}}, -- Deployable Wind-Wrangling Spire
+    [47925350] = {quest=83667, currency=2815}, -- Resonance Crystals
+    [49577916] = {quest=83456, loot={221754}}, -- Ringing Deeps Ingot
+}, STURDY{
+    achievement=40816, -- Discoveries
+})
