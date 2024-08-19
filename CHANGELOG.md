@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v15
+
+* Delves: The Waterworks, The Dread Pit
+* Show delve chests on the minimap as well
+
 ## Changed in v14
 
 * Azj-Kahet: found Silk-Spun Supplies, Concealed Contraband
