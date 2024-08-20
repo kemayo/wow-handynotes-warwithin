@@ -318,6 +318,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69637,
         quest=81633,
         npc=220285,
+        loot={
+            {223501, mount=2205}, -- Regurgitated Mole Reins
+        },
         vignette=6110,
         note="UNKNOWN LOCATION",
     },
