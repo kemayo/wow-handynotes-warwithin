@@ -62,7 +62,7 @@ local Race = ns.Class{
             return self._loot[self._uiMapID]
         end,
         parent=function(self)
-            return self._uiMapID == ns.DORNOGAL
+            return self._uiMapID == ns.DORNOGAL or self._uiMapID == ns.CITYOFTHREADS
         end,
     },
 }
@@ -98,14 +98,14 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [38976136] = Race(80260, {20401, 20404, 20407}, {2963, 2969, 2975}), -- Mereldar Meander
     [54131740] = Race(80261, {20410, 20413, 20416}, {2964, 2670, 2976}), -- Velhan's Venture
 })
+ns.RegisterPoints(ns.CITYOFTHREADS, {
+    [27010793] = Race(80277, {20421, 20424, 20427}, {2977, 2983, 2989}), -- City of Threads Twist
+})
 ns.RegisterPoints(ns.AZJKAHET, {
     -- quest, {achievements}, {currencies}
-    -- [71343636] = Race(, {}, {}), -- Rak-Ahat Rush
-    -- [23814835] = Race(, {}, {}), -- Pit Plunge
-    -- [52943618] = Race(, {}, {}), -- The Weaver's Wing
-    -- [40183220] = Race(, {}, {}), -- Siegehold Scuttle
-    -- [] = Race(, {}, {}), --
-})
-ns.RegisterPoints(ns.CITYOFTHREADS, {
-    -- [27010793] = Race(, {}, {}), -- City of Threads Twist
+    [77927964] = Race(80278, {20431, 20434, 20437}, {2978, 2984, 2990}), -- Maddening Deep Dip
+    [52943618] = Race(80279, {20441, 20444, 20447}, {2979, 2985, 2991}), -- The Weaver's Wing
+    [71343636] = Race(80280, {20450, 20453, 20456}, {2980, 2986, 2992}), -- Rak-Ahat Rush
+    [23814835] = Race(80281, {20459, 20462, 20465}, {2981, 2987, 2993}), -- Pit Plunge
+    [40183220] = Race(80282, {20468, 20471, 20474}, {2982, 2988, 2994}), -- Siegehold Scuttle
 })
