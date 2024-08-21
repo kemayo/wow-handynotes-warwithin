@@ -20,7 +20,7 @@ Items that you've already collected and mobs you've already killed won't be disp
 
 You can right-click on any treasure node and hide it, if you just don't want to see that one. If you have [TomTom](https://www.curseforge.com/wow/addons/tomtom) installed, you can also add a waypoint for that node.
 
-To edit the settings, visit the HandyNotes config panel, expand the "Plugins" section, and click on "Dragonflight". You can then choose which treasures to show, and whether to show ones you've already found.
+To edit the settings, visit the HandyNotes config panel, expand the "Plugins" section, and click on "War Within". You can then choose which treasures to show, and whether to show ones you've already found.
 
 ## Want to help?
 
