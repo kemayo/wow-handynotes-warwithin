@@ -91,12 +91,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 })
 ns.RegisterPoints(ns.HALLOWFALL, {
     -- quest, {achievements}, {currencies}
-    -- [72783842] = Race(, {}, {}), -- Dunelle's Detour
-    -- [38976136] = Race(, {}, {}), -- Mereldar Meander
-    -- [41436725] = Race(, {}, {}), -- Light's Redoubt Descent
-    -- [59196894] = Race(, {}, {}), -- Tenir's Traversal
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+    [72783842] = Race(80256, {20365, 20368, 20371}, {2959, 2965, 2971}), -- Dunelle's Detour
+    [59196894] = Race(80257, {20374, 20377, 20380}, {2960, 2966, 2972}), -- Tenir's Traversal
+    [41436725] = Race(80258, {20383, 20386, 20389}, {2961, 2967, 2973}), -- Light's Redoubt Descent
+    [60412602] = Race(80259, {20392, 20395, 20398}, {2962, 2968, 2974}), -- Stillstone Slalom
+    [38976136] = Race(80260, {20401, 20404, 20407}, {2963, 2969, 2975}), -- Mereldar Meander
+    [54131740] = Race(80261, {20410, 20413, 20416}, {2964, 2670, 2976}), -- Velhan's Venture
 })
 ns.RegisterPoints(ns.AZJKAHET, {
     -- quest, {achievements}, {currencies}
