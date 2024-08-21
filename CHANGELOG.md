@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v16
+
+* Locations and timing-display for all the races
+* Add Regurgitated Mole Reins to Lurker of the Deeps based on the mount journal
+
 ## Changed in v15
 
 * Delves: The Waterworks, The Dread Pit
