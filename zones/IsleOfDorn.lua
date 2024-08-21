@@ -8,6 +8,7 @@ Earthern coffer 6230
 
 Worldsoul Memory
 55627771
+51212917
 ]]
 
 -- Treasures

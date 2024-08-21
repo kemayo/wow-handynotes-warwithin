@@ -2,6 +2,9 @@ local myname, ns = ...
 
 -- TODO: this could be greatly simplified if I properly add multiple-achievement support to core...
 
+-- Currencies are all available from https://wago.tools/db2/CurrencyTypes
+-- They're named in the format `11 Z[zone-number] R[race-number]`
+
 -- local function extend(t1, t2)
 --     tAppendAll(t1, t2)
 --     return t1
@@ -58,19 +61,24 @@ local Race = ns.Class{
         loot=function(self)
             return self._loot[self._uiMapID]
         end,
+        parent=function(self)
+            return self._uiMapID == ns.DORNOGAL
+        end,
     },
 }
 
 -- lines with a ? need their currency verified
 
+ns.RegisterPoints(ns.DORNOGAL, {
+    [43471165] = Race(80219, {20257, 20260, 20263}, {2923, 2929, 2935}), -- Dornogal Drift
+})
 ns.RegisterPoints(ns.ISLEOFDORN, {
     -- quest, {achievements}, {currencies}
-    -- [32937483] = Race(, {}, {}), --
-    -- [62164601] = Race(, {}, {}), -- The Wold Ways
-    -- [53486422] = Race(, {}, {}), -- Basin Bypass
-    -- [38574346] = Race(, {}, {}), -- Storm's Watch Survey
-    -- [] = Race(, {}, {}), --
-    -- [] = Race(, {}, {}), --
+    [38574346] = Race(80220, {20266, 20269, 20272}, {2924, 2930, 2936}), -- Storm's Watch Survey
+    [53486422] = Race(80221, {20275, 20278, 20281}, {2925, 2931, 2937}), -- Basin Bypass
+    [62164601] = Race(80222, {20284, 20287, 20290}, {2926, 2932, 2938}), -- The Wold Ways
+    [58332485] = Race(80223, {20293, 20296, 20299}, {2927, 2933, 2938}), -- Thunderhead Trail
+    [32937483] = Race(80224, {20302, 20305, 20308}, {2928, 2934, 2940}), -- Orecreg's Doglegs
 })
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     -- quest, {achievements}, {currencies}
