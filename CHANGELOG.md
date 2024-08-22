@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v17
+
+* Support Map Pin Enhanced for waypoints
+
 ## Changed in v16
 
 * Locations and timing-display for all the races
