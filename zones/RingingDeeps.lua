@@ -314,7 +314,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="In cave",
         path=67056796,
     },
-    [12009000] = { -- Lurker of the Deeps
+    [60717630] = { -- Lurker of the Deeps
         criteria=69637,
         quest=81633,
         npc=220285,
@@ -322,7 +322,14 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             {223501, mount=2205}, -- Regurgitated Mole Reins
         },
         vignette=6110,
-        note="UNKNOWN LOCATION",
+        note="Pull 5 levers across the zone at the same time to summon; they stay activated for ~10 seconds, so you'll need a group",
+        related={
+            [49470882] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [53912530] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [57612358] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [59079239] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [62854464] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+        },
     },
 }, {
     achievement=40837, -- Adventurer
