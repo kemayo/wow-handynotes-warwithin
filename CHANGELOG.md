@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v19
+
+* Isle of Dorn: lots of new loot
+
 ## Changed in v18
 
 * Hide the Turtle's Thanks treasure in Dornogal before it's actually present
