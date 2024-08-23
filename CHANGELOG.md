@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v20
+
+* Ringing Deeps: Lurker of the Deeps has been found by the secret-finding discord
+
 ## Changed in v19
 
 * Isle of Dorn: lots of new loot
