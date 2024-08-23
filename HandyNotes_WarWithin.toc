@@ -3,6 +3,7 @@
 ## Notes: Where are the hidden treasures in the War Within?
 ## Author: Kemayo
 ## Version: @project-version@
+## IconTexture: Interface\Icons\Ability_Spy
 ## DefaultState: enabled
 ## X-Category: Map
 ## X-eMail: kemayo @ gmail DOT com
