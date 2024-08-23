@@ -2,6 +2,7 @@ local myname, ns = ...
 
 --[[
 notes:
+Arrival post-intro is 83622
 
 Earthern coffer 6230
 38523951 - in cave from 36354156
@@ -146,6 +147,7 @@ ns.RegisterPoints(ns.DORNOGAL, {
         criteria=68198,
         quest=82716, -- final!, also 82255 when treasure spawns
         loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        requires=ns.conditions.QuestComplete(79586), -- moves here
         note="Talk to the turtle to spawn the treasure",
         vignette=6246, -- Dalaran Sewer Turtle, then 6579 Turtle's Thanks
         parent=true,
