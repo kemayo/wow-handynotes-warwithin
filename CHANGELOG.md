@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v18
+
+* Hide the Turtle's Thanks treasure in Dornogal before it's actually present
+
 ## Changed in v17
 
 * Support Map Pin Enhanced for waypoints
