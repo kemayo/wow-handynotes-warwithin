@@ -7,11 +7,11 @@ local STURDY = ns.nodeMaker{
 }
 
 ns.RegisterPoints(2269, { -- Earthcrawl Mines
-    [45341512] = {quest=83440, currency=761},
+    [45341512] = {quest=83440, currency=2815}, -- Resonance Crystals
     [43522692] = {quest=83438, loot={226002}}, -- Expensive-Looking Find
     [32824004] = {quest=83451, loot={221756}}, -- Vial of Kaheti Oils
-    [36293302] = {quest=83441, loot={211062}, note="Jump down from above, onto the crane"}, -- Treasure-Seeker's Shawl
-    [53158208] = {quest=83439, loot={226109}}, -- Squirming Swarm Sac
+    [36293302] = {quest=83441, loot={211062, 211033}, note="Jump down from above, onto the crane"}, -- Treasure-Seeker's Shawl, Secret-Dredger's Legguards
+    [53158208] = {quest=83439, loot={226109, 226107}}, -- Squirming Swarm Sac, Homebrewed Blink Vial
 }, STURDY{
     achievement=40806, -- Discoveries
 })
@@ -40,12 +40,12 @@ ns.RegisterPoints(2249, { -- Fungal Folly
         quest=83702, loot={211032}, note="May need to jump down to this",
         path={55844465, 53394431, 54175113}
     },
-    [53324147] = { -- Snake Oil
-        quest=83690, loot={226003}, note="Bounce up",
+    [53324147] = { -- Snake Oil, Ancient Tool
+        quest=83690, loot={226003, 226005}, note="Bounce up",
         path={55744326, 55844465},
     },
     [49563598] = {quest=83452, loot={{225556, toy=true}}}, -- Ancient Construct
-    [34406546] = {quest=83689, loot={226003}, note="Under the waterfall"}, -- Snake Oil
+    [34406546] = {quest=83689, loot={226003, 226001}, note="Under the waterfall"}, -- Snake Oil, Pure Gold Stein
 }, STURDY{
     achievement=40803, -- Discoveries
 })
