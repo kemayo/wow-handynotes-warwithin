@@ -30,14 +30,14 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             --
             label="{npc:222941:Pearlescent Shellcrab}",
             color={r=1, g=0.5, b=0.5}, minimap=true,
-            required=ns.conditions.Item(224185), -- Crab-Guiding Branch
+            requires=ns.conditions.Item(224185), -- Crab-Guiding Branch
             note="Chase away all six crabs then return to {npc:222940:Freysworn Letitia}",
         },
         vignette=6210,
     },
     [40655988] = { -- Magical Treasure Chest
         criteria=68199,
-        quest=83243,
+        quest=83243, -- 82212 for giving Lionel crabs
         loot={{224579, pet=3362}}, -- Sapphire Crab
         note="Push {npc:223104:Lionel} into the water, talk to it, then go gather 5x {item:223159:Plump Snapcrab} nearby",
         vignette=6224,
@@ -342,7 +342,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [50876984] = { -- Plaguehart
         criteria=68216,
-        quest=81897,
+        quest=81897, -- also 84026?
         npc=219267,
         loot={
             221213, -- Shawl of the Plagued
