@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [54616373] = { -- 63192331
+    [61521852] = {
         quest=83922,
         loot={226348}, -- Dornogal Seam Ripper
         vignette=6505,

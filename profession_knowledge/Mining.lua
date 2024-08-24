@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [53225301] = { -- 35329153
+    [36647929] = {
         quest=83907,
         loot={226333}, -- Dornogal Chisel
         vignette=6490,

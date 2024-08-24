@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [59286628] = {
+    [58025691] = {
         quest=83859,
         loot={226285}, -- Silver Dornogal Rod
         vignette=6442,

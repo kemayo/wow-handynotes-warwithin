@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [66906192] = {
+    [64795279] = {
         quest=83867,
         loot={226293}, -- Dornogal Spectacles
         vignette=6450,

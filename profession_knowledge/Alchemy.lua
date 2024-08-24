@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [47207040] = { -- or 32456034 or 3061994
+    [32456034] = {
         quest=83840,
         loot={226265}, -- Earthen Iron Powder
         vignette=6425,
@@ -53,7 +53,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [44476052] = { -- 42875725
+    [42875725] = {
         quest=83847,
         loot={226272}, -- Dark Apothecary's Vial
         vignette=6432,
