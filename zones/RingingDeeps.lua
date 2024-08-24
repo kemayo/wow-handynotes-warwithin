@@ -171,13 +171,20 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69634,
         quest=81674,
         npc=220265,
+        loot={
+            221218, -- Reinforced Construct's Greaves
+            221238, -- Pillar of Constructs
+        },
         vignette=6128,
     },
     [41361692] = { -- Charmonger
-        -- wowhead says 60802540 too
         criteria=69632,
         quest=81562,
         npc=220267,
+        loot={
+            221209, -- Flame Trader's Gloves
+            221249, -- Kobold Rodent Squasher
+        },
         vignette=6104,
     },
     [42773508] = { -- King Splash
@@ -212,13 +219,20 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220269,
         loot={
             221205, -- Vest of the River
+            221254, -- Earthshatter Lance
+            221507, -- Earth Golem's Wrap
         },
         vignette=6090,
     },
     [55060843] = { -- Deepflayer Broodmother
         criteria=69636,
-        quest=  80536,
+        quest=80536,
         npc=220286,
+        loot={
+            221254, -- Earthshatter Lance
+            221507, -- Earth Golem's Wrap
+            225999, -- Earthen Adventurer's Tabard
+        },
         note="Flys around anticlockwise",
         route={
             55060843, 53000880, 49560836, 49121007, 45290955, 43790822, 42650871, 44220973, 44331083, 45151312,
@@ -243,18 +257,35 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69629,
         quest=80506,
         npc=220270,
+        loot={
+            221220, -- Basilisk Scale Pauldrons
+            221246, -- Fierce Beast Staff
+            221247, -- Cavernous Critter Shooter
+            221265, -- Charm of the Underground Beast
+        },
         vignette=6079,
     },
     [57903813] = { -- Coalesced Monstrosity
         criteria=69633,
         quest=81511,
         npc=220266,
+        loot={
+            221226, -- Voidtouched Waistguard
+            223006, -- Signet of Dark Horizons
+        },
         vignette=6101,
     },
     [46701209] = { -- Terror of the Forge
         criteria=69628,
         quest=80507,
         npc=220271,
+        loot={
+            221233, -- Deephunter's Bloody Hook
+            221234, -- Tidal Pendant
+            221242, -- Forgeborn Helm
+            221248, -- Deep Terror Carver
+            221255, -- Sharpened Scalepiercer
+        },
         vignette=6081,
         note="Walking in the lava",
     },
@@ -262,6 +293,13 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69635,
         quest=81485,
         npc=220287,
+        loot={
+            221204, -- Spore Giant's Stompers
+            221250, -- Creeping Lasher Machete
+            221253, -- Cultivator's Plant Puncher
+            221264, -- Fungarian Mystic's Cluster
+            223005, -- String of Fungal Fruits
+        },
         vignette=6099,
     },
     [57025480] = { -- Rampaging Blight
@@ -280,6 +318,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69631,
         quest=80574,
         npc=220268,
+        loot={
+            221228, -- Infested Fungal Wristwraps
+            221264, -- Fungarian Mystic's Cluster
+        },
         note="Kill the {npc:220615:Root of Trungal} to spawn",
         path={72534569, 72844444},
         vignette=6126,
@@ -288,6 +330,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69638,
         quest=81652,
         npc=221217,
+        loot={
+            223919, -- Abducted Lawman's Gavel
+            223942, -- Spore-Encrusted Ribbon
+        },
         vignette=6121,
         note="Flies around",
     },
@@ -295,6 +341,13 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69639,
         quest=81648,
         npc=221199,
+        loot={
+            221233, -- Deephunter's Bloody Hook
+            221234, -- Tidal Pendant
+            221248, -- Deep Terror Carver
+            221255, -- Sharpened Scalepiercer
+            223949, -- Dark Depth Stompers
+        },
         vignette=6119,
     },
     [67085262] = { -- Disturbed Earthgorger
