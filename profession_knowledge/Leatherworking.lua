@@ -18,7 +18,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [70702865] = {
+    [68202334] = {
         quest=83898,
         loot={226324}, -- Earthen Lacing Tools
         vignette=6481,
