@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v21
+
+* Ringing Deeps: lots of new loot
+* Delves add some loot variation
+* Isle of Dorn: fix typo that was making the Pearlescent Shellcrabs show up when they shouldn't
+
 ## Changed in v20
 
 * Ringing Deeps: Lurker of the Deeps has been found by the secret-finding discord
