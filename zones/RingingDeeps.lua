@@ -164,6 +164,37 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     minimap=true,
 })
 
+-- Gobblin' with Glublurb
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [44335024] = {
+        label="{npc:227132:Glublurb}",
+        texture=ns.atlas_texture("BuildanAbomination-32x32", {r=0, g=1, b=1}),
+        note="Get {spell:456739:Etheral Vision} from a Glimmering Crystal, then go to the pond to the northwest of it to find a {npc:227138:Ethereal Glimmerling}, and bring it here",
+        route={
+            44305020, 58363360, 59904110,
+            highlightOnly=true, r=1, g=0, b=1,
+        },
+    },
+    [58363360] = {
+        label="{npc:227138:Ethereal Glimmerling}",
+        active=ns.conditions.AuraActive(456739), -- Essence of Awakening
+        atlas="Vehicle-TempleofKotmogu-PurpleBall",
+        note="Take this to {npc:227132:Glublurb}; {spell:456739:Etheral Vision} only lasts 5 minutes, but can be refilled from the crystals",
+        route=44305020,
+    },
+    [59954100] = {
+        label="Glimmering Crystal",
+        spell=456739, -- Ethereal Vision
+        texture=ns.atlas_texture("keyflameon-32x32", {r=0, g=0.5, b=1}),
+        note="Get {spell:456739:Etheral Vision}, then go to the pond to the northwest to find a {npc:227138:Ethereal Glimmerling}",
+        route=44305020,
+    },
+}, {
+    achievement=40614,
+    quest=83623,
+    minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {

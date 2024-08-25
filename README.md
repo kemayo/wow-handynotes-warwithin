@@ -12,6 +12,7 @@ This includes:
 * [Not So Quick Fix](https://www.wowhead.com/achievement=40473/not-so-quick-fix)
 * [Rocked to Sleep](https://www.wowhead.com/achievement=40504/rocked-to-sleep)
 * [Notable Machines](https://www.wowhead.com/achievement=40628/notable-machines)
+* [Gobblin' with Glublurb](https://www.wowhead.com/achievement=40614/gobblin-with-glublurp)
 * Profession knowledge items
 * Chests inside Delves
 * Races for [Khaz Algar Completionist](https://www.wowhead.com/achievement=40354/khaz-algar-completionist-gold)
