@@ -96,7 +96,16 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         level=73,
         vignette=5989,
     },
-    -- [] = {criteria=69700, quest=82005}, -- Sky-Captains' Sunken Cache
+    [45904510] = { -- Sky-Captains' Sunken Cache
+         -- I believe the four captains are random, but the quest ids I got from the four I talked to were 82012, 82026, 82024, and 82025. ~Marthammor
+        criteria=69700,
+        quest=82005,
+        loot={
+            {224554, toy=true}, -- Silver Linin' Scepter
+        },
+        note="Must talk to four captains of the sky ships flying around. You'll know if they're the right captains if they have dialog.",
+        vignette=6181,
+    },
 }, {
     achievement=40848,
 })
