@@ -213,7 +213,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [74082756] = { -- Shallowshell the Clacker
         criteria=68221,
-        quest=81903,
+        quest=81903, -- 84032
         npc=219278,
         loot={
             221224, -- Bouldershell Waistguard
@@ -258,7 +258,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [76403620] = { -- Clawbreaker K'zithix
         -- [80003500]
         criteria=68224,
-        quest=81920,
+        quest=81920, -- 84036
         npc=221128,
         loot={
             223140, -- Formula: Enchant Cloak - Chant of Burrowing Rapidity
@@ -316,7 +316,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [57072279] = { -- Twice-Stinger the Wretched
         criteria=68222,
-        quest=81904,
+        quest=81904, -- 84033
         npc=219271,
         loot={
             221219, -- Silkwing Trousers

@@ -320,7 +320,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6081,
         note="Walking in the lava",
     },
-    [47074696] = { -- Kelpmire
+    [47224696] = { -- Kelpmire
         criteria=69635,
         quest=81485,
         npc=220287,
