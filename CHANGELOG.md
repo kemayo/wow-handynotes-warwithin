@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v23
+
+* Ringing Deeps: added the Gobblin' with Glublurb achievement
+* Isle of Dorn: improve the final display of the Mosswool Flower
+
 ## Changed in v22
 
 * Hallowfall: lots of new loot
