@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v22
+
+* Hallowfall: lots of new loot
+* Fixed the locations for some profession knowledge treasures that had moved since the beta (mostly in Dornogal)
+* Fixed the position of one chest in Kriegval's Rest
+
 ## Changed in v21
 
 * Ringing Deeps: lots of new loot
