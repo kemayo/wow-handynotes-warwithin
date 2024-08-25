@@ -123,27 +123,30 @@ ns.RegisterPoints(ns.AZJKAHET, {
 })
 
 -- Smelling History
-ns.RegisterPoints(ns.AZJKAHET, {
-    -- [] = {criteria=68818,}, -- Strands of Memory
-    -- [] = {criteria=68971,}, -- Ethos of War, Part 1
-    [66693128] = {criteria=68980,}, -- Ethos of War, Part 2
-    -- [] = {criteria=68981,}, -- Ethos of War, Part 3
-    -- [] = {criteria=68982,}, -- Ethos of War, Part 4
-    -- [] = {criteria=68984,}, -- Queen Xekatha
-    -- [] = {criteria=68985,}, -- Queen Anub'izek
-    -- [] = {criteria=68986,}, -- Queen Zaltra
-    -- [] = {criteria=68987,}, -- Treatise on Forms: Sages
-    -- [] = {criteria=68988,}, -- Treatise on Forms: Skitterlings
-    -- [] = {criteria=69446,}, -- Treatise on Forms: Lords
-    -- [] = {criteria=69447,}, -- Treatise on Forms: Ascended
-}, {
+local SMELL = {
     achievement=40542,
     texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
     minimap=true,
     levels=true,
     active=ns.conditions.AuraActive(456122), -- Polymorphic Translation: Nerubian
     note="Drink {item:225784:Potion of Polymorphic Translation Nerubian} first",
-})
+}
+ns.RegisterPoints(ns.AZJKAHET, {
+    [62973119] = {criteria=68971,}, -- Ethos of War, Part 1
+    [66693128] = {criteria=68980,}, -- Ethos of War, Part 2
+    [48862399] = {criteria=68981, note="Inside the building"}, -- Ethos of War, Part 3
+    [43252557] = {criteria=68982, note="Inside the building"}, -- Ethos of War, Part 4
+}, SMELL)
+ns.RegisterPoints(ns.CITYOFTHREADS, {
+    [27695460] = {criteria=68818, note="Inside the building"}, -- Strands of Memory
+    [38263554] = {criteria=68984, note="Inside Skein of the Dynasty"}, -- Queen Xekatha
+    [37113274] = {criteria=68985, note="Inside Skein of the Dynasty"}, -- Queen Anub'izek
+    [38413225] = {criteria=68986, note="Inside Skein of the Dynasty"}, -- Queen Zaltra
+    [38193902] = {criteria=68987, note="Inside the House of Scrolls, hidden behind the counter"}, -- Treatise on Forms: Sages
+    [38553772] = {criteria=68988, note="Inside the House of Scrolls"}, -- Treatise on Forms: Skitterlings
+    [23645109] = {criteria=69446, note="Inside the building, enter on the upper level", path=25925136}, -- Treatise on Forms: Lords
+    [77984104] = {criteria=69447, note="Inside the building"}, -- Treatise on Forms: Ascended
+}, SMELL)
 
 -- Bookworm
 ns.RegisterPoints(ns.AZJKAHET, {
