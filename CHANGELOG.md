@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v24
+
+* Azj-Kahet: lots of new loot
+
 ## Changed in v23
 
 * Ringing Deeps: added the Gobblin' with Glublurb achievement
