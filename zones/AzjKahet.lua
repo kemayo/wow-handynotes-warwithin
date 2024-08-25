@@ -150,9 +150,9 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
 
 -- Bookworm
 ns.RegisterPoints(ns.AZJKAHET, {
-    -- [] = {criteria=68983,}, -- Entomological Essay on Grubs, Volume 1
-    -- [] = {criteria=68989,}, -- Entomological Essay on Grubs, Volume 2
-    -- [] = {criteria=68990,}, -- Entomological Essay on Grubs, Volume 3
+    [40103980] = {criteria=68983,}, -- Entomological Essay on Grubs, Volume 1
+    [39794050] = {criteria=68989,}, -- Entomological Essay on Grubs, Volume 2
+    [39104259] = {criteria=68990,}, -- Entomological Essay on Grubs, Volume 3
 }, {
     achievement=40629,
     texture=ns.atlas_texture("profession", {r=1, g=0, b=1}),
