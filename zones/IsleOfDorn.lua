@@ -68,7 +68,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [59622459] = { -- Mosswool Flower
         criteria=68204,
-        quest=83246, -- 82145 when flower spawns, 82251 also when looted
+        quest=82145, -- when flower spawns
         loot={{224450, pet=4527}}, -- Lil' Moss Rosy
         nearby={
             -- In this order: (but no helpful quests)
@@ -80,6 +80,15 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         route={59622459, 59102706, 59752870},
         minimap=true,
         note="Chase {npc:222956:Lost Mosswool} to the flower",
+        vignette=6212,
+    },
+    [59722869] = { -- Mosswool Flower
+        criteria=68204,
+        quest=83246, -- 82251 also when looted
+        loot={{224450, pet=4527}}, -- Lil' Moss Rosy
+        hide_before=ns.conditions.QuestComplete(82145),
+        note="Chase {npc:222956:Lost Mosswool} to the flower; if another player has recently looted if you may have to wait for it to appear",
+        vignette=6238,
     },
     [62574327] = { -- Kobold Pickaxe
         criteria=68205,
