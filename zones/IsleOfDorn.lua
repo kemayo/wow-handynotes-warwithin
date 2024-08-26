@@ -183,7 +183,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         criteria=68229,
         quest=81923,
         npc=221126,
-            loot={
+        loot={
             223922, -- Cinder Pollen Cloak
             223937, -- Honey Deliverer's Leggings
         },
@@ -435,6 +435,12 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [31495529] = { -- Malfunctioning Spire
         quest=81891,
         npc=220068,
+        loot={
+            210931, -- Bismuth
+            210934, -- Aqirite
+            210937, -- Ironclaw Ore
+            210939, -- Null Stone
+        },
         vignette=6073,
     },
     [46003180] = { -- Rowdy Rubble

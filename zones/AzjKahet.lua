@@ -249,6 +249,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         npc=216042,
         loot={
             221212, -- Death Burrower Handguards
+            221237, -- Lamentable Vagrant's Lantern
         },
         vignette=6136,
         note="Cave behind the waterfall",
@@ -261,6 +262,8 @@ ns.RegisterPoints(ns.AZJKAHET, {
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221243, -- Slippers of Delirium
+            221248, -- Deep Terror Carver
+            221255, -- Sharpened Scalepiercer
         },
         vignette=6139,
     },
@@ -315,6 +318,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         npc=216051,
         loot={
             221240, -- Nerubian Stagshell Gouger
+            221252, -- Nerubian Slayer's Claymore
             223930, -- Monstrous Chain Pincers
         },
         vignette=6186,
@@ -336,6 +340,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         quest=82077,
         npc=222624,
         loot={
+            223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223923, -- Gilded Cryptlord's Sabatons
         },
@@ -353,6 +358,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         npc=216050,
         loot={
             223915, -- Nerubian Orator's Stiletto
+            223916, -- Nerubian Cutthroat's Reach
             223941, -- Nerubian Cultivator's Girdle
         },
         vignette=6185,
@@ -362,6 +368,7 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         quest=82035,
         npc=216049,
         loot={
+            223006, -- Signet of Dark Horizons
             223931, -- Black Blood Cowl
         },
         vignette=6184,
@@ -371,12 +378,19 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         quest=82034,
         npc=216048,
         loot={
+            223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223917, -- Nerubian Covert's Cloak
             223950, -- Corruption Sifter's Treads
         },
         vignette=6183,
     },
+}, {
+    achievement=40840, -- Adventurer
+    levels=true,
+})
+
+ns.RegisterPoints(ns.AZJKAHET, {
     [63409500] = { -- The One Left
         quest=nil,
         npc=216047,
@@ -384,14 +398,12 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
             221251, -- Bestial Underground Cleaver
+            221265, -- Charm of the Underground Beast
             225998, -- Earthen Adventurer's Cloak
         },
         path=65269328,
     },
-}, {
-    achievement=40840, -- Adventurer
-    levels=true,
-})
+}, {levels=true})
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
     [36404160] = { -- The Groundskeeper
@@ -411,6 +423,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         npc=216039,
         loot={
             221221, -- Venomous Lurker's Greathelm
+            221239, -- Spider Blasting Blunderbuss
             221506, -- Arachnid's Web-Sown Guise
         },
         vignette=6133,
@@ -428,6 +441,8 @@ ns.RegisterPoints(ns.AZJKAHET, {
             {225952, quest=83627}, -- Vial of Tka'ktath's Bloo
             -- {224150, mount=2222}, -- Siesbarg
             221240, -- Nerubian Stagshell Gouger
+            221252, -- Nerubian Slayer's Claymore
+            221263, -- Nerubian Venom-Tipped Dart
         },
         vignette=6265,
         note="Begins a quest chain leading to the mount {item:224150:Siesbarg}",

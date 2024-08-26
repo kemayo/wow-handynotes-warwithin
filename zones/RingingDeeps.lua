@@ -292,6 +292,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             221220, -- Basilisk Scale Pauldrons
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
+            221251, -- Bestial Underground Cleaver
             221265, -- Charm of the Underground Beast
         },
         vignette=6079,
@@ -351,7 +352,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220268,
         loot={
             221228, -- Infested Fungal Wristwraps
+            221253, -- Cultivator's Plant Puncher
             221264, -- Fungarian Mystic's Cluster
+            223005, -- String of Fungal Fruits
         },
         note="Kill the {npc:220615:Root of Trungal} to spawn",
         path={72534569, 72844444},
@@ -362,6 +365,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=81652,
         npc=221217,
         loot={
+            223918, -- Specter Stalker's Shotgun
             223919, -- Abducted Lawman's Gavel
             223942, -- Spore-Encrusted Ribbon
         },
@@ -385,6 +389,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69640,
         quest=80003,
         npc=218393,
+        loot={
+            221237, -- Lamentable Vagrant's Lantern
+            223926, -- Earthgorger's Chain Bib
+            223943, -- Cord of the Earthbreaker
+        },
         vignette=6031,
     },
     [66716881] = { -- Deathbound Husk
@@ -404,6 +413,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220285,
         loot={
             {223501, mount=2205}, -- Regurgitated Mole Reins
+            221233, -- Deephunter's Bloody Hook
+            221234, -- Tidal Pendant
+            221248, -- Deep Terror Carver
+            221255, -- Sharpened Scalepiercer
         },
         vignette=6110,
         note="Pull 5 levers across the zone at the same time to summon; they stay activated for ~10 seconds, so you'll need a group",
