@@ -4,6 +4,9 @@ local myname, ns = ...
 notes:
 Arrival post-intro is 83622
 
+Magni and Merrix chat after restoration: 84815
+Alleria and Anduin chat after restoration: 84335
+
 Earthern coffer 6230
 38523951 - in cave from 36354156
 
