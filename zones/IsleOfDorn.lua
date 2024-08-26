@@ -222,6 +222,8 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             221224, -- Bouldershell Waistguard
             221233, -- Deephunter's Bloody Hook
             221255, -- Sharpened Scalepiercer
+            221234, -- Tidal Pendant
+            221248, -- Deep Terror Carver
         },
         vignette=6052,
     },
@@ -286,6 +288,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         quest=81907,
         npc=219266,
         vignette=6049,
+        loot={
+            221208, -- Unseen Cutthroat's Tunic
+            221235, -- Dark Agent's Cloak
+        },
     },
     [73004010] = { -- Matriarch Charfuria
         criteria=68231,
@@ -294,6 +300,9 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={
             223948, -- Stubborn Wolf's Greathelm
             221247, -- Cavernous Critter Shooter
+            221251, -- Bestial Underground Cleaver
+            221265, -- Charm of the Underground Beast
+            221246, -- Fierce Beast Staff
         },
         vignette=6114,
     },
@@ -314,6 +323,9 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={
             221222, -- Water-Imbued Spaulders
             221234, -- Tidal Pendant
+            221248, -- Deep Terror Carver
+            221255, -- Sharpened Scalepiercer
+            221233, -- Deephunter's Bloody Hook
         },
         vignette=6048,
     },
@@ -372,6 +384,8 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         npc=220883,
         loot={
             223929, -- Honey Sweetener's Squeezers
+            223921, -- Ever-Oozing Signet
+            223920, -- Slime Deflecting Stopper
         },
         vignette=6113,
     },
