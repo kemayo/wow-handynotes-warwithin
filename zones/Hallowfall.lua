@@ -495,6 +495,16 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         vignette=6124,
         note="Objective of {questname:76588}",
     },
+    [61403220] = { -- Parasidious
+        criteria=69725,
+        quest=82563,
+        npc=206977,
+        loot={
+            221250, -- Creeping Lasher Machete
+        },
+        vignette=6361,
+        note="Objective of {questname:76588}",
+    },
     -- UNKNOWN LOCATION
     --[[
     [] = { -- Brineslash
@@ -502,12 +512,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=80486,
         npc=220159,
         vignette=6075,
-    },
-    [] = { -- Parasidious
-        criteria=69725,
-        quest=82563,
-        npc=206977,
-        vignette=6361,
     },
     --]]
 }, {
