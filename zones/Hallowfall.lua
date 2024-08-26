@@ -263,6 +263,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223924, -- Chitin-Inscribed Vest
         },
         vignette=5958,
+        note="Objective of {questname:76588}",
     },
     [44011639] = { -- The Perchfather
         criteria=69711,
@@ -332,6 +333,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82565,
         npc=220771,
         vignette=6123,
+        note="Objective of {questname:76588}",
     },
     [63643204] = { -- Deathpetal
         criteria=69721,
@@ -342,6 +344,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223927, -- Vinewrapped Leather Tunic
         },
         vignette=6078,
+        note="Objective of {questname:76588}",
     },
     [72136436] = { -- Deepfiend Azellix
         criteria=69703,
@@ -363,6 +366,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223936, -- Shadow Bog Trousers
         },
         vignette=6122,
+        note="Objective of {questname:76588}",
     },
     [36687172] = { -- Funglour
         criteria=69707,
@@ -438,6 +442,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=6125,
         --tameable=true, -- hopper
+        note="Objective of {questname:76588}",
     },
     [57304858] = { -- Pride of Beledar
         criteria=69715,
@@ -603,5 +608,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=nil, -- 76588 defender of the flame
         npc=214905,
         vignette=5984,
+        note="Objective of {questname:76588}",
     },
 })
