@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v26
+
+* Hallowfall: Parasidious found (only one more adventurer rare remains missing!)
+* More loot across all zones
+* Fix group-names not showing properly in the main HandyNotes settings dialog
+
 ## Changed in v25
 
 * Isle of Dorn: more loot for rares, thank Preheat!
