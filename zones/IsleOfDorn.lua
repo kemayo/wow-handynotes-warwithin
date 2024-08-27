@@ -51,13 +51,14 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={224373}, -- Waterlord's Iridescent Gem
         note="Talk to {npc:222847:Weary Water Elemental}, then go fetch its {item:221504:Elemental Pearl}",
         nearby={53051857, label="{item:221504:Elemental Pearl}"},
+        vignette=6208, -- Weary Water Elemental
     },
     [55006564] = { -- Mushroom Cap
         criteria=68202,
         quest=83245, -- 82142 after giving cap, 82253 as well on loot
         loot={210796}, -- Mycobloom
         note="Talk to {npc:222894:U'llort the Self-Exiled} then fetch a {item:221550:Boskroot Cap} from the nearby woods",
-            vignette=6209,
+        vignette=6209,
     },
     [38074358] = { -- Thak's Treasure
         criteria=68203,
@@ -116,20 +117,21 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         path=47316149,
         note="At the bottom of the cave; despawns for a while after someone loots it, so you might need to wait around",
-        vignette=2248,
+        vignette=6274,
     },
     [56226094] = { -- Infused Cinderbrew
         criteria=68208,
         quest=82714,
         loot={224263}, -- Infused Fire-Honey Milk
-        note="On the desk; despawns for a while after someone loots it, so you might need to wait around"
+        note="On the desk; despawns for a while after someone loots it, so you might need to wait around",
+        vignette=6292,
     },
     [59122347] = { -- Web-Wrapped Axe
         criteria=68209,
         quest=82715,
         loot={224290}, -- Storm Defender's Axe
         note="Inside the building; despawns for a while after someone loots it, so you might need to wait around",
-        vignette=2248,
+        vignette=6293,
     },
 }, {
     achievement=40434, -- Treasures

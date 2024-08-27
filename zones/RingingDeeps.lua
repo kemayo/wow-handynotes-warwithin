@@ -323,7 +323,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     },
     [47224696] = { -- Kelpmire
         criteria=69635,
-        quest=81485,
+        quest=81485, -- 84047
         npc=220287,
         loot={
             221204, -- Spore Giant's Stompers
