@@ -65,11 +65,14 @@ ns.RegisterPoints(2250, { -- Kriegval's Rest
 --     achievement=40809, -- Discoveries
 -- })
 
--- ns.RegisterPoints(, { -- Skittering Breach
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40810, -- Discoveries
--- })
+ns.RegisterPoints(2310, { -- Skittering Breach
+    [50796572] = {quest=83679, loot={226001}}, -- Pure Gold Stein
+    [27362648] = {quest=83660, currency=2815}, -- Resonance Crystals
+    [56112421] = {quest=83696, loot={211031}}, -- Secret-Dredger's Sabatons
+    [66761466] = {quest=83680, loot={226004}}, -- Olden Text
+}, STURDY{
+    achievement=40810, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- Tak-Rethan Abyss
 --     -- [] = {quest=, loot={}}, --
