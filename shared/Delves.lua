@@ -89,11 +89,14 @@ ns.RegisterPoints(2302, { -- The Dread Pit
     achievement=40812, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- The Sinkhole
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40813, -- Discoveries
--- })
+ns.RegisterPoints(2301, { -- The Sinkhole
+    [52291335] = {quest=83453, loot={221757}, note="At the bottom of the pool"}, -- Gloomfathom Hide
+    [43446070] = {quest=83668, currency=2815}, -- Resonance Crystals
+    [72566119] = {quest=83700, loot={211063}}, -- Long-Lost Choker
+    [48436926] = {quest=83685, loot={226001}}, -- Pure Gold Stein
+}, STURDY{
+    achievement=40813, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- The Spiral Weave
 --     -- [] = {quest=, loot={}}, --
