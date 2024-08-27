@@ -519,6 +519,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82564,
         npc=207780, -- also 220492?
         loot={
+            221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             223925, -- Blood Hungerer's Chestplate
         },
@@ -544,6 +545,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=206977,
         loot={
             221250, -- Creeping Lasher Machete
+            223940, -- Deranged Fungarian's Epaulets
         },
         vignette=6361,
         note="Objective of {questname:76588}",

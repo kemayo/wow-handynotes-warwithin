@@ -342,6 +342,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         loot={
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
+            223917, -- Nerubian Covert's Cloak
             223923, -- Gilded Cryptlord's Sabatons
         },
         vignette=6203,
@@ -413,6 +414,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         loot={
             221214, -- Chitin Chain Headpiece
             221240, -- Nerubian Stagshell Gouger
+            221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
         },
         vignette=6111,
