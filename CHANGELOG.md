@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v28
+
+* Added the Flat Earthen achievment
+* More loot added to rares
+
 ## Changed in v27
 
 * Behavior change: count *exact* items for transmog-collection, rather than just appearance-from-any-item; previous behavior is available as a toggle in the settings
