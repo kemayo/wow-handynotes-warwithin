@@ -81,7 +81,7 @@ ns.RegisterPoints(2310, { -- Skittering Breach
 -- })
 
 ns.RegisterPoints(2302, { -- The Dread Pit
-    [41124548] = {quest=83677, loot={226001}, note="Behind rocks"}, -- Pure Gold Stein
+    [41124548] = {quest=83677, loot={226001, 226003}, note="Behind rocks"}, -- Pure Gold Stein, Snake Oil
     [57465613] = {quest=83658, currency=2815}, -- Resonance Crystals
     [57852763] = {quest=83678, loot={226005}}, -- Ancient Tool
     [36291664] = {quest=83659, currency=2815}, -- Resonance Crystals
@@ -108,8 +108,8 @@ ns.RegisterPoints(2302, { -- The Dread Pit
 -- })
 
 ns.RegisterPoints(2251, { -- The Waterworks
-    [49902459] = {quest=83684, loot={226002}}, -- Expensive-Looking Find
-    [44383823] = {quest=83650, loot={226131}}, -- Deployable Wind-Wrangling Spire
+    [49902459] = {quest=83684, loot={226002, 226005}}, -- Expensive-Looking Find, Ancient Tool
+    [44383823] = {quest=83650, loot={226131, 223287}}, -- Deployable Wind-Wrangling Spire, Atomized Salien Slime
     [47925350] = {quest=83667, currency=2815}, -- Resonance Crystals
     [49577916] = {quest=83456, loot={221754}}, -- Ringing Deeps Ingot
 }, STURDY{
