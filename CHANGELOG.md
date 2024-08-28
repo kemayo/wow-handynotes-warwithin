@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v29
+
+* Delves: added Skittering Breach, The Sinkhole, and Nightfall Sanctum
+* Fix display of skyriding glyphs in Hallowfall and Azj-Kahet
+
 ## Changed in v28
 
 * Added the Flat Earthen achievment
