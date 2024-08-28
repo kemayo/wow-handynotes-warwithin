@@ -99,10 +99,21 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="At the back of the inn; gather the five shards first",
         related={
             [57272196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [44702280] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [39801990] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            --
             [59043804] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
+            [59704080] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
+            --
             [68205316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
+            [67304770] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
+            --
             [57434943] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
-            [62546313] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=0,g=1,b=1}, minimap=true,},
+            [59905300] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
+            --
+            [62546313] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
+            [67106310] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
+            [59279417] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
         },
         vignette=6286,
     },

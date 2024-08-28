@@ -1,5 +1,7 @@
 local myname, ns = ...
 
+-- 83264 for random-drop of 225226 Striated Inkstone
+
 local KNOWLEDGE = {
     note = "This can only be looted once per character.",
     currency=2790,
