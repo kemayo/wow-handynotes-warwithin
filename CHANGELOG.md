@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v30
+
+* Ringing Deeps: added locations for To All The Slimes I Love (hidden by default)
+* Ringing Deeps: give the Spore-Infused Shalewing a route
+* Ringing Deeps: add more locations for the rough shards for the Dusty Prospector's Chest
+* Hallowfall: consolidate some of the close-together Missing Lynx
+
 ## Changed in v29
 
 * Delves: added Skittering Breach, The Sinkhole, and Nightfall Sanctum
