@@ -59,11 +59,14 @@ ns.RegisterPoints(2250, { -- Kriegval's Rest
     achievement=40807, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- Nightfall Sanctum
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40809, -- Discoveries
--- })
+ns.RegisterPoints(2277, { -- Nightfall Sanctum
+    [77783613] = {quest=83688, loot={226005}}, -- Ancient Tool
+    [70914449] = {quest=83670, currency=2815, note="Jump down to this (or use the double-jump power)", path=70834054}, -- Resonance Crystals
+    [39147434] = {quest=83454, loot={221758}}, -- Profaned Tinderbox
+    [40043669] = {quest=83701, loot={219354}, note="Jump down from the ship", path={38654083, 38424814},}, -- Mountain Shaper's Greataxe
+}, STURDY{
+    achievement=40809, -- Discoveries
+})
 
 ns.RegisterPoints(2310, { -- Skittering Breach
     [50796572] = {quest=83679, loot={226001}}, -- Pure Gold Stein
