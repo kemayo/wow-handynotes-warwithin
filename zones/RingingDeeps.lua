@@ -195,6 +195,44 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     minimap=true,
 })
 
+-- To All the Slimes I Love
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [58606920] = {criteria=68670, --[[npc=226626--]]}, -- Spring Mole
+    [51601660] = {criteria=68673, --[[npc=217756--]]}, -- Snake
+    [63805010] = {criteria=68673, --[[npc=217756--]]}, -- Snake
+    [64603380] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [45003100] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [54405080] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [61407520] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [52605340] = {criteria=68676, --[[npc=221146--]]}, -- Tiny Sporbit
+    [42601500] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [48601740] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [44002880] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [62604140] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [61607300] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [55403560] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [61208580] = {criteria=68675, --[[npc=219585--]]}, -- Mass of Worms
+    [55006960] = {criteria=68731, --[[npc=217461--]]}, -- Grottoscale Hatchling
+    [57802440] = {criteria=68729, --[[npc=220177--]]}, -- Crackcreeper
+    [48801560] = {criteria=68730, --[[npc=214726--]]}, -- Lava Slug
+    [48601760] = {criteria=68732, --[[npc=220370--]]}, -- Earthenwork Stoneskitterer
+    [71604200] = {criteria=68733, --[[npc=223663--]]}, -- Cavern Skiplet
+    [56006940] = {criteria=68734, --[[npc=217316--]]}, -- Moss Sludglet
+    [60806960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [61803960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [43601220] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [64803300] = {criteria=68748, --[[npc=220168--]]}, -- Stumblegrub
+    [53603220] = {criteria=69805, --[[npc=219842--]]}, -- Darkgrotto Hopper
+    [65803920] = {criteria=68749, --[[npc=220413--]]}, -- Oozeling
+    [57405080] = {criteria=68750, --[[npc=217559--]]}, -- Pebble Scarab
+    [51801120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
+    [63205120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
+}, {
+    achievement=40475,
+    texture=ns.atlas_texture("delves-scenario-heart-icon", nil, 0, 0.9, 0, 0.9),
+    note=EMOTE152_CMD1 .. "\nCoords are approximate, these are critters that spawn in this general area", -- /love
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {

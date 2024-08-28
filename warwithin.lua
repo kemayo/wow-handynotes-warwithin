@@ -31,6 +31,10 @@ ns.hiddenConfig = {}
 
 ns.defaults.profile.groupsHidden = {}
 
+ns.defaults.profile.achievementsHidden = {
+    [40475] = true,
+}
+
 ns.groups["junk"] = BAG_FILTER_JUNK
 ns.groups["professionknowledge"] = "Profession Knowledge"
 ns.groups["glyphs"] = GLYPHS
