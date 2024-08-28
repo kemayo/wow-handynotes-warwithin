@@ -409,7 +409,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         path={72534569, 72844444},
         vignette=6126,
     },
-    [68224378] = { -- Spore-infused Shalewing
+    [68404754] = { -- Spore-infused Shalewing
         criteria=69638,
         quest=81652,
         npc=221217,
@@ -419,11 +419,17 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223942, -- Spore-Encrusted Ribbon
         },
         vignette=6121,
-        note="Flies around",
+        note="Flies around clockwise",
+        route={
+            68604852, 68735012, 68675047, 68215137, 68055156, 67745171, 67535176, 67225176, 67075174, 66585120, 66244896,
+            66264870, 66404840, 66234817, 65724779, 65564760, 65474737, 65534711, 65724669, 65834655, 66044644, 66944640,
+            67624608, 67774620, 68094659, 68214680, 68404754,
+            loop=true,
+        },
     },
     [65364949] = { -- Hungerer of the Deeps
         criteria=69639,
-        quest=81648,
+        quest=81648, -- 84048
         npc=221199,
         loot={
             221233, -- Deephunter's Bloody Hook
