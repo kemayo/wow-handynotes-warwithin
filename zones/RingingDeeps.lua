@@ -407,9 +407,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="In cave",
         path=67056796,
     },
-    [60717630] = { -- Lurker of the Deeps
+    [60887682] = { -- Lurker of the Deeps
         criteria=69637,
-        quest=81633,
+        quest=81633, -- 85163
         npc=220285,
         loot={
             {223501, mount=2205}, -- Regurgitated Mole Reins
