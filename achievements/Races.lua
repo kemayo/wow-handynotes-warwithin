@@ -1,4 +1,46 @@
 local myname, ns = ...
+local _, myfullname = C_AddOns.GetAddOnInfo(myname)
+
+local races = {}
+
+EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
+    local showing
+    local function ShowTooltipForRace(race, name, description)
+        local tooltip = GetAppropriateTooltip()
+        tooltip:SetOwner(WorldMapFrame, "ANCHOR_CURSOR")
+        GameTooltip_SetTitle(tooltip, name)
+        if description then
+            GameTooltip_AddNormalLine(tooltip, description)
+        end
+        race:OnTooltipShow(tooltip)
+        tooltip:AddDoubleLine(" ", myfullname, 0, 1, 1, 0, 1, 1)
+        tooltip:Show()
+        showing = tooltip
+    end
+    WorldMapFrame:RegisterCallback("SetAreaLabel", function(_, labelType, name, description)
+        if labelType ~= MAP_AREA_LABEL_TYPE.POI then return end
+        -- Sadly, there's not a convenient way I could see to just get the areaPoiID or the areaPoiInfo from this point
+        -- As such...
+        if races[name] then
+            return ShowTooltipForRace(races[name], name, description)
+        end
+        for _, race in ipairs(races) do
+            local rname = C_QuestLog.GetTitleForQuestID(race._questid)
+            if rname then
+                races[rname] = race
+            end
+            if name == rname then
+                return ShowTooltipForRace(race, name, description)
+            end
+        end
+    end)
+    WorldMapFrame:RegisterCallback("ClearAreaLabel", function(_, labelType)
+        if showing then
+            showing:Hide()
+            showing = nil
+        end
+    end)
+end)
 
 -- TODO: this could be greatly simplified if I properly add multiple-achievement support to core...
 
@@ -20,6 +62,8 @@ local Race = ns.Class{
         self._questid = questid
         self._achievements = achievements
         self._currencies = currencies or {}
+
+        table.insert(races, self)
     end,
     -- achievement=40354, -- Khaz Algar Completionist: Gold
     atlas="racing", scale=1.2,
