@@ -306,7 +306,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     },
     [55060843] = { -- Deepflayer Broodmother
         criteria=69636,
-        quest=80536,
+        quest=80536, -- 85162
         npc=220286,
         loot={
             221254, -- Earthshatter Lance
