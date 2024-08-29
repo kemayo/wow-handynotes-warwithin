@@ -444,11 +444,11 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6073,
     },
-    [46003180] = { -- Rowdy Rubble
-        quest=81515,
-        npc=220846,
-        vignette=6102,
-    },
+    -- [46003180] = { -- Rowdy Rubble
+    --     quest=81515,
+    --     npc=220846,
+    --     vignette=6102,
+    -- },
     [69204960] = { -- Elusive Ironhide Maelstrom Wolf
         quest=nil,
         npc=224515,
