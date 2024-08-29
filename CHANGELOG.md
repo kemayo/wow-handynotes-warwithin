@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v31
+
+* Change how the "show npcs" setting works: it now has a submenu that lets you choose a filter, where you can choose to see *all* npcs, only npcs that you can currently get loot from (the default), or only npcs that you can get "notable" loot from
+* New setting to control whether unlearned transmog appearances count as notable
+* New setting to add some emphasis to the icons for NPCs that are notable
+* Fix the "show treasure" setting so that it *only* affects treasures -- it was also controlling other non-npc points
+
 ## Changed in v30
 
 * Ringing Deeps: added locations for To All The Slimes I Love (hidden by default)
