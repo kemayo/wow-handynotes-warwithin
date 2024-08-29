@@ -357,7 +357,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [63994055] = { -- Flamekeeper Graz
         criteria=68223,
-        quest=81905,
+        quest=81905, -- 84034
         npc=219279,
         loot={
             221244, -- Flamekeeper's Footpads
@@ -452,5 +452,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [69204960] = { -- Elusive Ironhide Maelstrom Wolf
         quest=nil,
         npc=224515,
+        requires=ns.conditions.Profession(ns.PROF_WW_SKINNING),
+        active=ns.conditions.Item(219007), -- Elusive Creature Lure
     },
 })
