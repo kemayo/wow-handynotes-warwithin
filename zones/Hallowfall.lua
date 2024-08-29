@@ -258,7 +258,6 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82557,
         npc=206203,
         loot={
-            211973, -- Spider-Touched Bag
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
@@ -519,6 +518,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         loot={
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
+            221248, -- Deep Terror Carver
             223925, -- Blood Hungerer's Chestplate
         },
         vignette=6085,
@@ -543,6 +543,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         npc=206977,
         loot={
             221250, -- Creeping Lasher Machete
+            221264, -- Fungarian Mystic's Cluster
+            223005, -- String of Fungal Fruits
             223940, -- Deranged Fungarian's Epaulets
         },
         vignette=6361,

@@ -295,7 +295,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     },
     [50864651] = { -- Cragmund
         criteria=69630,
-        quest=80560, -- 84042?
+        quest=80560, -- 84042
         npc=220269,
         loot={
             221205, -- Vest of the River
@@ -401,6 +401,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220268,
         loot={
             221228, -- Infested Fungal Wristwraps
+            221250, -- Creeping Lasher Machete
             221253, -- Cultivator's Plant Puncher
             221264, -- Fungarian Mystic's Cluster
             223005, -- String of Fungal Fruits

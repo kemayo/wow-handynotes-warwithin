@@ -319,6 +319,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         loot={
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
+            221263, -- Nerubian Venom-Tipped Dart
             223930, -- Monstrous Chain Pincers
         },
         vignette=6186,
@@ -330,6 +331,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         loot={
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
+            223917, -- Nerubian Covert's Cloak
             223939, -- Esteemed Nerubian's Mantle
         },
         vignette=6204,
