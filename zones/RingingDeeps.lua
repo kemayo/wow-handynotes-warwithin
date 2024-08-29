@@ -486,3 +486,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 }, {
     achievement=40837, -- Adventurer
 })
+
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [62805000] = { -- Slatefang
+        quest=nil,
+        npc=228439,
+        requires=ns.conditions.Profession(ns.PROF_WW_SKINNING),
+        active=ns.conditions.Item(219008), -- Supreme Beast Lure
+    },
+})

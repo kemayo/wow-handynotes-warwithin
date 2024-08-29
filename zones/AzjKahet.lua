@@ -449,4 +449,10 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6265,
         note="Begins a quest chain leading to the mount {item:224150:Siesbarg}",
     },
+    [39804100] = { -- Elusive Razormouth Steelhide
+        quest=nil,
+        npc=226232,
+        requires=ns.conditions.Profession(ns.PROF_WW_SKINNING),
+        active=ns.conditions.Item(219007), -- Elusive Creature Lure
+    },
 }, {levels=true,})
