@@ -262,8 +262,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         },
         vignette=6026,
     },
-    [76403620] = { -- Clawbreaker K'zithix
-        -- [80003500]
+    [55712727] = { -- Clawbreaker K'zithix
         criteria=68224,
         quest=81920, -- 84036
         npc=221128,

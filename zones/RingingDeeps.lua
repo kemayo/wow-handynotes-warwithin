@@ -358,7 +358,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     },
     [46701209] = { -- Terror of the Forge
         criteria=69628,
-        quest=80507,
+        quest=80507, -- 84040
         npc=220271,
         loot={
             221233, -- Deephunter's Bloody Hook
