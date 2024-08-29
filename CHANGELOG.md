@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v33
+
+* More loot added to rares
+* Added some of the Elusive rares, and gated them behind you knowing Skinning
+* Isle of Dorn: fix the coords for Clawbreaker K'zithix, remove the Rowdy Rubble which doesn't seem to be appearing
+
 ## Changed in v32
 
 * Show my tooltips for races on the Blizzard race POIs when enabled (in the Blizzard filters menu)
