@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v32
+
+* Show my tooltips for races on the Blizzard race POIs when enabled (in the Blizzard filters menu)
+* Dornogal: Tome of Polymorph: Mosswool
+* Fix non-npc non-treasure points without completion from being considered "found" always
+* Mostly for myself, but just in case... you can now alt-click the map button to quickly toggle showing found points
+
 ## Changed in v31
 
 * Change how the "show npcs" setting works: it now has a submenu that lets you choose a filter, where you can choose to see *all* npcs, only npcs that you can currently get loot from (the default), or only npcs that you can get "notable" loot from
