@@ -1,5 +1,7 @@
 local myname, ns = ...
 
+-- 79929 for random herbing of Khaz Algar Herbalism Knowledge (currency 2789)
+
 local KNOWLEDGE = {
     note = "This can only be looted once per character.",
     currency=2789,

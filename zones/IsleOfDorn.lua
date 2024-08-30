@@ -322,9 +322,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [53348006] = { -- Gar'loc
         criteria=68217,
-        quest=81899,
+        quest=81899, -- 84028
         npc=219268,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84028}),
             221222, -- Water-Imbued Spaulders
             221234, -- Tidal Pendant
             221248, -- Deep Terror Carver
@@ -372,9 +373,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [50876984] = { -- Plaguehart
         criteria=68216,
-        quest=81897, -- also 84026?
+        quest=81897, -- 84026
         npc=219267,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84026}),
             221213, -- Shawl of the Plagued
             221265, -- Charm of the Underground Beast
             221246, -- Fierce Beast Staff
