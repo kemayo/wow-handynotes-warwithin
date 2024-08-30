@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v35
+
+* Provide settings for what counts as "notable" -- you can turn off things you don't care about now
+* Gather more of the weekly reputation quests, mostly from Ringing Deeps
+* Fix one last glyph in Azj-Kahet that wasn't clearing properly, thanks Christof Bruyland!
+
 ## Changed in v34
 
 * Starting on tracking the weekly reputation from rares
