@@ -69,7 +69,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [30223877] = { -- Priory Satchel
         criteria=69698,
         quest=81972,
-        loot={224578}, -- Arathor Courier's Satchel
+        loot={
+            224578, -- Arathor Courier's Satchel
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         level=75,
         note="Hanging from the cathedral",
     },
@@ -243,9 +246,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 ns.RegisterPoints(ns.HALLOWFALL, {
     [23005922] = { -- Lytfang the Lost
         criteria=69710,
-        quest=81756,
+        quest=81756, -- 84063
         npc=221534,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84063}),
             221207, -- Den Mother's Chestpiece
             221246, -- Fierce Beast Staff
             221251, -- Bestial Underground Cleaver
@@ -268,9 +272,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [44011639] = { -- The Perchfather
         criteria=69711,
-        quest=81791,
+        quest=81791, -- 84064
         npc=221648,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84064}),
             221229, -- Perchfather's Cuffs
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
@@ -312,9 +317,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [43622993] = { -- Strength of Beledar
         criteria=69713,
-        quest=81849,
-        npc=221690, -- Rage of Beledar
+        quest=81849, -- 84066
+        npc=221690,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84066}),
             221216, -- Bruin Strength Legplates
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
@@ -400,9 +406,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [35953546] = { -- Sir Alastair Purefire
         criteria=69714,
-        quest=81853,
+        quest=81853, -- 84067
         npc=221708,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84067}),
             221241, -- Priestly Agent's Knife
             221245, -- Righteous Path Treads
         },
@@ -410,9 +417,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [43410990] = { -- Horror of the Shallows
         criteria=69712,
-        quest=81836,
+        quest=81836, -- 85165
         npc=221668,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=85165}),
             221211, -- Grasp of the Shallows
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
