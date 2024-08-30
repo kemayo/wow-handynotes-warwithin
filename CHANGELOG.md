@@ -1,5 +1,13 @@
 # Changelog
 
+## Changed in v34
+
+* Starting on tracking the weekly reputation from rares
+* Only count loot for notable mobs if it's likely to drop
+* Highlight notable loot in the tooltips if you're emphasizing notable mobs
+* Fix an issue where learning a new appearance from killing a mob wouldn't immediately flag that item as learned
+* Fairly massive backend rewrite of the loot system to support reputation being included; hopefully there aren't any terrible new bugs...
+
 ## Changed in v33
 
 * More loot added to rares
