@@ -62,5 +62,5 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [65435176] = {criteria=69275,}, -- Untamed Valley, Azj-Kahet
 }, GLYPH{achievement=40705})
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [13323352] = {criteria=69269, quest=40695}, -- Old Sacrificial Pit, Azj-Kahet
+    [13323352] = {criteria=69269,}, -- Old Sacrificial Pit, Azj-Kahet
 }, GLYPH{achievement=40705, parent=true})
