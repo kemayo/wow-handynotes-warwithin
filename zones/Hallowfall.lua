@@ -587,16 +587,45 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, {
     achievement=40851,
     criteria=69716,
-    quest=81763,
+    quest=81763, -- 85164
     npc=207802,
     loot={
+        ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=85164}),
         {223315, mount=2192,}, -- Beledar's Spawn
         223006, -- Signet of Dark Horizons
     },
-    requires=ns.conditions.MajorFaction(ns.FACTION_ARATHI, 23),
-    active=ns.conditions.QuestComplete(82998), -- attunement
-    note="Buy and use {item:224553:Beledar's Attunement} from {majorfaction:2570:Hallowfall Arathi} to access",
-    vignette=6359, -- also 6118?
+    active={ns.Class{
+        __classname="SpawnTime",
+        __parent=ns.conditions.Condition,
+        Label = function(self)
+            local shadowed = "{spell:131233:Shadowed}"
+            if self:Matched() then
+                return shadowed
+            else
+                -- "%s in %s"
+                return WARDROBE_TOOLTIP_ENCOUNTER_SOURCE:format(shadowed, self:Duration(self:NextSpawn()))
+            end
+        end,
+        Matched = function(self)
+            -- if it's more than 2.5 hours away, we must be during the current event
+            return self:NextSpawn() > (3600 * 2.5)
+        end,
+        NextSpawn = function(self)
+            -- Shadow event is one hour after the daily reset, then repeating
+            -- every three hours; each time it lasts for 30 minutes.
+            return (GetQuestResetTime() + 3600) % 10800
+        end,
+        Duration = function(self, seconds)
+            if seconds > 3600 then
+                return COOLDOWN_DURATION_HOURS:format(floor(seconds / 3600)) .. " " .. COOLDOWN_DURATION_MIN:format(floor((seconds % 3600) / 60))
+            end
+            return COOLDOWN_DURATION_MIN:format(floor(seconds / 60))
+        end
+    }()},
+    note="Spawns during the shadow event, which happens every 3 hours.\nBuy and use {item:224553:Beledar's Attunement} from {majorfaction:2570:Hallowfall Arathi} to see which spawn is active.",
+    atlas="worldquest-icon-boss-zhCN",
+    group="beledarspawn",
+    vignette=6359, -- also 6118? That was the close-up one...
 })
 
 -- Deathtide
