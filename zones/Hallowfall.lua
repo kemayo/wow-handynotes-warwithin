@@ -645,7 +645,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=6156,
         active=ns.conditions.Item(220123), -- Ominous Offering
-        note="Create an {item:220123:Ominous Offering} to summon",
+        note="Create an {item:220123:Ominous Offering} from {item:220124:Jar of Mucus} (|A:playerpartyblip:::::0:255:127|a) + {item:220122} (|A:playerpartyblip:::::0:0:255|a) to summon",
     },
 }, deathtide{})
 ns.RegisterPoints(ns.HALLOWFALL, {
@@ -654,7 +654,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 }, deathtide{
     label="{item:220124}",
     loot={220124},
-    texture=ns.atlas_texture("playerpartyblip",{r=0,g=1,b=1,}),
+    texture=ns.atlas_texture("playerpartyblip",{r=0,g=1,b=0.5,}),
     minimap=true,
     note="Take to {npc:221753} @ 44.7,42.4",
 })
