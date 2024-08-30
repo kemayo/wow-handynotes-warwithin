@@ -298,6 +298,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=80560, -- 84042
         npc=220269,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84042}),
             221205, -- Vest of the River
             221254, -- Earthshatter Lance
             221507, -- Earth Golem's Wrap
@@ -309,6 +310,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=80536, -- 85162
         npc=220286,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=85162}),
             221254, -- Earthshatter Lance
             221507, -- Earth Golem's Wrap
             225999, -- Earthen Adventurer's Tabard
@@ -361,6 +363,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=80507, -- 84040
         npc=220271,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84040}),
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221242, -- Forgeborn Helm
@@ -375,6 +378,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=81485, -- 84047
         npc=220287,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84047}),
             221204, -- Spore Giant's Stompers
             221250, -- Creeping Lasher Machete
             221253, -- Cultivator's Plant Puncher
@@ -433,6 +437,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=81648, -- 84048
         npc=221199,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84048}),
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221248, -- Deep Terror Carver
@@ -468,6 +473,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=81633, -- 85163
         npc=220285,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=85163}),
             {223501, mount=2205}, -- Regurgitated Mole Reins
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
