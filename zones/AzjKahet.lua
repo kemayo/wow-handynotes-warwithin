@@ -221,14 +221,14 @@ ns.RegisterPoints(ns.AZJKAHET, {
     },
     [68876480] = { -- Maddened Siegebomber
         criteria=69663,
-        quest=81706,
+        quest=81706, -- 84075
         npc=216044,
-        loot={
+        loot=addThreadsRep(50, 84075, {
             221217, -- Nerubian Bomber's Leggings
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
-        },
+        }),
         vignette=6138,
         route={
             68876480, 69006715, 67206730, 65596605, 63576530, 61636444, 61006640,
@@ -242,12 +242,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69656,
         quest=81700,
         npc=216037,
-        loot={
+        loot=addThreadsRep(50, false, {
             223386, -- Vilewing Crown
             223387, -- Vilewing Chain Helm
             223388, -- Vilewing Cap
             223405, -- Vilewing Visor
-        },
+        }),
         vignette=6132,
     },
     [61242731] = { -- Webspeaker Grik'ik
@@ -272,28 +272,28 @@ ns.RegisterPoints(ns.AZJKAHET, {
     },
     [58056233] = { -- Enduring Gutterface
         criteria=69664,
-        quest=81707,
+        quest=81707, -- 84076
         npc=216045,
-        loot={
+        loot=addThreadsRep(50, 84076, {
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221243, -- Slippers of Delirium
             221248, -- Deep Terror Carver
             221255, -- Sharpened Scalepiercer
-        },
+        }),
         vignette=6139,
     },
     [69996920] = { -- Monstrous Lasharoth
         criteria=69662,
-        quest=81705,
+        quest=81705, -- 84074
         npc=216043,
-        loot={
+        loot=addThreadsRep(50, 84074, {
             221227, -- Monstrous Fungal Cord
             221250, -- Creeping Lasher Machete
             221253, -- Cultivator's Plant Puncher
             221264, -- Fungarian Mystic's Cluster
             223005, -- String of Fungal Fruits
-        },
+        }),
         vignette=6137,
     },
     [44803980] = { -- Khak'ik
@@ -373,13 +373,13 @@ ns.RegisterPoints(ns.AZJKAHET, {
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
     [64768691] = { -- Harvester Qixt
         criteria=69667,
-        quest=82036,
+        quest=82036, -- 84079
         npc=216050,
-        loot={
+        loot=addThreadsRep(50, 84079, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223941, -- Nerubian Cultivator's Girdle
-        },
+        }),
         vignette=6185,
     },
     [61938973] = { -- The Oozekhan
@@ -425,27 +425,27 @@ ns.RegisterPoints(ns.AZJKAHET, {
 }, {levels=true})
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [36404160] = { -- The Groundskeeper
+    [30975607] = { -- Chitin Hulk
         criteria=69657,
-        quest=81634,
-        npc=216038,
-        loot={
+        quest=81634, -- 84069
+        npc=216038, -- The Groundskeeper
+        loot=addThreadsRep(50, 84069, {
             221214, -- Chitin Chain Headpiece
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
-        },
+        }),
         vignette=6111,
     },
     [67165840] = { -- Xishorr
         criteria=69658,
-        quest=81701,
+        quest=81701, -- 84070
         npc=216039,
-        loot={
+        loot=addThreadsRep(50, 84070, {
             221221, -- Venomous Lurker's Greathelm
             221239, -- Spider Blasting Blunderbuss
             221506, -- Arachnid's Web-Sown Guise
-        },
+        }),
         vignette=6133,
     },
 }, {

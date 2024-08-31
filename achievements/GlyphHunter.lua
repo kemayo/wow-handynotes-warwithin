@@ -52,7 +52,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 ns.RegisterPoints(ns.AZJKAHET, {
     [63311399] = {criteria=69265,}, -- Arathi's End, Azj-Kahet
     [46692129] = {criteria=69266, note="On ledge very high above"}, -- Siegehold, Azj-Kahet
-    [25144058] = {criteria=69267,}, -- Ruptured Lake, Azj-Kahet
+    [25144058] = {criteria=69267, note="Up in the canopy"}, -- Ruptured Lake, Azj-Kahet
     [43125702] = {criteria=69268,}, -- Eye of Ansurek, Azj-Kahet
     [58628980] = {criteria=69270,}, -- Deepwalker Pass, Azj-Kahet
     [66298505] = {criteria=69271,}, -- The Maddening Deep, Azj-Kahet
