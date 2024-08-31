@@ -15,18 +15,30 @@ end
 -- Treasures
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [78623320] = { -- Weaving Supplies
+    [34076105] = { -- Concealed Contraband
+        criteria=70381,
+        quest=82525,
+        loot=addThreadsRep(50, false, {}),
+        level=74,
+        path={33846068, 33796026, 34015980, 34365949, 35555918},
+    },
+    [78623320] = { -- "Weaving Supplies"
         criteria=69643,
         quest=82527,
-        loot={{225347, toy=true}}, -- Web-Vandal's Spinning Wheel
+        loot=addThreadsRep(50, false, {{225347, toy=true}}), -- Web-Vandal's Spinning Wheel
         level=74,
         vignette=6289,
         note="Collect {item:223901:Violet Silk Scrap}, {item:223902:Crimson Silk Scrap}, {item:223903:Gold Silk Scrap} from the edges of the nearby platform to unlock",
+        nearby={
+            74794282, -- Violet Silk Scrap
+            72683967, -- Crimson Silk Scrap
+            74183772, -- Gold Silk Scrap
+        },
     },
     [49564370] = { -- Nest Egg
         criteria=69645,
         quest=82529,
-        loot={{221760, pet=4513}}, -- Bonedrinker
+        loot=addThreadsRep(50, false, {{221760, pet=4513}}, true), -- Bonedrinker
         level=74,
         vignette=6291,
         note="Webbed to the ceiling",
@@ -34,26 +46,29 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [67449072] = { -- Disturbed Soil
         criteria=69646,
         quest=82718,
-        loot={}, -- grays and commendations
+        loot=addThreadsRep(50, false, {224816}), -- Nerubian Almanac
         vignette=6280,
     },
     [38783722] = { -- Missing Scout's Pack
         criteria=69650,
         quest=82722,
-        loot={}, -- grays and commendations
+        loot=addThreadsRep(50, false, {
+            220222, -- Everburning Lump
+            211879, -- Algari Healing Potion
+        }, true), -- grays and commendations
         vignette=6283,
     },
     [54525081] = { -- Niffen Stash
         -- didn't appear until after I hit 73? Could just be a despawn-when-looted though...
         criteria=69649,
         quest=82721,
-        loot={
+        loot=addThreadsRep(50, false, {
             204730, -- Grub Grub
             204790, -- Strong Sniffin' Soup for Niffen
             204838, -- Discarded Toy
             204842, -- Red Sparklepretty
             213261, -- Niffen Smell Pouch
-        },
+        }, true),
         vignette=6282,
         note="Hanging under the bridge",
     },
@@ -61,22 +76,22 @@ ns.RegisterPoints(ns.AZJKAHET, {
         -- Wasn't around for ages; despawn-when-looted?
         criteria=69647,
         quest=82719,
-        loot={
+        loot=addThreadsRep(50, false, {
             224828, -- Weavercloth
             224441, -- Weavercloth Bandage
-        },
+        }, true),
     },
 }, {
     achievement=40828,
     levels=true,
 })
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
-    -- [] = {criteria=69615, quest=82724}, -- Corrupted Memory
-    [62688866] = { -- Memory Cache (confirm lower)
+    [62728795] = { -- Memory Cache (confirm lower)
         criteria=69615,
-        quest=82724,
-        loot={{225544, pet=4599}}, -- Mind Slurp
-        note="Get {spell:420847:Unseeming Shift} from a nearby Extractor Storage, then kill a {npc:223908:Corrupted Memory} for a {item:223870:Cache Key}",
+        quest=82520,
+        loot=addThreadsRep(50, false, {{225544, pet=4599}}, true), -- Mind Slurp
+        note="Get {spell:420847:Unseeming Shift} from a nearby Extractor Storage, then kill {npc:223908:Corrupted Memory} here for a {item:223870:Cache Key}",
+        vignette=6287,
     },
 }, {
     achievement=40828,
@@ -85,32 +100,26 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
 ns.RegisterPoints(ns.CITYOFTHREADS, {
     [67397441] = { -- Trapped Trove
         criteria=69644,
-        quest=82528,
-        loot={{222966, pet=4473}}, -- Spinner
+        quest=82727,
+        loot=addThreadsRep(50, false, {{222966, pet=4473}}, true), -- Spinner
         level=74,
         vignette=6290,
-        note="Navigate through the web traps",
+        note="In the hanging building; navigate through the web traps",
     },
     [31642077] = { -- Nerubian Offerings
         criteria=69648,
         quest=82720,
-        loot={}, -- Some grays and commendations for Weaver, General, Vizier
+        loot=addThreadsRep(50, false, {
+            225543, -- Bloodied Idol
+            220236, -- Sanguineous Sac
+            223899, -- Shadowed Appendage
+        }, true),
         vignette=6281,
         note="In a nook beneath the platform",
     },
 }, {
     achievement=40828,
     parent=true, levels=true, translate={[2256]=true},
-})
-
-ns.RegisterPoints(ns.AZJKAHET, {
-    [34076105] = {
-        label="Concealed Contraband",
-        quest=82525,
-        loot={},
-        level=74,
-        path={33846068, 33796026, 34015980, 34365949, 35555918},
-    },
 })
 
 -- Itsy Bitsy Spider
