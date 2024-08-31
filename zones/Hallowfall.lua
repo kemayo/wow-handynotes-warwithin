@@ -452,10 +452,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [43410990] = { -- Horror of the Shallows
         criteria=69712,
-        quest=81836, -- 85165
+        quest=81836, -- 84065
         npc=221668,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=85165}),
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84065}),
             221211, -- Grasp of the Shallows
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
