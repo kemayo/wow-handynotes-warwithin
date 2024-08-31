@@ -1,5 +1,14 @@
 # Changelog
 
+## Changed in v37
+
+* Azj-Kahet:
+    * The treasure quests apparently got shuffled around a bit somewhere between the beta and now, so fixed various questids
+    * Added most of the remaining reputation rewards
+    * Flag Tka'ktath's mount item as only dropping at level 80
+* Hallowfall: added some more reputation rewards, fixed a typo in the quest ID for the Horror of the Shallows' reputation reward, and explained how to access Croakit
+* Fixed some weird interactions around the notability settings for mobs that have quest-items and transmog
+
 ## Changed in v36
 
 * Hallowfall: improve Beledar's Spawn -- show the time until the shadow phase via entertaining abuse of the
