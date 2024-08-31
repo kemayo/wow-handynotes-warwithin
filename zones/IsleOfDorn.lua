@@ -122,7 +122,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [56226094] = { -- Infused Cinderbrew
         criteria=68208,
         quest=82714,
-        loot={224263}, -- Infused Fire-Honey Milk
+        loot={
+            224263, -- Infused Fire-Honey Milk
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="On the desk; despawns for a while after someone loots it, so you might need to wait around",
         vignette=6292,
     },
@@ -183,9 +186,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [72043881] = { -- Tephratennae
         criteria=68229,
-        quest=81923,
+        quest=81923, -- 84037
         npc=221126,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84037}),
             223922, -- Cinder Pollen Cloak
             223937, -- Honey Deliverer's Leggings
         },
@@ -289,19 +293,21 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [25784503] = { -- Escaped Cutthroat
         criteria=68218,
-        quest=81907,
+        quest=81907, -- 84029
         npc=219266,
         vignette=6049,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84029}),
             221208, -- Unseen Cutthroat's Tunic
             221235, -- Dark Agent's Cloak
         },
     },
     [73004010] = { -- Matriarch Charfuria
         criteria=68231,
-        quest=81921,
+        quest=81921, -- 84039
         npc=220890,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84039}),
             223948, -- Stubborn Wolf's Greathelm
             221247, -- Cavernous Critter Shooter
             221251, -- Bestial Underground Cleaver
@@ -315,6 +321,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         quest=81901,
         npc=219269,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84030}),
             221230, -- Storm Bindings
             221236, -- Stormbreaker's Shield
         },
@@ -388,9 +395,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [69853847] = { -- Sweetspark the Oozeful
         criteria=68230,
-        quest=81922,
+        quest=81922, -- 84038
         npc=220883,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=84038}),
             223929, -- Honey Sweetener's Squeezers
             223921, -- Ever-Oozing Signet
             223920, -- Slime Deflecting Stopper
@@ -401,9 +409,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     -- These all technically spawn exactly at 30915238
     [29915238] = { -- Kereke
         criteria=68227,
-        quest=82204,
+        quest=82204, -- 85160
         npc=222378,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=85160}),
             226111, -- Arakkoan Ritual Staff
             226113, -- Kereke's Flourishing Sabre
             226114, -- Windslicer's Lance
