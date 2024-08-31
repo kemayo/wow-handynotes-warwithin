@@ -512,7 +512,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=6125,
         --tameable=true, -- hopper
-        note="Objective of {questname:76588}",
+        note="Fish up 10x{item:211474:Shadowblind Grouper} and throw them to fill the {spell:437124:Craving} bar. Objective of {questname:76588}.",
     },
     [57304858] = { -- Pride of Beledar
         criteria=69715,
