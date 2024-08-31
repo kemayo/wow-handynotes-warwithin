@@ -457,15 +457,15 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [62796618] = { -- Tka'ktath
         quest=82289,
         npc=216046,
-        loot={
-            {225952, quest=83627}, -- Vial of Tka'ktath's Bloo
+        loot=addThreadsRep(50, 85166, {
+            ns.rewards.Item(225952, {quest=83627, requires=ns.conditions.Level(80)}), -- Vial of Tka'ktath's Bloo
             -- {224150, mount=2222}, -- Siesbarg
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
-        },
+        }),
         vignette=6265,
-        note="Begins a quest chain leading to the mount {item:224150:Siesbarg}",
+        note="Begins a quest chain leading to the mount {item:224150:Siesbarg}, item won't drop until you're level 80. Seems to spawn shortly after the daily quest reset.",
     },
     [39804100] = { -- Elusive Razormouth Steelhide
         quest=nil,
