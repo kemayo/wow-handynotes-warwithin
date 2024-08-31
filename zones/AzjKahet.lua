@@ -4,6 +4,14 @@ local myname, ns = ...
 Notes:
 ]]
 
+local addThreadsRep = function(amount, quest, loot, append)
+    local extra = quest and {quest=quest}
+    table.insert(loot, append and #loot+1 or 1, ns.rewards.Currency(ns.CURRENCY_SEVERED_WEAVER, amount, extra))
+    table.insert(loot, append and #loot+1 or 2, ns.rewards.Currency(ns.CURRENCY_SEVERED_GENERAL, amount, extra))
+    table.insert(loot, append and #loot+1 or 3, ns.rewards.Currency(ns.CURRENCY_SEVERED_VIZIER, amount, extra))
+    return loot
+end
+
 -- Treasures
 
 ns.RegisterPoints(ns.AZJKAHET, {
@@ -190,17 +198,16 @@ ns.RegisterPoints(ns.AZJKAHET, {
         },
         vignette=6131,
     },
-    [47204320] = { -- Abyssal Devourer
-        -- [47204320, 47204380]
+    [45863916] = { -- Abyssal Devourer
         criteria=69651,
         quest=81695,
         npc=216031,
-        loot={
+        loot=addThreadsRep(50, false, {
             223389, -- Legplates of Dark Hunger
             223390, -- Leggings of Dark Hunger
             223391, -- Legguards of Dark Hunger
             223392, -- Trousers of Dark Hunger
-        },
+        }, true),
         vignette=6129,
     },
     [68876480] = { -- Maddened Siegebomber
@@ -238,19 +245,19 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69655,
         quest=81699,
         npc=216041,
-        loot={
+        loot=addThreadsRep(50, false, {
             223369, -- Webspeaker's Spiritual Cloak
-        },
+        }, true),
         vignette=6135,
     },
     [70732146] = { -- Cha'tak
         criteria=69661,
-        quest=81704,
+        quest=81704, -- 84073
         npc=216042,
-        loot={
+        loot=addThreadsRep(50, 84073, {
             221212, -- Death Burrower Handguards
             221237, -- Lamentable Vagrant's Lantern
-        },
+        }),
         vignette=6136,
         note="Cave behind the waterfall",
     },
@@ -284,12 +291,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69653,
         quest=81694,
         npc=216032,
-        loot={
+        loot=addThreadsRep(50, false, {
             223378, -- Footguards of the Nerubian Twins
             223406, -- Slippers of the Nerubian Twins
             223407, -- Sabatons of the Nerubian Twins
             223408, -- Treads of the Nerubian Twins
-        },
+        }, true),
         vignette=6130,
         note="Patrols with {npc:221032:Rhak'ik}",
     },
@@ -307,9 +314,9 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69654,
         quest=78905,
         npc=214151,
-        loot={
+        loot=addThreadsRep(50, false, {
             223375, -- Clattering Chitin Necklace
-        },
+        }, true),
         vignette=5973,
     },
     [64600352] = { -- Umbraclaw Matra
