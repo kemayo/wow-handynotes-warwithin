@@ -417,11 +417,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         vignette=6035,
     },
-    [64401880] = { -- Duskshadow
+    [64051911] = { -- Duskshadow
         criteria=69724,
-        quest=82562,
+        quest=82562, -- 84056
         npc=221179,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84056}),
             223918, -- Specter Stalker's Shotgun
             223919, -- Abducted Lawman's Gavel
             223936, -- Shadow Bog Trousers
@@ -475,9 +476,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [73405259] = { -- Sloshmuck
         criteria=69709,
-        quest=79271,
+        quest=79271, -- 84062
         npc=215805,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84062}),
             221223, -- Bog Beast Mantle
             221250, -- Creeping Lasher Machete
             221253, -- Cultivator's Plant Puncher
@@ -516,9 +518,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [57304858] = { -- Pride of Beledar
         criteria=69715,
-        quest=81882,
+        quest=81882, -- 84068
         npc=221786,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84068}),
             221225, -- Benevolent Hornstag Cinch
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
