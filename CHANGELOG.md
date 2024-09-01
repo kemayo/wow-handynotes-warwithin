@@ -1,5 +1,14 @@
 # Changelog
 
+## Changed in v38
+
+* Isle of Dorn:
+    * Added the hiding place for obtaining Dog as a pet, if you've brought him with you from Pandaria to Dalaran.
+    * More weekly reputation rewards.
+* Ringing Deeps: more weekly reputation rewards.
+* New filter option for treasures, so they can be turned down to only show "notable" ones just like the rares. You can use this to not be shown treasures you found on other characters, mostly.
+* New setting to allow achievement-progress from other characters to count for completion. This won't make a huge difference in this expansion, because with warbands *most* achievements have shared criteria-progress between characters already.
+
 ## Changed in v37
 
 * Azj-Kahet:
