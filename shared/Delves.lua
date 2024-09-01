@@ -79,11 +79,14 @@ ns.RegisterPoints(2310, { -- Skittering Breach
     achievement=40810, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- Tak-Rethan Abyss
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40811, -- Discoveries
--- })
+ns.RegisterPoints(2259, { -- Tak-Rethan Abyss
+    [59752480] = {quest=83651, loot={226109}, note="Above the pool"}, -- Squirming Swarm Sac
+    [64744931] = {quest=83686, loot={226004}, note="Climb the coral"}, -- Olden Text
+    [44794979] = {quest=83687, loot={226003}}, -- Snake Oil
+    [35115861] = {quest=83669, loot=CRYSTAL}, -- Resonance Crystals
+}, STURDY{
+    achievement=40811, -- Discoveries
+})
 
 ns.RegisterPoints(2302, { -- The Dread Pit
     [41124548] = {quest=83677, loot={226001, 226003}, note="Behind rocks"}, -- Pure Gold Stein, Snake Oil
