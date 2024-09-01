@@ -6,6 +6,8 @@ local STURDY = ns.nodeMaker{
     minimap=true,
 }
 
+local CRYSTAL = ns.rewards.Currency(ns.CURRENCY_RESONANCE, 250)
+
 ns.RegisterPoints(2269, { -- Earthcrawl Mines
     [45341512] = {quest=83440, currency=2815}, -- Resonance Crystals
     [43522692] = {quest=83438, loot={226002}}, -- Expensive-Looking Find
@@ -101,11 +103,14 @@ ns.RegisterPoints(2301, { -- The Sinkhole
     achievement=40813, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- The Spiral Weave
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40814, -- Discoveries
--- })
+ns.RegisterPoints(2347, { -- The Spiral Weave
+    [50164325] = {quest=83649, loot={226107}, note="Under the {npc:227747:Crawler Eggs}"}, -- Homebrewed Blink Vial
+    [36381082] = {quest=83661, loot={}, note="Up on the beam; only reachable during the {achievement:40536.68787} variant"}, --
+    [46014630] = {quest=83681, loot={226005}, note="Jump down from the bridge, onto the pillar"}, -- Ancient Tool
+    [42324780] = {quest=83662, loot={CRYSTAL}, note="Jump down from the bridge, onto the beam", route={47004651, 46034617, 42324780}}, --
+}, STURDY{
+    achievement=40814, -- Discoveries
+})
 
 -- ns.RegisterPoints(, { -- The Underkeep
 --     -- [] = {quest=, loot={}}, --
