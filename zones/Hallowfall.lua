@@ -503,9 +503,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [67562316] = { -- Croakit
         criteria=69722,
-        quest=82560,
+        quest=82560, -- 84054
         npc=214757,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84054}),
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
             221251, -- Bestial Underground Cleaver
@@ -547,9 +548,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [64802920] = { -- Crazed Cabbage Smacker
         criteria=69720,
-        quest=82558,
+        quest=82558, -- 84052
         npc=206514,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84052}),
             211968, -- Blueprint Bundle
             221238, -- Pillar of Constructs
             223928, -- Crop Cutter's Gauntlets
@@ -726,7 +728,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 
 ns.RegisterPoints(ns.HALLOWFALL, {
     [62650611] = { -- Radiant-Twisted Mycelium
-        quest=nil, -- 76588 defender of the flame
+        quest=nil, -- confirmed, this has a vignette and is rare-flagged, but no quest or rep rewards
         npc=214905,
         vignette=5984,
         note="Objective of {questname:76588}",
