@@ -1,4 +1,5 @@
 local myname, ns = ...
+local _, myfullname = C_AddOns.GetAddOnInfo(myname)
 
 local STURDY = ns.nodeMaker{
     lable="Sturdy Chest",
@@ -132,3 +133,38 @@ ns.RegisterPoints(2251, { -- The Waterworks
 }, STURDY{
     achievement=40816, -- Discoveries
 })
+
+----
+
+EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
+    local delves = {
+        --[areaPoiID] = {stories, discoveries, other...}
+        [7863] = {40527, 40806, 40453}, -- Earthcrawl Mines (Nerubian)
+        [7864] = {40525, 40803, 40445}, -- Fungal Folly (Fungal)
+        [7865] = {40526, 40807, 40446}, -- Kriegval's Rest (Kobold)
+        [7866] = {40528, 40816, 40446}, -- The Waterworks (Kobold)
+        [7867] = {40529, 40812, 40453}, -- The Dread Pit (Nerubian)
+        [7868] = {40530, 40809, 40454}, -- Nightfall Sanctum (Order of Night)
+        [7869] = {40531, 40808, 40445}, -- Mycomancer Cavern (Fungal)
+        [7870] = {40532, 40813, 40452}, -- The Sinkhole (Kobyss)
+        [7871] = {40533, 40810, 40453}, -- Skittering Breach (Nerubian)
+        [7872] = {40534, 40815, 40453}, -- The Underkeep (Nerubian)
+        [7873] = {40535, 40811, 40452}, -- Tak-Rethan Abyss (Kobyss)
+        [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
+    }
+    EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
+        -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
+        if ns.db.groupsHidden.delves then
+            return
+        end
+        if tooltipShown and delves[areaPoiID] then
+            local tooltip = GetAppropriateTooltip()
+            for i, achievement in ipairs(delves[areaPoiID]) do
+                -- we want to show the full criteria list for the first one (stories), and just the summary for the second
+                ns.tooltipHelpers.achievement(tooltip, achievement, i == 1)
+            end
+            tooltip:AddDoubleLine(" ", myfullname:gsub("HandyNotes: ", ""), 0, 1, 1, 0, 1, 1)
+            tooltip:Show()
+        end
+    end)
+end)

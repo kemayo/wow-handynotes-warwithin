@@ -2,6 +2,7 @@ local myname, ns = ...
 
 -- 79929 for random herbing of Khaz Algar Herbalism Knowledge (currency 2789)
 -- 81417 for herbing a Deepgrove Petal (224264)
+-- 81418 for herbing a Deepgrove Petal from Mycobloom (224264)
 
 local KNOWLEDGE = {
     note = "This can only be looted once per character.",
