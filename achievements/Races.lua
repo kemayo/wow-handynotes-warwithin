@@ -13,7 +13,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
             GameTooltip_AddNormalLine(tooltip, description)
         end
         race:OnTooltipShow(tooltip)
-        tooltip:AddDoubleLine(" ", myfullname, 0, 1, 1, 0, 1, 1)
+        tooltip:AddDoubleLine(" ", myfullname:gsub("HandyNotes: ", ""), 0, 1, 1, 0, 1, 1)
         tooltip:Show()
         showing = tooltip
     end
