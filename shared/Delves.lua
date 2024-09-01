@@ -108,18 +108,21 @@ ns.RegisterPoints(2301, { -- The Sinkhole
 
 ns.RegisterPoints(2347, { -- The Spiral Weave
     [50164325] = {quest=83649, loot={226107}, note="Under the {npc:227747:Crawler Eggs}"}, -- Homebrewed Blink Vial
-    [36381082] = {quest=83661, loot={}, note="Up on the beam; only reachable during the {achievement:40536.68787} variant"}, --
+    [36381082] = {quest=83661, loot={}, note="Up on the beam; only reachable during the {achievement:40536.68787:From The Weaver With Love} variant"}, --
     [46014630] = {quest=83681, loot={226005}, note="Jump down from the bridge, onto the pillar"}, -- Ancient Tool
     [42324780] = {quest=83662, loot=CRYSTAL, note="Jump down from the bridge, onto the beam", route={47004651, 46034617, 42324780}}, --
 }, STURDY{
     achievement=40814, -- Discoveries
 })
 
--- ns.RegisterPoints(, { -- The Underkeep
---     -- [] = {quest=, loot={}}, --
--- }, STURDY{
---     achievement=40815, -- Discoveries
--- })
+ns.RegisterPoints(2299, { -- The Underkeep
+    [35913464] = {quest=83664, loot=CRYSTAL}, -- Resonance Crystals
+    [63613256] = {quest=83682, loot={226003}, note="Reachable during the {achievement:40534.68779:Torture Victims} variant"}, -- Snake Oil
+    [72118902] = {quest=83697, loot={211036}}, -- Secret-Dredger's Armplates
+    [38946882] = {quest=83663, loot={}, note="Reachable during the {achievement:40534.68780:Weaver Rescue} variant"}, --
+}, STURDY{
+    achievement=40815, -- Discoveries
+})
 
 ns.RegisterPoints(2251, { -- The Waterworks
     [49902459] = {quest=83684, loot={226002, 226005}}, -- Expensive-Looking Find, Ancient Tool
