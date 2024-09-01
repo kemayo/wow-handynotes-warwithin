@@ -171,6 +171,20 @@ ns.RegisterPoints(ns.DORNOGAL, {
     },
 })
 
+ns.RegisterPoints(ns.ISLEOFDORN, {
+    [31445131] = { --- Dog!
+        label="Half-Buried Dog Bowl",
+        quest=83094, -- 83093 for calling Dog
+        loot={{224766, pet=4596}}, -- Faithful Dog
+        active={
+            ns.conditions.QuestComplete(30526), -- Recruiting Dog in Pandaria
+            ns.conditions.QuestComplete(46952), -- Bringing Dog to Dalaran in Legion
+        },
+        note="{npc:225486:Dog} will be here if you've completed their quest chain across previous expansions. If you haven't... go recruit them as part of the Tillers in Pandaria, then get them to move from your Draenor garrison to the Legion version of Dalaran...",
+        minimap=true,
+    },
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
