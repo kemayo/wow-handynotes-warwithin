@@ -26,6 +26,8 @@ Disturbed Earth, (Odd Glob of Wax 212493)
 50972280
 51202109
 49911973, under the bridge
+57853703
+58254117
 
 Worldsoul memories (vignette 6358)
 59516981
@@ -267,9 +269,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     [52591991] = { -- Automaxor
         criteria=69634,
-        quest=81674,
+        quest=81674, -- 84046
         npc=220265,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84046}),
             221218, -- Reinforced Construct's Greaves
             221238, -- Pillar of Constructs
         },
@@ -370,9 +373,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     },
     [57903813] = { -- Coalesced Monstrosity
         criteria=69633,
-        quest=81511,
+        quest=81511, -- 84045
         npc=220266,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84045}),
             221226, -- Voidtouched Waistguard
             223006, -- Signet of Dark Horizons
         },
