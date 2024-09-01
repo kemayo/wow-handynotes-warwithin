@@ -477,6 +477,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         quest=80003,
         npc=218393,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150, {quest=84050}),
             221237, -- Lamentable Vagrant's Lantern
             223926, -- Earthgorger's Chain Bib
             223943, -- Cord of the Earthbreaker
