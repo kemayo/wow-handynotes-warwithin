@@ -744,11 +744,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 })
 
 
-ns.RegisterPoints(ns.HALLOWFALL, {
-    [62650611] = { -- Radiant-Twisted Mycelium
-        quest=nil, -- confirmed, this has a vignette and is rare-flagged, but no quest or rep rewards
-        npc=214905,
-        vignette=5984,
-        note="Objective of {questname:76588}",
-    },
-})
+-- ns.RegisterPoints(ns.HALLOWFALL, {
+--     [62650611] = { -- Radiant-Twisted Mycelium
+--         quest=nil, -- confirmed, this has a vignette and is rare-flagged, but no quest or rep rewards
+--         npc=214905,
+--         vignette=5984,
+--         note="Objective of {questname:76588}",
+--         additional={61953305},
+--     },
+-- })
