@@ -55,6 +55,7 @@ ns.groups["professionknowledge"] = "Profession Knowledge"
 ns.groups["glyphs"] = GLYPHS
 ns.groups["delves"] = DELVES_LABEL
 ns.groups["races"] = "{spell:369968:Racing}"
+ns.groups["beledar"] = "{spell:452526:Beledar's Influence}"
 ns.groups["beledarspawn"] = "{npc:207802:Beledar's Spawn}"
 
 --[[
