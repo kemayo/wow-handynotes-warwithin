@@ -422,9 +422,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [62401320] = { -- Murkspike
         criteria=69728,
-        quest=82565,
+        quest=82565, -- 84060
         npc=220771,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84060}),
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221248, -- Deep Terror Carver
@@ -608,9 +609,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [60201860] = { -- Finclaw Bloodtide
         criteria=69727,
-        quest=82564,
-        npc=207780, -- also 220492?
+        quest=82564, -- 84059
+        npc=207780, -- also 220492, the mount
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84059}),
             221233, -- Deephunter's Bloody Hook
             221234, -- Tidal Pendant
             221248, -- Deep Terror Carver
