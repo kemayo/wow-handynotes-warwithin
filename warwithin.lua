@@ -44,7 +44,9 @@ ns.PROF_WW_TAILORING = 2883 -- spell:
 
 ns.hiddenConfig = {}
 
-ns.defaults.profile.groupsHidden = {}
+ns.defaults.profile.groupsHidden = {
+    snuffling = true,
+}
 
 ns.defaults.profile.achievementsHidden = {
     [40475] = true,
@@ -57,6 +59,7 @@ ns.groups["delves"] = DELVES_LABEL
 ns.groups["races"] = "{spell:369968:Racing}"
 ns.groups["beledar"] = "{spell:452526:Beledar's Influence}"
 ns.groups["beledarspawn"] = "{npc:207802:Beledar's Spawn}"
+ns.groups["snuffling"] = "{spell:431909:Snuffling}"
 
 --[[
 notes:

@@ -34,6 +34,7 @@ achievements\KhazAlgarLoreHunter.lua
 achievements\Races.lua
 
 shared\Delves.lua
+shared\Snuffling.lua
 
 #profession_knowledge\Masters.lua
 profession_knowledge\Alchemy.lua

@@ -3,23 +3,6 @@ local myname, ns = ...
 --[[
 Notes:
 
-Disturbed Earth
-37273620, quest 82026, waxy lump
-41466045, catching wax fired into the air
-40776026, spawned enemy (229809)
-47616347, spawned enemy (216537)
-47156330, spawned waxy lump
-46676510, spawned waxy lump
-51006859, ambush
-50776694, squashable grubs
-23695880, spawned enemy (216288)
-60133139, spawned enemy (216537)
-53836700
-66503847
-64443404
-66252501
-55555175
-
 Worldsoul memories (vignette 6358)
 60686749
 ]]

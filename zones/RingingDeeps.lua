@@ -3,32 +3,6 @@ local myname, ns = ...
 --[[
 Notes:
 
-https://www.wowhead.com/beta/achievement=40585/super-size-snuffling
-https://www.wowhead.com/beta/object=422531/disturbed-earth
-Disturbed Earth, (Odd Glob of Wax 212493)
-64816894, quest 84543, spawned enemy
-58148698, spawned slime to bounce on
-60488818, rockfall to dodge
-60969336, just spawned waxy lump
-62259498, spawned enemy (2229812)
-57907229, spawned enemy (216250)
-55773373, spawned enemy (229808)
-53493438, just spawned waxy lump
-45042805, fired into the air to catch waxy sprockets
-43551959, waxy lump
-43141756, quest 84543, spawned enemy
-64015855
-53662379
-52131940
-52071557
-52991721
-56573634
-50972280
-51202109
-49911973, under the bridge
-57853703
-58254117
-
 Worldsoul memories (vignette 6358)
 59516981
 ]]
