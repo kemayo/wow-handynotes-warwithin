@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v40
+
+* Hallowfall: add a giant Beledar phase-change indicator to the map
+* Show the status for Delve achievements on their world map entrances
+* Add a few more weekly reputation rewards
+* Fix for the account-level checking of weekly reputation rewards
+
 ## Changed in v39
 
 * Delves: add The Spiral Weave, Tak-Rethan Abyss, and The Underkeep
