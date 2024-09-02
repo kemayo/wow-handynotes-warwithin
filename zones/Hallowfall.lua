@@ -59,9 +59,9 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         criteria=69692,
         quest=83263,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
             225639, -- Recipe: Exquisitely Eviscerated Muscle
             225592, -- Exquisitely Eviscerated Muscle
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         active=ns.conditions.Item(225238), -- Meaty Haunch
         related={
@@ -75,8 +75,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         criteria=69693,
         quest=83273,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
             226021, -- Jar of Pickles
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         note="Get the key from the {npc:226025:Dead Arathi} below",
         nearby={55425164},
@@ -86,7 +86,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [59525966] = { -- Dark Ritual
         criteria=69694,
         quest=83284,
-        loot={225693}, -- Shadowed Essence
+        loot={
+            225693, -- Shadowed Essence
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         note="In cave; use the book, defeat the summoned monsters",
         level=73,
         vignette=6372,
@@ -94,7 +97,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [40015112] = { -- Arathi Loremaster
         criteria=69695,
         quest=83298,
-        loot={{225659, toy=true}},
+        loot={
+                {225659, toy=true}, -- Arathi Book Collection
+                ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         note="Answer riddles from {npc:221630:Ryfus Sacredpyr}; you need to find the books for {achievement:40622:Biblo Archivist} for the correct answers to appear",
         level=73, -- not to talk to him, but to get any of the books for answers...
         vignette=6373,
@@ -103,8 +109,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         criteria=69697,
         quest=81971,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
             224580, -- Massive Sapphire Chunk
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         note="High up on the rocks",
         level=75,
@@ -123,14 +129,20 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [50061382] = { -- Lost Necklace
         criteria=69699,
         quest=81978,
-        loot={224575}, -- Lightbearer's Pendant
+        loot={
+            224575, -- Lightbearer's Pendant
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         level=75,
         vignette=6177, -- Lost Memento
     },
     [58392716] = { -- Illuminated Footlocker
         criteria=69701,
         quest=81468,
-        loot={{224552, toy=true}},
+        loot={
+            {224552, toy=true}, -- Cave Spelunker's Torch
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         note="In cave. Catch falling glimmers from {npc:220703:Starblessed Glimmerfly} until you get {spell:442529:Glimmering Illumination}",
         level=73,
         vignette=6098,
@@ -138,7 +150,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [76775383] = { -- Spore-covered Coffer
         criteria=69702,
         quest=79275,
-        loot={}, -- alchemy mats
+        loot={
+            -- alchemy mats
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+        },
         note="In cave",
         level=73,
         vignette=5989,
@@ -149,6 +164,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82005,
         loot={
             {224554, toy=true}, -- Silver Linin' Scepter
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         active={ns.conditions.QuestComplete(82012), ns.conditions.QuestComplete(82026), ns.conditions.QuestComplete(82024), ns.conditions.QuestComplete(82025)},
         note="Talk to four skyship captains flying around the zone to make this appear",
@@ -364,6 +380,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223398, -- Abyssal Hunter's Sash
             223399, -- Abyssal Hunter's Chain
             223400, -- Abyssal Hunter's Cinch
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         route={
             31205464, 33235598, 32725814, 34135728, 34525751, 35085894, 35655746, 36495657, 36945464,
@@ -437,11 +454,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=80011,
         npc=218458,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
             223393, -- Deepfiend Spaulders
             223394, -- Deepfiend Pauldrons
             223395, -- Deepfiend Shoulderpads
             223396, -- Deepfiend Shoulder Shells
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         vignette=6035,
     },
@@ -463,8 +480,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=81881,
         npc=221767,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
             223377, -- Ancient Fungarian's Fingerwrap
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         vignette=6157,
     },
@@ -525,6 +542,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223383, -- Murkshade Handguards
             223384, -- Murkshade Gloves
             223385, -- Murkshade Gauntlets
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         vignette=6034,
         note="Underwater",

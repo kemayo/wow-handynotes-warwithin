@@ -14,7 +14,6 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69280,
         quest=79308,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
             213254, -- Big Gold Nugget
             213251, -- Cinderbee Wax Jar
             213250, -- Cracked Gem
@@ -23,6 +22,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             213252, -- Stolen Earthen Contraption
             213257, -- Wax Shovel
             213256, -- Wax Spoon
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         level=71,
         vignette=5994,
@@ -32,7 +32,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [63086311] = { -- Cursed Pickaxe
         criteria=69281,
         quest=82230,
-        loot={224837}, -- Cursed Pickaxe
+        loot={
+            224837, -- Cursed Pickaxe
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         level=71,
         vignette=6232,
     },
@@ -40,11 +43,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         criteria=69282,
         quest=82235,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
             212508, -- Stunning Sapphire
             212505, -- Extravagant Emerald
             212495, -- Radiant Ruby
             212498, -- Ambivalent Amber
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         level=71,
         vignette=6233,
@@ -52,35 +55,51 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [45511745] = { -- Discarded Toolbox
         criteria=69283,
         quest=82239,
-        loot={224644}, -- Lava-Forged Cogwhee
+        loot={
+            224644, -- Lava-Forged Cogwheel
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         level=73,
         vignette=6235,
     },
     [66203342] = { -- Waterlogged Refuse
         criteria=69304,
         quest=83030,
-        loot={213250, 213255, 213253, 213254}, -- various grays
+        loot={
+            -- various grays
+            213250, 213255, 213253, 213254,
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         level=71,
         vignette=6356,
     },
     [58933028] = { -- Scary Dark Chest
         criteria=69307,
         quest=82818,
-        loot={{224439, pet=4470}}, -- Oop'lajax
+        loot={
+            {224439, pet=4470}, -- Oop'lajax
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         level=71,
         vignette=6277,
     },
     [59016440] = { -- Kaja'Cola Machine
         criteria=69308,
         quest=82819,
-        loot={220774}, -- Goblin Mini Fridge
+        loot={
+            220774, -- Goblin Mini Fridge
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         note="Order four drinks in the right order: Bluesberry, Orange, Oyster, Mangoro (BOOM!)",
         vignette=6241,
     },
     [48254896] = { -- Dislodged Blockage
         criteria=69311,
         quest=82820,
-        loot={{221548, pet=4536}}, -- Blightbud
+        loot={
+            {221548, pet=4536}, -- Blightbud
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         note="Solve a sliding-tiles puzzle",
         level=71, -- can solve the puzzle, but not loot the chest
         vignette=6284,
@@ -88,7 +107,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [49053163] = { -- Dusty Prospector's Chest
         criteria=69312,
         quest=82464,
-        loot={212495, 212505, 212508}, -- some gems
+        loot={
+            212495, 212505, 212508, -- some gems
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         level=71,
         note="At the back of the inn; gather the five shards first",
         related={
@@ -114,7 +136,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [52085327] = { -- Forgotten Treasure (this is the entrance, actually at 50485349)
         criteria=69313,
         quest=80485, -- chests: 80488, 80489, 80490, 80487
-        loot={{224783, toy=true}},
+        loot={
+            {224783, toy=true}, -- Sovereign's Finery chest
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
+        },
         note="Cave behind the waterfall; open chests until you find the key",
         level=71,
         vignette=6074,
@@ -272,6 +297,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223353, -- Waterskipper's Trousers
             223354, -- Waterskipper's Chain Leggings
             223355, -- Waterskipper's Leggings
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         --tameable=true, -- hopper
         vignette=6088,
@@ -285,6 +311,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223361, -- Flying Kobold's Seatbelt (cloth)
             223362, -- Flying Kobold's Seatbelt (mail)
             223363, -- Flying Kobold's Seatbelt (leather)
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         note="Patrols the area",
         vignette=6080,
@@ -328,6 +355,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223371, -- Slippers of Shallow Waters
             223372, -- Sabatons of Shallow Waters
             223373, -- Treads of Shallow Waters
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         vignette=6089,
     },
@@ -394,6 +422,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223402, -- Corrupted Earthen Wristguards
             223403, -- Corrupted Earthen Binds
             223404, -- Corrupted Earthen Cuffs
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         vignette=6105,
     },
@@ -465,6 +494,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         npc=220272,
         loot={
             223368, -- Twisted Earthen Signet
+            ns.rewards.Currency(ns.CURRENCY_ASSEMBLY, 150),
         },
         vignette=6106,
         note="In cave",

@@ -21,7 +21,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [48513004] = { -- Tree's Treasure
         criteria=68197,
         quest=83242, -- 82160 when treasure appears
-        loot={{224585, toy=true}}, -- Hanna's Locket
+        loot={
+            {224585, toy=true}, -- Hanna's Locket
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="In cave; talk to {npc:222940:Freysworn Letitia} for a {item:224185:Crab-Guiding Branch}, then go find {npc:222941:Pearlescent Shellcrab} around the zone",
         related={
             [19715844] = {quest=82755},
@@ -41,14 +44,20 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [40655988] = { -- Magical Treasure Chest
         criteria=68199,
         quest=83243, -- 82212 for giving Lionel crabs
-        loot={{224579, pet=3362}}, -- Sapphire Crab
+        loot={
+            {224579, pet=3362}, -- Sapphire Crab
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Push {npc:223104:Lionel} into the water, talk to it, then go gather 5x {item:223159:Plump Snapcrab} nearby",
         vignette=6224,
     },
     [54001914] = { -- Mysterious Orb
         criteria=68201,
         quest=83244, -- 82047 after talking, 82134 after giving, also 82252 when looted
-        loot={224373}, -- Waterlord's Iridescent Gem
+        loot={
+            224373, -- Waterlord's Iridescent Gem
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Talk to {npc:222847:Weary Water Elemental}, then go fetch its {item:221504:Elemental Pearl}",
         nearby={53051857, label="{item:221504:Elemental Pearl}"},
         vignette=6208, -- Weary Water Elemental
@@ -56,7 +65,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [55006564] = { -- Mushroom Cap
         criteria=68202,
         quest=83245, -- 82142 after giving cap, 82253 as well on loot
-        loot={210796}, -- Mycobloom
+        loot={
+            210796, -- Mycobloom
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Talk to {npc:222894:U'llort the Self-Exiled} then fetch a {item:221550:Boskroot Cap} from the nearby woods",
         vignette=6209,
     },
@@ -66,6 +78,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={
             212498, -- Ambivalent Amber
             212511, -- Ostentatious Onyx
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         note="Talk to {npc:223227:One-Eyed Thak} and follow him to the treasure",
         vignette=6236,
@@ -73,7 +86,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [59622459] = { -- Mosswool Flower
         criteria=68204,
         quest=82145, -- when flower spawns
-        loot={{224450, pet=4527}}, -- Lil' Moss Rosy
+        loot={
+            {224450, pet=4527}, -- Lil' Moss Rosy
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         nearby={
             -- In this order: (but no helpful quests)
             -- 59622459, -- 222956
@@ -89,7 +105,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [59722869] = { -- Mosswool Flower
         criteria=68204,
         quest=83246, -- 82251 also when looted
-        loot={{224450, pet=4527}}, -- Lil' Moss Rosy
+        loot={
+            {224450, pet=4527}, -- Lil' Moss Rosy
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         hide_before=ns.conditions.QuestComplete(82145),
         note="Chase {npc:222956:Lost Mosswool} to the flower; if another player has recently looted if you may have to wait for it to appear",
         vignette=6238,
@@ -97,14 +116,20 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [62574327] = { -- Kobold Pickaxe
         criteria=68205,
         quest=82325,
-        loot={223484}, -- Kobold Mastermind's "Pivel"
+        loot={
+            223484, -- Kobold Mastermind's "Pivel"
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         vignette=6273,
         note="Despawns for a while after someone loots it, so you might need to wait around",
     },
     [77232446] = { -- Jade Pearl
         criteria=68206,
         quest=82287,
-        loot={223280}, -- Jade Pearl
+        loot={
+            223280, -- Jade Pearl
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         vignette=6262,
         note="Despawns for a while after someone loots it, so you might need to wait around",
     },
@@ -114,6 +139,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         loot={
             213197, -- Null Lotus
             210800, -- Luredrop
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         path=47316149,
         note="At the bottom of the cave; despawns for a while after someone loots it, so you might need to wait around",
@@ -132,7 +158,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [59122347] = { -- Web-Wrapped Axe
         criteria=68209,
         quest=82715,
-        loot={224290}, -- Storm Defender's Axe
+        loot={
+            224290, -- Storm Defender's Axe
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Inside the building; despawns for a while after someone loots it, so you might need to wait around",
         vignette=6293,
     },
@@ -144,7 +173,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [40917377] = { -- Turtle's Thanks (initial)
         criteria=68198,
         quest=79585, -- pike
-        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        loot={
+            {224549,pet=4594}, -- Sewer Turtle Whistle
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Give {npc:223338:Dalaran Sewer Turtle} 5x {item:220143:Dornish Pike}, then leave the area and return to give it 1x {item:222533:Goldengill Trout}. Then go find it again in Dornegal.",
         active=ns.conditions.Item(220143, 5),
         vignette=6244,
@@ -152,7 +184,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [40917376] = { -- Turtle's Thanks (after pike)
         criteria=68198,
         quest=79586, -- trout
-        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        loot={
+            {224549,pet=4594}, -- Sewer Turtle Whistle
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         note="Give {npc:223338:Dalaran Sewer Turtle} 1x {item:222533:Goldengill Trout}. Then go find it again in Dornegal.",
         active=ns.conditions.Item(222533),
         vignette=6245,
@@ -163,7 +198,10 @@ ns.RegisterPoints(ns.DORNOGAL, {
         achievement=40434, -- Treasures
         criteria=68198,
         quest=82716, -- final!, also 82255 when treasure spawns
-        loot={{224549,pet=4594}}, -- Sewer Turtle Whistle
+        loot={
+            {224549,pet=4594}, -- Sewer Turtle Whistle
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
+        },
         requires=ns.conditions.QuestComplete(79586), -- moves here
         note="Talk to the turtle to spawn the treasure",
         vignette=6246, -- Dalaran Sewer Turtle, then 6579 Turtle's Thanks
@@ -175,7 +213,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     [31445131] = { --- Dog!
         label="Half-Buried Dog Bowl",
         quest=83094, -- 83093 for calling Dog
-        loot={{224766, pet=4596}}, -- Faithful Dog
+        loot={
+            {224766, pet=4596}, -- Faithful Dog
+            -- no rep, shockingly
+        },
         active={
             ns.conditions.QuestComplete(30526), -- Recruiting Dog in Pandaria
             ns.conditions.QuestComplete(46952), -- Bringing Dog to Dalaran in Legion
@@ -219,6 +260,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223342, -- Warphorn's Resilient Chestplate
             223343, -- Warphorn's Resilient Chainmail
             223344, -- Warphorn's Resilient Vest
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         route={57003460, 58403560, 58403680, 57803780, 56603840, 56003780, 56403660, loop=true,},
         vignette=6044,
@@ -258,6 +300,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223350, -- Wolf Packleader's Helm
             223351, -- Wolf Packleader's Hood
             223370, -- Wolf Packleader's Visor
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=6045,
     },
@@ -270,6 +313,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223357, -- Spaulders of the Steamsurger
             223358, -- Mantle of the Steamsurger (name matches, but not listed?)
             223359, -- Epaulets of the Steamsurger
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=6043,
     },
@@ -279,6 +323,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         npc=217534,
         loot={
             223376, -- Band of the Relic Bearer
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=6026,
     },
@@ -301,6 +346,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223346, -- Viper's Stone Handguards
             223347, -- Viper's Stone Mitts
             223348, -- Viper's Stone Gauntlets
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=6046,
         note="At the bottom of the cave",
@@ -377,6 +423,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223365, -- Wristguards of the Titancap
             223366, -- Bracers of the Titancap
             223367, -- Cuffs of the Titancap
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=5959,
         note="Wanders the quarry",
@@ -471,6 +518,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             210934, -- Aqirite
             210937, -- Ironclaw Ore
             210939, -- Null Stone
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
         vignette=6073,
     },
