@@ -21,8 +21,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 -- 84543 first time you dig up disturbed earth?
 
 local disturbed = {
-    label="Disturbed Earth",
-    loot={212493}, -- Odd Glob of Wax
+    label="{npc:207764:Disturbed Earth}",
+    loot={
+        212493, -- Odd Glob of Wax
+        -- {228228, quest=79343}, -- Strange Lump of Wax
+    },
     texture=ns.atlas_texture("Professions_Tracking_Ore", {r=0.5, g=0.1, b=1, a=0.8, scale=0.8}),
     minimap=true,
     group="snuffling",
@@ -142,6 +145,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [60702260] = {}, -- w
     [61203030] = {}, -- w
     [61302850] = {}, -- w
+    [61392941] = {},
     [62003130] = {}, -- w
     [62103350] = {}, -- w
     [62704480] = {}, -- w
