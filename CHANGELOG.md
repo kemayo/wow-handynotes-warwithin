@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v42
+
+* Hallowfall: explain how to summon Parasidious
+* Snuffling: give Disturbed Earth a localized name
+* A bunch of backend changes that shouldn't have any visible effect on anything
+
 ## Changed in v41
 
 * Add snuffling-related Disturbed Earth points and vendor, hidden by default
