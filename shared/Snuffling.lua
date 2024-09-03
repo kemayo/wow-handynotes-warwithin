@@ -3,7 +3,11 @@ local myname, ns = ...
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     [47663529] = {
         label="{npc:216164:Gnawbles}",
-        hide_before=ns.conditions.QuestComplete(80082), -- Back To Gundargaz; possibly *really* 79635 which is a flag tripped at the same time
+        -- Appears after Back To Gundargaz (80082); possibly *really* 79635
+        -- which is a flag tripped at the same time. Doesn't sell anything
+        -- until you complete Everyday I'm Snufflin' (79343) from the Strange
+        -- Lump of Wax in Disturbed Earth
+        hide_before=ns.conditions.QuestComplete(80082),
         loot={
             -- These are the learnable things:
             {224643, toy=true}, -- Pet-Sized Candle
@@ -52,11 +56,14 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [45103330] = {}, -- w
     [47104110] = {}, -- w
     [49911973] = {note="Under the bridge"},
+    [50742605] = {},
     [50972280] = {},
     [51202109] = {},
+    [51154402] = {},
     [52071557] = {},
     [52131940] = {},
     [52224260] = {},
+    [52492311] = {},
     [52501180] = {}, -- w
     [52804520] = {}, -- w
     [52991721] = {},
@@ -168,6 +175,9 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 ns.RegisterPoints(ns.AZJKAHET, {
     [60008260] = {}, -- w
     [61008530] = {}, -- w
+    [63918916] = {},
+    [61428994] = {note="In cave"},
+    [62088935] = {note="In cave"},
     [69707560] = {}, -- w
     [73404450] = {}, -- w
     [75206180] = {}, -- w

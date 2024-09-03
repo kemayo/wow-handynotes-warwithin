@@ -371,15 +371,22 @@ ns.RegisterPoints(ns.AZJKAHET, {
 })
 
 ns.RegisterPoints(2256, { -- Azj-Kahet Lower
-    [64768691] = { -- Harvester Qixt
+    [65688051] = { -- Harvester Qixt
         criteria=69667,
         quest=82036, -- 84079
         npc=216050,
         loot=addThreadsRep(50, 84079, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
+            223917, -- Nerubian Covert's Cloak
             223941, -- Nerubian Cultivator's Girdle
         }),
+        route={
+            -- 65318052, 65098306, 64908333, 64898331, 64868391, 64468542, 64478571, 64798646, 64888682,
+            -- 64698716, 64478728, 64258727, 63448621, 63618636, 62418558
+            62418558, 63228614, 63608652, 64218736, 64618723, 64828700, 64718638, 64458568, 64598484,
+            64548512, 65208295, 65238270, 65268127, 65358100, 65688051,
+        },
         vignette=6185,
     },
     [61938973] = { -- The Oozekhan

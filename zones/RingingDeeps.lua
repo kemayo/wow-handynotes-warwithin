@@ -2,6 +2,9 @@ local myname, ns = ...
 
 --[[
 Notes:
+Rappelling anchor 51084752, trips 84585
+Rappelling anchor 46901230, trips 84584
+Rappelling anchor 43906860, trips 84586
 
 Worldsoul memories (vignette 6358)
 59516981
