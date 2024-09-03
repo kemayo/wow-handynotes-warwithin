@@ -15,4 +15,11 @@ ns.RegisterPoints(ns.DORNOGAL, {
         atlas="class",
         requires=ns.conditions.Class("MAGE"),
     },
+    [57256085] = { -- Osidion
+        label="{npc:224294:Osidion}",
+        --loot={}, -- There's so many that it feels like overkill...
+        active=ns.conditions.Item(223951), -- Earth-Encrusted Gem
+        atlas="banker",
+        note="Trade {item:223951:Earth-Encrusted Gem} for Ensembles",
+    },
 })
