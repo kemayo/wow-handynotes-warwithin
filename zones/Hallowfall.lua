@@ -7,49 +7,49 @@ Worldsoul memories (vignette 6358)
 60686749
 ]]
 
-local SHADOWPHASE = ns.Class{
-    __classname="ShadowPhase",
-    __parent=ns.conditions.Condition,
-    Label = function(self)
-        local shadowed = "{spell:131233:Shadowed}"
-        if self:Matched() then
-            return shadowed
-        else
-            -- "%s in %s"
-            return WARDROBE_TOOLTIP_ENCOUNTER_SOURCE:format(shadowed, self:Duration(self:NextSpawn()))
-        end
-    end,
-    Matched = function(self)
-        -- if it's more than 2.5 hours away, we must be during the current event
-        return self:NextSpawn() > (3600 * 2.5)
-    end,
-    NextSpawn = function(self)
-        -- Shadow event is one hour after the daily reset, then repeating
-        -- every three hours; each time it lasts for 30 minutes.
-        return (GetQuestResetTime() + 3600) % 10800
-    end,
-    Duration = function(self, seconds)
-        if seconds > 3600 then
-            return COOLDOWN_DURATION_HOURS:format(floor(seconds / 3600)) .. " " .. COOLDOWN_DURATION_MIN:format(floor((seconds % 3600) / 60))
-        end
-        return COOLDOWN_DURATION_MIN:format(floor(seconds / 60))
+local ShadowPhase = ns.conditions._Condition:extends{classname="ShadowPhase"}
+function ShadowPhase:Label()
+    local shadowed = "{spell:131233:Shadowed}"
+    if self:Matched() then
+        return shadowed
+    else
+        -- "%s in %s"
+        return WARDROBE_TOOLTIP_ENCOUNTER_SOURCE:format(shadowed, self:Duration(self:NextSpawn()))
     end
-}()
+end
+function ShadowPhase:Matched()
+    -- if it's more than 2.5 hours away, we must be during the current event
+    return self:NextSpawn() > (3600 * 2.5)
+end
+function ShadowPhase:NextSpawn()
+    -- Shadow event is one hour after the daily reset, then repeating
+    -- every three hours; each time it lasts for 30 minutes.
+    return (GetQuestResetTime() + 3600) % 10800
+end
+function ShadowPhase:Duration(seconds)
+    if seconds > 3600 then
+        return COOLDOWN_DURATION_HOURS:format(floor(seconds / 3600)) .. " " .. COOLDOWN_DURATION_MIN:format(floor((seconds % 3600) / 60))
+    end
+    return COOLDOWN_DURATION_MIN:format(floor(seconds / 60))
+end
+
+local SHADOWPHASE = ShadowPhase()
+_G.SHAD = SHADOWPHASE
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [11091678] = ns.Class{
+    [11091678] = ns.Getterize{
         label="{spell:452526:Beledar's Influence}",
         texture_light = ns.atlas_texture("Mobile-Jewelcrafting", {r=1, g=1, b=0.5}),
         texture_dark = ns.atlas_texture("Mobile-Jewelcrafting", {r=0.75, g=0, b=1}),
         scale=5,
+        group="beledar",
         __get={
             note=function(self) return SHADOWPHASE:Label() .. "\nBeledar switches from light to dark for 30 minutes every 3 hours." end,
             texture=function(self)
                 return SHADOWPHASE:Matched() and self.texture_dark or self.texture_light
             end,
         },
-        group="beledar",
-    }(),
+    },
 })
 
 -- Treasures
