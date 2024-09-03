@@ -92,7 +92,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         note="In cave; use the book, defeat the summoned monsters",
         level=73,
-        vignette=6372,
+        vignette=6372, -- 6371 after you defeat them
     },
     [40015112] = { -- Arathi Loremaster
         criteria=69695,
@@ -635,10 +635,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         vignette=6124,
         note="Objective of {questname:76588}",
     },
-    [61403220] = { -- Parasidious
+    [61623277] = { -- Parasidious
         criteria=69725,
         quest=82563,
-        npc=206977,
+        npc=206977, -- Disturbed Dirt (206978) > Fungus Growth (206980) > Fungus Mound (206981) > Fungal Mass (206993) > Parasidious
         loot={
             221250, -- Creeping Lasher Machete
             221264, -- Fungarian Mystic's Cluster
@@ -646,7 +646,15 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             223940, -- Deranged Fungarian's Epaulets
         },
         vignette=6361,
-        note="Objective of {questname:76588}",
+        note="Objective of {questname:76588}. Buy {item:206670:Darkroot Grippers} from {npc:206533:Chef Dinaire}, and use them to pull {npc:206870:Shadowrooted Vine} until this spawns.",
+        related={
+            [64403100] = {
+                label="{npc:206533:Chef Dinaire}",
+                loot={206670}, -- Darkroot Grippers
+                atlas="banker", minimap=true,
+                note="Feed the keyflame if he's not there",
+            },
+        },
     },
     -- UNKNOWN LOCATION
     --[[
