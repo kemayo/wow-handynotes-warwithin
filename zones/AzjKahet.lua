@@ -333,12 +333,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69668,
         quest=82037,
         npc=216051,
-        loot={
+        loot=addThreadsRep(50, 84080, {
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
             223930, -- Monstrous Chain Pincers
-        },
+        }),
         vignette=6186,
     },
     [62940509] = { -- Kaheti Bladeguard
@@ -358,12 +358,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69669,
         quest=82077,
         npc=222624,
-        loot={
+        loot=addThreadsRep(50, 84081, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223917, -- Nerubian Covert's Cloak
             223923, -- Gilded Cryptlord's Sabatons
-        },
+        }),
         vignette=6203,
     },
 }, {
