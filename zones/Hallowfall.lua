@@ -3,6 +3,8 @@ local myname, ns = ...
 --[[
 Notes:
 
+tripped together while I was running around the keyflame area at 80: 81416+83208
+
 Worldsoul memories (vignette 6358)
 60686749
 ]]
@@ -186,12 +188,42 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         label="Crabber Supplies",
         quest=84342,
         loot={
-            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+            226018, -- Darkened Arathi Cape (cosmetic)
             206350, -- Radiant Remnant
-            212242, -- Cavedweller's Delight
-            225814, -- Feather-on-a-Stick
+            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
         },
     },
+    [62013176] = {
+        label="Hillhelm Lunchbox",
+        quest=82996,
+        loot={
+            226019, -- Darkened Arathi Shoulderguards (cosmetic)
+            206350, -- Radiant Remnant
+            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+        },
+    },
+})
+
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [66561515] = {
+        label="Captain Lancekat's Discretionary Funds",
+        quest=nil, -- 80337 popped near here?
+        path=66011863,
+    },
+    [61703270] = {
+        label="Farmhand Stash",
+        quest=nil,
+    },
+    [64503160] = {
+        label="Old Rotting Crate",
+        quest=nil,
+    },
+}, {
+    loot={
+        226016, -- Darkened Tabard of the Arathi (cosmetic)
+    },
+    note="Only visible with a light source ({item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher})",
+    minimap=true,
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
