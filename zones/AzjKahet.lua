@@ -344,12 +344,12 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69670,
         quest=82078,
         npc=216052, -- Skirmisher Sa'ztyk
-        loot={
+        loot=addThreadsRep(50, 84082, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223917, -- Nerubian Covert's Cloak
             223939, -- Esteemed Nerubian's Mantle
-        },
+        }),
         vignette=6204,
         note="Patrols the area",
     },
@@ -403,12 +403,12 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         criteria=69665,
         quest=82034,
         npc=216048,
-        loot={
+        loot=addThreadsRep(50, 84077, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
             223917, -- Nerubian Covert's Cloak
             223950, -- Corruption Sifter's Treads
-        },
+        }),
         vignette=6183,
     },
 }, {
