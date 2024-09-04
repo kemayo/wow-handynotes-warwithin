@@ -31,7 +31,7 @@ local disturbed = {
         -- {228228, quest=79343}, -- Strange Lump of Wax
     },
     texture=ns.atlas_texture("Professions_Tracking_Ore", {r=0.5, g=0.1, b=1, a=0.8, scale=0.8}),
-    minimap=true,
+    minimap=true, levels=true,
     group="snuffling",
 }
 
@@ -65,6 +65,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [52224260] = {},
     [52492311] = {},
     [52501180] = {}, -- w
+    [52585015] = {},
     [52804520] = {}, -- w
     [52991721] = {},
     [53493438] = {},
@@ -105,7 +106,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [62204080] = {}, -- w
     [62259498] = {},
     [63503550] = {}, -- w
+    [63766316] = {},
     [64015855] = {},
+    [64076139] = {},
     [64203650] = {}, -- w
     [64506460] = {}, -- w
     [64816894] = {},
@@ -178,6 +181,8 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [63918916] = {},
     [61428994] = {note="In cave"},
     [62088935] = {note="In cave"},
+    [64567817] = {},
+    [64692042] = {},
     [69707560] = {}, -- w
     [73404450] = {}, -- w
     [75206180] = {}, -- w
