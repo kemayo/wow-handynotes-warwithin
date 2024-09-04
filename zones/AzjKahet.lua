@@ -420,14 +420,14 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [63409500] = { -- The One Left
         quest=nil,
         npc=216047,
-        loot={
+        loot=addThreadsRep(50, 85167, {
             221246, -- Fierce Beast Staff
             221247, -- Cavernous Critter Shooter
             221251, -- Bestial Underground Cleaver
             221265, -- Charm of the Underground Beast
             225998, -- Earthen Adventurer's Cloak
-        },
-        path=65269328,
+        }),
+        path={63489512, 63959536, 64129539, 65349489, 65429466, 65279345},
     },
 }, {levels=true})
 
