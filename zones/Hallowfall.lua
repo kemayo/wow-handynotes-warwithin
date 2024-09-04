@@ -36,7 +36,6 @@ function ShadowPhase:Duration(seconds)
 end
 
 local SHADOWPHASE = ShadowPhase()
-_G.SHAD = SHADOWPHASE
 
 ns.RegisterPoints(ns.HALLOWFALL, {
     [11091678] = ns.Getterize{
