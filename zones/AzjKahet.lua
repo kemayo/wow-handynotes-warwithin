@@ -183,19 +183,18 @@ ns.RegisterPoints(ns.AZJKAHET, {
 -- Rares
 
 ns.RegisterPoints(ns.AZJKAHET, {
-    [65201896] = { -- Kaheti Silk Hauler
-        -- [62404140, 68205360]
+    [61712962] = { -- Kaheti Silk Hauler
         criteria=69659,
         quest=81702,
         npc=221327,
-        loot={
+        loot=addThreadsRep(50, 84071, {
             221206, -- Reinforced Chitin Chestpiece
             221240, -- Nerubian Stagshell Gouger
             221252, -- Nerubian Slayer's Claymore
             221263, -- Nerubian Venom-Tipped Dart
-        },
+        }),
         vignette=6134,
-        route={65201896, 65142033, 63122532, 62492877, 61882919},
+        route={65201896, 65142033, 63122532, 62492877, 61712962},
         note="Slowly wanders back and forth",
     },
     [76585780] = { -- XT-Minecrusher 8700
