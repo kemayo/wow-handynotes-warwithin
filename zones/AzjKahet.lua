@@ -202,10 +202,10 @@ ns.RegisterPoints(ns.AZJKAHET, {
         criteria=69660,
         quest=81703,
         npc=216034,
-        loot={
+        loot=addThreadsRep(50, 84072, {
             221231, -- Steam-Powered Wristwatch
             221232, -- Polished Goblin Bling
-        },
+        }),
         vignette=6131,
     },
     [45863916] = { -- Abyssal Devourer
