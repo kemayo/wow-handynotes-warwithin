@@ -80,6 +80,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
             224828, -- Weavercloth
             224441, -- Weavercloth Bandage
         }, true),
+        path={67462755, 66882761, 66692773, 66342805, 66142810, 65582772},
     },
 }, {
     achievement=40828,
