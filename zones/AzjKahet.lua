@@ -393,10 +393,10 @@ ns.RegisterPoints(2256, { -- Azj-Kahet Lower
         criteria=69666,
         quest=82035,
         npc=216049,
-        loot={
+        loot=addThreadsRep(50, 84078, {
             223006, -- Signet of Dark Horizons
             223931, -- Black Blood Cowl
-        },
+        }),
         vignette=6184,
     },
     [67458318] = { -- Jix'ak the Crazed
