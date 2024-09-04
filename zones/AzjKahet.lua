@@ -18,14 +18,14 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [34076105] = { -- Concealed Contraband
         criteria=70381,
         quest=82525,
-        loot=addThreadsRep(50, false, {}),
+        loot=addThreadsRep(50, false, {}, true),
         level=74,
         path={33846068, 33796026, 34015980, 34365949, 35555918},
     },
     [78623320] = { -- "Weaving Supplies"
         criteria=69643,
         quest=82527,
-        loot=addThreadsRep(50, false, {{225347, toy=true}}), -- Web-Vandal's Spinning Wheel
+        loot=addThreadsRep(50, false, {{225347, toy=true}}, true), -- Web-Vandal's Spinning Wheel
         level=74,
         vignette=6289,
         note="Collect {item:223901:Violet Silk Scrap}, {item:223902:Crimson Silk Scrap}, {item:223903:Gold Silk Scrap} from the edges of the nearby platform to unlock",
@@ -46,7 +46,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [67449072] = { -- Disturbed Soil
         criteria=69646,
         quest=82718,
-        loot=addThreadsRep(50, false, {224816}), -- Nerubian Almanac
+        loot=addThreadsRep(50, false, {224816}, true), -- Nerubian Almanac
         vignette=6280,
     },
     [38783722] = { -- Missing Scout's Pack
