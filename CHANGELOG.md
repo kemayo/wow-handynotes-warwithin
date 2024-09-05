@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v46
+
+* Hallowfall: shift the start of the shadow phase back 60 seconds, because nothing spawns until all the animations have finished playing out; also, show in the tooltip how long is remaining in the phase
+* Azj-Kahet: tweaks to mob positioning and paths, show the actual names for the Bladeguard and Hulk rather than their achievement-criteria names, and put in the daily quest ID for The One Left rather than just its weekly reputation quest, all thanks to sebid!
+
 ## Changed in v45
 
 * Mounts and pets get better tooltips
