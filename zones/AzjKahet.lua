@@ -343,6 +343,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         vignette=6186,
     },
     [62940509] = { -- Kaheti Bladeguard
+        label="{npc:216052:Skirmisher Sa'ztyk}",
         criteria=69670,
         quest=82078,
         npc=216052, -- Skirmisher Sa'ztyk
@@ -436,6 +437,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
     [30975607] = { -- Chitin Hulk
+        label="{npc:216038:The Groundskeeper}",
         criteria=69657,
         quest=81634, -- 84069
         npc=216038, -- The Groundskeeper
