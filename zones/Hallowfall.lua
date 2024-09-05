@@ -24,9 +24,11 @@ function ShadowPhase:Matched()
     return self:NextSpawn() > (3600 * 2.5)
 end
 function ShadowPhase:NextSpawn()
-    -- Shadow event is one hour after the daily reset, then repeating
-    -- every three hours; each time it lasts for 30 minutes.
-    return (GetQuestResetTime() + 3600) % 10800
+    -- Shadow phase starts one hour and one minute after the daily reset, then
+    -- repeating every three hours; each time it lasts for 30 minutes.
+    -- (Well, the shift starts about 45 seconds after, and takes about 15
+    -- seconds to play.)
+    return (GetQuestResetTime() + 3600 + 60) % 10800
 end
 function ShadowPhase:Duration(seconds)
     if seconds > 3600 then
