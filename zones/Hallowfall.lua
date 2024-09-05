@@ -11,7 +11,7 @@ Worldsoul memories (vignette 6358)
 
 local ShadowPhase = ns.conditions._Condition:extends{classname="ShadowPhase"}
 function ShadowPhase:Label()
-    local shadowed = "{spell:131233:Shadowed}"
+    local shadowed = ITEM_QUALITY_COLORS[4].color:WrapTextInColorCode("{spell:131233:Shadowed}")
     if self:Matched() then
         return shadowed .. " " .. GARRISON_MISSION_TIMELEFT:format(self:Duration(self:NextSpawn() - (3600 * 2.5)))
     else
@@ -47,11 +47,25 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         scale=5,
         group="beledar",
         __get={
-            note=function(self) return SHADOWPHASE:Label() .. "\nBeledar switches from light to dark for 30 minutes every 3 hours." end,
+            note=function(self)
+                return SHADOWPHASE:Label() ..
+                    "\nBeledar switches from light to dark for 30 minutes every 3 hours." ..
+                    "\n|cff00ffffClick|r this to force {npc:207802:Beledar's Spawn} to show regardless of your normal settings"
+            end,
             texture=function(self)
                 return SHADOWPHASE:Matched() and self.texture_dark or self.texture_light
             end,
         },
+        OnClick=function(point, button, uiMapID, coord)
+            ns.db.groupsHidden["beledarspawn"] = false
+            for coord, opoint in pairs(ns.points[ns.HALLOWFALL]) do
+                if opoint.npc == 207802 then
+                    opoint.always = not opoint.always
+                end
+            end
+
+            C_Timer.NewTimer(0, function() ns.HL:Refresh() end)
+        end,
     },
 })
 
