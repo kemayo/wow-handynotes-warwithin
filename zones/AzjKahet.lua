@@ -342,11 +342,11 @@ ns.RegisterPoints(ns.AZJKAHET, {
         }),
         vignette=6186,
     },
-    [62940509] = { -- Kaheti Bladeguard
-        label="{npc:216052:Skirmisher Sa'ztyk}",
+    [61210771] = { -- Kaheti Bladeguard
+        label="{npc:216052:Skirmisher Sa'zryk}",
         criteria=69670,
         quest=82078,
-        npc=216052, -- Skirmisher Sa'ztyk
+        npc=216052, -- Skirmisher Sa'zryk
         loot=addThreadsRep(50, 84082, {
             223915, -- Nerubian Orator's Stiletto
             223916, -- Nerubian Cutthroat's Reach
@@ -354,7 +354,8 @@ ns.RegisterPoints(ns.AZJKAHET, {
             223939, -- Esteemed Nerubian's Mantle
         }),
         vignette=6204,
-        note="Patrols the area",
+        note="Spawns at the top, teleports to the bottom of the path, walks back to the top, then repeats",
+        route={62940509, 62430707, 62270757, 61930840, 61740856, 61520848, 61330831, 61210803, 61210771},
     },
     [64590667] = { -- Deepcrawler Tx'kesh
         criteria=69669,
