@@ -13,7 +13,7 @@ local ShadowPhase = ns.conditions._Condition:extends{classname="ShadowPhase"}
 function ShadowPhase:Label()
     local shadowed = "{spell:131233:Shadowed}"
     if self:Matched() then
-        return shadowed
+        return shadowed .. " " .. GARRISON_MISSION_TIMELEFT:format(self:Duration(self:NextSpawn() - (3600 * 2.5)))
     else
         -- "%s in %s"
         return WARDROBE_TOOLTIP_ENCOUNTER_SOURCE:format(shadowed, self:Duration(self:NextSpawn()))
