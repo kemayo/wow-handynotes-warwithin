@@ -71,10 +71,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         note="Inside",
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82636,
-    --     loot={224053}, -- Eight Views on Defense against Hostile Runes
-    --     note="Buy from {npc::}",
-    --     parent=true, levels=true, translate={[2256]=true},
-    -- },
 }, KNOWLEDGE)

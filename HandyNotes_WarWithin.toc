@@ -36,7 +36,7 @@ achievements\Races.lua
 shared\Delves.lua
 shared\Snuffling.lua
 
-#profession_knowledge\Masters.lua
+profession_knowledge\Masters.lua
 profession_knowledge\Alchemy.lua
 profession_knowledge\Blacksmithing.lua
 profession_knowledge\Enchanting.lua

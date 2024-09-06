@@ -67,10 +67,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6439,
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82631,
-    --     loot={224038}, -- Smithing After Saronite
-    --     note="Buy from {npc::}",
-    --     parent=true, levels=true, translate={[2256]=true},
-    -- },
 }, KNOWLEDGE)

@@ -67,10 +67,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6479,
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82637,
-    --     loot={224054}, -- Emergent Crystals of the Surface-Dwellers
-    --     note="Buy from {npc::}",
-    --     parent=true, levels=true, translate={[2256]=true},
-    -- },
 }, KNOWLEDGE)

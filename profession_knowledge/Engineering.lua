@@ -67,10 +67,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6456,
         parent=true, levels=true, translate={[2256]=true},
     },
-    [58203160] = {
-        quest=82632,
-        loot={224052}, -- Clocks, Gears, Sprockets, and Legs
-        note="Buy from {npc:218195:Rukku}",
-        parent=true, levels=true, translate={[2256]=true},
-    },
 }, KNOWLEDGE)

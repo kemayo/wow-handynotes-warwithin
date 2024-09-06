@@ -68,10 +68,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6487,
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82626,
-    --     loot={224056}, -- Uses for Leftover Husks (After You Take Them Apart)
-    --     note="Buy from {npc::}",
-    --     parent=true, levels=true, translate={[2256]=true},
-    -- },
 }, KNOWLEDGE)

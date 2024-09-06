@@ -67,10 +67,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6447,
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82635,
-    --     loot={224050}, -- Web Sparkles: Pretty and Powerful
-    --     note="Buy from {npc::}",
-    --     parent=true,
-    -- },
 }, KNOWLEDGE)

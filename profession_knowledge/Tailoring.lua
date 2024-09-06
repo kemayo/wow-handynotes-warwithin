@@ -67,10 +67,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6512,
         parent=true, levels=true, translate={[2256]=true},
     },
-    [50601680] = {
-        quest=82634,
-        loot={224036}, -- And That's A Web-Wrap!
-        note="Buy from {npc:218190:Saaria}",
-        parent=true, levels=true, translate={[2256]=true},
-    },
 }, KNOWLEDGE)

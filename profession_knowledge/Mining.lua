@@ -68,10 +68,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6495,
         parent=true, levels=true, translate={[2256]=true},
     },
-    -- [] = {
-    --     quest=82614,
-    --     loot={224055}, -- A Rocky Start
-    --     note="Buy from {npc::}",
-    --     parent=true,
-    -- },
 }, KNOWLEDGE)

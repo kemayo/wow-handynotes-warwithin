@@ -73,10 +73,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6463,
         parent=true, levels=true, translate={[2256]=true},
     },
-    [47001620] = {
-        quest=82630,
-        loot={224023}, -- Herbal Embalming Techniques
-        note="Buy from {npc:218169:Llyot}",
-        parent=true, levels=true, translate={[2256]=true},
-    },
 }, KNOWLEDGE)

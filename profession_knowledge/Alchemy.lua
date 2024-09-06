@@ -66,10 +66,4 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
         vignette=6431,
         parent=true, levels=true, translate={[2256]=true},
     },
-    [55604700] = {
-        quest=82633,
-        loot={224024}, -- Theories of Bodily Transmutation, Chapter 8
-        note="Buy from {npc:224337:Zara'azj the Magnificent}",
-        parent=true, levels=true, translate={[2256]=true},
-    }
 }, KNOWLEDGE)
