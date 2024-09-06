@@ -496,9 +496,10 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
     },
     [31915238] = { -- Rotfist
         criteria=68228,
-        quest=82205,
+        quest=82205, -- 85161
         npc=222380,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150, {quest=85161}),
             226112, -- Rotfist Flesh Carver
             226115, -- Contaminating Cleaver
             226116, -- Coagulating Phlegm Churner
