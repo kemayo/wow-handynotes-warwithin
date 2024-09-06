@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v47
+
+* Hallowfall: clicking on Beledar will force the Beledar's Spawn locations to show regardless of your other settings, so you can help out even if you already have the mount
+* Show notable mobs that *only* have transmog in a different color, so you can still hunt for unknown transmog while prioritizing weekly reputation
+
 ## Changed in v46
 
 * Hallowfall: shift the start of the shadow phase back 60 seconds, because nothing spawns until all the animations have finished playing out; also, show in the tooltip how long is remaining in the phase
