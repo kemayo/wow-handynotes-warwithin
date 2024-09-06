@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v48
+
+* Isle of Dorn: weekly reputation quests for Zovex and Rotfist (I finally gave up and just camped a character on their spawn point for an hour and a half)
+* Profession Knowledge: fill out the vendors in the City of Threads
+* Better notoriety-without-transmog calculation
+
 ## Changed in v47
 
 * Hallowfall: clicking on Beledar will force the Beledar's Spawn locations to show regardless of your other settings, so you can help out even if you already have the mount
