@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v50
+
+* Hallowfall: add a missing Biblo Archivist book, and the random non-achievement Fisherman's Pouch
+* Stop some occasional taint caused by routes
+
 ## Changed in v49
 
 * Hallowfall: removed a doubled-up Beledar's Spawn point
