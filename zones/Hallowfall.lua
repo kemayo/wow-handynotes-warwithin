@@ -335,7 +335,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [59802203] = {criteria=68965, loot={225205}}, -- Shadow Curfew Journal
     [70225684] = {criteria=68967, loot={225215}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Song of Renilash
     [56586518] = {criteria=68968, loot={225203}, note="In the ship. Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Beledar- The Emperor's Vision
-    -- [] = {criteria=69729, loot={228457}}, -- Lightspark Grade Book
+    [52645999] = {criteria=69729, quest=84497, loot={228457}}, -- Lightspark Grade Book
 }, {
     achievement=40622,
     texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
