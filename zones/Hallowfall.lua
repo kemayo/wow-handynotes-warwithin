@@ -52,17 +52,21 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             note=function(self)
                 return SHADOWPHASE:Label() ..
                     "\nBeledar switches from light to dark for 30 minutes every 3 hours." ..
-                    "\n|cff00ffffClick|r this to force {npc:207802:Beledar's Spawn} to show regardless of your normal settings"
+                    "\n|cff00ffffClick|r this to force {npc:207802:Beledar's Spawn} to " ..
+                    (self.FORCED and "hide" or "show") .. " regardless of your normal settings"
             end,
             texture=function(self)
                 return SHADOWPHASE:Matched() and self.texture_dark or self.texture_light
             end,
         },
-        OnClick=function(point, button, uiMapID, coord)
-            ns.db.groupsHidden["beledarspawn"] = false
+        OnClick=function(self, button, uiMapID, coord)
+            -- TODO: it'd be nice to work out the current state of the Spawn
+            -- points so I can toggle from the start, rather than the first
+            -- click apparently doing nothing if they're currently shown
+            self.FORCED = not self.FORCED
             for coord, opoint in pairs(ns.points[ns.HALLOWFALL]) do
                 if opoint.npc == 207802 then
-                    opoint.always = not opoint.always
+                    opoint.force = self.FORCED
                 end
             end
 
