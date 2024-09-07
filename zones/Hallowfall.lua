@@ -217,6 +217,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
         },
     },
+    [56091455] = {
+        label="Fisherman's Pouch",
+        quest=81518,
+        loot={},
+        vignette=6103,
+    },
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
