@@ -5,6 +5,8 @@ Notes:
 
 tripped together while I was running around the keyflame area at 80: 81416+83208
 
+faction unlocks with light of the dawntower 78671, also trips hidden 79654...
+
 Worldsoul memories (vignette 6358)
 60686749
 ]]
@@ -331,7 +333,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 
 -- Biblo Archivist
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [48153959] = {criteria=68954, loot={225212}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Big Book of Arathi Idioms
+    [48153959] = {criteria=68954, quest=83314, loot={225212}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Big Book of Arathi Idioms
     [43904997] = {criteria=68955, loot={225217}}, -- 500 Dishes Using Cave Fish and Mushrooms
     [69344394] = {criteria=68957, loot={225207}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Care and Feeding of the Imperial Lynx
     [68684159] = {criteria=68958, loot={225206}}, -- Light's Gambit Playbook
@@ -770,6 +772,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [44744241] = { -- Deathtide
         npc=221753,
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=85165}),
             223920, -- Slime Deflecting Stopper
             223921, -- Ever-Oozing Signet
             225997, -- Earthen Adventurer's Spaulders
@@ -777,30 +780,42 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         vignette=6156,
         active=ns.conditions.Item(220123), -- Ominous Offering
         note="Create an {item:220123:Ominous Offering} from {item:220124:Jar of Mucus} (|A:playerpartyblip:::::0:255:127|a) + {item:220122} (|A:playerpartyblip:::::0:0:255|a) to summon",
+        routes={
+            -- water
+            {28925120, 44744241, highlightOnly=true},
+            {34185782, 44744241, highlightOnly=true},
+            {34365357, 44744241, highlightOnly=true},
+            {43451413, 44744241, highlightOnly=true},
+            {50094966, 44744241, highlightOnly=true},
+            {53771913, 44744241, highlightOnly=true},
+            {55142344, 44744241, highlightOnly=true},
+            -- mucus
+            {48001668, 44744241, highlightOnly=true},
+        },
     },
 }, deathtide{})
 ns.RegisterPoints(ns.HALLOWFALL, {
     -- Jar of Mucus
-    [48001668] = {route={48001668, 44744241, highlightOnly=true}},
+    [48001668] = {route=44744241},
 }, deathtide{
     label="{item:220124}",
-    loot={220124},
+    loot={220124}, inbag={220124, 220123, any=true},
     texture=ns.atlas_texture("playerpartyblip",{r=0,g=1,b=0.5,}),
     minimap=true,
     note="Take to {npc:221753} @ 44.7,42.4",
 })
 ns.RegisterPoints(ns.HALLOWFALL, {
      -- Offering of Pure Water
-    [28925120] = {route={28925120, 44744241, highlightOnly=true}},
-    [34185782] = {route={34185782, 44744241, highlightOnly=true}},
-    [34365357] = {route={34365357, 44744241, highlightOnly=true}},
-    [43451413] = {route={43451413, 44744241, highlightOnly=true}},
-    [50094966] = {route={50094966, 44744241, highlightOnly=true}},
-    [53771913] = {route={53771913, 44744241, highlightOnly=true}},
-    [55142344] = {route={55142344, 44744241, highlightOnly=true}},
+    [28925120] = {route=44744241},
+    [34185782] = {route=44744241},
+    [34365357] = {route=44744241},
+    [43451413] = {route=44744241},
+    [50094966] = {route=44744241},
+    [53771913] = {route=44744241},
+    [55142344] = {route=44744241},
 }, deathtide{
     label="{item:220122}",
-    loot={220122},
+    loot={220122}, inbag={220122, 220123, any=true},
     texture=ns.atlas_texture("playerpartyblip",{r=0,g=0,b=1,}),
     minimap=true,
     note="Take to {npc:221753} @ 44.7,42.4",
