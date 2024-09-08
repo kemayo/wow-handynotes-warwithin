@@ -180,6 +180,37 @@ ns.RegisterPoints(ns.AZJKAHET, {
     note="Drink {item:225784:Potion of Polymorphic Translation Nerubian} first",
 })
 
+-- No Harm Ever Came From Reading A Book
+ns.RegisterPoints(ns.CITYOFTHREADSLOWER, {
+    [66775626] = {
+        label="{npc:215605:Grimoire}",
+        quest=83741,
+        note="Read the Fleshy Grimoire.",
+    },
+    [66775627] = {
+        label="{npc:227452:Another You}",
+        quest=83724,
+        note="Talk to {npc:227452:Another You} again.",
+    },
+}, {
+    note="Find the wall with three tiny spiders on it, climb it, and jump down the hole by the top spider.",
+    path={66465579, 66635516, 67235497, 67805521, 68755623, 69305652, 69875672, 71045679, 71715691},
+    achievement=40632, achievementNotFound=true,
+    texture=ns.atlas_texture("notoriety-32x32", {r=0, g=1, b=1}), minimap=true,
+    levels=true, parent=true,
+})
+ns.RegisterPoints(ns.AZJKAHET, {
+    [78046325] = {quest=83746, hide_before=ns.conditions.QuestComplete(83741)}, -- Mmarl
+    [60231814] = {quest=83745, hide_before=ns.conditions.QuestComplete(83741)}, -- Faerin's Advance
+    [24215274] = {quest=83744, hide_before=ns.conditions.QuestComplete(83741)}, -- Wildcamp Or'lay
+    [56564317] = {quest=83747, hide_before=ns.conditions.QuestComplete(83741)}, -- Weaver's Lair
+}, {
+    achievement=40632, achievementNotFound=true,
+    label="{npc:227452:Another You}",
+    note="Find {npc:227452:Another You} and tell it to go home. You may need to talk to the flight master nearby before it appears. It'll /whisper you when you're close.",
+    texture=ns.atlas_texture("notoriety-32x32", {r=0, g=1, b=1}), minimap=true, levels=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.AZJKAHET, {

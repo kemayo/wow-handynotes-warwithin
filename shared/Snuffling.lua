@@ -124,6 +124,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 ns.RegisterPoints(ns.HALLOWFALL, {
     [23695880] = {},
+    [31575710] = {},
     [32275832] = {},
     [35205354] = {},
     [37273620] = {},
