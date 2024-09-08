@@ -322,10 +322,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 
 -- Illusive Kobyss Lure (Treasures)
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [55362720] = {label="{npc:215653:Kobyss Shadeshaper}: {item:225554:Sunless Lure}",},
-    [47611854] = {label="{npc:213622:Murkfin Depthstalker}: {item:225558:Murkfin Lure}",},
-    [50655037] = {label="{npc:215243:Hungering Shimmerfin}: {item:225559:Hungering Shimmerfin}",},
-    [34965465] = {label="{npc:213406:Ragefin Necromancer}: {item:225560:Ragefin Necrostaff}",},
+    [55362720] = {label="{npc:215653:Kobyss Shadeshaper}: {item:225554:Sunless Lure}", inbag=225554},
+    [47611854] = {label="{npc:213622:Murkfin Depthstalker}: {item:225558:Murkfin Lure}", inbag=225558},
+    [50655037] = {label="{npc:215243:Hungering Shimmerfin}: {item:225559:Hungering Shimmerfin}", inbag=225559},
+    [34965465] = {label="{npc:213406:Ragefin Necromancer}: {item:225560:Ragefin Necrostaff}", inbag=225560},
 }, {
     achievement=40848, -- Treasures
     criteria=69696,
