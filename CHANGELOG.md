@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v52
+
+* Azj-Kahet: added the No Harm Ever Came From Reading A Book achievement
+
 ## Changed in v51
 
 * Clicking to keep routes visible should now work more reliably
