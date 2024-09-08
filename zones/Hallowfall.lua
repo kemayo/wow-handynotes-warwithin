@@ -229,6 +229,16 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         loot={},
         vignette=6103,
     },
+    [65432715] = {
+        label="Surveyor's Box",
+        quest=34341,
+        loot={
+            226019, -- Darkened Arathi Shoulderguards (cosmetic)
+            206350, -- Radiant Remnant
+            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
+        },
+        vignette=6536,
+    },
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
