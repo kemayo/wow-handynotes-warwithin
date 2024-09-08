@@ -247,11 +247,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=nil, -- 80337 popped near here?
         path=66011863,
     },
-    [61703270] = {
+    [63073074] = {
         label="Farmhand Stash",
         quest=nil,
     },
-    [64503160] = {
+    [64903330] = {
         label="Old Rotting Crate",
         quest=nil,
     },
