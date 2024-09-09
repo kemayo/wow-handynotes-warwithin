@@ -3,6 +3,8 @@ local myname, ns = ...
 local KNOWLEDGE = {
     note="Profession master; buy knowledge from them",
     texture=ns.atlas_texture("Professions-Crafting-Orders-Icon", {r=0.5,g=1,b=1,}),
+    backdrop=ns.atlas_texture("CircleMask", {r=0.5, g=1, b=1}),
+    border=ns.atlas_texture("AutoQuest-badgeborder", 1.1),
     group="professionknowledge",
     minimap=true,
 }

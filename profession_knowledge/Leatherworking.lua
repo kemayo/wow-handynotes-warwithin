@@ -6,7 +6,9 @@ local KNOWLEDGE = {
     requires = ns.conditions.Profession(ns.PROF_WW_LEATHERWORKING),
     -- active = ns.conditions.Profession(ns.PROF_WW_LEATHERWORKING, 25),
     group = "professionknowledge",
-    texture=ns.atlas_texture("VignetteLoot", {r=0.5,g=1,b=1,}),
+    atlas="worldquest-icon-leatherworking",
+    backdrop=ns.atlas_texture("CircleMask", {r=0.5, g=1, b=1}),
+    border=ns.atlas_texture("AutoQuest-badgeborder", 1.1),
     -- minimap = true,
 }
 
