@@ -119,7 +119,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [40015112] = { -- Arathi Loremaster
         criteria=69695,
-        quest=83298,
+        quest=83298, -- questions trip 83300, 83301, 83302, 83303, 83304, 83305
         loot={
                 {225659, toy=true}, -- Arathi Book Collection
                 ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
@@ -352,7 +352,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [69344394] = {criteria=68957, loot={225207}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Care and Feeding of the Imperial Lynx
     [68684159] = {criteria=68958, loot={225206}}, -- Light's Gambit Playbook
     [57815182] = {criteria=68960, loot={225208}, note="By the shore"}, -- From the Depths They Come
-    [48756472] = {criteria=68961, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}", vignette=6374}, -- Palawltar's Codex of Dimensional Structure
+    [48756472] = {criteria=68961, quest=83309, loot={225216}, note="Needed for {achievement:40848.69695:Arathi Loremaster}", vignette=6374}, -- Palawltar's Codex of Dimensional Structure
     [64182812] = {criteria=68963, loot={225204}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- Shadow Curfew Guidelines
     [59802203] = {criteria=68965, loot={225205}}, -- Shadow Curfew Journal
     [70225684] = {criteria=68967, loot={225215}, note="Needed for {achievement:40848.69695:Arathi Loremaster}"}, -- The Song of Renilash
