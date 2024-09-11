@@ -86,7 +86,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     achievement=40828,
     levels=true,
 })
-ns.RegisterPoints(2256, { -- Azj-Kahet Lower
+ns.RegisterPoints(ns.AZJKAHETLOWER, { -- Azj-Kahet Lower
     [62728795] = { -- Memory Cache (confirm lower)
         criteria=69615,
         quest=82520,
@@ -405,7 +405,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
     levels=true,
 })
 
-ns.RegisterPoints(2256, { -- Azj-Kahet Lower
+ns.RegisterPoints(ns.AZJKAHETLOWER, { -- Azj-Kahet Lower
     [65688051] = { -- Harvester Qixt
         criteria=69667,
         quest=82036, -- 84079
