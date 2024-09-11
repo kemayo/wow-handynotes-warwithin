@@ -741,7 +741,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 ns.RegisterPoints(ns.HALLOWFALL, {
     [25825754] = {},
     [32673962] = {},
-    [37207191] = {},
+    [37207190] = {},
     [37744585] = {},
     [38382474] = {},
     [42733133] = {},

@@ -35,6 +35,7 @@ achievements\Races.lua
 
 shared\Delves.lua
 shared\Snuffling.lua
+shared\WorldBosses.lua
 
 profession_knowledge\Masters.lua
 profession_knowledge\Alchemy.lua
