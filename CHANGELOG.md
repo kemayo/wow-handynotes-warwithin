@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v56
+
+* Fix the position of some dornogal profession knowledge items that moved a bit since beta, thanks ElGabbaGhoul for pointing out the blacksmithing one being incorrect
+* Tooltip text colors for a point having unmet requirements were inverted
+
 ## Changed in v55
 
 * Fixed an issue with treasures not hiding if you'd found everything in them, if you'd also set the only things in them that were knowable as not-notable. (E.g. the Hallowfall repeating chests that have cosmetic transmogs in them, if you said you didn't care about transmog.)
