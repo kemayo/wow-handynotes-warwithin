@@ -13,14 +13,14 @@ local KNOWLEDGE = {
 }
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
-    [58136201] = {
+    [58186204] = {
         quest=83906,
         loot={226332}, -- Earthen Miner's Gavel
         vignette=6489,
     },
 }, KNOWLEDGE)
 ns.RegisterPoints(ns.DORNOGAL, {
-    [36647929] = {
+    [36717936] = {
         quest=83907,
         loot={226333}, -- Dornogal Chisel
         vignette=6490,
