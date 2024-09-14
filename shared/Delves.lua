@@ -181,6 +181,9 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         end
     end)
 
+    if C_AddOns.IsAddOnLoaded("DelverView") then
+        return
+    end
     local OnTooltipShow = function(point, tooltip)
         if point._tooltipWidgetSet then
             GameTooltip_AddWidgetSet(tooltip, point._tooltipWidgetSet, 10)
