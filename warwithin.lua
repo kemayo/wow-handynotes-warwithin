@@ -69,4 +69,6 @@ ns.groups["worldboss"] = MAP_LEGEND_WORLDBOSS
 --[[
 notes:
 
+World quests available: 79573 (at the same time as Surface Bound 79197)
+
 --]]
