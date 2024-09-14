@@ -22,7 +22,11 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [34076105] = { -- Concealed Contraband
         criteria=70381,
         quest=82525,
-        loot=addThreadsRep(50, false, {}, true),
+        loot=addThreadsRep(50, false, {
+            220228, -- Quartz Growth
+            220237, -- Shining Amethyst Cluster
+            220224, -- Iridescent Integument
+        }, true),
         level=74,
         path={33846068, 33796026, 34015980, 34365949, 35555918},
     },
@@ -130,7 +134,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
 -- Itsy Bitsy Spider
 ns.RegisterPoints(ns.AZJKAHET, {
     -- [] = {criteria=68972,}, -- Webster (227217)
-    [55654395] = {criteria=68973,}, -- Spindle (216213) (this coord isn't giving me completion...)
+    [55654395] = {criteria=68973,}, -- Spindle (216213) (this coord isn't giving me completion... 44255678 did as 216217, but it's temporary while Spindle's a questgiver there)
     -- [] = {criteria=68974,}, -- Swift (226133 or 220666)
     -- [] = {criteria=68976,}, -- Ru'murh (...14 different npc ids)
     -- [] = {criteria=68977,}, -- Thimble (220568)
