@@ -2,6 +2,10 @@ local myname, ns = ...
 
 --[[
 Notes:
+
+Anub'azal's pheromones (siegehold): spellid 430649, questid 81628
+Weaver's Azj-Kahet Pheromones (burrows): spellid 434977, questid 81625
+Nizrek's Azj-Kahet Pheromones (umbral bazar, skeins, burrows): spellid 434980, questid 81623
 ]]
 
 local addThreadsRep = function(amount, quest, loot, append)
