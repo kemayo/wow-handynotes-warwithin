@@ -151,6 +151,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7872] = {40534, 40815, 40453}, -- The Underkeep (Nerubian)
         [7873] = {40535, 40811, 40452}, -- Tak-Rethan Abyss (Kobyss)
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
+        [7875] = {}, -- Zekvir's Lair (Nerubian)
     }
     EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
         -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
