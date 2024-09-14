@@ -154,16 +154,25 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
     }
     EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
         -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
-        if ns.db.groupsHidden.delves then
-            return
-        end
-        if tooltipShown and delves[areaPoiID] then
-            local tooltip = GetAppropriateTooltip()
-            for i, achievement in ipairs(delves[areaPoiID]) do
-                -- we want to show the full criteria list for the first one (stories), and just the summary for the second
-                ns.tooltipHelpers.achievement(tooltip, achievement, i == 1)
+        if not ns.db.groupsHidden.delves then
+            if tooltipShown and delves[areaPoiID] then
+                local tooltip = GetAppropriateTooltip()
+                for i, achievement in ipairs(delves[areaPoiID]) do
+                    -- we want to show the full criteria list for the first one (stories), and just the summary for the second
+                    ns.tooltipHelpers.achievement(tooltip, achievement, i == 1)
+                end
+                tooltip:AddDoubleLine(" ", myfullname:gsub("HandyNotes: ", ""), 0, 1, 1, 0, 1, 1)
+                tooltip:Show()
             end
-            tooltip:AddDoubleLine(" ", myfullname:gsub("HandyNotes: ", ""), 0, 1, 1, 0, 1, 1)
+        end
+        if ns.DEBUG then
+            local tooltip = GetAppropriateTooltip()
+            if not tooltipShown then
+                tooltip:SetOwner(pin, "ANCHOR_CURSOR")
+                -- tooltip:AddLine(name)
+                tooltip:AddDoubleLine(name, "DEBUG", 1, 1, 1, 1, 0, 0)
+            end
+            tooltip:AddDoubleLine("areaPoiID", areaPoiID)
             tooltip:Show()
         end
     end)
