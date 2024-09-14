@@ -181,6 +181,11 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         end
     end)
 
+    local OnTooltipShow = function(point, tooltip)
+        if point._tooltipWidgetSet then
+            GameTooltip_AddWidgetSet(tooltip, point._tooltipWidgetSet, 10)
+        end
+    end
     local points = {}
     local already = {}
     for _, mapInfo in ipairs(C_Map.GetMapChildrenInfo(ns.KHAZALGAR)) do
@@ -205,6 +210,8 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                             atlas=info.atlasName, scale=1.5,
                             note=info.description,
                             group="delves",
+                            OnTooltipShow=OnTooltipShow,
+                            _tooltipWidgetSet = info.tooltipWidgetSet,
                         }
                     end
                 end
