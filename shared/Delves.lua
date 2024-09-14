@@ -1,6 +1,9 @@
 local myname, ns = ...
 local _, myfullname = C_AddOns.GetAddOnInfo(myname)
 
+local HandyNotes = LibStub("AceAddon-3.0"):GetAddon("HandyNotes")
+local HBD = LibStub("HereBeDragons-2.0")
+
 local STURDY = ns.nodeMaker{
     lable="Sturdy Chest",
     group="delves",
@@ -177,4 +180,36 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
             tooltip:Show()
         end
     end)
+
+    local points = {}
+    local already = {}
+    for _, mapInfo in ipairs(C_Map.GetMapChildrenInfo(ns.KHAZALGAR)) do
+        if mapInfo.mapType == Enum.UIMapType.Zone then
+            for _, delveID in ipairs(C_AreaPoiInfo.GetDelvesForMap(mapInfo.mapID)) do
+                if not already[delveID] then
+                    already[delveID] = true
+                    local info = C_AreaPoiInfo.GetAreaPOIInfo(mapInfo.mapID, delveID)
+                    local x, y = info.position:GetXY()
+                    local tx, ty
+                    if mapInfo.mapID == ns.ISLEOFDORN then
+                        -- special-case, as HereBeDragons can't translate these due to the weird stacked-maps structure of Khaz Algar
+                        local minX, maxX, minY, maxY = C_Map.GetMapRectOnMap(mapInfo.mapID, ns.KHAZALGAR)
+                        tx = Lerp(minX, maxX, x)
+                        ty = Lerp(minY, maxY, y)
+                    else
+                        tx, ty = HBD:TranslateZoneCoordinates(x, y, mapInfo.mapID, ns.KHAZALGAR)
+                    end
+                    if tx and ty then
+                        points[HandyNotes:getCoord(tx, ty)] = {
+                            label=info.name,
+                            atlas=info.atlasName, scale=1.5,
+                            note=info.description,
+                            group="delves",
+                        }
+                    end
+                end
+            end
+        end
+    end
+    ns.RegisterPoints(ns.KHAZALGAR, points)
 end)
