@@ -159,7 +159,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
     EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
         -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
         if not ns.db.groupsHidden.delves then
-            if tooltipShown and delves[areaPoiID] then
+            if tooltipShown and delves[areaPoiID] and #delves[areaPoiID] > 0 then
                 local tooltip = GetAppropriateTooltip()
                 for i, achievement in ipairs(delves[areaPoiID]) do
                     -- we want to show the full criteria list for the first one (stories), and just the summary for the second
