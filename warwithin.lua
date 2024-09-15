@@ -10,6 +10,8 @@ ns.AZJKAHETLOWER = 2256
 ns.CITYOFTHREADS = 2213
 ns.CITYOFTHREADSLOWER = 2216
 
+ns.WORLDQUESTS = ns.conditions.QuestComplete(79573)
+
 -- ns.MAXLEVEL = {ns.conditions.QuestComplete(67030), ns.conditions.Level(70)}
 -- ns.DRAGONRIDING = ns.conditions.SpellKnown(376777)
 

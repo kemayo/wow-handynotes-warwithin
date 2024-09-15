@@ -214,53 +214,85 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
         },
     },
-    [62013176] = {
-        label="Hillhelm Lunchbox",
-        quest=82996,
-        loot={
-            226019, -- Darkened Arathi Shoulderguards (cosmetic)
-            206350, -- Radiant Remnant
-            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
-        },
-    },
     [56091455] = {
         label="Fisherman's Pouch",
         quest=81518,
         loot={},
         vignette=6103,
     },
-    [65432715] = {
-        label="Surveyor's Box",
-        quest=34341,
-        loot={
-            226019, -- Darkened Arathi Shoulderguards (cosmetic)
-            206350, -- Radiant Remnant
-            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
-        },
-        vignette=6536,
-    },
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [66561515] = {
+    [62013176] = {
+        label="Hillhelm Lunchbox",
+        quest=82996,
+        vignette=6352,
+    },
+    [65193399] = {
+        label="Hillhelm Lunchbox",
+        quest=82996,
+        vignette=6352,
+    },
+    [65432715] = {
+        label="Surveyor's Box",
+        quest=34341,
+        vignette=6536,
+    },
+    [65652946] = {
+        label="Harvest Box",
+        quest=80420,
+        vignette=6071,
+    },
+    [64492879] = {
+        label="Fieldhand Stash",
+        quest=84337,
+        vignette=6533,
+    },
+}, {
+    loot={
+        226019, -- Darkened Arathi Shoulderguards (cosmetic)
+        206350, -- Radiant Remnant
+        ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
+    },
+    note="Only visible with a light source ({item:211872:Patrol Torch}, {item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher}, etc)",
+    minimap=true, scale=0.9,
+    hide_before=ns.WORLDQUESTS,
+})
+
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [66561514] = {
         label="Captain Lancekat's Discretionary Funds",
-        quest=nil, -- 80337 popped near here?
+        quest=81612,
         path=66011863,
+        vignette=6108,
     },
-    [63073074] = {
+    [61633265] = { -- directly saw
         label="Farmhand Stash",
-        quest=nil,
+        quest=80590,
+        vignette=6092,
     },
-    [64903330] = {
+    [63073074] = { -- wowhead comments
+        label="Farmhand Stash",
+        quest=80590,
+        vignette=6092,
+    },
+    [64513159] = { -- directly saw the vignette for this one
         label="Old Rotting Crate",
-        quest=nil,
+        quest=84339,
+        vignette=6534,
+    },
+    [64903330] = { -- wowhead comments swear it's here
+        label="Old Rotting Crate",
+        quest=84339,
+        vignette=6534,
     },
 }, {
     loot={
         226016, -- Darkened Tabard of the Arathi (cosmetic)
     },
-    note="Only visible with a light source ({item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher})",
-    minimap=true,
+    note="Only visible with a light source ({item:211872:Patrol Torch}, {item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher}, etc)",
+    minimap=true, scale=0.9,
+    hide_before=ns.WORLDQUESTS,
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
@@ -373,7 +405,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [69274372] = {criteria={69001, 69002},}, -- Moog, Iggy
     [63302940] = {criteria=7, note="Light the lesser keyflame"}, -- Nightclaw
     [63262811] = {criteria=8, note="Light the blooming keyflame"}, -- Shadowpouncer
-    [63792932] = {criteria=9, note="Light the blooming keyflame"}, -- Purrlock
+    [63792962] = {criteria=9, note="Light the blooming keyflame"}, -- Purrlock
     [61193054] = {criteria=10,}, -- Miral Murder-Mittens
     [64441857] = {criteria={11, 12},}, -- Fuzzy, Furball
     [61922081] = {criteria=13,}, -- Dander

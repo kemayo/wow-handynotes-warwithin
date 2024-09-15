@@ -33,7 +33,7 @@ ns.RegisterPoints(2269, { -- Earthcrawl Mines
 
 ns.RegisterPoints(2312, { -- Mycomancer Cavern
     [49882164] = {quest=83652, loot={223287}}, -- Atomized Salien Slime
-    [63304537] = {quest=83691, loot={226005}, note="Underwater"}, -- Ancient Tool
+    [63304537] = {quest=83691, loot={226005, 226003}, note="Underwater"}, -- Ancient Tool, Snake Oil
     [68724128] = {quest=83455, loot={221763}}, -- Viridian Charmcap
     [40706135] = {quest=83672, loot=CRYSTAL, note="Jump down"}, -- Resonance Crystals
 }, STURDY{
