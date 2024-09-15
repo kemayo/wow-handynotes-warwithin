@@ -156,15 +156,21 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
         [7875] = {}, -- Zekvir's Lair (Nerubian)
     }
+    local function addToTooltip(tooltip, areaPoiID)
+        if delves[areaPoiID] and #delves[areaPoiID] > 0 then
+            for i, achievement in ipairs(delves[areaPoiID]) do
+                -- we want to show the full criteria list for the first one (stories), and just the summary for the second
+                ns.tooltipHelpers.achievement(tooltip, achievement, i == 1)
+            end
+            return true
+        end
+    end
     EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
         -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
         if not ns.db.groupsHidden.delves then
             if tooltipShown and delves[areaPoiID] and #delves[areaPoiID] > 0 then
                 local tooltip = GetAppropriateTooltip()
-                for i, achievement in ipairs(delves[areaPoiID]) do
-                    -- we want to show the full criteria list for the first one (stories), and just the summary for the second
-                    ns.tooltipHelpers.achievement(tooltip, achievement, i == 1)
-                end
+                addToTooltip(tooltip, areaPoiID)
                 tooltip:AddDoubleLine(" ", myfullname:gsub("HandyNotes: ", ""), 0, 1, 1, 0, 1, 1)
                 tooltip:Show()
             end
@@ -188,6 +194,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         if point._tooltipWidgetSet then
             GameTooltip_AddWidgetSet(tooltip, point._tooltipWidgetSet, 10)
         end
+        addToTooltip(tooltip, point._areaPoiID)
     end
     local already = {}
     EventRegistry:RegisterCallback("WorldMapOnShow", function()
@@ -213,9 +220,10 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                                 label=info.name,
                                 atlas=info.atlasName, scale=1.5,
                                 note=info.description,
-                                group="delves",
+                                group="delveentrances",
                                 OnTooltipShow=OnTooltipShow,
                                 _tooltipWidgetSet = info.tooltipWidgetSet,
+                                _areaPoiID = delveID,
                             }
                         end
                     end
