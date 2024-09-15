@@ -709,6 +709,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=82563,
         npc=206977, -- Disturbed Dirt (206978) > Fungus Growth (206980) > Fungus Mound (206981) > Fungal Mass (206993) > Parasidious
         loot={
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150, {quest=84057}),
             221250, -- Creeping Lasher Machete
             221264, -- Fungarian Mystic's Cluster
             223005, -- String of Fungal Fruits
