@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v59
+
+* Hallowfall: improvements to the loot around the Spreading the Light area (for one: you can't see it until you have world quests)
+* Show achievement-status on the continent-map delve entrances as well
+* Give the delve entrances a dedicated group, because whether you want to see them is probably unrelated to whether you want to see chests inside delves
+
 ## Changed in v58
 
 * Show delves on the continent map for easier finding of bountiful delves (I also split this out into a separate addon called [DelverView](https://www.curseforge.com/wow/addons/delverview) which is slightly better because it's not filtered through HandyNotes and so you can click the delve icons to supertrack them... but that's still waiting on Curse approval at the time I write this changelog)
