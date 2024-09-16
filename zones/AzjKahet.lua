@@ -29,6 +29,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         }, true),
         level=74,
         path={33846068, 33796026, 34015980, 34365949, 35555918},
+        vignette=6288,
     },
     [78623320] = { -- "Weaving Supplies"
         criteria=69643,
@@ -89,6 +90,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
             224441, -- Weavercloth Bandage
         }, true),
         path={67462755, 66882761, 66692773, 66342805, 66142810, 65582772},
+        vignette=6285,
     },
 }, {
     achievement=40828,

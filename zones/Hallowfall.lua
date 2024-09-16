@@ -121,8 +121,8 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         criteria=69695,
         quest=83298, -- questions trip 83300, 83301, 83302, 83303, 83304, 83305
         loot={
-                {225659, toy=true}, -- Arathi Book Collection
-                ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
+            {225659, toy=true}, -- Arathi Book Collection
+            ns.rewards.Currency(ns.CURRENCY_ARATHI, 150),
         },
         note="Answer riddles from {npc:221630:Ryfus Sacredpyr}; you need to find the books for {achievement:40622:Biblo Archivist} for the correct answers to appear",
         level=73, -- not to talk to him, but to get any of the books for answers...
@@ -148,6 +148,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
         level=75,
         note="Hanging from the cathedral",
+        vignette=6175,
     },
     [50061382] = { -- Lost Necklace
         criteria=69699,
@@ -213,11 +214,15 @@ ns.RegisterPoints(ns.HALLOWFALL, {
             206350, -- Radiant Remnant
             ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
         },
+        vignette=6537,
     },
     [56091455] = {
         label="Fisherman's Pouch",
         quest=81518,
-        loot={},
+        loot={
+            206350, -- Radiant Remnant
+            ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
+        },
         vignette=6103,
     },
 })
