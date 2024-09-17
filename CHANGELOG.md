@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v60
+
+* Added quests for this week's world boss Shurrai
+
 ## Changed in v59
 
 * Hallowfall: improvements to the loot around the Spreading the Light area (for one: you can't see it until you have world quests)
