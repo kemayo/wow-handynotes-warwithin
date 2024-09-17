@@ -43,9 +43,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 }, boss)
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [45401740] = { -- Shurrai
-        quest=nil,
-        worldquest=nil,
+    [45401740] = { -- Shurrai, Atrocity of the Undersea
+        quest=83467,
+        worldquest=81653,
         npc=221224,
         loot={
             225730, -- Stone Gaze Ceinture
