@@ -51,6 +51,7 @@ ns.hiddenConfig = {}
 ns.defaults.profile.groupsHidden = {
     snuffling = true,
     worldboss = true, -- we get their loot in the POI, without showing the points when you can't see them...
+    rumor = true,
 }
 
 ns.defaults.profile.achievementsHidden = {
@@ -68,6 +69,7 @@ ns.groups["beledar"] = "{spell:452526:Beledar's Influence}"
 ns.groups["beledarspawn"] = "{npc:207802:Beledar's Spawn}"
 ns.groups["snuffling"] = "{spell:431909:Snuffling}"
 ns.groups["worldboss"] = MAP_LEGEND_WORLDBOSS
+ns.groups["rumor"] = "{spell:463344:City Rumors}"
 
 --[[
 notes:

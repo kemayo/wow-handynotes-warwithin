@@ -6,6 +6,9 @@ Rappelling anchor 51084752, trips 84585
 Rappelling anchor 46901230, trips 84584
 Rappelling anchor 43906860, trips 84586
 
+awakening the machine: 5 84631, 10 84632, 15 84633, 20 84633
+looting the cache afterwards: 84642 84644 84646 84647
+
 Worldsoul memories (vignette 6358)
 59516981
 ]]
