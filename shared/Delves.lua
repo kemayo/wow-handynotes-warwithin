@@ -175,16 +175,6 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                 tooltip:Show()
             end
         end
-        if ns.DEBUG then
-            local tooltip = GetAppropriateTooltip()
-            if not tooltipShown then
-                tooltip:SetOwner(pin, "ANCHOR_CURSOR")
-                -- tooltip:AddLine(name)
-                tooltip:AddDoubleLine(name, "DEBUG", 1, 1, 1, 1, 0, 0)
-            end
-            tooltip:AddDoubleLine("areaPoiID", areaPoiID)
-            tooltip:Show()
-        end
     end)
 
     if C_AddOns.IsAddOnLoaded("DelverView") then
