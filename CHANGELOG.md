@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v61
+
+* Start including City Rumor locations (hidden by default, as they're very incomplete)
+* Tighten up the right-click menu's wording for some options
+
 ## Changed in v60
 
 * Added quests for this week's world boss Shurrai
