@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v65
+
+* Added quests for this week's world boss Orta
+
 ## Changed in v64
 
 * Show where to tame the hidden spirit beast Aradan, for hunters only
