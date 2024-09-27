@@ -80,7 +80,8 @@ local CACHE = {
     atlas="notoriety-32x32",
     loot={},
     -- TODO: detect pact for the week
-    hide_before=ns.WORLDQUESTS,
+    -- 80544 for chosing the Weaver?
+    hide_before={ns.conditions.QuestComplete(80544)},
     group="rumor",
 }
 
