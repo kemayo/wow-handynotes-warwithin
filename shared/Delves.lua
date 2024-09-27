@@ -156,6 +156,20 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
         [7875] = {}, -- Zekvir's Lair (Nerubian)
     }
+    -- Bountiful:
+    delves[7779] = delves[7864] -- Fungal Folly
+    delves[7780] = delves[7869] -- Mycomancer Cavern
+    delves[7781] = delves[7865] -- Kriegval's Rest
+    delves[7782] = delves[7866] -- The Waterworks
+    delves[7783] = delves[7870] -- The Sinkhole
+    delves[7784] = delves[7873] -- Tak-Rethan Abyss
+    delves[7785] = delves[7868] -- Nightfall Sanctum
+    delves[7786] = delves[7872] -- The Underkeep
+    delves[7787] = delves[7863] -- Earthcrawl Mines
+    delves[7788] = delves[7867] -- The Dread Pit
+    delves[7789] = delves[7871] -- Skittering Breach
+    delves[7790] = delves[7874] -- The Spiral Weave
+    --
     local function addToTooltip(tooltip, areaPoiID)
         if delves[areaPoiID] and #delves[areaPoiID] > 0 then
             for i, achievement in ipairs(delves[areaPoiID]) do
