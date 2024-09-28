@@ -240,7 +240,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     [65432715] = {
         label="Surveyor's Box",
-        quest=34341,
+        quest=84341,
         vignette=6536,
     },
     [65652946] = {
