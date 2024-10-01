@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v67
+
+* Added quests for this week's world boss Kordac
+* Hallowfall: fixed typo on Surveyor's Box questid
+
 ## Changed in v66
 
 * Show information on the tooltips for the bountiful versions of delves as well (oops, thanks Numy for pointing this out)
