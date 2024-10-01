@@ -6,8 +6,8 @@ local boss = {
 
 ns.RegisterPoints(ns.ISLEOFDORN, {
     [50005880] = { -- Kordac
-        quest=nil,
-        worldquest=nil,
+        quest=81630, -- This is the world quest
+        worldquest=81630,
         npc=229334,
         loot={
             225730, -- Stone Gaze Ceinture
