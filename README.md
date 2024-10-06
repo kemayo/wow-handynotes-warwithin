@@ -10,6 +10,7 @@ This includes:
 * [Khaz Algar Lore Hunter](https://www.wowhead.com/achievement=40762/khaz-algar-lore-hunter)
 * [Biblo Archivist](https://www.wowhead.com/achievement=40622/biblo-archivist)
 * [The Missing Lynx](https://www.wowhead.com/achievement=40625/the-missing-lynx)
+* [Lost and Found](https://www.wowhead.com/achievement=40618/lost-and-found)
 * [Not So Quick Fix](https://www.wowhead.com/achievement=40473/not-so-quick-fix)
 * [Rocked to Sleep](https://www.wowhead.com/achievement=40504/rocked-to-sleep)
 * [Notable Machines](https://www.wowhead.com/achievement=40628/notable-machines)
