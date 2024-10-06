@@ -243,6 +243,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=84341,
         vignette=6536,
     },
+    [64732948] = {
+        label="Harvest Box",
+        quest=80420,
+        vignette=6071,
+    },
     [65652946] = {
         label="Harvest Box",
         quest=80420,
