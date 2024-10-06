@@ -420,6 +420,33 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     minimap=true,
 })
 
+-- Lost and Found
+
+local lostAndFound=function(data)
+    return {
+        achievement=40618,
+        criteria=data.criteria,
+        quest=data.quest,
+        label=("{item:%d} to {npc:%d}"):format(data.item, data.npc),
+        hide_before=ns.conditions.Item(data.item),
+        atlas="QuestBlob",
+    }
+end
+ns.RegisterPoints(ns.HALLOWFALL, {
+    -- From Time Lost (80678)
+    [65453223] = lostAndFound{item=219810, npc=215527, criteria=68932, quest=80681}, -- Broken Bracelet -> Keyrra Flamestonge
+    [43285544] = lostAndFound{item=219809, npc=218486, criteria=68933, quest=80679}, -- Plush Lynx -> Phillip Taversil
+    [43485173] = lostAndFound{item=219524, npc=217338, criteria=68934, quest=80680}, -- Tarnished Compass -> Grave Offering Location
+    -- From Time Found (82810)
+    [41643476] = lostAndFound{item=224266, npc=226051, criteria=68942, quest=82845}, -- Ivory Tinderbox -> Haverd Sunhart
+    [42355500] = lostAndFound{item=224267, npc=213145, criteria=68943, quest=82846}, -- Dented Spear -> Auralia Steelstrike
+    [43974971] = lostAndFound{item=224268, npc=217813, criteria=68945, quest=82849}, -- Filigreed Cleric -> Kiera Horth
+    -- From Time Borrowed (82813)
+    [43185018] = lostAndFound{item=224274, npc=220859, criteria=68935, quest=82815}, -- Sturdy Locket -> Amy Lychenstone (patrols)
+    [69254383] = lostAndFound{item=224273, npc=217609, criteria=68937, quest=82832}, -- Wooden Figure -> Barahl Lynflayme
+    [48423889] = lostAndFound{item=224272, npc=222813, criteria=68940, quest=82835}, -- Calcified Journal -> Lorel Ironglen
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.HALLOWFALL, {
