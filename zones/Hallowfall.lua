@@ -425,8 +425,17 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     minimap=true,
 })
 
--- Lost and Found
+-- Flamegard's Hope
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [43215177] = {
+        achievement=20594,
+        -- quest=79081, -- daily
+        atlas="GreenCross", minimap=true,
+        note="Use any healing ability on {npc:220225:Injured Soldier}, once a day.\nHealed today: {quest:79081:Tracking quest}",
+    },
+})
 
+-- Lost and Found
 local lostAndFound=function(data)
     return {
         achievement=40618,
