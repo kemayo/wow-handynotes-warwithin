@@ -221,6 +221,33 @@ ns.RegisterPoints(ns.AZJKAHET, {
     texture=ns.atlas_texture("notoriety-32x32", {r=0, g=1, b=1}), minimap=true, levels=true,
 })
 
+-- Back to the Wall
+-- https://www.wowhead.com/achievement=40620/back-to-the-wall
+
+ns.RegisterPoints(ns.AZJKAHET, {
+    [65901335] = {},
+    [64951100] = {},
+    [65101058] = {},
+    [64241006] = {},
+    [65080784] = {},
+    [64880760] = {},
+    [64720438] = {},
+    [64740440] = {},
+    [61690791] = {},
+    [60280928] = {},
+    [60270939] = {},
+    [62000428] = {},
+    [61210398] = {},
+    [63060098] = {},
+    [63800073] = {},
+    [63880010] = {},
+    -- [48465780] = {}, -- the wowhead page says this, but I am skeptical
+}, {
+    achievement=40620,
+    note="Requires {quest:81965:Invasion Disruption} or {quest:82414:Special Assignment A Pound of Cure}. Respawns slowly.",
+    atlas="poi-soulspiritghost", minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.AZJKAHET, {
