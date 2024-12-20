@@ -27,6 +27,7 @@ zones\Hallowfall.lua
 zones\IsleOfDorn.lua
 zones\KhazAlgar.lua
 zones\RingingDeeps.lua
+zones\SirenIsle.lua
 
 achievements\GlyphHunter.lua
 #achievements\EchoesOfDanger.lua
