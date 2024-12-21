@@ -5,6 +5,7 @@ local myname, ns = ...
 -- unlock the windsinger's runed citrine: 85675
 -- unlock the mariner's hallowed citrine: 85672
 -- unlock the thunderlord's crackling citrine: 85669
+-- unlock the undersea overseer's citrine: 85670
 
 -- Treasures
 
@@ -24,18 +25,21 @@ ns.RegisterPoints(ns.SIRENISLE, {
         quest=86765,
         loot={233910}, -- Salt-Stained Sweatcap
     },
-    -- [41684585] = { -- Ashvane-Issued Workboots
-    --     quest=,
-    --     loot={},
-    -- },
+    [41684585] = {
+        quest=86766,
+        loot={233916}, -- Ashvane-Issued Workboots
+        vignette=6740,
+    },
     [40284185] = {
         quest=86764,
         loot={233957}, -- Kul Tiran Lumberer's Hatchet
+        vignette=6741,
     },
     [39405328] = {
         quest=86767,
         loot={233831}, -- Minnow's Favorite Blade
         note="Stuck in the rafters; jump from the upstairs",
+        vignette=6743,
     },
 })
 
@@ -64,7 +68,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
     },
     [67222763] = { -- Snacker
         criteria=70799,
-        quest=nil,
+        quest=86933,
         npc=231090,
         vignette=6607,
     },
@@ -76,7 +80,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
     },
     [37105499] = { -- Stalagnarok
         criteria=70793,
-        quest=nil,
+        quest=85437,
         npc=229992,
         loot={
             229037, -- Earthen Landlubber's Breastplate
@@ -119,7 +123,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
     },
     [63938735] = { -- Asbjorn the Bloodsoaked
         criteria=70806,
-        quest=84839, -- 84805
+        quest=84805, -- 84839 first time?
         npc=230137,
         loot={
             234972, -- Bloodwake Missive
