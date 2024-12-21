@@ -11,11 +11,6 @@
 ## X-Wago-ID: 56n9w0N9
 ## SavedVariables: HandyNotes_WarWithinDB
 ## RequiredDeps: HandyNotes
-## OptionalDeps: !LibUIDropDownMenu
-
-#@non-debug@
-# lib\LibUIDropDownMenu\LibUIDropDownMenu.xml
-#@end-non-debug@
 
 handler\handler.xml
 
