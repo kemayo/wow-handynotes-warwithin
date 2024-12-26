@@ -6,6 +6,11 @@ local myname, ns = ...
 -- unlock the mariner's hallowed citrine: 85672
 -- unlock the thunderlord's crackling citrine: 85669
 -- unlock the undersea overseer's citrine: 85670
+-- unlock the old salt's bardic citrine: 85673
+-- unlock the storm sewer's citrine: 85674
+
+-- starving snapdragon runt daily: 86566
+-- (+86482 A Lifeline, 86486 Hungry Hungry Snapdragon, )
 
 -- Treasures
 
@@ -24,6 +29,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
     [74025331] = {
         quest=86765,
         loot={233910}, -- Salt-Stained Sweatcap
+        vignette=6747,
     },
     [41684585] = {
         quest=86766,
@@ -41,7 +47,47 @@ ns.RegisterPoints(ns.SIRENISLE, {
         note="Stuck in the rafters; jump from the upstairs",
         vignette=6743,
     },
+    [68439433] = {
+        quest=84527,
+        label="Pilfered Earthen Chest",
+        loot={229181}, -- Ordained Forge Maul
+        vignette=6685,
+    },
 })
+
+ns.RegisterPoints(ns.FORGOTTENVAULT, {
+    [26462297] = {
+        quest=86732,
+        loot={233834}, -- Stone Carver's Scramseax
+        note="First get {spell:1215470:Glittering Vault Shard} from the other vault, and rush back here",
+        vignette=6739,
+        related={[32147952]={label="{spell:1215470:Glittering Vault Shard}"}},
+    },
+})
+
+--[[
+ns.RegisterPoints(ns.SIRENISLE, {
+    [37723869] = {},
+    [52043265] = {},
+    [59692058] = {},
+}, {
+    label="Runed Storm Cache",
+})
+ns.RegisterPoints(ns.SIRENISLE, {
+    [71101984] = {}, -- 84842, earthen landlubber's breastplate 229037
+    [63200920] = {},
+    -- somewhere above ~77500000, 85956, cursed pirate skull 231116
+    [81440172] = {},
+    [53060069] = {},
+    [76642024] = {},
+    [77772623] = {},
+    [64722409] = {},
+}, {
+    label="Seafarer's Cache",
+    loot={},
+    vignette=6659,
+})
+--]]
 
 -- Rares
 
@@ -92,7 +138,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
     },
     [26236548] = { -- Nerathor
         criteria=70791,
-        quest=85760, -- <- drowned lair, also 85938; second time 84845 + 85762 (drowned lair)
+        quest=85938, -- also 85760 (drowned lair); second time 84845 + 85762 (drowned lair)
         npc=229982,
         loot={
             231118, -- Runecaster's Stormbound Rune
@@ -130,38 +176,40 @@ ns.RegisterPoints(ns.SIRENISLE, {
         },
         vignette=6590,
     },
-    --[[
-    [0] = { -- Bloodbrine
+    [31757154] = { -- Bloodbrine
         criteria=70794,
-        quest=nil,
+        quest=84795, -- 84875
         npc=228154,
         vignette=6530,
     },
+    --[[
     [0] = { -- Chef Chum Platter
         criteria=70803,
         quest=nil,
         npc=228583,
         vignette=6580,
     },
-    [0] = { -- Coralweaver Calliso
+    --]]
+    [61708967] = { -- Coralweaver Calliso
         criteria=70801,
-        quest=nil,
+        quest=84802,
         npc=229852,
         vignette=6581,
     },
+    --[[
     [0] = { -- Plank-Master Bluebelly
         criteria=70804,
         quest=nil,
         npc=228580,
         vignette=6577,
     },
-    [0] = { -- Siris the Sea Scorpion
+    --]]
+    [55808381] = { -- Siris the Sea Scorpion
         criteria=70802,
-        quest=nil,
+        quest=84803,
         npc=229853,
         vignette=6582,
     },
-    --]]
 }, {
     achievement=41046, -- Clean Up On Isle Siren
 })
@@ -229,9 +277,9 @@ ns.RegisterPoints(ns.SIRENISLE, {
 })
 
 ns.RegisterPoints(ns.FORGOTTENVAULT, {
-    [26402300] = { -- Shardsong
+    [28342486] = { -- Shardsong
         criteria=70795,
-        quest=nil,
+        quest=86779,
         npc=227550,
         loot={
             {235017,toy=true,}, -- Glittering Vault Shard
