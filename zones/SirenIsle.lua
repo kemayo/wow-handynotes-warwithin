@@ -8,6 +8,9 @@ local myname, ns = ...
 -- unlock the undersea overseer's citrine: 85670
 -- unlock the old salt's bardic citrine: 85673
 -- unlock the storm sewer's citrine: 85674
+-- unlock the stormbringer's runed citrine: 85676
+-- unlock the squall sailor's citrine: 85671
+-- unlock the legendary skipper's citrine: 85707 (? 84794, 85070 at same time)
 
 -- starving snapdragon runt daily: 86566
 -- (+86482 A Lifeline, 86486 Hungry Hungry Snapdragon, )
@@ -52,6 +55,14 @@ ns.RegisterPoints(ns.SIRENISLE, {
         label="Pilfered Earthen Chest",
         loot={229181}, -- Ordained Forge Maul
         vignette=6685,
+    },
+    [62449081] = {
+        quest=84529, -- 84873
+        label="Bilge Rat Supply Chest",
+        loot={},
+        vignette=6683,
+        related={[61146889]={label="{npc:228582:First Mate Shellshock}",loot={228621}},},
+        note="Get the {item:228621:Bilge Rat Supply Key} from {npc:228582:First Mate Shellshock}",
     },
 })
 
@@ -182,33 +193,30 @@ ns.RegisterPoints(ns.SIRENISLE, {
         npc=228154,
         vignette=6530,
     },
-    --[[
-    [0] = { -- Chef Chum Platter
-        criteria=70803,
-        quest=nil,
-        npc=228583,
-        vignette=6580,
-    },
-    --]]
     [61708967] = { -- Coralweaver Calliso
         criteria=70801,
         quest=84802,
         npc=229852,
         vignette=6581,
     },
-    --[[
-    [0] = { -- Plank-Master Bluebelly
-        criteria=70804,
-        quest=nil,
-        npc=228580,
-        vignette=6577,
-    },
-    --]]
     [55808381] = { -- Siris the Sea Scorpion
         criteria=70802,
         quest=84803,
         npc=229853,
         vignette=6582,
+    },
+    -- Pirate phase
+    [66128506] = { -- Chef Chum Platter
+        criteria=70803,
+        quest=84800,
+        npc=228583,
+        vignette=6580,
+    },
+    [60568904] = { -- Plank-Master Bluebelly
+        criteria=70804,
+        quest=84799,
+        npc=228580,
+        vignette=6577,
     },
 }, {
     achievement=41046, -- Clean Up On Isle Siren
