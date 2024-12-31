@@ -105,6 +105,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
 -- 44.49 22.70 = Forgotten Vault Entrance
 
 ns.RegisterPoints(ns.SIRENISLE, {
+    -- Always
     [35791339] = { -- Grimgull
         criteria=70797,
         quest=84796,
@@ -135,6 +136,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
         npc=228151,
         vignette=6526,
     },
+    -- Project quests
     [37105499] = { -- Stalagnarok
         criteria=70793,
         quest=85437,
@@ -157,16 +159,6 @@ ns.RegisterPoints(ns.SIRENISLE, {
         vignette=6754,
         path=32456476,
     },
-    [32327408] = { -- Ikir the Flotsurge
-        criteria=70805,
-        quest=84792, -- 84847
-        npc=227545,
-        loot={
-            231117, -- Darktide Wavebender's Orb
-            231118, -- Runecaster's Stormbound Rune
-        },
-        vignette=6525,
-    },
     [55206840] = { -- Gravesludge (The Drain)
         criteria=70792,
         quest=85937, -- 84753 the drain
@@ -178,6 +170,18 @@ ns.RegisterPoints(ns.SIRENISLE, {
         vignette=6517,
         path=62607519,
     },
+    -- Storm
+    [32327408] = { -- Ikir the Flotsurge
+        criteria=70805,
+        quest=84792, -- 84847
+        npc=227545,
+        loot={
+            231117, -- Darktide Wavebender's Orb
+            231118, -- Runecaster's Stormbound Rune
+        },
+        vignette=6525,
+    },
+    -- Vrykul phase
     [63938735] = { -- Asbjorn the Bloodsoaked
         criteria=70806,
         quest=84805, -- 84839 first time?
@@ -187,6 +191,7 @@ ns.RegisterPoints(ns.SIRENISLE, {
         },
         vignette=6590,
     },
+    -- Naga phase
     [31757154] = { -- Bloodbrine
         criteria=70794,
         quest=84795, -- 84875
