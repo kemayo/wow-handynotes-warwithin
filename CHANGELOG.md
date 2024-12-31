@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v73
+
+* Siren Isle updates for the pirate phase
+
 ## Changed in v72
 
 * Updated Siren Isle with more rares and treasures
