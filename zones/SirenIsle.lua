@@ -2,15 +2,20 @@ local myname, ns = ...
 
 -- talk to Tanmar: 85103
 -- talk to Didi: 85157
--- unlock the windsinger's runed citrine: 85675
--- unlock the mariner's hallowed citrine: 85672
--- unlock the thunderlord's crackling citrine: 85669
--- unlock the undersea overseer's citrine: 85670
--- unlock the old salt's bardic citrine: 85673
--- unlock the storm sewer's citrine: 85674
--- unlock the stormbringer's runed citrine: 85676
--- unlock the squall sailor's citrine: 85671
--- unlock the legendary skipper's citrine: 85707 (? 84794, 85070 at same time)
+
+-- A Choir of Citrines 41050:
+-- [] = {criteria=70827, quest=85674}, -- Storm Sewer's Citrine
+-- [] = {criteria=70825, quest=85673}, -- Old Salt's Bardic Citrine
+-- [] = {criteria=70826, quest=85672}, -- Mariner's Hallowed Citrine
+-- [] = {criteria=70828, quest=85707}, -- Legendary Skipper's Citrine
+-- [] = {criteria=70829, quest=85708}, -- Seabed Leviathan's Citrine
+-- [] = {criteria=70830, quest=85709}, -- Roaring War-Queen's Citrine
+-- [] = {criteria=70831, quest=85676}, -- Stormbringer's Runed Citrine
+-- [] = {criteria=70832, quest=85677}, -- Fathomdweller's Runed Citrine
+-- [] = {criteria=70834, quest=85675}, -- Windsinger's Runed Citrine
+-- [] = {criteria=70835, quest=85669}, -- Thunderlord's Crackling Citrine
+-- [] = {criteria=70836, quest=85670}, -- Undersea Overseer's Citrine
+-- [] = {criteria=70837, quest=85671}, -- Squall Sailor's Citrine
 
 -- starving snapdragon runt daily: 86566
 -- (+86482 A Lifeline, 86486 Hungry Hungry Snapdragon, )
