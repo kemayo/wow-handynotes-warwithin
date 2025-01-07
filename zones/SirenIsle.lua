@@ -84,11 +84,31 @@ ns.RegisterPoints(ns.FORGOTTENVAULT, {
     },
 })
 
+ns.RegisterPoints(ns.SIRENISLE, {
+    [52583865] = {quest=86435, note="In cave, in ghost's hands", path=50024270},
+    [38195188] = {quest=86436, note="In {npc:235134:Dirt Pile}"},
+    [67237882] = {quest=86437, note="In cave"},
+}, {
+    label="{npc:234934:Runic Fragment}",
+    loot={234327}, -- Turbulent Fragment
+    atlas="reagents",
+    minimap=true,
+    requires=TEMPEST,
+})
+
 --[[
 ns.RegisterPoints(ns.SIRENISLE, {
     [37723869] = {},
     [52043265] = {},
     [59692058] = {},
+    [45056264] = {}, -- tempest
+    [52054102] = {}, -- tempest
+    [49297264] = {}, -- tempest
+}, {
+    label="Runed Storm Cache",
+})
+ns.RegisterPoints(ns.FORGOTTENVAULT, {
+    [64165059] = {}, -- tempest
 }, {
     label="Runed Storm Cache",
 })
