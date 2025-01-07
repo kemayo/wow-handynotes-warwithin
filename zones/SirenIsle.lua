@@ -277,6 +277,9 @@ ns.RegisterPoints(ns.SIRENISLE, {
         quest=85403,
         npc=231353,
         vignette=6615,
+        loot={
+            234328, -- Torrential Fragment
+        },
         requires=TEMPEST,
     },
     [32818762] = { -- Slaughtershell
@@ -293,6 +296,9 @@ ns.RegisterPoints(ns.SIRENISLE, {
         quest=85404,
         npc=231356,
         vignette=6616,
+        loot={
+            234328, -- Torrential Fragment
+        },
         requires=TEMPEST,
     },
     --[[
