@@ -461,6 +461,39 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     [48423889] = lostAndFound{item=224272, npc=222813, criteria=68940, quest=82835}, -- Calcified Journal -> Lorel Ironglen
 })
 
+-- Mereldar Menace
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [41895552] = {criteria={67121, 67122, 67123, 67124, 67125}}, -- Orphanage
+    [42265254] = {criteria={67126, 67127, 67128}}, -- Training Ground
+    [44245123] = {criteria={67129, 67130,}}, -- Steelstrike Residence
+}, {
+    achievement=40151,
+    label="{achievement:40151:Mereldar Menace}",
+    note="Find the tiny {npc:219916:Throw Rock Vehicle} on the ground",
+    texture=ns.atlas_texture("Professions_Tracking_Ore", {r=1, g=0.5, b=1}),
+    minimap=true,
+})
+ns.RegisterPoints(ns.HALLOWFALL, {
+    -- From Orphanage
+    [41845564] = {criteria=67121, note="From the Orphanage"}, -- Orphanage Window
+    [42545551] = {criteria=67122, note="From the Orphanage"}, -- Notice Board
+    [42455439] = {criteria=67123, note="From the Orphanage"}, -- Food Stall
+    [42355491] = {criteria=67124, note="From the Orphanage"}, -- Fountain
+    [42295439] = {criteria=67125, note="From the Orphanage"}, -- Spice Stall
+    -- From Training Ground
+    [42975268] = {criteria=67126, note="From the Training Ground"}, -- Light and Flame
+    [43025235] = {criteria=67127, note="From the Training Ground"}, -- Lamplighter Doorway
+    [41325296] = {criteria=67128, note="From the Training Ground"}, -- Barracks Doorway
+    -- From Steelstrike Residence
+    [43505078] = {criteria=67129, note="From the Steelstrike Residence"}, -- Holy Oil
+    [44685177] = {criteria=67130, note="From the Steelstrike Residence"}, -- Airship Drafting Board
+}, {
+    achievement=40151,
+    requires=ns.conditions.Vehicle(219916), -- Throwing Rock
+    atlas="XMarksTheSpot",
+    minimap=true, worldmap=false,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.HALLOWFALL, {
