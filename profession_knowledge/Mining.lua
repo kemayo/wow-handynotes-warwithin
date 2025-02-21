@@ -29,12 +29,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [49442773] = {
+    [49422755] = {
         quest=83908,
         loot={226334}, -- Earthen Excavator's Shovel
         vignette=6491,
     },
-    [66276626] = {
+    [66266624] = {
         quest=83909,
         loot={226335}, -- Regenerating Ore
         vignette=6492,
@@ -42,12 +42,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.HALLOWFALL, {
-    [46126438] = {
+    [46076439] = {
         quest=83910,
         loot={226336}, -- Arathi Precision Drill
         vignette=6493,
     },
-    [43075684] = {
+    [43095684] = {
         quest=83911,
         loot={226337}, -- Devout Archaeologist's Excavator
         vignette=6494,
@@ -58,13 +58,13 @@ ns.RegisterPoints(ns.AZJKAHET, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.CITYOFTHREADS, {
-    [48314080] = { -- by "the burrows"
+    [47954059] = { -- by "the burrows"
         quest=83913,
         loot={226339}, -- Nerubian Mining Supplies
         vignette=6496, -- Nerubian Mining Cart
         parent=true, levels=true, translate={[2256]=true},
     },
-    [46732165] = {
+    [46812169] = {
         quest=83912,
         loot={226338}, -- Heavy Spider Crusher
         vignette=6495,
