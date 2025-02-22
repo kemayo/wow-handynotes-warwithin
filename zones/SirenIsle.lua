@@ -40,34 +40,35 @@ ns.RegisterPoints(ns.SIRENISLE, {
     -- Quests for most of these are IsQuestFlaggedCompletedOnAccount but not
     -- on later characters, *but* they're not present anyway.
     [74025331] = {
-        -- quest=86765,
+        found=ns.conditions.QuestCompleteOnAccount(86765),
         loot={233910}, -- Salt-Stained Sweatcap
         vignette=6747,
     },
     [41684585] = {
-        -- quest=86766,
+        found=ns.conditions.QuestCompleteOnAccount(86766),
         loot={233916}, -- Ashvane-Issued Workboots
         vignette=6740,
     },
     [40284185] = {
-        -- quest=86764,
+        found=ns.conditions.QuestCompleteOnAccount(86764),
         loot={233957}, -- Kul Tiran Lumberer's Hatchet
         vignette=6741,
     },
     [39405328] = {
-        -- quest=86767,
+        found=ns.conditions.QuestCompleteOnAccount(86767),
         loot={233831}, -- Minnow's Favorite Blade
         note="Stuck in the rafters; jump from the upstairs",
         vignette=6743,
     },
     [68439433] = {
-        -- quest=84527,
+        found=ns.conditions.QuestCompleteOnAccount(84527), -- actually account?
         label="Pilfered Earthen Chest",
         loot={229181}, -- Ordained Forge Maul
         vignette=6685,
+        note="Naga phase only",
     },
     [36925309] = {
-        -- quest=87446,
+        found=ns.conditions.QuestCompleteOnAccount(87446),
         label="Iron Mining Pick",
         loot={233955}, -- Iron Mining Pick,
         vignette=6742,
@@ -114,11 +115,13 @@ ns.RegisterPoints(ns.SIRENISLE, {
     [45056264] = {}, -- tempest
     [52054102] = {}, -- tempest
     [49297264] = {}, -- tempest
+    [42174741] = {}, -- tempest
 }, {
     label="Runed Storm Cache",
 })
 ns.RegisterPoints(ns.FORGOTTENVAULT, {
     [64165059] = {}, -- tempest
+    [31702778] = {}, -- tempest
 }, {
     label="Runed Storm Cache",
 })
