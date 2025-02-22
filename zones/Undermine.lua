@@ -102,6 +102,17 @@ ns.RegisterPoints(ns.UNDERMINE, {
     achievement=41217,
 })
 
+ns.RegisterPoints(ns.UNDERMINE, {
+    [23814539] = {quest=85072, loot={234427}}, -- Gorillion Fork
+    [71468588] = {quest=85114, loot={234430}}, -- Gorillion Grease
+    [75142295] = {quest=85115, loot={234431}}, -- Gorillion Batteries
+    [56665547] = {quest=85116, loot={234432}}, -- Gorillion Engine
+    [34318286] = {quest=85117, loot={234433}}, -- Gorillion Chasis
+}, {
+    achievement=40948, -- Nine-Tenths of the Law
+    texture=ns.atlas_texture("VignetteLoot", {r=0.5, g=0.5, b=1}),
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
