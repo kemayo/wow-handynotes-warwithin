@@ -23,6 +23,7 @@ zones\IsleOfDorn.lua
 zones\KhazAlgar.lua
 zones\RingingDeeps.lua
 zones\SirenIsle.lua
+zones\Undermine.lua
 
 achievements\GlyphHunter.lua
 #achievements\EchoesOfDanger.lua
