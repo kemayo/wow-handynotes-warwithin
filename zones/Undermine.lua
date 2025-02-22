@@ -1,5 +1,107 @@
 local myname, ns = ...
 
+-- Treasures
+
+ns.RegisterPoints(ns.UNDERMINE, {
+    [48504310] = { -- Unexploded Fireworks
+        criteria=71613,
+        quest=85683,
+        loot={235042}, -- Imminently Exploding Fireworks
+        vignette=6657,
+    },
+    [49806620] = { -- Suspicious Book
+        criteria=71624,
+        quest=85868,
+        loot={235283}, -- Bashful Book
+        note="Pick it up three times",
+        vignette=6679,
+    },
+    [57905270] = { -- Fireworks Hat
+        criteria=71614,
+        quest=85856,
+        loot={{235220, toy=true}}, -- Fireworks Hat
+        note="Pick it up twice",
+        vignette=6677,
+    },
+    [49609030] = { -- Exploded Plunger
+        criteria=71615,
+        quest=85698,
+        loot={235238}, -- Exploded Plunder
+        vignette=6672,
+    },
+    [39005960] = { -- Blackened Dice
+        criteria=71625,
+        quest=85814,
+        loot={235255}, -- Durable Dice
+        vignette=6671,
+    },
+    [59301900] = { -- Lonely Tub
+        criteria=71626,
+        quest=85858,
+        loot={235279}, -- Scorched Shorts
+        vignette=6678,
+    },
+    [69602160] = { -- Potent Potable
+        criteria=71627,
+        quest=85426,
+        loot={235230}, -- Impotent Potable
+        vignette=6646,
+    },
+    [40802120] = { -- Abandoned Toolbox
+        criteria=71628,
+        quest=85422,
+        loot={}, -- assorted engineering items
+        vignette=6643,
+    },
+    [74607980] = { -- Papa's Prized Putter
+        criteria=71629,
+        quest=85424,
+        loot={234821}, -- Papa's Prized Putter
+        vignette=6644,
+    },
+    [26904270] = { -- Unsupervised Takeout
+        criteria=71630,
+        quest=85425,
+        loot={
+            7341, -- Cubic Zirconia Ring
+            233118, -- Incontinental Takeout
+        },
+        vignette=6645,
+    },
+    [39506070] = { -- Particularly Nice Lamp
+        criteria=71631,
+        quest=85492,
+        loot={235221}, -- Particularly Bright Lightbulb
+        vignette=6651,
+    },
+    [53505280] = { -- Uncracked Cold Ones
+        criteria=71632,
+        quest=85495,
+        loot={{234951, toy=true}}, -- Uncracked Cold Ones
+        vignette=6654,
+    },
+    [63803220] = { -- Marooned Floatmingo
+        criteria=71633,
+        quest=85494,
+        loot={235273}, -- Distracting Floatmingo
+        vignette=6653,
+    },
+    [43705150] = { -- Trick Deck of Cards
+        criteria=71634,
+        quest=85496,
+        loot={235268}, -- Misprinted Card
+        vignette=6655,
+    },
+    [42408220] = { -- Crumpled Schematics
+        criteria=71635,
+        quest=86487,
+        loot={235038}, -- Crumpled Schematic
+        vignette=6713,
+    },
+}, {
+    achievement=41217,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
