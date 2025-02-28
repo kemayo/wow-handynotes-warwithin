@@ -113,6 +113,22 @@ ns.RegisterPoints(ns.UNDERMINE, {
     texture=ns.atlas_texture("VignetteLoot", {r=0.5, g=0.5, b=1}),
 })
 
+local READ = {
+    achievement=41588, -- Read Between the Lines
+    texture=ns.atlas_texture("loreobject-32x32"),
+}
+ns.RegisterPoints(ns.UNDERMINE, {
+    [27317085] = {criteria=103108, quest=86567, vignette=6732}, -- A Threatening Letter
+    [40402851] = {criteria=103106, quest=86572, vignette=6737}, -- First Half of Noggenfogger's Journal
+    [32915880] = {criteria=103109, quest=86571, vignette=6736}, -- Second Half of Noggenfogger's Journal
+    [58585932] = {criteria=103111, quest=86573, vignette=6738}, -- Gallywix's Notes
+    [65621421] = {criteria=103112, quest=86568, vignette=6733}, -- Misplaced Work Order
+}, READ)
+ns.RegisterPoints(ns.RINGINGDEEPS, {
+    [72917314] = {criteria=103107, quest=86570, vignette=6735}, -- Rocket Drill Safety Manual
+    [68029650] = {criteria=103110, quest=86569, vignette=6734}, -- Extractor Drill X-78 Safety Guide
+}, READ)
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
