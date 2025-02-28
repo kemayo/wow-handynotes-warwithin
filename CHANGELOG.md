@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v76
+
+* Added Read Between the Lines achievement to Undermine
+* Fixed changed coordinates in the Ringing Deeps
+
 ## Changed in v75
 
 * Updated for 11.1.0
