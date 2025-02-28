@@ -137,6 +137,15 @@ ns.RegisterPoints(2251, { -- The Waterworks
     achievement=40816, -- Discoveries
 })
 
+ns.RegisterPoints(2396, { -- Excavation Site 9
+    [73283990] = {quest=86343, loot={211007}}, -- Torchbearer's Greatcloak
+    [57024681] = {quest=86345, loot={226002}}, -- Expensive-Looking Find
+    [33575915] = {quest=86346, loot=CRYSTAL}, -- Resonance Crystals
+    [50906150] = {quest=86347, loot=CRYSTAL}, -- Resonance Crystals
+}, STURDY{
+    achievement=41100, -- Discoveries
+})
+
 ----
 
 EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
@@ -155,6 +164,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7873] = {40535, 40811, 40452}, -- Tak-Rethan Abyss (Kobyss)
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
         [7875] = {}, -- Zekvir's Lair (Nerubian)
+        [8143] = {}, -- Excavation Site Nine
     }
     -- Bountiful:
     delves[7779] = delves[7864] -- Fungal Folly
@@ -169,6 +179,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
     delves[7788] = delves[7867] -- The Dread Pit
     delves[7789] = delves[7871] -- Skittering Breach
     delves[7790] = delves[7874] -- The Spiral Weave
+    delves[8181] = delves[8143] -- Excavation Site Nine
     --
     local function addToTooltip(tooltip, areaPoiID)
         if delves[areaPoiID] and #delves[areaPoiID] > 0 then
