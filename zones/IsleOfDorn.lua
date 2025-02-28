@@ -7,6 +7,7 @@ Arrival post-intro is 83622
 Magni and Merrix chat after restoration: 84815
 Alleria and Anduin chat after restoration: 84335
 Lufsela chat after Rook Rally: 84813
+Merrix and Olbarig chat after Titanic Failsafe: 82541
 
 Earthern coffer 6230
 38523951 - in cave from 36354156
