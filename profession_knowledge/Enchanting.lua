@@ -29,12 +29,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [44612213] = {
+    [41772213] = {
         quest=83860,
         loot={226286}, -- Soot-Coated Orb
         vignette=6443,
     },
-    [67126585] = {
+    [62856585] = {
         quest=83861,
         loot={226287}, -- Animated Enchanting Dust
         vignette=6444,

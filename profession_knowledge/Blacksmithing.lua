@@ -29,12 +29,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [47673317] = {
+    [44643317] = {
         quest=83850,
         loot={226278}, -- Ringing Hammer Vise
         vignette=6435,
     },
-    [60555373] = {
+    [56705373] = {
         quest=83851,
         loot={226279}, -- Earthen Chisels
         vignette=6436,

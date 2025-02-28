@@ -29,12 +29,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [48823286] = {
+    [45713286] = {
         quest=83924,
         loot={226350}, -- Runed Earthen Pins
         vignette=6507,
     },
-    [64126034] = {
+    [60046034] = {
         quest=83925,
         loot={226351}, -- Earthen Stitcher's Snips
         vignette=6508,

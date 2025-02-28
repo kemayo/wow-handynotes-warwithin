@@ -104,12 +104,12 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 })
 ns.RegisterPoints(ns.RINGINGDEEPS, {
     -- quest, {achievements}, {currencies}
-    [40861131] = Race(80237, {20311, 20314, 20317}, {2941, 2947, 2953}), -- Earthenworks Weave
-    [42232744] = Race(80238, {20320, 20323, 20326}, {2942, 2948, 2954}), -- Ringing Deeps Ramble
-    [67913479] = Race(80239, {20329, 20332, 20335}, {2943, 2949, 2955}), -- Chittering Concourse
-    [52474686] = Race(80240, {20338, 20341, 20344}, {2944, 2950, 2956}), -- Cataract River Cruise
-    [66646868] = Race(80242, {20347, 20350, 20353}, {2945, 2951, 2957}), -- Taelloch Twist
-    [63557513] = Race(80243, {20356, 20359, 20362}, {2946, 2952, 2958}), -- Opportunity Point Amble
+    [38261131] = Race(80237, {20311, 20314, 20317}, {2941, 2947, 2953}), -- Earthenworks Weave
+    [39542744] = Race(80238, {20320, 20323, 20326}, {2942, 2948, 2954}), -- Ringing Deeps Ramble
+    [63593479] = Race(80239, {20329, 20332, 20335}, {2943, 2949, 2955}), -- Chittering Concourse
+    [49134686] = Race(80240, {20338, 20341, 20344}, {2944, 2950, 2956}), -- Cataract River Cruise
+    [62406868] = Race(80242, {20347, 20350, 20353}, {2945, 2951, 2957}), -- Taelloch Twist
+    [59517513] = Race(80243, {20356, 20359, 20362}, {2946, 2952, 2958}), -- Opportunity Point Amble
 })
 ns.RegisterPoints(ns.HALLOWFALL, {
     -- quest, {achievements}, {currencies}
