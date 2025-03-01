@@ -131,3 +131,16 @@ ns.RegisterPoints(ns.AZJKAHET, {
     [23814835] = Race(80281, {20459, 20462, 20465}, {2981, 2987, 2993}), -- Pit Plunge
     [40183220] = Race(80282, {20468, 20471, 20474}, {2982, 2988, 2994}), -- Siegehold Scuttle
 })
+ns.RegisterPoints(ns.UNDERMINE, {
+    -- quest, {achievements}, {currencies}
+    -- Skyrocketing
+    [39032869] = Race(85071, {40914, 40917}, {3119, 3121}), -- Skyrocketing Sprint
+    [33787623] = Race(85097, {40920, 40923}, {3122, 3123}), -- The Heaps Leap
+    [39221137] = Race(85099, {40926, 40929}, {3124, 3125}), -- Scrapshop Shot
+    [25504213] = Race(85101, {40932, 40935}, {3126, 3127}), -- Rags to Riches Rush
+    -- Breaknecking (hide before No More Walking Here (87581?))
+    [26005300] = Race(85900, {41059, 41062}, {3181, 3182}), -- Breakneck Bolt
+    [43507800] = Race(85902, {41065, 41068}, {3183, 3184}), -- Junkyard Jaunt
+    [39505400] = Race(85904, {41071, 41074}, {3185, 3186}), -- Casino Cruise
+    [47504400] = Race(85906, {41077, 41080}, {3187, 3188}), -- Sandy Scuttle
+})
