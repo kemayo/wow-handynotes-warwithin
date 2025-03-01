@@ -146,6 +146,20 @@ ns.RegisterPoints(2396, { -- Excavation Site 9
     achievement=41100, -- Discoveries
 })
 
+ -- Sidestreet Sluice
+ns.RegisterPoints(2420, { -- The Pits
+    [61536586] = {quest=86787, loot={211035}}, -- Secret-Dredger's Girdle
+    [74387426] = {quest=86788, loot={226001}}, -- Pure Gold Stein
+    [33437307] = {quest=86790, loot=CRYSTAL}, -- Resonance Crystals
+}, STURDY{
+    achievement=41101, -- Discoveries
+})
+ns.RegisterPoints(2422, { -- The High Decks
+    [77483948] = {quest=86789, loot=CRYSTAL, path=72753882}, -- Resonance Crystals
+}, STURDY{
+    achievement=41101, -- Discoveries
+})
+
 ----
 
 EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
@@ -164,6 +178,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7873] = {40535, 40811, 40452}, -- Tak-Rethan Abyss (Kobyss)
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
         [7875] = {}, -- Zekvir's Lair (Nerubian)
+        [8142] = {}, -- Sidestreet Sluice (8140 too on wago?)
         [8143] = {}, -- Excavation Site Nine
     }
     -- Bountiful:
@@ -180,6 +195,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
     delves[7789] = delves[7871] -- Skittering Breach
     delves[7790] = delves[7874] -- The Spiral Weave
     delves[8181] = delves[8143] -- Excavation Site Nine
+    delves[8246] = delves[8142] -- Sidestreet Sluice
     --
     local function addToTooltip(tooltip, areaPoiID)
         if delves[areaPoiID] and #delves[areaPoiID] > 0 then
