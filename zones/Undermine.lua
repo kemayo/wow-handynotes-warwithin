@@ -160,6 +160,21 @@ ns.RegisterPoints(ns.UNDERMINE, {
     minimap=true,
 })
 
+ns.RegisterPoints(ns.UNDERMINE, {
+    [35394141] = {
+        label="{npc:236411:Ditty Fuzeboy}",
+        loot={
+            {232850, toy=true}, -- Blackwater Kegmover
+            {232846, toy=true}, -- Steamwheedle Flunkie
+            {232849, toy=true}, -- Venture Companyman
+            {232840, toy=true}, -- Mechagopher
+            {232841, toy=true}, -- Professor Punch
+            {232842, toy=true}, -- Crimson Mechasaur
+        },
+        atlas="banker",
+    },
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
@@ -183,6 +198,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
             235303, -- Seafused Brimstone Band
             235319, -- Tidebomb Chestpiece
             235323, -- Blastshell Bracers
+            {234416, quest=85783}, -- Steamboil Casing
             {234386, quest=85784}, -- Handcrank Fuel Injector
             {234420, quest=85784}, -- Handcrank Mounting System
         },
