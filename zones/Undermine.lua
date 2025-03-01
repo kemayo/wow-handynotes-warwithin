@@ -1,65 +1,74 @@
 local myname, ns = ...
 
+--[[
+notes:
+Picked any cartel: 84948 (contract work)
+Picked bilgewater: 54951
+--]]
+
 -- Treasures
 
 ns.RegisterPoints(ns.UNDERMINE, {
-    [48504310] = { -- Unexploded Fireworks
+    [48454293] = { -- Unexploded Fireworks
         criteria=71613,
         quest=85683,
         loot={235042}, -- Imminently Exploding Fireworks
+        note="On the roof; there's a door you can click to open",
         vignette=6657,
     },
-    [49806620] = { -- Suspicious Book
+    [49886618] = { -- Suspicious Book
         criteria=71624,
         quest=85868,
         loot={235283}, -- Bashful Book
         note="Pick it up three times",
         vignette=6679,
     },
-    [57905270] = { -- Fireworks Hat
+    [57845269] = { -- Fireworks Hat
         criteria=71614,
-        quest=85856,
+        quest=85856, -- first attempt 85838 @ 57845269, second attempt 85839 @ 56015172
         loot={{235220, toy=true}}, -- Fireworks Hat
         note="Pick it up twice",
         vignette=6677,
     },
-    [49609030] = { -- Exploded Plunger
+    [49709027] = { -- Exploded Plunger
         criteria=71615,
-        quest=85698,
+        quest=85698, -- 85694 first press
         loot={235238}, -- Exploded Plunder
-        vignette=6672,
+        vignette=6658, -- Inert Plunger? / 6672 Exploded Plunger
     },
-    [39005960] = { -- Blackened Dice
+    [38965963] = { -- Blackened Dice
         criteria=71625,
-        quest=85814,
+        quest=85814, -- 84813 for the valve
         loot={235255}, -- Durable Dice
         vignette=6671,
+        note="Use the Pipe Valve",
     },
-    [59301900] = { -- Lonely Tub
+    [59371914] = { -- Lonely Tub
         criteria=71626,
-        quest=85858,
+        quest=85858, -- 85860 extinguished
         loot={235279}, -- Scorched Shorts
         vignette=6678,
+        note="Use the {spell:471345:Fire Extinguisher}",
     },
-    [69602160] = { -- Potent Potable
+    [69652164] = { -- Potent Potable
         criteria=71627,
         quest=85426,
         loot={235230}, -- Impotent Potable
         vignette=6646,
     },
-    [40802120] = { -- Abandoned Toolbox
+    [40842127] = { -- Abandoned Toolbox
         criteria=71628,
         quest=85422,
         loot={}, -- assorted engineering items
         vignette=6643,
     },
-    [74607980] = { -- Papa's Prized Putter
+    [74697984] = { -- Papa's Prized Putter
         criteria=71629,
         quest=85424,
         loot={234821}, -- Papa's Prized Putter
         vignette=6644,
     },
-    [26904270] = { -- Unsupervised Takeout
+    [26844266] = { -- Unsupervised Takeout
         criteria=71630,
         quest=85425,
         loot={
@@ -68,31 +77,31 @@ ns.RegisterPoints(ns.UNDERMINE, {
         },
         vignette=6645,
     },
-    [39506070] = { -- Particularly Nice Lamp
+    [39386107] = { -- Particularly Nice Lamp
         criteria=71631,
         quest=85492,
         loot={235221}, -- Particularly Bright Lightbulb
         vignette=6651,
     },
-    [53505280] = { -- Uncracked Cold Ones
+    [53415274] = { -- Uncracked Cold Ones
         criteria=71632,
         quest=85495,
         loot={{234951, toy=true}}, -- Uncracked Cold Ones
         vignette=6654,
     },
-    [63803220] = { -- Marooned Floatmingo
+    [63813220] = { -- Marooned Floatmingo
         criteria=71633,
         quest=85494,
         loot={235273}, -- Distracting Floatmingo
         vignette=6653,
     },
-    [43705150] = { -- Trick Deck of Cards
+    [43645155] = { -- Trick Deck of Cards
         criteria=71634,
         quest=85496,
         loot={235268}, -- Misprinted Card
         vignette=6655,
     },
-    [42408220] = { -- Crumpled Schematics
+    [42288231] = { -- Crumpled Schematics
         criteria=71635,
         quest=86487,
         loot={235038}, -- Crumpled Schematic
@@ -103,14 +112,15 @@ ns.RegisterPoints(ns.UNDERMINE, {
 })
 
 ns.RegisterPoints(ns.UNDERMINE, {
-    [23814539] = {quest=85072, loot={234427}}, -- Gorillion Fork
-    [71468588] = {quest=85114, loot={234430}}, -- Gorillion Grease
-    [75142295] = {quest=85115, loot={234431}}, -- Gorillion Batteries
-    [56665547] = {quest=85116, loot={234432}}, -- Gorillion Engine
-    [34318286] = {quest=85117, loot={234433}}, -- Gorillion Chasis
+    [23814539] = {quest=85072, loot={234427}, vignette=6624}, -- Gorillion Fork
+    [71458594] = {quest=85114, loot={234430}, vignette=6625}, -- Gorillion Grease
+    [75142295] = {quest=85115, loot={234431}, vignette=6626}, -- Gorillion Batteries
+    [56675547] = {quest=85116, loot={234432}, vignette=6627}, -- Gorillion Engine
+    [34338286] = {quest=85117, loot={234433}, vignette=6628}, -- Gorillion Chasis
 }, {
     achievement=40948, -- Nine-Tenths of the Law
     texture=ns.atlas_texture("VignetteLoot", {r=0.5, g=0.5, b=1}),
+    note="Unlock the Muff's Auto-Locker",
 })
 
 local READ = {
