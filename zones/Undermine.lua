@@ -143,6 +143,20 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [68029650] = {criteria=103110, quest=86569, vignette=6734}, -- Extractor Drill X-78 Safety Guide
 }, READ)
 
+ns.RegisterPoints(ns.UNDERMINE, {
+    -- there are no tracking quests for this one, sadly
+    [43591131] = {note="Beneath the stands"},
+    [28485579] = {note="Upper floor under a trash can"},
+    [35808557] = {note="On the bannister"},
+    [65328859] = {note="In the cave"},
+    [65864395] = {note="By a tree"},
+}, {
+    achievement=41708, -- You're My Friend Now
+    texture=ns.atlas_texture("WildBattlePetCapturable", {r=1, g=0.7, b=1}),
+    note="Grab the {npc:239248:Grabbable Rat}",
+    minimap=true,
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
