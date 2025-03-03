@@ -4,6 +4,7 @@ local _, myfullname = C_AddOns.GetAddOnInfo(myname)
 local races = {}
 
 EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
+    if C_AddOns.IsAddOnLoaded("ContinentalRacing") then return end
     local showing
     local function ShowTooltipForRace(race, name, description)
         local tooltip = GetAppropriateTooltip()
