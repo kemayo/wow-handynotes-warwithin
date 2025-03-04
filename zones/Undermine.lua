@@ -183,7 +183,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84927, --v
         npc=231012, -- 238119
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235304, -- Gutter Rat Mask
             235348, -- Back Alley Shank
             {232983, quest=85783}, -- Steamboil
@@ -197,7 +197,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84928, --v
         npc=231017,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235303, -- Seafused Brimstone Band
             235319, -- Tidebomb Chestpiece
             235323, -- Blastshell Bracers
@@ -212,7 +212,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         npc=230940,
         loot={
             234218, -- Goo-blin Grenade
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235328, -- Boots of the Silver Tongue
             235355, -- Gossi-blin's Baton
             {232983, quest=85783}, -- Steamboil
@@ -225,7 +225,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84920, --v
         npc=230946,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235306, -- Ooze-fused Mantle
             235327, -- Mend-and-Match Shoulderpads
             235347, -- 100% Sharp Glimmerblade
@@ -249,7 +249,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84877, --v
         npc=230746,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235309, -- Gloomshroud Robe
             235350, -- Void-forged Cudgel
             235352, -- Netherflare Wand
@@ -264,7 +264,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84917, --v
         npc=230931,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235301, -- Drape of the Dazzling Feather
             235305, -- Golfer's Truestrike Gloves
             235321, -- Feather-Spike Girdle
@@ -278,7 +278,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84926, --v
         npc=230995,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235318, -- Ironfang Plate Legguards
             235324, -- Scavenger's Lost Bind
             235325, -- Rusthide Gloves
@@ -292,7 +292,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84895, --v
         npc=230800,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235349, -- Shadowfume Club
             235363, -- Suspicious Energy Drink
             {232983, quest=85783}, -- Steamboil
@@ -305,7 +305,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84907, --v
         npc=230828,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235311, -- Rocket-Powered Shoulderguards
             235357, -- Bulletscar Barricade
             {232983, quest=85783}, -- Steamboil
@@ -318,7 +318,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=85778, --v
         npc=233471,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235829, -- Welded Scrap Hood
             235830, -- Unstable Missilecaps
             235831, -- Battery-Powered Longshank
@@ -333,7 +333,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84884, --v
         npc=230793,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235313, -- Shockproof Helm
             235354, -- Scrapblaster Lance
             {232983, quest=85783}, -- Steamboil
@@ -346,7 +346,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84911, --v
         npc=230840,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235312, -- Snooty's Aviator Bindings
             235316, -- Whirly-Giggle Windwhir Wrap
             235322, -- Junkyard Clawguards
@@ -360,7 +360,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=85004, --v
         npc=231288,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235307, -- Smoketrail Belt
             235314, -- Knightrider's Steelfists
             {232983, quest=85783}, -- Steamboil
@@ -373,7 +373,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84921, --v
         npc=230951,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235310, -- Flashy Patchwork Trousers
             235317, -- Chestplate of the Ultimatum
             235353, -- Debtsmasher Axe
@@ -387,7 +387,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84922, --v
         npc=230979,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235302, -- Shockwave Pendant
             235315, -- Rocketstep Boots
             235356, -- Sapper's Spark Reactor
@@ -401,7 +401,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=86298, --v
         npc=234480,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235300, -- Cloak of Mecha Shards
             235318, -- Ironfang Plate Legguards
             235835, -- Braided Wire Wrap
@@ -414,7 +414,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=84918,
         npc=230934, -- accompanied by Grease (230935) and Grime (230936)
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235308, -- Filthtread Boots
             235326, -- Ratspit's Heirloom Wristwraps
             235359, -- Ratfang Toxin
@@ -428,7 +428,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=86307, -- v + 90489
         npc=234499,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235310, -- Flashy Patchwork Trousers
             235320, -- S.1.Z.Z.L.E.S.T.E.P Boots
             235823, -- Scrap-Plated Pants
@@ -444,7 +444,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         quest=85777, --v
         npc=233472,
         loot={
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235373, -- Abyssal Volt
             235826, -- Electric Wristrags
             235827, -- Statically Charged Vest
@@ -481,7 +481,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         npc=234621,
         loot={
             {229953, mount=true,}, -- Salvaged Goblin Gazillionaire's Flying Machine
-            234741, -- Miscellaneous Mechanica
+            --234741, -- Miscellaneous Mechanica
             235819, -- Lucky Penny Locket
             235820, -- Hole-Punched Doubloon
             235821, -- Pressed-Gold Pantaloons
