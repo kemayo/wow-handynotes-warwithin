@@ -1,5 +1,9 @@
 # Changelog
 
+## Chagned in v79
+
+* Undermine: added new loot for rares, consolidated the Steamboil / Handcrank parts
+
 ## Changed in v78
 
 * Show data on Skyrocketing and Breaknecking races in Undermine
