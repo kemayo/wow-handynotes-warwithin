@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v80
+
+* Delves weren't showing on the continent map if you logged in within a subzone like Dornogal
+* The Undermine delves weren't showing on the continent map at all, because Undermine is techincally a child-map of Ringing Deeps and so wasn't being scanned
+
 ## Chagned in v79
 
 * Undermine: added new loot for rares, consolidated the Steamboil / Handcrank parts
