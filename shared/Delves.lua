@@ -228,23 +228,25 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         addToTooltip(tooltip, point._areaPoiID)
     end
     local already = {}
-    EventRegistry:RegisterCallback("WorldMapOnShow", function()
-        local points = {}
-        for _, mapInfo in ipairs(C_Map.GetMapChildrenInfo(ns.KHAZALGAR)) do
+    EventRegistry:RegisterCallback("MapCanvas.MapSet", function(_, mapID)
+        if mapID ~= ns.KHAZALGAR then
+            return
+        end
+        local points
+        local childMaps = C_Map.GetMapChildrenInfo(ns.KHAZALGAR)
+        table.insert(childMaps, C_Map.GetMapInfo(ns.UNDERMINE)) -- it's a child of Ringing Deeps...
+        for _, mapInfo in ipairs(childMaps) do
             if mapInfo.mapType == Enum.UIMapType.Zone then
                 for _, delveID in ipairs(C_AreaPoiInfo.GetDelvesForMap(mapInfo.mapID)) do
                     if not already[delveID] then
                         already[delveID] = true
+                        points = points or {}
                         local info = C_AreaPoiInfo.GetAreaPOIInfo(mapInfo.mapID, delveID)
                         local x, y = info.position:GetXY()
-                        local tx, ty
-                        if mapInfo.mapID == ns.ISLEOFDORN then
-                            -- special-case, as HereBeDragons can't translate these due to the weird stacked-maps structure of Khaz Algar
-                            local minX, maxX, minY, maxY = C_Map.GetMapRectOnMap(mapInfo.mapID, ns.KHAZALGAR)
+                        local minX, maxX, minY, maxY = C_Map.GetMapRectOnMap(mapInfo.mapID, ns.KHAZALGAR)
+                        if minX then
                             tx = Lerp(minX, maxX, x)
                             ty = Lerp(minY, maxY, y)
-                        else
-                            tx, ty = HBD:TranslateZoneCoordinates(x, y, mapInfo.mapID, ns.KHAZALGAR)
                         end
                         if tx and ty then
                             points[HandyNotes:getCoord(tx, ty)] = {
@@ -261,7 +263,8 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                 end
             end
         end
-        ns.RegisterPoints(ns.KHAZALGAR, points)
-        EventRegistry:UnregisterCallback("WorldMapOnShow", myname)
+        if points then
+            ns.RegisterPoints(ns.KHAZALGAR, points)
+        end
     end, myname)
 end)
