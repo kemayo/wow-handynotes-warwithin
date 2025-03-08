@@ -3,7 +3,8 @@ local myname, ns = ...
 --[[
 notes:
 Picked any cartel: 84948 (contract work)
-Picked bilgewater: 54951
+Picked bilgewater: 84951
+Picked steamwheedle: 84952
 
 Worldsoul memory:
 6358 @ 58206866
@@ -475,9 +476,9 @@ ns.RegisterPoints(ns.UNDERMINE, {
 })
 
 ns.RegisterPoints(ns.UNDERMINE, {
-    [38808080] = { -- Gallagio Garbage
+    [90005000] = { -- Gallagio Garbage
         achievement=41594,
-        quest=nil,
+        quest=87007,
         npc=234621,
         loot={
             {229953, mount=true,}, -- Salvaged Goblin Gazillionaire's Flying Machine
@@ -491,7 +492,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
             {232983, quest=85783}, -- Steamboil
             {232984, quest=85784}, -- Handcrank
         },
-        notes="Appears during S.C.R.A.P. jobs",
+        notes="Appears after S.C.R.A.P. jobs sometimes",
     },
     --[[
     [0] = { -- Taskmaster Zendu
