@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v81
+
+* Undermine: add quest for Gallagio Garbage and move it to the side of the map
+* World bosses: add the Gobfather
+
 ## Changed in v80
 
 * Delves weren't showing on the continent map if you logged in within a subzone like Dornogal
