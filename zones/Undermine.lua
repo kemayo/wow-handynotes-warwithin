@@ -235,6 +235,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         loot={
             234218, -- Goo-blin Grenade
             --234741, -- Miscellaneous Mechanica
+            235320, -- S.1.Z.Z.L.E.S.T.E.P Boots
             235328, -- Boots of the Silver Tongue
             235355, -- Gossi-blin's Baton
             {232983, quest=85783}, -- Steamboil
@@ -337,7 +338,8 @@ ns.RegisterPoints(ns.UNDERMINE, {
     },
     [57207860] = { -- Scrapchewer
         criteria=71610,
-        quest=85778, --v
+        quest=85778,
+        worldquest=90491,
         npc=233471,
         loot={
             --234741, -- Miscellaneous Mechanica
@@ -479,13 +481,15 @@ ns.RegisterPoints(ns.UNDERMINE, {
     },
     [40209190] = { -- Darkfuse Precipitant
         criteria=71612,
-        quest=85010, --v
+        quest=85010,
+        worldquest=90492,
         npc=231310,
         loot={
             {229955, mount=true,}, -- Darkfuse Spy-Eye
             235467, -- Ominous Oil Residue
             235832, -- Oil-Splattered Cloak
             235833, -- Serrated Slickgrip
+            235834, -- Rocketgrip Turboslicer
             {232983, quest=85783}, -- Steamboil
             {232984, quest=85784}, -- Handcrank
         },
