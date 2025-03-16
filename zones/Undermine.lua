@@ -176,6 +176,27 @@ ns.RegisterPoints(ns.UNDERMINE, {
     },
 })
 
+ns.RegisterPoints(ns.UNDERMINE, {
+    [63201680] = {
+        label="{npc:237412:Pix Xizzix}",
+        active=ns.conditions.Item(237129), -- Tarnished Undermine Real
+        loot={237130}, -- Undermine Undershirt
+        note="Bring the {item:237129:Tarnished Undermine Real} from the sewer @ 33.1 58.2",
+        minimap=true,
+        route={63201680, 33105818, highlightOnly=true},
+    },
+    [33105818] = {
+        label="Sewer Cheese",
+        loot={237130}, -- Undermine Undershirt
+        path={33835756, label="Sewer Grate"},
+        nearby={33635815},
+        minimap=true,
+        route=63201680,
+        active=false,
+        note="Use the cheese, get {spell:1221472:Cheesed To Meet You?}, and talk to the {npc:238661:Hungry Rat} right by you. Take the {item:237129:Tarnished Undermine Real} to {npc:237412:Pix Xizzix} @ 63.2 16.8",
+    },
+})
+
 -- Rares
 
 ns.RegisterPoints(ns.UNDERMINE, {
