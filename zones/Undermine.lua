@@ -177,6 +177,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
 })
 
 ns.RegisterPoints(ns.UNDERMINE, {
+    -- Undermine Undershirt
     [63201680] = {
         label="{npc:237412:Pix Xizzix}",
         active=ns.conditions.Item(237129), -- Tarnished Undermine Real
@@ -194,6 +195,18 @@ ns.RegisterPoints(ns.UNDERMINE, {
         route=63201680,
         active=false,
         note="Use the cheese, get {spell:1221472:Cheesed To Meet You?}, and talk to the {npc:238661:Hungry Rat} right by you. Take the {item:237129:Tarnished Undermine Real} to {npc:237412:Pix Xizzix} @ 63.2 16.8",
+    },
+
+    -- Recipe: Authentic Undermine Clam Chowder
+    [38008864] = {
+        label="{item:235800:Recipe_ Authentic Undermine Clam Chowder}",
+        loot={ns.rewards.Recipe(235800, 1218414)}, -- Recipe: Authentic Undermine Clam Chowder
+        atlas="poi-workorders",
+        -- TODO: make a condition for knows-a-specific-recipe?
+        -- In the interim, hiding this from people who aren't pursuing cooking is probably enough
+        requires=ns.conditions.Profession(ns.PROF_WW_COOKING),
+        minimap=true,
+        note="You have to know {spell:20626:Undermine Clam Chowder} from Classic Cooking to be able to loot this."
     },
 })
 
