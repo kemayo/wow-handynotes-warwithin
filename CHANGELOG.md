@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v83
+
+* Updated for 11.1.5
+* Undermine: added the Authentic Undermine Clam Chowder recipe
+
 ## Changed in v82
 
 * Undermine: add some missing loot, and a hidden shirt
