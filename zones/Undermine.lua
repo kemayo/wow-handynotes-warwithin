@@ -10,6 +10,90 @@ Worldsoul memory:
 6358 @ 58206866
 --]]
 
+-- Quartermasters
+
+ns.RegisterPoints(ns.UNDERMINE, {
+    -- Bilgewater
+    [38962225] = {
+        label="{npc:231406:Rocco Razzboom}",
+        loot={
+            {236672, quest=85785, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Honored")}, -- The Ol' Low-and-Slow
+            {235670, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Honored")}, -- Bilgewater Cartel Banner
+            {232845, pet=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Revered")}, -- Bilgewater Junkhauler
+            {235807, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Revered")}, -- Storefront-in-a-Box
+            {229935, mount=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Exalted")}, -- Crimson Armored Growler
+            {231526, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Exalted")}, -- Bilgewater Undermine Tabard
+            {235388, quest=86773, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BILGEWATER, "Exalted")}, -- Paint: Redlining Red
+        },
+        note="{faction:".. ns.FACTION_UNDERMINE_BILGEWATER .."}",
+    },
+    -- Steamwheedle
+    [27217233] = {
+        label="{npc:231408:Lab Assistant Laszly}",
+        loot={
+            {236670, quest=85787, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Honored")}, -- Maniacal Melodies
+            {235669, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Honored")}, -- Steamwheedle Cartel Banner
+            {232853, pet=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Revered")}, -- Eepy
+            {226373, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Revered")}, -- Everlasting Noggenfogger Elixir
+            {229956, mount=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Exalted")}, -- Mean Green Flying Machine
+            {231527, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Exalted")}, -- Steamwheedle Undermine Tabard
+            {235389, quest=86772, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_STEAMWHEEDLE, "Exalted")}, -- Paint: Goblin Green
+        },
+        path=29136946,
+        note="{faction:".. ns.FACTION_UNDERMINE_STEAMWHEEDLE .."}",
+    },
+    -- Blackwater
+    [63351692] = {
+        label="{npc:231405:Boatswain Hardee}",
+        loot={
+            {236671, quest=85786, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Honored")}, -- The Buzzer
+            {235671, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Honored")}, -- Blackwater Cartel Banner
+            {232839, pet=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Revered")}, -- Wavebreaker Mechasaur
+            {235801, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Revered")}, -- Personal Fishing Barge
+            {229948, mount=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Exalted")}, -- Blackwater Shredder Deluxe Mk 2
+            {231528, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Exalted")}, -- Blackwater Undermine Tabard
+            {235390, quest=86771, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_BLACKWATER, "Exalted")}, -- Paint: Body Roll Blue
+        },
+        note="{faction:".. ns.FACTION_UNDERMINE_BLACKWATER .."}",
+    },
+    -- Venture Co
+    [53127263] = {
+        label="{npc:231407:Shredz the Scrapper}",
+        loot={
+            {236669, quest=85788, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Honored")}, -- The Whole Brass Band
+            {235672, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Honored")}, -- Venture Co. Banner
+            {232851, pet=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Revered")}, -- Rocketfist
+            {235799, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Revered")}, -- Throwin' Sawblade
+            {229946, mount=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Exalted")}, -- Ochre Delivery Rocket
+            {231542, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Exalted")}, -- Venture Co. Undermine Tabard
+            {235391, quest=86774, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_VENTURE, "Exalted")}, -- Paint: Yellow Cake Yellow
+        },
+        note="{faction:".. ns.FACTION_UNDERMINE_VENTURE .."}",
+    },
+    -- Darkfuse
+    [30603880] = {
+        label="{npc:231396:Sitch Lowdown}",
+        loot={
+            {235558, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Neutral")}, -- Box of Darkfuse Miscellany
+            {237276, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Neutral")}, -- Refurbished Rocket Glider
+            {235532, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Neutral")}, -- Experimental Goblin-FUEL Supplement
+            {229823, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Friendly")}, -- Canister of Darkfuse Solution
+            {235533, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Friendly")}, -- Prototype Auto-Advertiser
+            {234950, toy=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Honored")}, -- Atomic Regoblinator
+            {235534, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Honored")}, -- Electropuncture Test Model
+            {229950, mount=true, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Revered")}, -- Darkfuse Demolisher
+            {231550, requires=ns.conditions.Faction(ns.FACTION_UNDERMINE_DARKFUSE, "Exalted")}, -- Darkfuse Lowdown Coat
+        },
+        hide_before=ns.conditions.QuestComplete(86961), -- Diversified Investments
+        path=29694099, -- sewer entrance
+        note="{faction:".. ns.FACTION_UNDERMINE_DARKFUSE .."}",
+    },
+}, {
+    texture=ns.atlas_texture("Banker", {r=0.2, g=1, b=1}), scale=1.2,
+    minimap=true,
+    note="Quartermaster",
+})
+
 -- Treasures
 
 ns.RegisterPoints(ns.UNDERMINE, {
