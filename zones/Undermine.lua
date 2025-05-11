@@ -10,6 +10,40 @@ Worldsoul memory:
 6358 @ 58206866
 --]]
 
+-- Quartermasters
+
+ns.RegisterPoints(ns.UNDERMINE, {
+    -- Bilgewater
+    [38962225] = {
+        label="{npc:231406:Rocco Razzboom}",
+        loot={},
+    },
+    -- Steamwheedle
+    [27217233] = {
+        label="{npc:231408:Lab Assistant Laszly}",
+        loot={},
+        path=29136946,
+    },
+    -- Blackwater
+    [63351692] = {
+        label="{npc:231405:Boatswain Hardee}",
+        loot={},
+    },
+    -- Venture Co
+    [53127263] = {
+        label="{npc:231407:Shredz the Scrapper}",
+        loot={},
+    },
+    -- Darkfuse
+    --[[
+    [] = {
+        label="{npc:23140:}",
+        loot={},
+        hide_before=ns.conditions.QuestComplete(86961), -- Diversified Investments
+    },
+    --]]
+})
+
 -- Treasures
 
 ns.RegisterPoints(ns.UNDERMINE, {
