@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v84
+
+* Undermine:
+    * Added the quartermasters to the map
+    * Some rare quest updates (thanks ywi!)
+
 ## Changed in v83
 
 * Updated for 11.1.5
