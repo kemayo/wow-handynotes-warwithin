@@ -83,7 +83,7 @@ ns.RegisterPoints(ns.CITYOFTHREADS, {
 ns.RegisterPoints(ns.UNDERMINE, {
     [49601720] = { -- The Gobfather
         quest=85088, -- 89401 is the account-loot weekly, I think?
-        worldquest=85089, -- The Main Event, also
+        worldquest=85088, -- The Main Event, also
         npc=231821,
         loot={
             232725, -- Pilot's Oiled Trousers
