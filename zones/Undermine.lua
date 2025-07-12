@@ -92,6 +92,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
     texture=ns.atlas_texture("Banker", {r=0.2, g=1, b=1}), scale=1.2,
     minimap=true,
     note="Quartermaster",
+    showallloot=true,
 })
 
 -- Treasures
