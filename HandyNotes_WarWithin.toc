@@ -24,6 +24,7 @@ zones\KhazAlgar.lua
 zones\RingingDeeps.lua
 zones\SirenIsle.lua
 zones\Undermine.lua
+zones\Karesh.lua
 
 achievements\GlyphHunter.lua
 #achievements\EchoesOfDanger.lua
