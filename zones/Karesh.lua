@@ -28,7 +28,7 @@ ns.RegisterPoints(ns.KARESH, {
 			[69806050] = {label="{npc:234113:M'alim}", minimap=true,}, -- 86067
 		},
 		note="Get {spell:471549:Flickering Lantern} and find the three brothers",
-		vignette=2371, -- Flickering Lantern, then 6681 Gift of the Brothers
+		vignette=6682, -- Flickering Lantern, then 6681 Gift of the Brothers
 	},
 	[60903835] = { -- Ancient Coffer
 		criteria=106271,
