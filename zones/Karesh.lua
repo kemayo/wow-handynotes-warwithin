@@ -1,5 +1,7 @@
 local myname, ns = ...
 
+local PHASEDIVING = ns.conditions.AuraActive(1214374) -- Phase Diving
+
 --[[
 notes:
 --]]
@@ -125,8 +127,8 @@ ns.RegisterPoints(ns.KARESH, {
 		vignette=6638,
 	},
 }, {
-	achievement = 42761, -- Remnants of a Shattered World
-	note="While Phase Diving",
+	achievement=42761, -- Remnants of a Shattered World
+	hide_before=PHASEDIVING,
 })
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	-- not yet vignette-coords:
