@@ -1,42 +1,185 @@
 local myname, ns = ...
 
 local PHASEDIVING = ns.conditions.AuraActive(1214374) -- Phase Diving
+-- Under Her Power (spell:1219699) also counts
 
 --[[
 notes:
 --]]
 
 -- Treasures
-
 ns.RegisterPoints(ns.KARESH, {
-	--[[
-	[] = {criteria=106270, quest=85959}, -- Gift of the Brothers
-	[] = {criteria=106271, quest=86416}, -- Ancient Coffer
-	[] = {criteria=106272, quest=85837}, -- Forlorn Wind Chime
-	[] = {criteria=106244, quest=86492, vignette=6724}, -- Ixthar's Favorite Crystal
-	[] = {criteria=106274, quest=86301}, -- Wastelander Stash
-	[] = {criteria=106275, quest=86304}, -- Tumbled Package
-	[] = {criteria=106276, quest=86306}, -- Rashaal's Vase
-	[] = {criteria=108722, quest=86308}, -- Shattered Crystals
-	[] = {criteria=106277, quest=86322}, -- Skeletal Tail Bones
-	[] = {criteria=106278, quest=86323}, -- Crudely Stitched Sack
-	[] = {criteria=108723, quest=92348}, -- Abandoned Lockbox
-	[] = {criteria=106279, quest=91352}, -- Lightly-Dented Luggage
-	[] = {criteria=106280, quest=85840}, -- Sand-Worn Coffer
-	[] = {criteria=106224, quest=89378}, -- Ethereal Voidforged Container
-	[] = {criteria=106281, quest=90511}, -- Light-Soaked Cleaver
-	[] = {criteria=106296, quest=90512}, -- Spear of Fallen Memories
-	[] = {criteria=106283, quest=90514}, -- Efrat's Forgotten Bulwark
-	[] = {criteria=106284, quest=90522}, -- Tulwar of the Golden Guard
-	[] = {criteria=106285, quest=90515}, -- Petrified Branch of Janaa
-	[] = {criteria=106286, quest=90527}, -- Shadowguard Crusher
-	[] = {criteria=106287, quest=90521}, -- Sufaadi Skiff Lantern
-	[] = {criteria=106288, quest=90532, vignette=6927}, -- Korgorath's Talon
-	[] = {criteria=106289, quest=91055}, -- Warglaive of the Audacious Hunter
-	[] = {criteria=106290, quest=91056, vignette=6966}, -- P.O.S.T. Master's Prototype Parcel and Postage Presser
-	[] = {criteria=106291, quest=91057}, -- Phaseblade of the Void Marches
-	[] = {criteria=106292, quest=91058}, -- Bladed Rifle of Unfettered Momentum
-	--]]
+	[76114526] = { -- Gift of the Brothers
+		criteria=106270,
+		quest=85959, -- Brothers are 86065, 86066, 86067; turning it in is 85958
+		loot={
+			248199, -- The Brothers' Final Gift
+		},
+		related={
+			[75453979] = {label="{npc:234075:Sahra}", minimap=true,}, -- 86065?
+			[68304530] = {label="{npc:234112:Naji}", minimap=true,}, -- 86066?
+			[69806050] = {label="{npc:234113:M'alim}", minimap=true,}, -- 86067
+		},
+		note="Get {spell:471549:Flickering Lantern} and find the three brothers",
+		vignette=2371, -- Flickering Lantern, then 6681 Gift of the Brothers
+	},
+	[60903835] = { -- Ancient Coffer
+		criteria=106271,
+		quest=86416,
+		loot={
+			{245269, pet=true}, -- Mr. Long-Legs
+		},
+		related={
+			[66564478] = {loot={233794}, inbag=233794, minimap=true}, -- Battered Book (quest 86415 tripped?)
+			[76233122] = {loot={233799}, inbag=233799, minimap=true}, -- Submerged Bottle
+		},
+		note="Bring the {item:233794} and {item:233799}",
+		vignette=6702,
+	},
+	[69745231] = { -- Forlorn Wind Chime
+		criteria=106272,
+		quest=85837,
+		loot={
+			243144, -- Reshii Crystal Fragments
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+		},
+		vignette=6675,
+	},
+	[64104398] = { -- Ixthar's Favorite Crystal
+		criteria=106244,
+		quest=86492,
+		loot={
+			243144, -- Reshii Crystal Fragments
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
+		},
+		vignette=6724
+	},
+	[60544213] = { -- Wastelander Stash
+		criteria=106274,
+		quest=86301,
+		loot={
+			243145, -- Well-Preserved Wrappings
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+		},
+		vignette=6690,
+	},
+	[65346362] = { -- Tumbled Package
+		criteria=106275,
+		quest=86304,
+		loot={
+			238201,
+			243160,
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+		},
+		vignette=6692,
+	},
+	-- [] = { -- Rashaal's Vase
+	-- 	criteria=106276,
+	-- 	quest=86306,
+	-- },
+	[75065534] = { -- Shattered Crystals
+		criteria=108722,
+		quest=86308,
+		loot={
+			243144, -- Reshii Crystal Fragments
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+		},
+		vignette=6695,
+	},
+	[77782787] = { -- Skeletal Tail Bones
+		criteria=106277,
+		quest=86322,
+		loot={
+			{243158, pet=true}, -- Ixthal the Observling
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+		},
+		vignette=6696,
+	},
+	[58653434] = { -- Crudely Stitched Sack
+		criteria=106278,
+		quest=86323,
+		loot={
+			246295, -- Tazavesh Lookout's Mace
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+		},
+		vignette=6697,
+	},
+	[59755370] = { -- Abandoned Lockbox
+		criteria=108723,
+		quest=92348,
+		loot={
+			246299, -- Blade of Lost Hope
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+		},
+		vignette=6673,
+	},
+	-- [] = { -- Lightly-Dented Luggage
+	-- 	criteria=106279,
+	-- 	quest=91352,
+	-- },
+	[54462441] = { -- Sand-Worn Coffer
+		criteria=106280,
+		quest=85840,
+		loot={
+			246297, -- Desperate Defender's Bladed Staff
+			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+		},
+		vignette=6676,
+	},
+	-- [] = { -- Ethereal Voidforged Container
+	-- 	criteria=106224,
+	-- 	quest=89378,
+	-- },
+	-- [] = { -- Light-Soaked Cleaver
+	-- 	criteria=106281,
+	-- 	quest=90511,
+	-- },
+	-- [] = { -- Spear of Fallen Memories
+	-- 	criteria=106296,
+	-- 	quest=90512,
+	-- },
+	-- [] = { -- Efrat's Forgotten Bulwark
+	-- 	criteria=106283,
+	-- 	quest=90514,
+	-- },
+	-- [] = { -- Tulwar of the Golden Guard
+	-- 	criteria=106284,
+	-- 	quest=90522,
+	-- },
+	-- [] = { -- Petrified Branch of Janaa
+	-- 	criteria=106285,
+	-- 	quest=90515,
+	-- },
+	-- [] = { -- Shadowguard Crusher
+	-- 	criteria=106286,
+	-- 	quest=90527,
+	-- },
+	-- [] = { -- Sufaadi Skiff Lantern
+	-- 	criteria=106287,
+	-- 	quest=90521,
+	-- },
+	-- [] = { -- Korgorath's Talon
+	-- 	criteria=106288,
+	-- 	quest=90532,
+	-- 	vignette=6927
+	-- },
+	-- [] = { -- Warglaive of the Audacious Hunter
+	-- 	criteria=106289,
+	-- 	quest=91055,
+	-- },
+	-- [] = { -- P.O.S.T. Master's Prototype Parcel and Postage Presser
+	-- 	criteria=106290,
+	-- 	quest=91056,
+	-- 	vignette=6966
+	-- },
+	-- [] = { -- Phaseblade of the Void Marches
+	-- 	criteria=106291,
+	-- 	quest=91057,
+	-- },
+	-- [] = { -- Bladed Rifle of Unfettered Momentum
+	-- 	criteria=106292,
+	-- 	quest=91058,
+	-- },
 }, {
 	achievement=42741, -- Treasures of K'aresh
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
@@ -59,45 +202,74 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 
 
 -- Secrets of the K'areshi (60890)
+local secrets = {
+	achievement=60890,
+	atlas="loreobject-32x32",
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+}
+ns.RegisterPoints(ns.KARESH, {
+	[42292093] = {criteria=107308, quest=91646, hide_before=PHASEDIVING}, -- From Vengeance to Void
+	[48925715] = {criteria=107313, quest=91686}, -- Geologist Field Journal
+}, secrets)
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	-- [] = {criteria=107306, quest=91649}, -- I Have Become Void!
 	-- [] = {criteria=107307, quest=91643}, -- Multiversal Energy Dynamics and the Murmuration Paradox
-	-- [] = {criteria=107308, quest=91646}, -- From Vengeance to Void
 	-- [] = {criteria=107309, quest=91647}, -- The Facets of K'aresh
 	-- [] = {criteria=107310, quest=91687}, -- Checklist of Minor Pleasures
 	[46321858] = {criteria=107311, quest=91645}, -- Ba'key's Aromatic Broker Cookies Recipes
 	-- [] = {criteria=107312, quest=91640}, -- A Dog-eared Book
 	[58459150] = {criteria=107315, quest=91642}, -- Mysterious Notebook
 	[41683982] = {criteria=107314, quest=91648}, -- Coins: An Oath We Exchange
-	-- [] = {criteria=107313, quest=91686}, -- Geologist Field Journal
-}, {
-	achievement=60890,
-	atlas="loreobject-32x32",
-	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
-})
+}, secrets)
+
+-- Phase Conduits
+
+local conduit = {
+	label="{npc:249754:Phase Conduit}",
+	texture=ns.atlas_texture("teleportationnetwork-32x32", {r=1, g=1, b=1}),
+	minimap=true,
+}
+ns.RegisterPoints(ns.KARESH, {
+	[50403640] = {}, -- Overlook Zo'Shuul Conduit
+	[77104890] = {}, -- North Sufaad Conduit
+	[51204850] = {}, -- Serrated Peaks Conduit
+	[45202390] = {}, -- Shadow Point Conduit
+	[60202900] = {}, -- Shan'dorah Conduit
+	[75903290] = {}, -- The Oasis Conduit
+	[71200820] = {}, -- Vanquisher's Wake Conduit
+	[72601250] = {}, -- Vanquisher's Wake Arena Conduit
+	[56202150] = {}, -- Fracture of Laacuna Conduit
+	[53902670] = {}, -- Untethered Space Conduit
+	[65404790] = {}, -- Lunnall River Conduit
+	[58905780] = {}, -- Naakroa Conduit
+	[51306710] = {}, -- Ruins of Yaathron Conduit
+	[53806360] = {}, -- Hosaas' Rest Conduit
+}, conduit)
+ns.RegisterPoints(ns.KARESH_TAZAVESH, {
+	[46705680] = {parent=true}, -- Tazavesh Conduit
+}, conduit)
 
 -- Rares
 
 ns.RegisterPoints(ns.KARESH, {
-	-- not yet vignette-coords:
-	[75243091] = { -- Heka'tamos
+	[75233098] = { -- Heka'tamos
 		criteria=106334,
 		quest=91276,
 		npc=245998,
 		loot={{245272, pet=true}}, -- Heka'Tarnos, Bringer of Discord
 		vignette=6981,
-		note="Jump",
+		note="Gather {spell:1240235}, {spell:1240217}, {spell:1240233}, {spell:1240237} nearby",
 	},
-	[53955896] = { -- Malek'ta
+	[54055884] = { -- Malek'ta
 		criteria=106336,
 		quest=91275,
 		npc=245997,
 		loot={{245214, pet=true}}, -- Palek'ti, the Mouth of Nothingness
 		vignette=6980,
-		note="Gather {spell:1240235}, {spell:1240217}, {spell:1240233}, {spell:1240237} nearby",
+		note="Jump repeatedly",
 	},
 }, {
-	achievement = 42761, -- Remnants of a Shattered World
+	achievement=42761, -- Remnants of a Shattered World
 })
 ns.RegisterPoints(ns.KARESH, {
 	[74043254] = { -- Sthaarbs
@@ -106,18 +278,36 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=234845, -- 234848
 		vignette=6725,
 	},
+	[63824363] = { -- Ixthar the Unblinking
+		criteria=106245,
+		quest=90596,
+		npc=232128,
+		vignette=6636,
+	},
+	[54455445] = { -- Maw of the Sands
+		criteria=106337,
+		quest=90594,
+		npc=231981,
+		vignette=6630,
+	},
+	[52782081] = { -- Orith the Dreadful
+		criteria=106339,
+		quest=90595,
+		npc=232127,
+		vignette=6635,
+	},
+	[45782425] = { -- Prototype Mk-V
+		criteria=106341,
+		quest=90590,
+		npc=232182,
+		vignette=6638,
+	},
 	-- not yet vignette-coords:
 	[70174979] = { -- Urmag
 		criteria=106348,
 		quest=90593,
 		npc=232195,
 		vignette=6641,
-	},
-	[63704369] = { -- Ixthar the Unblinking
-		criteria=106245,
-		quest=90596,
-		npc=232128,
-		vignette=6636,
 	},
 	[76724212] = { -- Stalker of the Wastes
 		criteria=106345,
@@ -137,12 +327,6 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=232006,
 		vignette=6629,
 	},
-	[54385441] = { -- Maw of the Sands
-		criteria=106337,
-		quest=90594,
-		npc=231981,
-		vignette=6630,
-	},
 	[50346480] = { -- Revenant of the Wasteland
 		criteria=106342,
 		quest=90591,
@@ -161,12 +345,6 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=232108,
 		vignette=6633,
 	},
-	[52752064] = { -- Orith the Dreadful
-		criteria=106339,
-		quest=90595,
-		npc=232127,
-		vignette=6635,
-	},
 	[54074928] = { -- Shadowhowl
 		criteria=106344,
 		quest=90583,
@@ -179,29 +357,22 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=232077,
 		vignette=6631,
 	},
-	[46212427] = { -- Prototype Mk-V
-		criteria=106341,
-		quest=90590,
-		npc=232182,
-		vignette=6638,
-	},
 }, {
 	achievement=42761, -- Remnants of a Shattered World
 	hide_before=PHASEDIVING,
 })
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
-	-- not yet vignette-coords:
-	[71998189] = { -- "Chowdar"
+	[72508187] = { -- "Chowdar"
 		criteria=106331,
-		quest=90587,
+		quest=90587, -- 90676
 		npc=232098,
 		loot={
 			{242323, toy=true}, -- Chowdar's Favorite Ribbon
 		},
 		vignette=6632,
 		note="Wanders northeast",
-		-- route={71998189, 81747427},
 	},
+	-- not yet vignette-coords:
 	[34703610] = { -- Arcana-Monger So'zer
 		criteria=106332,
 		quest=90696,
