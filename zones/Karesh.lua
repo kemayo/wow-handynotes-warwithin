@@ -9,8 +9,49 @@ notes:
 -- Treasures
 
 ns.RegisterPoints(ns.KARESH, {
+	--[[
+	[] = {criteria=106270, quest=85959}, -- Gift of the Brothers
+	[] = {criteria=106271, quest=86416}, -- Ancient Coffer
+	[] = {criteria=106272, quest=85837}, -- Forlorn Wind Chime
+	[] = {criteria=106244, quest=86492, vignette=6724}, -- Ixthar's Favorite Crystal
+	[] = {criteria=106274, quest=86301}, -- Wastelander Stash
+	[] = {criteria=106275, quest=86304}, -- Tumbled Package
+	[] = {criteria=106276, quest=86306}, -- Rashaal's Vase
+	[] = {criteria=108722, quest=86308}, -- Shattered Crystals
+	[] = {criteria=106277, quest=86322}, -- Skeletal Tail Bones
+	[] = {criteria=106278, quest=86323}, -- Crudely Stitched Sack
+	[] = {criteria=108723, quest=92348}, -- Abandoned Lockbox
+	[] = {criteria=106279, quest=91352}, -- Lightly-Dented Luggage
+	[] = {criteria=106280, quest=85840}, -- Sand-Worn Coffer
+	[] = {criteria=106224, quest=89378}, -- Ethereal Voidforged Container
+	[] = {criteria=106281, quest=90511}, -- Light-Soaked Cleaver
+	[] = {criteria=106296, quest=90512}, -- Spear of Fallen Memories
+	[] = {criteria=106283, quest=90514}, -- Efrat's Forgotten Bulwark
+	[] = {criteria=106284, quest=90522}, -- Tulwar of the Golden Guard
+	[] = {criteria=106285, quest=90515}, -- Petrified Branch of Janaa
+	[] = {criteria=106286, quest=90527}, -- Shadowguard Crusher
+	[] = {criteria=106287, quest=90521}, -- Sufaadi Skiff Lantern
+	[] = {criteria=106288, quest=90532, vignette=6927}, -- Korgorath's Talon
+	[] = {criteria=106289, quest=91055}, -- Warglaive of the Audacious Hunter
+	[] = {criteria=106290, quest=91056, vignette=6966}, -- P.O.S.T. Master's Prototype Parcel and Postage Presser
+	[] = {criteria=106291, quest=91057}, -- Phaseblade of the Void Marches
+	[] = {criteria=106292, quest=91058}, -- Bladed Rifle of Unfettered Momentum
+	--]]
 }, {
-	achievement = 42741, -- Treasures of K'aresh
+	achievement=42741, -- Treasures of K'aresh
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+})
+ns.RegisterPoints(ns.KARESH_TAZAVESH, {
+	[47766265] = { -- Mailroom Distribution
+		criteria=106273,
+		quest=86467,
+		loot={{245970, toy=true}}, -- P.O.S.T. Master's Express Hearthstone
+		vignette=6712, -- then 6709
+	},
+}, {
+	achievement=42741, -- Treasures of K'aresh
+	parent=true,
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
 })
 
 -- Things to find:
