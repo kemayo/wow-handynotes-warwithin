@@ -13,12 +13,14 @@ notes:
 --]]
 
 -- Treasures
+-- These mostly have a learn-cosmetic item, and a grey equivalent if you already know it
 ns.RegisterPoints(ns.KARESH, {
 	[76114526] = { -- Gift of the Brothers
 		criteria=106270,
 		quest=85959, -- Brothers are 86065, 86066, 86067; turning it in is 85958
 		loot={
 			248199, -- The Brothers' Final Gift
+			248200, -- The Brothers' Not-So-Final Present
 		},
 		related={
 			[75453979] = {label="{npc:234075:Sahra}", minimap=true,}, -- 86065?
@@ -46,7 +48,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=85837,
 		loot={
 			243144, -- Reshii Crystal Fragments
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
 		},
 		vignette=6675,
 	},
@@ -55,7 +57,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86492,
 		loot={
 			243144, -- Reshii Crystal Fragments
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
 		},
 		vignette=6724
 	},
@@ -64,7 +66,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86301,
 		loot={
 			243145, -- Well-Preserved Wrappings
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
 		},
 		vignette=6690,
 	},
@@ -72,9 +74,9 @@ ns.RegisterPoints(ns.KARESH, {
 		criteria=106275,
 		quest=86304,
 		loot={
-			238201,
-			243160,
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+			ns.rewards.Item(238201, 10), -- Desolate Talus
+			243160, -- Tazavesh Shipping Manifest
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
 		},
 		vignette=6692,
 	},
@@ -84,7 +86,7 @@ ns.RegisterPoints(ns.KARESH, {
 		loot={
 			ns.rewards.Item(239690, 10), -- Phantom Bloom
 			243161, -- Long-Pressed Flowers
-			ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+			-- ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
 		},
 		vignette=6693, -- Tumbled Package
 		path=68834794,
@@ -94,7 +96,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86308,
 		loot={
 			243144, -- Reshii Crystal Fragments
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
 		},
 		vignette=6695,
 	},
@@ -103,7 +105,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86322,
 		loot={
 			{243158, pet=true}, -- Ixthal the Observling
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
 		},
 		vignette=6696,
 	},
@@ -112,86 +114,37 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86323,
 		loot={
 			246295, -- Tazavesh Lookout's Mace
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
+			246296, -- Off-Balance Mace of the Tazavesh Lookout
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 4),
 		},
 		vignette=6697,
 	},
-	[59755370] = { -- Abandoned Lockbox
+	[59755370] = { -- Abandoned Lockbox (multiple spawn points?)
 		criteria=108723,
 		quest=92348,
 		loot={
 			246299, -- Blade of Lost Hope
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+			246301, -- Pitted Blade of Lost Hope
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
 		},
 		vignette=6673,
 	},
-	-- [] = { -- Lightly-Dented Luggage
-	-- 	criteria=106279,
-	-- 	quest=91352,
-	-- },
+	[53706400] = { -- Lightly-Dented Luggage (multiple spawn points?)
+		criteria=106279,
+		quest=91352,
+		loot={},
+		vignette=nil, -- 6674
+	},
 	[54462441] = { -- Sand-Worn Coffer
 		criteria=106280,
 		quest=85840,
 		loot={
 			246297, -- Desperate Defender's Bladed Staff
-			ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+			246298, -- Cracked Staff of the Desperate Defender
+			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
 		},
 		vignette=6676,
 	},
-	-- [] = { -- Ethereal Voidforged Container
-	-- 	criteria=106224,
-	-- 	quest=89378,
-	-- },
-	-- [] = { -- Light-Soaked Cleaver
-	-- 	criteria=106281,
-	-- 	quest=90511,
-	-- },
-	-- [] = { -- Spear of Fallen Memories
-	-- 	criteria=106296,
-	-- 	quest=90512,
-	-- },
-	-- [] = { -- Efrat's Forgotten Bulwark
-	-- 	criteria=106283,
-	-- 	quest=90514,
-	-- },
-	-- [] = { -- Tulwar of the Golden Guard
-	-- 	criteria=106284,
-	-- 	quest=90522,
-	-- },
-	-- [] = { -- Petrified Branch of Janaa
-	-- 	criteria=106285,
-	-- 	quest=90515,
-	-- },
-	-- [] = { -- Shadowguard Crusher
-	-- 	criteria=106286,
-	-- 	quest=90527,
-	-- },
-	-- [] = { -- Sufaadi Skiff Lantern
-	-- 	criteria=106287,
-	-- 	quest=90521,
-	-- },
-	-- [] = { -- Korgorath's Talon
-	-- 	criteria=106288,
-	-- 	quest=90532,
-	-- 	vignette=6927
-	-- },
-	-- [] = { -- Warglaive of the Audacious Hunter
-	-- 	criteria=106289,
-	-- 	quest=91055,
-	-- },
-	-- [] = { -- P.O.S.T. Master's Prototype Parcel and Postage Presser
-	-- 	criteria=106290,
-	-- 	quest=91056,
-	-- 	vignette=6966
-	-- },
-	-- [] = { -- Phaseblade of the Void Marches
-	-- 	criteria=106291,
-	-- 	quest=91057,
-	-- },
-	-- [] = { -- Bladed Rifle of Unfettered Momentum
-	-- 	criteria=106292,
-	-- 	quest=91058,
-	-- },
 }, {
 	achievement=42741, -- Treasures of K'aresh
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
@@ -207,6 +160,138 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	achievement=42741, -- Treasures of K'aresh
 	parent=true,
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+})
+-- Phased:
+ns.RegisterPoints(ns.KARESH, {
+	[52006840] = { -- Ethereal Voidforged Container
+		criteria=106224,
+		quest=89378,
+		loot={
+			246293, -- Buckler of the Last Stand
+			246294, -- Shattered Buckler of the Last Stand
+		},
+		vignette=6889, --
+	},
+	[52404660] = { -- Light-Soaked Cleaver
+		criteria=106281,
+		quest=90511,
+		loot={
+			243002, -- Light-Soaked Cleaver
+			243014, -- Light-Dimmed Cleaver
+		},
+		vignette=6919, --
+	},
+	[78004890] = { -- Efrat's Forgotten Bulwark
+		criteria=106283,
+		quest=90514,
+		loot={
+			243004, -- Efrat's Forgotten Bulwark
+			243016, -- Efrat's Totally Abandonded Bulwark
+		},
+		vignette=6921, --
+	},
+	[51006510] = { -- Tulwar of the Golden Guard
+		criteria=106284,
+		quest=90522,
+		loot={
+			243005, -- Tulwar of the Golden Guard
+			243017, -- Tulwar of the Pyrite Guard
+		},
+		vignette=6925, --
+	},
+	[78306150] = { -- Petrified Branch of Janaa
+		criteria=106285,
+		quest=90515,
+		loot={
+			243006, -- Petrified Branch of Janaa
+			243018, -- Petrified Twig of the Fennad
+		},
+		vignette=6922, --
+	},
+	[49101800] = { -- Shadowguard Crusher
+		criteria=106286,
+		quest=90527,
+		loot={
+			243008, -- Shadowguard Crusher
+			243021, -- Shadowguard Bonker
+		},
+		vignette=6926, --
+	},
+	[80705260] = { -- Sufaadi Skiff Lantern
+		criteria=106287,
+		quest=90521,
+		loot={
+			243009, -- Sufaadi Skiff Lantern
+			243022, -- Sufaadi Skiff Candle
+		},
+		vignette=6923, --
+	},
+	[64404270] = { -- Korgorath's Talon
+		criteria=106288,
+		quest=90532,
+		loot={
+			243153, -- Korgorath's Talon
+			243154, -- Korgorath's Broken Nail
+		},
+		vignette=6927, --
+	},
+	[56802410] = { -- Warglaive of the Audacious Hunter
+		criteria=106289,
+		quest=91055,
+		loot={
+			245667, -- Warglaive of the Audacious Hunter
+			245668, -- Warglaive of the Subdued Tracker
+		},
+		vignette=6965, --
+		--path=56802410,
+	},
+	[50803530] = { -- Phaseblade of the Void Marches
+		criteria=106291,
+		quest=91057,
+		loot={
+			245671, -- Phaseblade of the Void Marches
+			245672, -- Blade of the Void Swamp
+		},
+		vignette=6967, --
+	},
+	[70007090] = { -- Bladed Rifle of Unfettered Momentum
+		criteria=106292,
+		quest=91058,
+		loot={
+			245673, -- Bladed Rifle of Unfettered Momentum
+			245674, -- Rifle of Leaden Movement
+		},
+		vignette=6968, --
+	},
+}, {
+	achievement=42741, -- Treasures of K'aresh
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+	hide_before=PHASEDIVING,
+})
+ns.RegisterPoints(ns.KARESH_TAZAVESH, {
+	[23704680] = { -- Spear of Fallen Memories
+		criteria=106296,
+		quest=90512,
+		loot={
+			243003, -- Spear of Fallen Memories
+			243015, -- Spear of Forgotten Memories
+		},
+		vignette=6920, --
+	},
+	[47406980] = { -- P.O.S.T. Master's Prototype Parcel and Postage Presser
+		criteria=106290,
+		quest=91056,
+		loot={
+			245669, -- P.O.S.T. Master's Prototype Parcel and Postage Presser
+			245670, -- P.O.S.T. Employee's Backup Stamp
+		},
+		vignette=6966, --
+	},
+}, {
+	achievement=42741, -- Treasures of K'aresh
+	parent=true,
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+	hide_before=PHASEDIVING,
 })
 
 -- Things to find:
@@ -340,9 +425,9 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=232006,
 		vignette=6629,
 	},
-	[50346480] = { -- Revenant of the Wasteland
+	[50536476] = { -- Revenant of the Wasteland
 		criteria=106342,
-		quest=90591,
+		quest=90591, -- 90680
 		npc=232189,
 		vignette=6639,
 	},
@@ -406,6 +491,16 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 })
 
 ns.RegisterPoints(ns.KARESH, {
+	[50555406] = { -- Miasmawrath
+		quest=86447,
+		npc=234970,
+		vignette=6705, -- Devourer Attack: Eco-Dome Primus (not sure if multiples spawn?)
+	},
+	[49386418] = { -- The Harvester
+		quest=86464,
+		npc=235087, -- 246366
+		vignette=6707, -- Devourer Attack: The Atrium
+	},
 	-- not yet vignette-coords:
 	--[[
 	[0] = { -- Xy'vox the Twisted
@@ -480,24 +575,9 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=244442,
 		--vignette=,
 	},
-	[50555406] = { -- Miasmawrath
-		quest=86447,
-		npc=234970,
-		vignette=6705, -- not sure if multiples spawn?
-	},
 	[0] = { -- Soroth Miasmawrath
 		quest=nil,
 		npc=240967,
-		--vignette=,
-	},
-	[0] = { -- The Harvester
-		quest=nil,
-		npc=235087,
-		--vignette=,
-	},
-	[0] = { -- The Harvester
-		quest=nil,
-		npc=246366,
 		--vignette=,
 	},
 	[0] = { -- [DNT] Kill Credit
