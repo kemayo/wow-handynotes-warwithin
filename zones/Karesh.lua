@@ -15,7 +15,25 @@ ns.RegisterPoints(ns.KARESH, {
 
 -- Things to find:
 -- Dangerous Prowlers of K'aresh (42729)
+
+
 -- Secrets of the K'areshi (60890)
+ns.RegisterPoints(ns.KARESH_TAZAVESH, {
+	-- [] = {criteria=107306, quest=91649}, -- I Have Become Void!
+	-- [] = {criteria=107307, quest=91643}, -- Multiversal Energy Dynamics and the Murmuration Paradox
+	-- [] = {criteria=107308, quest=91646}, -- From Vengeance to Void
+	-- [] = {criteria=107309, quest=91647}, -- The Facets of K'aresh
+	-- [] = {criteria=107310, quest=91687}, -- Checklist of Minor Pleasures
+	[46321858] = {criteria=107311, quest=91645}, -- Ba'key's Aromatic Broker Cookies Recipes
+	-- [] = {criteria=107312, quest=91640}, -- A Dog-eared Book
+	[58459150] = {criteria=107315, quest=91642}, -- Mysterious Notebook
+	[41683982] = {criteria=107314, quest=91648}, -- Coins: An Oath We Exchange
+	-- [] = {criteria=107313, quest=91686}, -- Geologist Field Journal
+}, {
+	achievement=60890,
+	atlas="loreobject-32x32",
+	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
+})
 
 -- Rares
 
