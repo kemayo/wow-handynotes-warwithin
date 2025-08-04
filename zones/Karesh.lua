@@ -5,6 +5,11 @@ local PHASEDIVING = ns.conditions.AuraActive(1214374) -- Phase Diving
 
 --[[
 notes:
+91812: either world quests or Reshii Wraps acquisition (after The Tabiqa 84910)
+90955: first Reshii Wraps ability unlock
+89380: after Another World, primary Phase Conduit (6784) appears on zone map
+84901: after Shadow Point / Like A Knife Through Aether (84900)
+85037: That's a Wrap, unlocks Warrants
 --]]
 
 -- Treasures
@@ -73,10 +78,17 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6692,
 	},
-	-- [] = { -- Rashaal's Vase
-	-- 	criteria=106276,
-	-- 	quest=86306,
-	-- },
+	[70204773] = { -- Rashaal's Vase
+		criteria=106276,
+		quest=86306,
+		loot={
+			ns.rewards.Item(239690, 10), -- Phantom Bloom
+			243161, -- Long-Pressed Flowers
+			ns.rewards.Currency(ns.CURRENCY_RESONANCE, 5),
+		},
+		vignette=6693, -- Tumbled Package
+		path=68834794,
+	},
 	[75065534] = { -- Shattered Crystals
 		criteria=108722,
 		quest=86308,
@@ -202,32 +214,32 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 
 
 -- Secrets of the K'areshi (60890)
-local secrets = {
+local secrets = ns.nodeMaker{
 	achievement=60890,
 	atlas="loreobject-32x32",
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
 }
 ns.RegisterPoints(ns.KARESH, {
-	[42292093] = {criteria=107308, quest=91646, hide_before=PHASEDIVING}, -- From Vengeance to Void
-	[48925715] = {criteria=107313, quest=91686}, -- Geologist Field Journal
-}, secrets)
+	[42292093] = {criteria=107308, quest=91646, vignette=7122, hide_before=PHASEDIVING}, -- From Vengeance to Void
+	[48925715] = {criteria=107313, quest=91686, vignette=7127}, -- Geologist Field Journal
+	[72102940] = {criteria=107309, quest=91647, vignette=nil, hide_before=PHASEDIVING}, -- The Facets of K'aresh
+	[49602670] = {criteria=107307, quest=91643, vignette=nil, hide_before=PHASEDIVING}, -- Multiversal Energy Dynamics and the Murmuration Paradox
+}, secrets{})
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
-	-- [] = {criteria=107306, quest=91649}, -- I Have Become Void!
-	-- [] = {criteria=107307, quest=91643}, -- Multiversal Energy Dynamics and the Murmuration Paradox
-	-- [] = {criteria=107309, quest=91647}, -- The Facets of K'aresh
-	-- [] = {criteria=107310, quest=91687}, -- Checklist of Minor Pleasures
-	[46321858] = {criteria=107311, quest=91645}, -- Ba'key's Aromatic Broker Cookies Recipes
-	-- [] = {criteria=107312, quest=91640}, -- A Dog-eared Book
-	[58459150] = {criteria=107315, quest=91642}, -- Mysterious Notebook
-	[41683982] = {criteria=107314, quest=91648}, -- Coins: An Oath We Exchange
-}, secrets)
+	[36605810] = {criteria=107306, quest=91649, vignette=nil, hide_before=PHASEDIVING}, -- I Have Become Void!
+	[38204560] = {criteria=107310, quest=91687, vignette=nil, hide_before=PHASEDIVING}, -- Checklist of Minor Pleasures
+	[46321858] = {criteria=107311, quest=91645, vignette=7121}, -- Ba'key's Aromatic Broker Cookies Recipes
+	[37302570] = {criteria=107312, quest=91640, vignette=nil, minimap=true, loot={246584}}, -- A Dog-eared Book (no vignette)
+	[58459150] = {criteria=107315, quest=91642, vignette=7119}, -- Mysterious Notebook
+	[41683982] = {criteria=107314, quest=91648, vignette=7124}, -- Coins: An Oath We Exchange
+}, secrets{parent=true})
 
 -- Phase Conduits
 
 local conduit = {
 	label="{npc:249754:Phase Conduit}",
 	texture=ns.atlas_texture("teleportationnetwork-32x32", {r=1, g=1, b=1}),
-	minimap=true,
+	requires=ns.conditions.Achievement(42731), -- Become a Hero, Become a Phasediver!
 }
 ns.RegisterPoints(ns.KARESH, {
 	[50403640] = {}, -- Overlook Zo'Shuul Conduit
@@ -254,11 +266,12 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 ns.RegisterPoints(ns.KARESH, {
 	[75233098] = { -- Heka'tamos
 		criteria=106334,
-		quest=91276,
+		quest=91276, -- 91422
 		npc=245998,
 		loot={{245272, pet=true}}, -- Heka'Tarnos, Bringer of Discord
 		vignette=6981,
 		note="Gather {spell:1240235}, {spell:1240217}, {spell:1240233}, {spell:1240237} nearby",
+		nearby={76983175, 72023077, 72713330, 71783464, color={r=0,g=1,b=0}},
 	},
 	[54055884] = { -- Malek'ta
 		criteria=106336,
@@ -467,10 +480,10 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=244442,
 		--vignette=,
 	},
-	[0] = { -- Miasmawrath
-		quest=nil,
+	[50555406] = { -- Miasmawrath
+		quest=86447,
 		npc=234970,
-		--vignette=,
+		vignette=6705, -- not sure if multiples spawn?
 	},
 	[0] = { -- Soroth Miasmawrath
 		quest=nil,

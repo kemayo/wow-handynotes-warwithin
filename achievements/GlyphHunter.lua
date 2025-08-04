@@ -75,5 +75,5 @@ ns.RegisterPoints(ns.KARESH, {
     [74073252] = {criteria=106190}, -- The Oasis, K'aresh
 }, GLYPH{achievement=42727})
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
-    [55106750] = {criteria=106189}, -- Tazavesh, the Veiled Market, K'aresh
+    [55126762] = {criteria=106189}, -- Tazavesh, the Veiled Market, K'aresh
 }, GLYPH{achievement=42727, parent=true})
