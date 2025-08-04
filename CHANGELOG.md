@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v86
+
+* Updated for 11.2.0
+* K'aresh: all the basics, missing some non-achievement rares
+
 ## Changed in v85
 
 * Updated for 11.1.7
