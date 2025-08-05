@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v87
+
+* Azj-Kahet: showing the tooltip for some of the profession masters could cause an error
+
 ## Changed in v86
 
 * Updated for 11.2.0
