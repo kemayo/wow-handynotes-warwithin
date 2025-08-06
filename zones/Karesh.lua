@@ -323,7 +323,7 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 
 local conduit = {
 	label="{npc:249754:Phase Conduit}",
-	texture=ns.atlas_texture("teleportationnetwork-32x32", {r=1, g=1, b=1}),
+	texture=ns.atlas_texture("flightmaster_ancientwaygate-taxinode_neutral", {r=1, g=1, b=1}),
 	requires=ns.conditions.Achievement(42731), -- Become a Hero, Become a Phasediver!
 }
 ns.RegisterPoints(ns.KARESH, {
