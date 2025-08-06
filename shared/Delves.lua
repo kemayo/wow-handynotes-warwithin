@@ -146,7 +146,7 @@ ns.RegisterPoints(2396, { -- Excavation Site 9
     achievement=41100, -- Discoveries
 })
 
- -- Sidestreet Sluice
+-- Sidestreet Sluice
 ns.RegisterPoints(2420, { -- The Pits
     [61536586] = {quest=86787, loot={211035}}, -- Secret-Dredger's Girdle
     [74387426] = {quest=86788, loot={226001}}, -- Pure Gold Stein
@@ -178,9 +178,9 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [7873] = {40535, 40811, 40452}, -- Tak-Rethan Abyss (Kobyss)
         [7874] = {40536, 40814, 40453}, -- The Spiral Weave (Nerubian)
         [7875] = {}, -- Zekvir's Lair (Nerubian)
-        [8140] = {41099}, -- Sidestreet Sluice
+        [8140] = {41099, 41101}, -- Sidestreet Sluice
         [8142] = {}, -- Demolition Dome
-        [8143] = {41098}, -- Excavation Site Nine
+        [8143] = {41098, 41100}, -- Excavation Site Nine
     }
     -- Bountiful:
     delves[7779] = delves[7864] -- Fungal Folly
