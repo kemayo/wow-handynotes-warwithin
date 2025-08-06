@@ -160,6 +160,28 @@ ns.RegisterPoints(2422, { -- The High Decks
     achievement=41101, -- Discoveries
 })
 
+-- Archival Assault
+ns.RegisterPoints(2452, { -- The Arcane Conservatory
+    [62373798] = {quest=83692, loot={226005}, note="Waygate from lower level; {spell:1246323:Phase Cutter} down and land on the ledge at the edge of the room to reach it"}, -- Ancient Tool
+    [61941087] = {quest=83673, loot=CRYSTAL, note="May help to {spell:1246323:Phase Cutter} from the other chest on this level"},
+}, STURDY{
+    achievement=42679, -- Discoveries
+})
+-- ns.RegisterPoints(2454, { -- Mausoleum of Legends
+-- }, STURDY{
+--     achievement=42679, -- Discoveries
+-- })
+ns.RegisterPoints(2455, { -- Lower Chamber
+    [49709263] = {quest=92573, loot={226120}, note="{spell:1246323:Phase Cutter} through the barrier"}, -- Deployable Battle Supplies
+}, STURDY{
+    achievement=42679, -- Discoveries
+})
+ns.RegisterPoints(2476, { -- Crystal Chambers
+    [43906467] = {quest=90839, loot={221758, 221757, 221756, 221754, 221763}, note="Balanced on the pipe, {spell:1246323:Phase Cutter} from above. Gliding might be simpler."}, -- crafting blues
+}, STURDY{
+    achievement=42679, -- Discoveries
+})
+
 ----
 
 EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
@@ -181,6 +203,8 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
         [8140] = {41099, 41101}, -- Sidestreet Sluice
         [8142] = {}, -- Demolition Dome
         [8143] = {41098, 41100}, -- Excavation Site Nine
+        [8274] = {42771, 42679}, -- Archival Assault
+        [8323] = {}, -- Voidrazor Sanctuary
     }
     -- Bountiful:
     delves[7779] = delves[7864] -- Fungal Folly
@@ -197,6 +221,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
     delves[7790] = delves[7874] -- The Spiral Weave
     delves[8181] = delves[8143] -- Excavation Site Nine
     delves[8246] = delves[8140] -- Sidestreet Sluice
+    delves[8273] = delves[8274] -- Archival Assault
     --
     local function addToTooltip(tooltip, areaPoiID)
         if delves[areaPoiID] and #delves[areaPoiID] > 0 then
