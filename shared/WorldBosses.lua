@@ -98,3 +98,22 @@ ns.RegisterPoints(ns.UNDERMINE, {
         },
     },
 })
+
+ns.RegisterPoints(ns.KARESH, {
+    [71854851] = { -- Reshanor
+        quest=90783, -- 87352 tripped as well, account-wide
+        worldquest=87354,
+        npc=238319,
+        loot={
+            243038, -- Gaze of the Untethered Doom
+            243039, -- Devoured Magi's Cinch
+            243040, -- Crystalblight Legguards
+            243041, -- Umbral Stalker's Footpads
+            243042, -- Void-Bound Hauberk
+            243043, -- Shadowguard's Rift Wrap
+            243044, -- Feasting Fiend's Barbute
+            243045, -- Bygone Wastelander's Girdle
+            243046, -- Band of Boundless Hunger
+        },
+    },
+})
