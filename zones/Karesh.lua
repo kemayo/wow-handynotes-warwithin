@@ -501,8 +501,12 @@ ns.RegisterPoints(ns.KARESH, {
 		vignette=6705, -- Devourer Attack: Eco-Dome Primus (not sure if multiples spawn?)
 	},
 	[49386418] = { -- The Harvester
-		quest=86464,
+		quest=86464, -- 91289, 91311, 91435
 		npc=235087, -- 246366
+		loot={
+			246240, -- Devoured Energy-Pod
+			{238664, quest=89062}, -- Crystallized Anima
+		},
 		vignette=6707, -- Devourer Attack: The Atrium
 	},
 	[42505755] = { -- Purple Peat
