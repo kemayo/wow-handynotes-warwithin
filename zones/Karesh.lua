@@ -294,9 +294,23 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	hide_before=PHASEDIVING,
 })
 
--- Things to find:
 -- Dangerous Prowlers of K'aresh (42729)
-
+local prowlers = ns.nodeMaker{
+	achievement=42729,
+	note=EMOTE410_CMD1,
+	texture=ns.atlas_texture("WildBattlePetCapturable", {r=1, g=0.4, b=1}),
+	minimap=true,
+}
+ns.RegisterPoints(ns.KARESH, {
+	[47916135] = {criteria=106220, npc=245387, note="Patrols"}, -- C.T.
+	[73172374] = {criteria=106225, npc=248062, note="Up on the ledge"}, -- Empurror
+	[70255423] = {criteria=106226, npc=248067, note="Phases in and out, up in the tree"}, -- K'aresh'ire
+	[50345921] = {criteria=106221, npc=248056, note="Phases in and out"}, -- Little Ms. Phaser
+	[47613738] = {criteria=106223, npc=248057, hide_before=PHASEDIVING}, -- The King in Silver
+}, prowlers{})
+ns.RegisterPoints(ns.KARESH_TAZAVESH, {
+	[61005551] = {criteria=106222, npc=237077,}, -- Mar
+}, prowlers{parent=true})
 
 -- Secrets of the K'areshi (60890)
 local secrets = ns.nodeMaker{
