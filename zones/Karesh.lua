@@ -370,7 +370,7 @@ ns.RegisterPoints(ns.KARESH, {
 		loot={{245272, pet=true}}, -- Heka'Tarnos, Bringer of Discord
 		vignette=6981,
 		note="Gather {spell:1240235}, {spell:1240217}, {spell:1240233}, {spell:1240237} nearby",
-		nearby={76983175, 72023077, 72713330, 71783464, color={r=0,g=1,b=0}},
+		nearby={76983175, 72023077, 72713330, 71783464, 72582845, 72713472, color={r=0,g=1,b=0}, worldmap=false},
 	},
 	[54055884] = { -- Malek'ta
 		criteria=106336,
