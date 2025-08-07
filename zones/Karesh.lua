@@ -24,9 +24,10 @@ ns.RegisterPoints(ns.KARESH, {
 			248200, -- The Brothers' Not-So-Final Present
 		},
 		related={
-			[75453979] = {label="{npc:234075:Sahra}", minimap=true,}, -- 86065?
-			[68304530] = {label="{npc:234112:Naji}", minimap=true,}, -- 86066?
-			[69806050] = {label="{npc:234113:M'alim}", minimap=true,}, -- 86067
+			[75453979] = {label="{npc:234075:Sahra}", minimap=true, requires=ns.conditions.AuraActive(471549), quest=86065},
+			[68304530] = {label="{npc:234112:Naji}", minimap=true, requires=ns.conditions.AuraActive(471549), quest=86066},
+			[69806050] = {label="{npc:234113:M'alim}", minimap=true, requires=ns.conditions.AuraActive(471549), quest=86067},
+			color={r=0.6,g=0.6,b=1},
 		},
 		note="Get {spell:471549:Flickering Lantern} and find the three brothers",
 		vignette=6682, -- Flickering Lantern, then 6681 Gift of the Brothers
@@ -422,9 +423,9 @@ ns.RegisterPoints(ns.KARESH, {
 		npc=232195,
 		vignette=6641,
 	},
-	[76724212] = { -- Stalker of the Wastes
+	[76794208] = { -- Stalker of the Wastes
 		criteria=106345,
-		quest=90592,
+		quest=90592, -- 90681
 		npc=232193,
 		vignette=6640,
 	},
