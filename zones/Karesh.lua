@@ -2,6 +2,7 @@ local myname, ns = ...
 
 local PHASEDIVING = ns.conditions.AuraActive(1214374) -- Phase Diving
 -- Under Her Power (spell:1219699) also counts
+local TRAIT_WHATLIESBEYOND = ns.conditions.Trait(1115, 105870)
 
 --[[
 notes:
@@ -266,7 +267,7 @@ ns.RegisterPoints(ns.KARESH, {
 }, {
 	achievement=42741, -- Treasures of K'aresh
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
-	hide_before=PHASEDIVING,
+	hide_before={PHASEDIVING, TRAIT_WHATLIESBEYOND},
 })
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	[23704680] = { -- Spear of Fallen Memories
@@ -291,7 +292,7 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 	achievement=42741, -- Treasures of K'aresh
 	parent=true,
 	requires=ns.conditions.QuestComplete(84967), -- The Shadowguard Shattered
-	hide_before=PHASEDIVING,
+	hide_before={PHASEDIVING, TRAIT_WHATLIESBEYOND},
 })
 
 -- Dangerous Prowlers of K'aresh (42729)
