@@ -1,5 +1,12 @@
 # Changelog
 
+## Changed in v90
+
+* K'aresh:
+    * Note that the phased treasures require What Lies Beyond
+    * Hide the individual brothers when you find them for Gift of the Brothers
+* Azj-kahet: add a few more rumors to the map
+
 ## Changed in v89
 
 * K'aresh:
