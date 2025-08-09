@@ -605,7 +605,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86447, -- 91287, 91310, 91434
 		npc=234970,
 		loot={
-			246240, -- Devoured Energy-Pod
+			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
 			{238663, quest=89061,}, -- Crystallized Anima
 			240111, -- Reshii Skirmisher's Axe
 			240112, -- Reshii Scout's Blade
@@ -625,7 +625,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=86464, -- 91289, 91311, 91435
 		npc=235087, -- 246366
 		loot={
-			246240, -- Devoured Energy-Pod
+			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
 			{238664, quest=89062,}, -- Crystallized Anima
 			240113, -- Reshii Magi's Dagger
 			240115, -- Reshii Brute's Warmace
@@ -656,7 +656,7 @@ ns.RegisterPoints(ns.KARESH, {
 		quest=84993, -- 91286, 91309, 91433
 		npc=231229,
 		loot={
-			246240, -- Devoured Energy-Pod
+			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
 			{232467, quest=85722,}, -- Crystallized Anima
 			240111, -- Reshii Skirmisher's Axe
 			240112, -- Reshii Scout's Blade
@@ -754,6 +754,7 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 		quest=nil,
 		npc=235104,
 		loot={
+			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
 			{238665, quest=89063,}, -- Crystallized Anima
 			240111, -- Reshii Skirmisher's Axe
 			240112, -- Reshii Scout's Blade
