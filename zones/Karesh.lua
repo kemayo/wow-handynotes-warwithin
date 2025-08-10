@@ -750,8 +750,8 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 		vignette=6772, -- also 6770?
 		note="Complete {quest:87345:Warrant Xy'vox the Twisted} to summon",
 	},
-	[25807120] = { -- The Wallbreaker
-		quest=nil,
+	[28587428] = { -- The Wallbreaker
+		quest=86465, -- 91436, 91312, 91290
 		npc=235104,
 		loot={
 			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
