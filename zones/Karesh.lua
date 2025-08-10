@@ -376,7 +376,7 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6981,
 		note="Gather {spell:1240235}, {spell:1240217}, {spell:1240233}, {spell:1240237} nearby",
-		nearby={76983175, 72023077, 72713330, 71783464, 72582845, 72713472, color={r=0,g=1,b=0}, worldmap=false},
+		nearby={75553340, 72853131, 76983175, 72023077, 72713330, 71783464, 72582845, 72713472, color={r=0,g=1,b=0}, worldmap=false},
 	},
 	[54055884] = { -- Malek'ta
 		criteria=106336,
@@ -396,7 +396,7 @@ ns.RegisterPoints(ns.KARESH, {
 ns.RegisterPoints(ns.KARESH, {
 	[74043254] = { -- Sthaarbs
 		criteria=106346,
-		quest=91293,
+		quest=91293, -- 91431
 		npc=234845, -- 234848
 		loot={
 			240171, -- Observer's Soul Fetters
@@ -653,7 +653,7 @@ ns.RegisterPoints(ns.KARESH, {
 		note="Complete {quest:87546:Warrant Purple Peat} to summon",
 	},
 	[71792823] = { -- Korgoth the Hungerer
-		quest=84993, -- 91286, 91309, 91433
+		quest=84993, -- 91286; these didn't trip after the Energy-Pod: 91309, 91433
 		npc=231229,
 		loot={
 			{246240, mount=2602, note="needs 20"}, -- Devoured Energy-Pod
