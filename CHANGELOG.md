@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v92
+
+* All that and I forgot to update the TOC interface number for 11.2.0 :-P
+* K'aresh: added missing questID for the Wallbreaker
+* Fixed some bugs with showing nodes on parent maps, and with trait checks not using a cached config ID
+
 ## Changed in v91
 
 * K'aresh: add loot to lots of rares now that data is out there for it
