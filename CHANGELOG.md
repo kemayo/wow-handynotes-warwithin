@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v93
+
+* K'aresh: add the Phase-Lost-and-Found achievement, hidden by default
+* Fixed a typo
+
 ## Changed in v92
 
 * All that and I forgot to update the TOC interface number for 11.2.0 :-P
