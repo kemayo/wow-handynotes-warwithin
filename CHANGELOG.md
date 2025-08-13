@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v95
+
+* Fix an issue with points displaying across zones in Azj-Kahet
+
 ## Changed in v94
 
 * K'aresh: adjustments to a few coordinates
