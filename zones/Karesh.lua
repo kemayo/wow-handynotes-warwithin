@@ -820,9 +820,8 @@ ns.RegisterPoints(ns.KARESH, {
 	--]]
 })
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
-	-- not yet vignette-coords:
-	[31405740] = { -- Xy'vox the Twisted
-		quest=90580,
+	[31225813] = { -- Xy'vox the Twisted
+		quest=90694, -- 90695 (90580 on vignette but didn't flip)
 		npc=238384,
 		loot={
 			239455, -- Reshii Magi's Bands
@@ -835,7 +834,7 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 		vignette=6772, -- also 6770?
 		note="Complete {quest:87345:Warrant Xy'vox the Twisted} to summon",
 	},
-	[28587428] = { -- The Wallbreaker
+	[27557044] = { -- The Wallbreaker
 		quest=86465, -- 91436, 91312, 91290
 		npc=235104,
 		loot={
