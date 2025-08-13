@@ -324,12 +324,12 @@ local secrets = ns.nodeMaker{
 ns.RegisterPoints(ns.KARESH, {
 	[42292093] = {criteria=107308, quest=91646, vignette=7122, hide_before=PHASEDIVING}, -- From Vengeance to Void
 	[48925715] = {criteria=107313, quest=91686, vignette=7127}, -- Geologist Field Journal
-	[72102940] = {criteria=107309, quest=91647, vignette=nil, hide_before=PHASEDIVING}, -- The Facets of K'aresh
-	[49602670] = {criteria=107307, quest=91643, vignette=nil, hide_before=PHASEDIVING}, -- Multiversal Energy Dynamics and the Murmuration Paradox
+	[72122941] = {criteria=107309, quest=91647, vignette=7123, hide_before=PHASEDIVING}, -- The Facets of K'aresh
+	[49632676] = {criteria=107307, quest=91643, vignette=7120, hide_before=PHASEDIVING}, -- Multiversal Energy Dynamics and the Murmuration Paradox
 }, secrets{})
 ns.RegisterPoints(ns.KARESH_TAZAVESH, {
-	[36605810] = {criteria=107306, quest=91649, vignette=nil, hide_before=PHASEDIVING}, -- I Have Become Void!
-	[38204560] = {criteria=107310, quest=91687, vignette=nil, hide_before=PHASEDIVING}, -- Checklist of Minor Pleasures
+	[36795807] = {criteria=107306, quest=91649, vignette=7125, hide_before=PHASEDIVING}, -- I Have Become Void!
+	[38234562] = {criteria=107310, quest=91687, vignette=7128, hide_before=PHASEDIVING}, -- Checklist of Minor Pleasures
 	[46321858] = {criteria=107311, quest=91645, vignette=7121}, -- Ba'key's Aromatic Broker Cookies Recipes
 	[37302570] = {criteria=107312, quest=91640, vignette=nil, minimap=true, loot={246584}}, -- A Dog-eared Book (no vignette)
 	[58459150] = {criteria=107315, quest=91642, vignette=7119}, -- Mysterious Notebook
