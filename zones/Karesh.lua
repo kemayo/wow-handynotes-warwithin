@@ -505,7 +505,7 @@ ns.RegisterPoints(ns.KARESH, {
 	},
 	[54455445] = { -- Maw of the Sands
 		criteria=106337,
-		quest=90594,
+		quest=90594, -- 90683
 		npc=231981,
 		loot={
 			240172, -- Depleted K'areshi Battery
@@ -560,9 +560,9 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6640,
 	},
-	[51965772] = { -- The Nightreaver
+	[51915767] = { -- The Nightreaver
 		criteria=106347,
-		quest=90589,
+		quest=90589, -- 90678
 		npc=232111,
 		loot={
 			239454, -- Reshii Magi's Cord
@@ -605,9 +605,9 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6642,
 	},
-	[55925105] = { -- Morgil the Netherspawn
+	[56085040] = { -- Morgil the Netherspawn
 		criteria=106338,
-		quest=90588,
+		quest=90588, -- 90677
 		npc=232108,
 		loot={
 			239450, -- Reshii Magi's Gloves
@@ -617,9 +617,9 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6633,
 	},
-	[54074928] = { -- Shadowhowl
+	[54114923] = { -- Shadowhowl
 		criteria=106344,
-		quest=90583,
+		quest=90583, -- 90674
 		npc=232129,
 		loot={
 			239452, -- Reshii Magi's Leggings
