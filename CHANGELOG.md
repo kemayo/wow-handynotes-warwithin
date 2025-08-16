@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v96
+
+* K'aresh: adjustments to a few coordinates
+* Fix an issue where trait-gated points weren't correctly displaying on first login
+
 ## Changed in v95
 
 * Fix an issue with points displaying across zones in Azj-Kahet
