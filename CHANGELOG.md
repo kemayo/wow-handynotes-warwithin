@@ -1,5 +1,9 @@
 # Changelog
 
+## Changed in v97
+
+* Updated for 11.2.7
+
 ## Changed in v96
 
 * K'aresh: adjustments to a few coordinates
