@@ -1,4 +1,4 @@
-## Interface: 110207
+## Interface: 110207, 120001
 ## Title: HandyNotes: The War Within Treasures and Rares
 ## Notes: Where are the hidden treasures in the War Within?
 ## Author: Kemayo
