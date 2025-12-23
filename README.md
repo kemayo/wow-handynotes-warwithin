@@ -37,6 +37,7 @@ To edit the settings, just right-click on the treasure chest icon that's added t
 Sure! Here's other addons I have that fill similar niches:
 
 * [HandyNotes: Directions](https://www.curseforge.com/wow/addons/handynotes-directions) remembers places that guards have given you directions for
+* [HandyNotes: Midnight Treasures and Rares](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
 * [HandyNotes: The War Within Treasures and Rares](https://www.curseforge.com/wow/addons/handynotes-war-within)
 * [HandyNotes: Dragonflight Treasures and Rares](https://www.curseforge.com/wow/addons/handynotes-dragonflight-treasures)
 * [HandyNotes: Shadowlands Treasures and Rares](https://www.curseforge.com/wow/addons/handynotes-shadowlands-treasures)
