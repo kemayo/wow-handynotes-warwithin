@@ -307,6 +307,19 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
 })
 
+-- Nightfarm Growthling
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [61403180] = {},
+    [63403110] = {},
+    [64203160] = {},
+    [65203340] = {},
+    [65203350] = {},
+}, SHADOWED{
+    loot={
+        {221546, pet=true}, -- Nightfarm Growthling
+    },
+    texture=ns.atlas_texture("VignetteLoot", {r=1, g=0.5, b=1})
+})
 ns.RegisterPoints(ns.HALLOWFALL, {
     [62754689] = {
         label="{npc:222333:Sky-Captain Dornald}, The Mighty Lynx",
