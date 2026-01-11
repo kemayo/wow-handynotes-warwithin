@@ -266,6 +266,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=84337,
         vignette=6533,
     },
+    [66142802] = {
+        label="Farm Satchel",
+        quest=81988,
+        vignette=6178,
+    },
 }, SHADOWED{
     loot={
         226019, -- Darkened Arathi Shoulderguards (cosmetic)
