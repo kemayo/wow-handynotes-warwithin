@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v99
+
+* Ringing Deeps: fixed all coordinates, which were still a bit off after the zone was changed in 11.1.0
+* Hallowfall: added the Nightfarm Growthling and Thunder pets
+
 ## Changed in v98
 
 * Ready for Midnight
