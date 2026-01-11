@@ -96,6 +96,7 @@ ns.groups["beledarspawn"] = "{npc:207802:Beledar's Spawn}"
 ns.groups["snuffling"] = "{spell:431909:Snuffling}"
 ns.groups["worldboss"] = MAP_LEGEND_WORLDBOSS
 ns.groups["rumor"] = "{spell:463344:City Rumors}"
+ns.groups["shadowed"] = "{spell:131233:Shadowed}"
 
 --[[
 notes:

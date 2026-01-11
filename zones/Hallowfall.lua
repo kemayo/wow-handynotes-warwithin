@@ -227,6 +227,14 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
 })
 
+-- Assorted shadowed loot
+local SHADOWED = ns.nodeMaker{
+    note="Only visible with a light source ({item:211872:Patrol Torch}, {item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher}, etc)",
+    minimap=true, scale=0.9,
+    hide_before=ns.WORLDQUESTS,
+    group="shadowed",
+}
+
 ns.RegisterPoints(ns.HALLOWFALL, {
     [62013176] = {
         label="Hillhelm Lunchbox",
@@ -258,15 +266,12 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=84337,
         vignette=6533,
     },
-}, {
+}, SHADOWED{
     loot={
         226019, -- Darkened Arathi Shoulderguards (cosmetic)
         206350, -- Radiant Remnant
         ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
     },
-    note="Only visible with a light source ({item:211872:Patrol Torch}, {item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher}, etc)",
-    minimap=true, scale=0.9,
-    hide_before=ns.WORLDQUESTS,
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
@@ -296,13 +301,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=84339,
         vignette=6534,
     },
-}, {
+}, SHADOWED{
     loot={
         226016, -- Darkened Tabard of the Arathi (cosmetic)
     },
-    note="Only visible with a light source ({item:211872:Patrol Torch}, {item:220756:Flickering Torch}, {item:217344:Sentry Flare Launcher}, etc)",
-    minimap=true, scale=0.9,
-    hide_before=ns.WORLDQUESTS,
 })
 
 ns.RegisterPoints(ns.HALLOWFALL, {
