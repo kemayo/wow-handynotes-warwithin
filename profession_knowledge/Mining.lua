@@ -29,12 +29,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [46272755] = {
+    [45262755] = {
         quest=83908,
         loot={226334}, -- Earthen Excavator's Shovel
         vignette=6491,
     },
-    [62046624] = {
+    [62106624] = {
         quest=83909,
         loot={226335}, -- Regenerating Ore
         vignette=6492,

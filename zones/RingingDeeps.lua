@@ -2,21 +2,21 @@ local myname, ns = ...
 
 --[[
 Notes:
-Rappelling anchor 47834752, trips 84585
-Rappelling anchor 43911230, trips 84584
-Rappelling anchor 41116860, trips 84586
+Rappelling anchor 46924752, trips 84585
+Rappelling anchor 42741230, trips 84584
+Rappelling anchor 39746860, trips 84586
 
 awakening the machine: 5 84631, 10 84632, 15 84633, 20 84633
 looting the cache afterwards: 84642 84644 84646 84647
 
 Worldsoul memories (vignette 6358)
-55726981
+55356981
 ]]
 
 -- Treasures
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [64334056] = { -- Webbed Knapsack
+    [64544056] = { -- Webbed Knapsack
         criteria=69280,
         quest=79308,
         loot={
@@ -32,10 +32,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         level=71,
         vignette=5994,
-        nearby={64483883},
+        nearby={64703883},
         note="In cave",
     },
-    [59076311] = { -- Cursed Pickaxe
+    [58926311] = { -- Cursed Pickaxe
         criteria=69281,
         quest=82230,
         loot={
@@ -45,7 +45,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71,
         vignette=6232,
     },
-    [51871385] = { -- Munderut's Forgotten Stash
+    [51241385] = { -- Munderut's Forgotten Stash
         criteria=69282,
         quest=82235,
         loot={
@@ -58,7 +58,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71,
         vignette=6233,
     },
-    [42611745] = { -- Discarded Toolbox
+    [41351745] = { -- Discarded Toolbox
         criteria=69283,
         quest=82239,
         loot={
@@ -68,7 +68,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=73,
         vignette=6235,
     },
-    [61993342] = { -- Waterlogged Refuse
+    [62043342] = { -- Waterlogged Refuse
         criteria=69304,
         quest=83030,
         loot={
@@ -79,7 +79,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71,
         vignette=6356,
     },
-    [55183028] = { -- Scary Dark Chest
+    [54773028] = { -- Scary Dark Chest
         criteria=69307,
         quest=82818,
         loot={
@@ -89,7 +89,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71,
         vignette=6277,
     },
-    [55256440] = { -- Kaja'Cola Machine
+    [54856440] = { -- Kaja'Cola Machine
         criteria=69308,
         quest=82819,
         loot={
@@ -99,7 +99,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="Order four drinks in the right order: Bluesberry, Orange, Oyster, Mangoro (BOOM!)",
         vignette=6241,
     },
-    [45184896] = { -- Dislodged Blockage
+    [44094896] = { -- Dislodged Blockage
         criteria=69311,
         quest=82820,
         loot={
@@ -110,7 +110,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71, -- can solve the puzzle, but not loot the chest
         vignette=6284,
     },
-    [45933163] = { -- Dusty Prospector's Chest
+    [44893163] = { -- Dusty Prospector's Chest
         criteria=69312,
         quest=82464,
         loot={
@@ -120,26 +120,26 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         level=71,
         note="At the back of the inn; gather the five shards first",
         related={
-            [53622196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
-            [41852280] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
-            [37271990] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [53112196] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [40542280] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
+            [35641990] = {label="{item:223880:Rough Deepamethyst Shard}", loot={223880}, inbag=223880, color={r=1,g=0,b=1}, minimap=true,},
             --
-            [55283804] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
-            [55904080] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
+            [54883804] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
+            [55544080] = {label="{item:223881:Rough Deepemerald Shard}", loot={223881}, inbag=223881, color={r=0,g=1,b=0}, minimap=true,},
             --
-            [63865316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
-            [63024770] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
+            [64045316] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
+            [63144770] = {label="{item:223882:Rough Deepdiamond Shard}", loot={223882}, inbag=223882, color={r=0,g=0,b=1}, minimap=true,},
             --
-            [53774943] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
-            [56095300] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
+            [53274943] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
+            [55745300] = {label="{item:223878:Rough Deepruby Shard}", loot={223878}, inbag=223878, color={r=1,g=0,b=0}, minimap=true,},
             --
-            [58566313] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
-            [62836310] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
-            [55509417] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
+            [58386313] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
+            [62946310] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
+            [55119417] = {label="{item:223879:Rough Deeptopaz Shard}", loot={223879}, inbag=223879, color={r=1,g=1,b=0}, minimap=true,},
         },
         vignette=6286,
     },
-    [48775327] = { -- Forgotten Treasure (this is the entrance, actually at 47275349)
+    [47925327] = { -- Forgotten Treasure (this is the entrance, actually at 46325349)
         criteria=69313,
         quest=80485, -- chests: 80488, 80489, 80490, 80487
         loot={
@@ -156,12 +156,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- Not So Quick Fix
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [42424644] = {criteria=68658, quest=83475, note="By the stairs"}, -- Water Console
-    [55249330] = {criteria=68659, quest=83479, note="In the building"}, -- Abyssal Console
-    [59656110] = {criteria=68660, quest=83480, note="On the bridge"}, -- Taelloch Console
-    [64704880] = {criteria=68661, quest=83481}, -- Obsidian Console
-    [52802250] = {criteria=68662, quest=83482}, -- Lost Console
-    [43351409] = {criteria=68663, quest=83483}, -- Earthen Console
+    [41144644] = {criteria=68658, quest=83475, note="By the stairs"}, -- Water Console
+    [54849330] = {criteria=68659, quest=83479, note="In the building"}, -- Abyssal Console
+    [59546110] = {criteria=68660, quest=83480, note="On the bridge"}, -- Taelloch Console
+    [64944880] = {criteria=68661, quest=83481}, -- Obsidian Console
+    [52232250] = {criteria=68662, quest=83482}, -- Lost Console
+    [42141409] = {criteria=68663, quest=83483}, -- Earthen Console
 }, {
     achievement=40473,
     atlas="mechagon-projects",
@@ -170,16 +170,16 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- Rocked to Sleep
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [45447065] = {criteria=68690}, -- Alfritha
-    [58863637] = {criteria=68684, note="Up on the ledge"}, -- Attwogaz
+    [44377065] = {criteria=68690}, -- Alfritha
+    [58703637] = {criteria=68684, note="Up on the ledge"}, -- Attwogaz
     [61258379] = {criteria=68691, note="Up on the ledge"}, -- Gundrig
-    [41531354] = {criteria=68682}, -- Hathlaz
-    [40394087] = {criteria=68685}, -- Krattdaz
-    [55439371] = {criteria=68688, note="Up on the pipes"}, -- Merunth
-    [59985573] = {criteria=68692}, -- Sathilga
-    [51543023] = {criteria=68686, note="Up on the ledge"}, -- Uisgaz
-    [46244904] = {criteria=68689}, -- Varerko
-    [45493178] = {criteria=68687, note="By the pipes above the inn"}, -- Venedaz
+    [40191354] = {criteria=68682}, -- Hathlaz
+    [38984087] = {criteria=68685}, -- Krattdaz
+    [55049371] = {criteria=68688, note="Up on the pipes"}, -- Merunth
+    [59905573] = {criteria=68692}, -- Sathilga
+    [50883023] = {criteria=68686, note="Up on the ledge"}, -- Uisgaz
+    [45224904] = {criteria=68689}, -- Varerko
+    [44423178] = {criteria=68687, note="By the pipes above the inn"}, -- Venedaz
 }, {
     achievement=40504,
     atlas="reagents", color={r=0.5, g=1, b=1},
@@ -188,12 +188,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- Notable Machines
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [42972880] = {criteria=68991}, -- Notes On The Machine Speakers: Fragment I
-    [45822593] = {criteria=68992}, -- Notes On The Machine Speakers: Fragment II
-    [47821448] = {criteria=68993}, -- Notes On The Machine Speakers: Fragment III
-    [37352099] = {criteria=68994, note="Up on the scaffolding"}, -- Notes On The Machine Speakers: Fragment IV
-    [59655878] = {criteria=68995, note="Up on the arch"}, -- Notes On The Machine Speakers: Fragment V
-    [60967955] = {criteria=68996}, -- Notes On The Machine Speakers: Fragment VI
+    [41732880] = {criteria=68991}, -- Notes On The Machine Speakers: Fragment I
+    [44772593] = {criteria=68992}, -- Notes On The Machine Speakers: Fragment II
+    [46911448] = {criteria=68993}, -- Notes On The Machine Speakers: Fragment III
+    [35732099] = {criteria=68994, note="Up on the scaffolding"}, -- Notes On The Machine Speakers: Fragment IV
+    [59545878] = {criteria=68995, note="Up on the arch"}, -- Notes On The Machine Speakers: Fragment V
+    [60947955] = {criteria=68996}, -- Notes On The Machine Speakers: Fragment VI
 }, {
     achievement=40628,
     texture=ns.atlas_texture("profession", {r=0, g=1, b=1}),
@@ -202,28 +202,28 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- Gobblin' with Glublurb
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [41515024] = {
+    [40175024] = {
         label="{npc:227132:Glublurb}",
         texture=ns.atlas_texture("BuildanAbomination-32x32", {r=0, g=1, b=1}),
         note="Get {spell:456739:Etheral Vision} from a Glimmering Crystal, then go to the pond to the northwest of it to find a {npc:227138:Ethereal Glimmerling}, and bring it here",
         route={
-            41485020, 54653360, 56094110,
+            40145020, 54203360, 55744110,
             highlightOnly=true, r=1, g=0, b=1,
         },
     },
-    [54653360] = {
+    [54203360] = {
         label="{npc:227138:Ethereal Glimmerling}",
         active=ns.conditions.AuraActive(456739), -- Essence of Awakening
         atlas="Vehicle-TempleofKotmogu-PurpleBall",
         note="Take this to {npc:227132:Glublurb}; {spell:456739:Etheral Vision} only lasts 5 minutes, but can be refilled from the crystals",
-        route=41485020,
+        route=40145020,
     },
-    [56134100] = {
+    [55794100] = {
         label="Glimmering Crystal",
         spell=456739, -- Ethereal Vision
         texture=ns.atlas_texture("keyflameon-32x32", {r=0, g=0.5, b=1}),
         note="Get {spell:456739:Etheral Vision}, then go to the pond to the northwest to find a {npc:227138:Ethereal Glimmerling}",
-        route=41485020,
+        route=40145020,
     },
 }, {
     achievement=40614,
@@ -233,36 +233,36 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 
 -- To All the Slimes I Love
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [54876920] = {criteria=68670, --[[npc=226626--]]}, -- Spring Mole
-    [48321660] = {criteria=68673, --[[npc=217756--]]}, -- Snake
-    [59745010] = {criteria=68673, --[[npc=217756--]]}, -- Snake
-    [60493380] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
-    [42143100] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
-    [50945080] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
-    [57497520] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
-    [49255340] = {criteria=68676, --[[npc=221146--]]}, -- Tiny Sporbit
-    [39891500] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [45511740] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [41202880] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [58624140] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [57687300] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [51873560] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
-    [57308580] = {criteria=68675, --[[npc=219585--]]}, -- Mass of Worms
-    [51506960] = {criteria=68731, --[[npc=217461--]]}, -- Grottoscale Hatchling
-    [54122440] = {criteria=68729, --[[npc=220177--]]}, -- Crackcreeper
-    [45691560] = {criteria=68730, --[[npc=214726--]]}, -- Lava Slug
-    [45511760] = {criteria=68732, --[[npc=220370--]]}, -- Earthenwork Stoneskitterer
-    [67044200] = {criteria=68733, --[[npc=223663--]]}, -- Cavern Skiplet
-    [52446940] = {criteria=68734, --[[npc=217316--]]}, -- Moss Sludglet
-    [56936960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
-    [57873960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
-    [40821220] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
-    [60683300] = {criteria=68748, --[[npc=220168--]]}, -- Stumblegrub
-    [50193220] = {criteria=69805, --[[npc=219842--]]}, -- Darkgrotto Hopper
-    [61613920] = {criteria=68749, --[[npc=220413--]]}, -- Oozeling
-    [53755080] = {criteria=68750, --[[npc=217559--]]}, -- Pebble Scarab
-    [48501120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
-    [59185120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
+    [54446920] = {criteria=68670, --[[npc=226626--]]}, -- Spring Mole
+    [47441660] = {criteria=68673, --[[npc=217756--]]}, -- Snake
+    [59645010] = {criteria=68673, --[[npc=217756--]]}, -- Snake
+    [60443380] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [40843100] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [50245080] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [57247520] = {criteria=68674, --[[npc=220173--]]}, -- Lightdarter
+    [48445340] = {criteria=68676, --[[npc=221146--]]}, -- Tiny Sporbit
+    [38441500] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [44441740] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [39842880] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [58444140] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [57447300] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [51243560] = {criteria=68677, --[[npc=220369--]]}, -- Dustcrawler Beetle
+    [57048580] = {criteria=68675, --[[npc=219585--]]}, -- Mass of Worms
+    [50846960] = {criteria=68731, --[[npc=217461--]]}, -- Grottoscale Hatchling
+    [53642440] = {criteria=68729, --[[npc=220177--]]}, -- Crackcreeper
+    [44641560] = {criteria=68730, --[[npc=214726--]]}, -- Lava Slug
+    [44441760] = {criteria=68732, --[[npc=220370--]]}, -- Earthenwork Stoneskitterer
+    [67444200] = {criteria=68733, --[[npc=223663--]]}, -- Cavern Skiplet
+    [51846940] = {criteria=68734, --[[npc=217316--]]}, -- Moss Sludglet
+    [56646960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [57643960] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [39441220] = {criteria=68747, --[[npc=219366--]]}, -- Cavern Mote
+    [60643300] = {criteria=68748, --[[npc=220168--]]}, -- Stumblegrub
+    [49443220] = {criteria=69805, --[[npc=219842--]]}, -- Darkgrotto Hopper
+    [61643920] = {criteria=68749, --[[npc=220413--]]}, -- Oozeling
+    [53245080] = {criteria=68750, --[[npc=217559--]]}, -- Pebble Scarab
+    [47641120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
+    [59045120] = {criteria=68751, --[[npc=216058--]]}, -- Rock Snail
 }, {
     achievement=40475,
     texture=ns.atlas_texture("delves-scenario-heart-icon", nil, 0, 0.9, 0, 0.9),
@@ -272,7 +272,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 -- Rares
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [49241991] = { -- Automaxor
+    [48431991] = { -- Automaxor
         criteria=69634,
         quest=81674, -- 84046
         npc=220265,
@@ -283,7 +283,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6128,
     },
-    [38731692] = { -- Charmonger
+    [37201692] = { -- Charmonger
         criteria=69632,
         quest=81562, -- 84044
         npc=220267,
@@ -294,7 +294,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6104,
     },
-    [40053508] = { -- King Splash
+    [38613508] = { -- King Splash
         criteria=69624,
         quest=80547,
         npc=220275,
@@ -308,7 +308,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         --tameable=true, -- hopper
         vignette=6088,
     },
-    [61802840] = { -- Candleflyer Captain
+    [61842840] = { -- Candleflyer Captain
         criteria=69623,
         quest=80505,
         npc=220276,
@@ -322,7 +322,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="Patrols the area",
         vignette=6080,
     },
-    [47624651] = { -- Cragmund
+    [46704651] = { -- Cragmund
         criteria=69630,
         quest=80560, -- 84042
         npc=220269,
@@ -334,7 +334,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6090,
     },
-    [51560843] = { -- Deepflayer Broodmother
+    [50900843] = { -- Deepflayer Broodmother
         criteria=69636,
         quest=80536, -- 85162
         npc=220286,
@@ -346,13 +346,13 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         note="Flys around anticlockwise",
         route={
-            51560843, 49630880, 46410836, 45991007, 42410955, 41000822, 39940871, 41410973, 41511083, 42281312,
-            40421750, 45581919, 49652244, 50331761, 52521023,
+            50900843, 48840880, 45400836, 44961007, 41130955, 39630822, 38490871, 40060973, 40171083, 40991312,
+            39011750, 44521919, 48862244, 49591761, 51931023,
             loop=true,
         },
         vignette=6082,
     },
-    [46406619] = { -- Aquellion
+    [45396619] = { -- Aquellion
         criteria=69625,
         quest=80557,
         npc=220274,
@@ -365,7 +365,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6089,
     },
-    [48712657] = { -- Zilthara
+    [47862657] = { -- Zilthara
         criteria=69629,
         quest=80506, -- 84041
         npc=220270,
@@ -379,7 +379,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6079,
     },
-    [54213813] = { -- Coalesced Monstrosity
+    [53743813] = { -- Coalesced Monstrosity
         criteria=69633,
         quest=81511, -- 84045
         npc=220266,
@@ -390,7 +390,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6101,
     },
-    [43731209] = { -- Terror of the Forge
+    [42541209] = { -- Terror of the Forge
         criteria=69628,
         quest=80507, -- 84040
         npc=220271,
@@ -405,7 +405,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6081,
         note="Walking in the lava",
     },
-    [44214696] = { -- Kelpmire
+    [43064696] = { -- Kelpmire
         criteria=69635,
         quest=81485, -- 84047
         npc=220287,
@@ -419,7 +419,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6099,
     },
-    [53395480] = { -- Rampaging Blight
+    [52865480] = { -- Rampaging Blight
         criteria=69626,
         quest=81563,
         npc=220273,
@@ -432,7 +432,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6105,
     },
-    [67094629] = { -- Trungal
+    [67494629] = { -- Trungal
         criteria=69631,
         quest=80574, -- 84043
         npc=220268,
@@ -445,10 +445,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             223005, -- String of Fungal Fruits
         },
         note="Kill the {npc:220615:Root of Trungal} to spawn",
-        path={67914569, 68204444},
+        path={68374569, 68684444},
         vignette=6126,
     },
-    [64054754] = { -- Spore-infused Shalewing
+    [64244754] = { -- Spore-infused Shalewing
         criteria=69638,
         quest=81652, -- 84049
         npc=221217,
@@ -461,9 +461,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6121,
         note="Flies around clockwise",
         route={
-            64234852, 64365012, 64305047, 63875137, 63725156, 63435171, 63235176, 62945176, 62805174, 62345120, 62024896,
-            62044870, 62174840, 62014817, 61544779, 61394760, 61304737, 61364711, 61544669, 61644655, 61844644, 62684640,
-            63324608, 63464620, 63764659, 63874680, 64054754,
+            64444852, 64575012, 64515047, 64055137, 63895156, 63585171, 63375176, 63065176, 62915174, 62425120, 62084896,
+            62104870, 62244840, 62074817, 61564779, 61404760, 61314737, 61374711, 61564669, 61674655, 61884644, 62784640,
+            63464608, 63614620, 63934659, 64054680, 64244754,
             loop=true,
         },
     },
@@ -481,7 +481,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6119,
     },
-    [62815262] = { -- Disturbed Earthgorger
+    [62925262] = { -- Disturbed Earthgorger
         criteria=69640,
         quest=80003,
         npc=218393,
@@ -494,7 +494,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         note="Stand in the dust cloud and use {spell:437003:Stomp} several times",
         vignette=6031,
     },
-    [62466881] = { -- Deathbound Husk
+    [62556881] = { -- Deathbound Husk
         criteria=69627,
         quest=81566,
         npc=220272,
@@ -504,9 +504,9 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6106,
         note="In cave",
-        path=62786796,
+        path=62896796,
     },
-    [57017682] = { -- Lurker of the Deeps
+    [56727682] = { -- Lurker of the Deeps
         criteria=69637,
         quest=81633, -- 85163
         npc=220285,
@@ -521,11 +521,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         vignette=6110,
         note="Pull 5 levers across the zone at the same time to summon; they stay activated for ~10 seconds, so you'll need a group",
         related={
-            [46320882] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
-            [50482530] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
-            [53942358] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
-            [55319239] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
-            [58854464] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [45310882] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [49752530] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [53452358] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [54919239] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
+            [58694464] = {label="Inconspicuous Lever", note="Pull all 5 levers simultaneously to summon {npc:220285:Lurker of the Deeps}"},
         },
     },
 }, {
@@ -533,7 +533,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
 })
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [58805000] = { -- Slatefang
+    [58645000] = { -- Slatefang
         quest=nil,
         npc=228439,
         requires=ns.conditions.Profession(ns.PROF_WW_SKINNING),

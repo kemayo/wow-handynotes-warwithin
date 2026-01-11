@@ -25,15 +25,15 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 }, GLYPH{achievement=40166})
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [45903161] = {criteria=69246,}, -- Gundargaz, The Ringing Deeps
-    [43871019] = {criteria=69247,}, -- The Stonevault Exterior, The Ringing Deeps
-    [53623159] = {criteria=69248,}, -- The Lost Mines, The Ringing Deeps
-    [65003445] = {criteria=69249,}, -- Chittering Den, The Ringing Deeps
-    [52685607] = {criteria=69250,}, -- The Rumbling Wastes, The Ringing Deeps
-    [46196613] = {criteria=69251,}, -- The Living Grotto, The Ringing Deeps
-    [59839493] = {criteria=69252,}, -- Abyssal Excavation, The Ringing Deeps
-    [58896610] = {criteria=69253,}, -- Taelloch Mine, The Ringing Deeps
-    [43475157] = {criteria=69254,}, -- The Waterworks, The Ringing Deeps
+    [44863161] = {criteria=69246,}, -- Gundargaz, The Ringing Deeps
+    [42691019] = {criteria=69247,}, -- The Stonevault Exterior, The Ringing Deeps
+    [53103159] = {criteria=69248,}, -- The Lost Mines, The Ringing Deeps
+    [65263445] = {criteria=69249,}, -- Chittering Den, The Ringing Deeps
+    [52105607] = {criteria=69250,}, -- The Rumbling Wastes, The Ringing Deeps
+    [45176613] = {criteria=69251,}, -- The Living Grotto, The Ringing Deeps
+    [59749493] = {criteria=69252,}, -- Abyssal Excavation, The Ringing Deeps
+    [58736610] = {criteria=69253,}, -- Taelloch Mine, The Ringing Deeps
+    [42275157] = {criteria=69254,}, -- The Waterworks, The Ringing Deeps
 }, GLYPH{achievement=40703})
 
 ns.RegisterPoints(ns.HALLOWFALL, {

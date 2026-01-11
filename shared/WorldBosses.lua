@@ -24,7 +24,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
 }, boss)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [60868760] = { -- Aggregation of Horrors
+    [56708760] = { -- Aggregation of Horrors
         quest=83466,
         worldquest=82653,
         npc=220999,

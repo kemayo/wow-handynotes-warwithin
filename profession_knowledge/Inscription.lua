@@ -32,12 +32,12 @@ ns.RegisterPoints(ns.DORNOGAL, {
 }, KNOWLEDGE)
 
 ns.RegisterPoints(ns.RINGINGDEEPS, {
-    [45473432] = {
+    [44403432] = {
         quest=83884,
         loot={226310}, -- Runic Scroll
         vignette=6467,
     },
-    [58485801] = {
+    [58305801] = {
         quest=83885,
         loot={226311}, -- Blue Earthen Pigment
         vignette=6468,
