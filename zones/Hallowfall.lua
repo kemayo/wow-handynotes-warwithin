@@ -320,6 +320,38 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     },
     texture=ns.atlas_texture("VignetteLoot", {r=1, g=0.5, b=1})
 })
+
+-- Thunder
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [64451880] = {
+        label="{npc:212419:Attica Whiskervale}",
+        note="Talk until they offer {quest:82007:Tale of Tales}",
+    },
+}, SHADOWED{
+    quest=82007,
+    atlas="banker",
+    loot={
+        {220782, pet=true}, -- Thunder
+    },
+})
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [66311569] = {label="{npc:222373:Beef}", note="In cave", path=65831877}, -- Beef
+}, SHADOWED{
+    quest=82007,
+    atlas="WildBattlePet", minimap=true, scale=0.9,
+    requires=ns.conditions.OnQuest(82007), -- Tale of Tales
+    -- hide_before=ns.conditions.QuestComplete(82006), -- quest for finishing Attica's dialog
+})
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [63901970] = {label="{npc:222372:Beans}"}, -- Beans
+    [61982078] = {label="{npc:222375:Thunder}"}, -- Thunder
+    [66702100] = {label="{npc:222374:Cap'n Elaena}"}, -- Cap'n Elaena
+}, {
+    quest=82007,
+    atlas="WildBattlePet",
+    requires=ns.conditions.OnQuest(82007), -- Tale of Tales
+})
+
 ns.RegisterPoints(ns.HALLOWFALL, {
     [62754689] = {
         label="{npc:222333:Sky-Captain Dornald}, The Mighty Lynx",
