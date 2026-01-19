@@ -270,6 +270,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         label="Farm Satchel",
         quest=81988,
         vignette=6178,
+        additional={64872564},
     },
 }, SHADOWED{
     loot={
@@ -357,6 +358,29 @@ ns.RegisterPoints(ns.HALLOWFALL, {
     requires=ns.conditions.OnQuest(82007), -- Tale of Tales
 })
 
+-- Life on the Farm
+local FARMLIFE = {
+    achievement=40360, 
+    atlas="QuestNormal",
+}
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [64752653] = { -- Lil Piggy
+        criteria=68012, quest=82963, onquest=82963, loot={224457},
+        additional={
+            63802643,
+            64022592,
+            64502736,
+            64752732,
+        },
+        note="Various spawn points near here",
+    },
+}, SHADOWED(FARMLIFE))
+ns.RegisterPoints(2312, { -- Mycomancer Cavern
+    [39292127] = {criteria=68271, quest=83278, onquest=83278, loot={225336},}, -- Lost Shoe
+    [58913111] = {criteria=68272, quest=83282, onquest=83282, loot={225339},}, -- Chicken Eggs
+}, FARMLIFE)
+
+-- Sky-Captain's Sunken Cache (Treasures)
 ns.RegisterPoints(ns.HALLOWFALL, {
     [62754689] = {
         label="{npc:222333:Sky-Captain Dornald}, The Mighty Lynx",
@@ -418,7 +442,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         },
     },
 }, {
-    achievement=40848,
+    achievement=40848, -- Treasures
     criteria=69700,
     atlas="Vehicle-Air-Occupied", scale=1.5,
     note="Find the ship on the route and talk to the captain",
