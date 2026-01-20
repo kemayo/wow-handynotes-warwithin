@@ -132,11 +132,11 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6673,
 	},
-	[53706400] = { -- Lightly-Dented Luggage (multiple spawn points?)
+	[55716411] = { -- Lightly-Dented Luggage (multiple spawn points? 53706400)
 		criteria=106279,
 		quest=91352,
 		loot={},
-		vignette=nil, -- 6674
+		vignette=6674,
 	},
 	[54462441] = { -- Sand-Worn Coffer
 		criteria=106280,
@@ -175,14 +175,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6889, --
 	},
-	[52404660] = { -- Light-Soaked Cleaver
+	[52504677] = { -- Light-Soaked Cleaver
 		criteria=106281,
 		quest=90511,
 		loot={
 			243002, -- Light-Soaked Cleaver
 			243014, -- Light-Dimmed Cleaver
 		},
-		vignette=6919, --
+		vignette=6919,
 	},
 	[78004890] = { -- Efrat's Forgotten Bulwark
 		criteria=106283,
@@ -193,14 +193,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6921, --
 	},
-	[51006510] = { -- Tulwar of the Golden Guard
+	[51056509] = { -- Tulwar of the Golden Guard
 		criteria=106284,
 		quest=90522,
 		loot={
 			243005, -- Tulwar of the Golden Guard
 			243017, -- Tulwar of the Pyrite Guard
 		},
-		vignette=6925, --
+		vignette=6925,
 	},
 	[78306150] = { -- Petrified Branch of Janaa
 		criteria=106285,
@@ -248,14 +248,14 @@ ns.RegisterPoints(ns.KARESH, {
 		vignette=6965, --
 		--path=56802410,
 	},
-	[50803530] = { -- Phaseblade of the Void Marches
+	[50823534] = { -- Phaseblade of the Void Marches
 		criteria=106291,
 		quest=91057,
 		loot={
 			245671, -- Phaseblade of the Void Marches
 			245672, -- Blade of the Void Swamp
 		},
-		vignette=6967, --
+		vignette=6967,
 	},
 	[70007090] = { -- Bladed Rifle of Unfettered Momentum
 		criteria=106292,
@@ -281,14 +281,14 @@ ns.RegisterPoints(ns.KARESH_TAZAVESH, {
 		},
 		vignette=6920, --
 	},
-	[47406980] = { -- P.O.S.T. Master's Prototype Parcel and Postage Presser
+	[66048299] = { -- P.O.S.T. Master's Prototype Parcel and Postage Presser
 		criteria=106290,
 		quest=91056,
 		loot={
 			245669, -- P.O.S.T. Master's Prototype Parcel and Postage Presser
 			245670, -- P.O.S.T. Employee's Backup Stamp
 		},
-		vignette=6966, --
+		vignette=6966,
 	},
 }, {
 	achievement=42741, -- Treasures of K'aresh
@@ -514,7 +514,7 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6630,
 	},
-	[52782081] = { -- Orith the Dreadful
+	[52702072] = { -- Orith the Dreadful
 		criteria=106339,
 		quest=90595,
 		npc=232127,
