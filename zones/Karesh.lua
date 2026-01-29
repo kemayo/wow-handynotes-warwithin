@@ -184,14 +184,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6919,
 	},
-	[78004890] = { -- Efrat's Forgotten Bulwark
+	[77994894] = { -- Efrat's Forgotten Bulwark
 		criteria=106283,
 		quest=90514,
 		loot={
 			243004, -- Efrat's Forgotten Bulwark
 			243016, -- Efrat's Totally Abandonded Bulwark
 		},
-		vignette=6921, --
+		vignette=6921,
 	},
 	[51056509] = { -- Tulwar of the Golden Guard
 		criteria=106284,
@@ -220,14 +220,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6926, --
 	},
-	[80705260] = { -- Sufaadi Skiff Lantern
+	[80725267] = { -- Sufaadi Skiff Lantern
 		criteria=106287,
 		quest=90521,
 		loot={
 			243009, -- Sufaadi Skiff Lantern
 			243022, -- Sufaadi Skiff Candle
 		},
-		vignette=6923, --
+		vignette=6923,
 	},
 	[64404270] = { -- Korgorath's Talon
 		criteria=106288,
@@ -238,15 +238,15 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6927, --
 	},
-	[56802410] = { -- Warglaive of the Audacious Hunter
+	[58432259] = { -- Warglaive of the Audacious Hunter
 		criteria=106289,
 		quest=91055,
 		loot={
 			245667, -- Warglaive of the Audacious Hunter
 			245668, -- Warglaive of the Subdued Tracker
 		},
-		vignette=6965, --
-		--path=56802410,
+		vignette=6965,
+		path=56802410,
 	},
 	[50823534] = { -- Phaseblade of the Void Marches
 		criteria=106291,
