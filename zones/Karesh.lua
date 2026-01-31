@@ -59,6 +59,7 @@ ns.RegisterPoints(ns.KARESH, {
 		criteria=106244,
 		quest=86492,
 		loot={
+			ns.rewards.Achievement(42736, 106244), -- Ixthar's Legacy
 			243144, -- Reshii Crystal Fragments
 			-- ns.rewards.Currency(ns.CURRENCY_VALORSTONE, 5), ns.rewards.Currency(ns.CURRENCY_RESONANCE, 3),
 		},
@@ -494,9 +495,10 @@ ns.RegisterPoints(ns.KARESH, {
 	},
 	[63824363] = { -- Ixthar the Unblinking
 		criteria=106245,
-		quest=90596,
+		quest=90596, -- 90685
 		npc=232128,
 		loot={
+			ns.rewards.Achievement(42736, 106245), -- Ixthar's Legacy
 			240171, -- Observer's Soul Fetters
 			240213, -- Veiling Mana Shroud
 			240214, -- Miniature Reshii Sandgarden
