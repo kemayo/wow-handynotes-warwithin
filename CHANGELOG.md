@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v102
+
+* K'aresh: add the Ixthar's Legacy achievement, and improve various phased coordinates
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+    * Don't try to show a comparison tooltip if GameTooltip has become secret
+
 ## Changed in v101
 
 * Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
