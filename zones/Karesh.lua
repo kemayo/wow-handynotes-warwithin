@@ -230,14 +230,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6923,
 	},
-	[64404270] = { -- Korgorath's Talon
+	[64434269] = { -- Korgorath's Talon
 		criteria=106288,
 		quest=90532,
 		loot={
 			243153, -- Korgorath's Talon
 			243154, -- Korgorath's Broken Nail
 		},
-		vignette=6927, --
+		vignette=6927,
 	},
 	[58432259] = { -- Warglaive of the Audacious Hunter
 		criteria=106289,
@@ -388,7 +388,7 @@ ns.RegisterPoints(ns.KARESH, {
 	[63984597] = {},
 	[64865224] = {},
 	[64905495] = {},
-	[66054880] = {},
+	[66054880] = {note="Under the bridge"},
 	[68834777] = {},
 	[69755531] = {},
 	[70206061] = {},
@@ -516,7 +516,7 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6630,
 	},
-	[52702072] = { -- Orith the Dreadful
+	[52782081] = { -- Orith the Dreadful
 		criteria=106339,
 		quest=90595,
 		npc=232127,
@@ -596,9 +596,9 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6639,
 	},
-	[65204985] = { -- Xarran the Binder
+	[65144998] = { -- Xarran the Binder
 		criteria=106349,
-		quest=90584,
+		quest=90584, -- 90672
 		npc=232199,
 		loot={
 			239451, -- Reshii Magi's Crown
@@ -630,9 +630,9 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6637,
 	},
-	[65524418] = { -- Korgorath the Ravager
+	[65624423] = { -- Korgorath the Ravager
 		criteria=106335,
-		quest=90586,
+		quest=90586, -- 90675
 		npc=232077,
 		loot={
 			239448, -- Reshii Magi's Vestments
