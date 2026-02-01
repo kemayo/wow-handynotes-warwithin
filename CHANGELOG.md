@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v103
+
+* Delves: avoid a secret-values error that could happen when viewing the tooltip on delve entrances on the continent map
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+    * Performance improvement: only cache points on-load if you're in a relevant zone
+
 ## Changed in v102
 
 * K'aresh: add the Ixthar's Legacy achievement, and improve various phased coordinates
