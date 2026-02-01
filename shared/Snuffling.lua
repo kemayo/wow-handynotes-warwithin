@@ -62,7 +62,7 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
     [40404500] = {},
     [40882805] = {},
     [40943330] = {}, -- w
-    [42141409] = {note="Covered by {npc:226642:Earthen Console}"},
+    [42141410] = {note="Covered by {npc:226642:Earthen Console}"},
     [42293316] = {},
     [42054109] = {},
     [42954110] = {},
