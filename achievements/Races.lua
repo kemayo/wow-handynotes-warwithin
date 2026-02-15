@@ -48,11 +48,12 @@ end)
 -- Currencies are all available from https://wago.tools/db2/CurrencyTypes
 -- They're named in the format `11 Z[zone-number] R[race-number]`
 
-local Race = function(questid, achievements, currencies)
+local Race = function(questid, achievements, currencies, vignette)
     local race = ns.Getterize{
         _questid = questid,
         _achievements = achievements,
         _currencies = currencies or {},
+        vignette=vignette,
         -- achievement=40354, -- Khaz Algar Completionist: Gold
         atlas="racing", scale=1.2,
         group="races",
@@ -140,7 +141,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
     [39221137] = Race(85099, {40926, 40929}, {3124, 3125}), -- Scrapshop Shot
     [25504213] = Race(85101, {40932, 40935}, {3126, 3127}), -- Rags to Riches Rush
     -- Breaknecking (hide before No More Walking Here (87581?))
-    [26005300] = Race(85900, {41059, 41062}, {3181, 3182}), -- Breakneck Bolt
+    [26165298] = Race(85900, {41059, 41062}, {3181, 3182}), -- Breakneck Bolt
     [43507800] = Race(85902, {41065, 41068}, {3183, 3184}), -- Junkyard Jaunt
     [39505400] = Race(85904, {41071, 41074}, {3185, 3186}), -- Casino Cruise
     [47504400] = Race(85906, {41077, 41080}, {3187, 3188}), -- Sandy Scuttle
