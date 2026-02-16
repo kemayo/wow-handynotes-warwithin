@@ -95,6 +95,24 @@ ns.RegisterPoints(ns.UNDERMINE, {
     showallloot=true,
 })
 
+-- S.C.R.A.P. Heap cosmetic drops
+
+ns.RegisterVignettes(ns.UNDERMINE, {
+    [6757] = {}, -- active
+    [6687] = {}, -- starting
+}, {
+    loot={
+        ns.rewards.Achievement(41590), -- Really No Littering
+        ns.rewards.Achievement(41591), -- Really No Littering
+        ns.rewards.Achievement(41593), -- Cleanin' the Streets
+        {229953, mount=true}, -- Salvaged Goblin Gazillionaire's Flying Machine (from Garbage)
+        236161, -- Broiler Supreme 300
+        236178, -- Gammy's Hand-Me-Down Bow
+        236181, -- Center-Stage Remover
+        236191, -- Mechanic's Best Motivator
+    },
+})
+
 -- Treasures
 
 ns.RegisterPoints(ns.UNDERMINE, {
@@ -616,6 +634,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
             {232984, quest=85784}, -- Handcrank
         },
         notes="Appears after S.C.R.A.P. jobs sometimes",
+        vignette=6700,
     },
     --[[
     [0] = { -- Taskmaster Zendu
