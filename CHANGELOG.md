@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v104
+
+* Undermine: add cosmetics and achievements to the S.C.R.A.P. Heaps
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+
 ## Changed in v103
 
 * Delves: avoid a secret-values error that could happen when viewing the tooltip on delve entrances on the continent map
