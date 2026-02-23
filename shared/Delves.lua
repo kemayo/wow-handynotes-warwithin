@@ -232,8 +232,8 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
             return true
         end
     end
-    EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", function(_, pin, tooltipShown, areaPoiID, name)
-        -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name)
+    local function handlePin(_, pin, tooltipShown, areaPoiID, name, originalMapID)
+        -- print("AreaPOIPin.MouseOver", pin, tooltipShown, areaPoiID, name, originalMapID)
         if not ns.db.groupsHidden.delves then
             if tooltipShown and delves[areaPoiID] and #delves[areaPoiID] > 0 then
                 local tooltip = GetAppropriateTooltip()
@@ -242,6 +242,10 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                 tooltip:Show()
             end
         end
+    end
+    EventRegistry:RegisterCallback("AreaPOIPin.MouseOver", handlePin)
+    EventRegistry:RegisterCallback("X-ImportedAreaPOIPin.MouseOver", function(_, pin, tooltipShown, originalMapID, areaPoiID, name)
+        handlePin(_, pin, tooltipShown, areaPoiID, name, originalMapID)
     end)
 
     if C_AddOns.IsAddOnLoaded("DelverView") then
