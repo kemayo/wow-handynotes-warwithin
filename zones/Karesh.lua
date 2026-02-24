@@ -518,7 +518,7 @@ ns.RegisterPoints(ns.KARESH, {
 	},
 	[52782081] = { -- Orith the Dreadful
 		criteria=106339,
-		quest=90595,
+		quest=90595, -- 90684
 		npc=232127,
 		loot={
 			240172, -- Depleted K'areshi Battery
