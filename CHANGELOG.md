@@ -1,5 +1,13 @@
 # Changelog
 
+## Changed in v105
+
+* Delves: listen for DelverView's specific event so its tooltips can be updated
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+    * Adjust display so that tooltip titles use normal blizzard color
+    * Change the tooltip anchor to point default to true
+    * Override reward item tooltip display to not use a MoneyFrame
+
 ## Changed in v104
 
 * Undermine: add cosmetics and achievements to the S.C.R.A.P. Heaps
