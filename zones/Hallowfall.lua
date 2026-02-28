@@ -7,6 +7,8 @@ tripped together while I was running around the keyflame area at 80: 81416+83208
 
 faction unlocks with light of the dawntower 78671, also trips hidden 79654...
 
+Strange Eggs @ 67162184, The Unusual Bug (item 212331), starts The Unusual Bug (quest 79221)
+
 Worldsoul memories (vignette 6358)
 60686749
 ]]
@@ -302,7 +304,7 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         quest=84339,
         vignette=6534,
     },
-    [64903330] = { -- wowhead comments swear it's here
+    [64933336] = { -- wowhead comments swear it's here
         label="Old Rotting Crate",
         quest=84339,
         vignette=6534,
@@ -1033,3 +1035,11 @@ ns.RegisterPoints(ns.HALLOWFALL, {
 --         additional={61953305},
 --     },
 -- })
+
+ns.RegisterPoints(ns.HALLOWFALL, {
+    [72054154] = { -- Dissenter Troosilver
+        npc=241232,
+        quest=91158,
+        vignette=6884,
+    },
+})

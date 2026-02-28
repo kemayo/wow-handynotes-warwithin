@@ -212,14 +212,14 @@ ns.RegisterPoints(ns.KARESH, {
 		},
 		vignette=6922, --
 	},
-	[49101800] = { -- Shadowguard Crusher
+	[49201805] = { -- Shadowguard Crusher
 		criteria=106286,
 		quest=90527,
 		loot={
 			243008, -- Shadowguard Crusher
 			243021, -- Shadowguard Bonker
 		},
-		vignette=6926, --
+		vignette=6926,
 	},
 	[80725267] = { -- Sufaadi Skiff Lantern
 		criteria=106287,
