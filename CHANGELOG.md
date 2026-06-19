@@ -1,5 +1,10 @@
 # Changelog
 
+## Changed in v106
+
+* Updated for 12.0.7
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+
 ## Changed in v105
 
 * Delves: listen for DelverView's specific event so its tooltips can be updated
