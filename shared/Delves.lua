@@ -5,7 +5,7 @@ local HandyNotes = LibStub("AceAddon-3.0"):GetAddon("HandyNotes")
 local HBD = LibStub("HereBeDragons-2.0")
 
 local STURDY = ns.nodeMaker{
-    lable="Sturdy Chest",
+    label="Sturdy Chest",
     group="delves",
     minimap=true,
 }
