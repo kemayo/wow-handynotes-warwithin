@@ -195,10 +195,10 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         active={ns.conditions.QuestComplete(82012), ns.conditions.QuestComplete(82026), ns.conditions.QuestComplete(82024), ns.conditions.QuestComplete(82025)},
         note="Talk to four skyship captains flying around the zone to make this appear",
         routes={
-            {45904510, 62754689, highlightOnly=true},
-            {45904510, 49535554, highlightOnly=true},
-            {45904510, 54821161, highlightOnly=true},
-            {45904510, 27633461, highlightOnly=true},
+            {45904510, 62754689, highlightOnly=true, _related=62754689},
+            {45904510, 49535554, highlightOnly=true, _related=49535554},
+            {45904510, 54821161, highlightOnly=true, _related=54821161},
+            {45904510, 27633461, highlightOnly=true, _related=27633461},
         },
         atlas="VignetteLootElite", scale=1.2,
         vignette=6181, -- Sunken Cache
@@ -986,15 +986,15 @@ ns.RegisterPoints(ns.HALLOWFALL, {
         note="Create an {item:220123:Ominous Offering} from {item:220124:Jar of Mucus} (|A:playerpartyblip:::::0:255:127|a) + {item:220122} (|A:playerpartyblip:::::0:0:255|a) to summon",
         routes={
             -- water
-            {28925120, 44744241, highlightOnly=true},
-            {34185782, 44744241, highlightOnly=true},
-            {34365357, 44744241, highlightOnly=true},
-            {43451413, 44744241, highlightOnly=true},
-            {50094966, 44744241, highlightOnly=true},
-            {53771913, 44744241, highlightOnly=true},
-            {55142344, 44744241, highlightOnly=true},
+            {28925120, 44744241, highlightOnly=true, _related=28925120},
+            {34185782, 44744241, highlightOnly=true, _related=34185782},
+            {34365357, 44744241, highlightOnly=true, _related=34365357},
+            {43451413, 44744241, highlightOnly=true, _related=43451413},
+            {50094966, 44744241, highlightOnly=true, _related=50094966},
+            {53771913, 44744241, highlightOnly=true, _related=53771913},
+            {55142344, 44744241, highlightOnly=true, _related=55142344},
             -- mucus
-            {48001668, 44744241, highlightOnly=true},
+            {48001668, 44744241, highlightOnly=true, _related=48001668},
         },
     },
 }, deathtide{})
