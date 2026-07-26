@@ -1,5 +1,15 @@
 # Changelog
 
+## Changed in v107
+
+* Delves: fix the "Sturdy Chest" label not showing
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures)
+    * Routes to the parts of a multi-step treasure now hide as you collect them, so Hallowfall's Sunken Cache and Deathtide only point at what's left
+    * Treasures could stay visible after you'd collected everything, if one of the items had an appearance the game can't track
+    * Shift-left-click to send a link to chat was broken
+    * Transmog set rewards only counted as collected if you'd also finished the attached quest
+    * Fix several errors when showing faction, calendar event and transmog set names
+
 ## Changed in v106
 
 * Updated for 12.0.7
