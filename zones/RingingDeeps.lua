@@ -206,10 +206,10 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         label="{npc:227132:Glublurb}",
         texture=ns.atlas_texture("BuildanAbomination-32x32", {r=0, g=1, b=1}),
         note="Get {spell:456739:Etheral Vision} from a Glimmering Crystal, then go to the pond to the northwest of it to find a {npc:227138:Ethereal Glimmerling}, and bring it here",
-        route={
+        routes={{
             40145020, 54203360, 55744110,
             highlightOnly=true, r=1, g=0, b=1,
-        },
+        }},
     },
     [54203360] = {
         label="{npc:227138:Ethereal Glimmerling}",
@@ -345,11 +345,11 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
             225999, -- Earthen Adventurer's Tabard
         },
         note="Flys around anticlockwise",
-        route={
+        routes={{
             50900843, 48840880, 45400836, 44961007, 41130955, 39630822, 38490871, 40060973, 40171083, 40991312,
             39011750, 44521919, 48862244, 49591761, 51931023,
             loop=true,
-        },
+        }},
         vignette=6082,
     },
     [45396619] = { -- Aquellion
@@ -460,12 +460,12 @@ ns.RegisterPoints(ns.RINGINGDEEPS, {
         },
         vignette=6121,
         note="Flies around clockwise",
-        route={
+        routes={{
             64444852, 64575012, 64515047, 64055137, 63895156, 63585171, 63375176, 63065176, 62915174, 62425120, 62084896,
             62104870, 62244840, 62074817, 61564779, 61404760, 61314737, 61374711, 61564669, 61674655, 61884644, 62784640,
             63464608, 63614620, 63934659, 64054680, 64244754,
             loop=true,
-        },
+        }},
     },
     [61204949] = { -- Hungerer of the Deeps
         criteria=69639,

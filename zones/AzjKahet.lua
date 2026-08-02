@@ -262,7 +262,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
             221263, -- Nerubian Venom-Tipped Dart
         }),
         vignette=6134,
-        route={65201896, 65142033, 63122532, 62492877, 61712962},
+        routes={{65201896, 65142033, 63122532, 62492877, 61712962}},
         note="Slowly wanders back and forth",
     },
     [76585780] = { -- XT-Minecrusher 8700
@@ -298,13 +298,13 @@ ns.RegisterPoints(ns.AZJKAHET, {
             221263, -- Nerubian Venom-Tipped Dart
         }),
         vignette=6138,
-        route={
+        routes={{
             66536946, 66056803, 65616706, 65096620, 64446559, 63706526, 62926513, 62146530,
             61486584, 61396696, 61826791, 62536809, 63166813, 63746786, 64146720, 65386409,
             65706345, 66026301, 66606247, 67206246, 67696278, 68086319, 68356370, 68806483,
             69006550, 69096626, 69076707, 68876785, 68436846, 67866891,
             loop=true,
-        },
+        }},
         note="Patrols around the area, fighting other mobs",
     },
     [34574106] = { -- Vilewing
@@ -423,7 +423,7 @@ ns.RegisterPoints(ns.AZJKAHET, {
         }),
         vignette=6204,
         note="Spawns at the top, teleports to the bottom of the path, walks back to the top, then repeats",
-        route={62940509, 62430707, 62270757, 61930840, 61740856, 61520848, 61330831, 61210803, 61210771},
+        routes={{62940509, 62430707, 62270757, 61930840, 61740856, 61520848, 61330831, 61210803, 61210771}},
     },
     [64590667] = { -- Deepcrawler Tx'kesh
         criteria=69669,
@@ -453,12 +453,12 @@ ns.RegisterPoints(ns.AZJKAHETLOWER, { -- Azj-Kahet Lower
             223917, -- Nerubian Covert's Cloak
             223941, -- Nerubian Cultivator's Girdle
         }),
-        route={
+        routes={{
             -- 65318052, 65098306, 64908333, 64898331, 64868391, 64468542, 64478571, 64798646, 64888682,
             -- 64698716, 64478728, 64258727, 63448621, 63618636, 62418558
             62418558, 63228614, 63608652, 64218736, 64618723, 64828700, 64718638, 64458568, 64598484,
             64548512, 65208295, 65238270, 65268127, 65358100, 65688051,
-        },
+        }},
         vignette=6185,
     },
     [61938973] = { -- The Oozekhan

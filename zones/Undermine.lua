@@ -287,7 +287,7 @@ ns.RegisterPoints(ns.UNDERMINE, {
         loot={237130}, -- Undermine Undershirt
         note="Bring the {item:237129:Tarnished Undermine Real} from the sewer @ 33.1 58.2",
         minimap=true,
-        route={63201680, 33105818, highlightOnly=true},
+        routes={{63201680, 33105818, highlightOnly=true}},
     },
     [33105818] = {
         label="Sewer Cheese",

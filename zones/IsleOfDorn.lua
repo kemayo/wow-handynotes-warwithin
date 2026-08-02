@@ -99,7 +99,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             59752870, -- 222965
             label="{npc:222956:Lost Mosswool}",
         },
-        route={59622459, 59102706, 59752870},
+        routes={{59622459, 59102706, 59752870}},
         minimap=true,
         note="Chase {npc:222956:Lost Mosswool} to the flower",
         vignette=6212,
@@ -260,7 +260,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
         active={ns.conditions.Item(224025, 10), ns.conditions.Item(224026)},
         note="Get 10x {item:224025:Crackling Shard} from zone mobs, combine into {item:224026:Storm Vessel}, use to break the shield",
         vignette=6055,
-        --route={16606120,23205840},
+        --routes={{16606120,23205840}},
     },
     [72043881] = { -- Tephratennae
         criteria=68229,
@@ -285,7 +285,7 @@ ns.RegisterPoints(ns.ISLEOFDORN, {
             223344, -- Warphorn's Resilient Vest
             ns.rewards.Currency(ns.CURRENCY_DORNOGAL, 150),
         },
-        route={57003460, 58403560, 58403680, 57803780, 56603840, 56003780, 56403660, loop=true,},
+        routes={{57003460, 58403560, 58403680, 57803780, 56603840, 56003780, 56403660, loop=true,}},
         vignette=6044,
     },
     [48202703] = { -- Kronolith, Might of the Mountain
