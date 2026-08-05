@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v109
+
+* Karesh: the pickups around the Reshii Magi's cache are green again, as they were meant to be
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
+    * Turning on "Transmog exact items" didn't take effect until you reloaded
+
 ## Changed in v108
 
 * Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
