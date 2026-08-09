@@ -1,5 +1,11 @@
 # Changelog
 
+## Changed in v110
+
+* Updated for 12.1.0
+* Bring in systems improvements from [my Midnight plugin](https://www.curseforge.com/wow/addons/handynotes-midnight-treasures), notably:
+    * Achievement rewards that name a single criteria now count as earned once that criteria is done, rather than waiting for the whole achievement
+
 ## Changed in v109
 
 * Karesh: the pickups around the Reshii Magi's cache are green again, as they were meant to be
