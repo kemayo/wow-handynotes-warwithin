@@ -313,6 +313,7 @@ EventUtil.ContinueOnAddOnLoaded("Blizzard_WorldMap", function()
                         local info = C_AreaPoiInfo.GetAreaPOIInfo(mapInfo.mapID, delveID)
                         local x, y = info.position:GetXY()
                         local minX, maxX, minY, maxY = C_Map.GetMapRectOnMap(mapInfo.mapID, mapID)
+                        local tx, ty
                         if minX then
                             tx = Lerp(minX, maxX, x)
                             ty = Lerp(minY, maxY, y)
