@@ -7,7 +7,7 @@ local myname, ns = ...
 
 local KNOWLEDGE = {
     note = "This can only be looted once per character.",
-    currency=2789,
+    loot={ns.rewards.Currency(2789)},
     requires = ns.conditions.Profession(ns.PROF_WW_HERBALISM),
     -- active = ns.conditions.Profession(ns.PROF_WW_HERBALISM, 25),
     group = "professionknowledge",
